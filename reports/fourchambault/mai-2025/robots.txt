@@ -1,4 +1,4 @@
 # https://www.robotstxt.org/robotstxt.html
-# test
+# test 2
 User-agent: *
 Disallow:
