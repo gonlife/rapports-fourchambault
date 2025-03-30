@@ -1,4 +1,3 @@
-# Emplacement: /netlify.toml
 # Configuration principale Netlify
 
 # Redirection des rapports vers une fonction d'authentification
@@ -7,7 +6,6 @@
   to = "/.netlify/functions/verify-auth"
   status = 200
   force = true
-  conditions = {Role = ["!authenticated"]}
 
 # Règle par défaut pour l'application principale
 [[redirects]]
