@@ -1,13 +1,13 @@
-# Configuration principale Netlify
+# Configuration temporaire pour déboguer
+# Toutes les redirections sont commentées pour arrêter la boucle
 
-# Redirection des rapports vers une fonction d'authentification
-[[redirects]]
-  from = "/reports/*"
-  to = "/.netlify/functions/verify-auth"
-  status = 200
-  force = true
+# [[redirects]]
+#  from = "/reports/*"
+#  to = "/.netlify/functions/verify-auth"
+#  status = 200
+#  force = true
 
-# Règle par défaut pour l'application principale
+# Seule règle active pour le moment
 [[redirects]]
   from = "/*"
   to = "/index.html"
