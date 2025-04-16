@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.73ecf4d4.css",
-    "main.js": "/static/js/main.1c7bb6f1.js",
+    "main.js": "/static/js/main.c1330ae4.js",
     "static/media/gon-life-logo.png": "/static/media/gon-life-logo.bd32b857a32163c3f6df.png",
     "index.html": "/index.html",
     "main.73ecf4d4.css.map": "/static/css/main.73ecf4d4.css.map",
-    "main.1c7bb6f1.js.map": "/static/js/main.1c7bb6f1.js.map"
+    "main.c1330ae4.js.map": "/static/js/main.c1330ae4.js.map"
   },
   "entrypoints": [
     "static/css/main.73ecf4d4.css",
-    "static/js/main.1c7bb6f1.js"
+    "static/js/main.c1330ae4.js"
   ]
 }
