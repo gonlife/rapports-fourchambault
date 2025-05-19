@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/reports/paris/mars-2025/static/css/main.75db7d16.css",
-    "main.js": "/reports/paris/mars-2025/static/js/main.81108c98.js",
+    "main.js": "/reports/paris/mars-2025/static/js/main.913edbfb.js",
     "index.html": "/reports/paris/mars-2025/index.html",
     "main.75db7d16.css.map": "/reports/paris/mars-2025/static/css/main.75db7d16.css.map",
-    "main.81108c98.js.map": "/reports/paris/mars-2025/static/js/main.81108c98.js.map"
+    "main.913edbfb.js.map": "/reports/paris/mars-2025/static/js/main.913edbfb.js.map"
   },
   "entrypoints": [
     "static/css/main.75db7d16.css",
-    "static/js/main.81108c98.js"
+    "static/js/main.913edbfb.js"
   ]
 }
