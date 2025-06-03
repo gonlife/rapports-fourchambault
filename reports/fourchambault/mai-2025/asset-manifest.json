@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/reports/fourchambault/mai-2025/static/css/main.75db7d16.css",
-    "main.js": "/reports/fourchambault/mai-2025/static/js/main.93fc499e.js",
+    "main.js": "/reports/fourchambault/mai-2025/static/js/main.dc3e2142.js",
     "index.html": "/reports/fourchambault/mai-2025/index.html",
     "main.75db7d16.css.map": "/reports/fourchambault/mai-2025/static/css/main.75db7d16.css.map",
-    "main.93fc499e.js.map": "/reports/fourchambault/mai-2025/static/js/main.93fc499e.js.map"
+    "main.dc3e2142.js.map": "/reports/fourchambault/mai-2025/static/js/main.dc3e2142.js.map"
   },
   "entrypoints": [
     "static/css/main.75db7d16.css",
-    "static/js/main.93fc499e.js"
+    "static/js/main.dc3e2142.js"
   ]
 }
