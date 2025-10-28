@@ -1,5 +1,15 @@
-# Emplacement: /netlify.toml
 # Configuration principale Netlify
+
+# Route publique pour ECLA (SANS authentification)
+[[redirects]]
+  from = "/analyse/ECLA/*"
+  to = "/analyse/ECLA/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/analyse/ECLA"
+  to = "/analyse/ECLA/index.html"
+  status = 200
 
 # Redirection des rapports vers une fonction d'authentification
 [[redirects]]

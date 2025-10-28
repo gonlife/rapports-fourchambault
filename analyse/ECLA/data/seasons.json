@@ -1,0 +1,212 @@
+{
+  "noisy-le-grand": [
+    {
+      "id": "ete_2025",
+      "label": "Eté 2025",
+      "data_file": "noisy-le-grand_ete_2025.json",
+      "content_file": "noisy-le-grand_ete_2025_content.json",
+      "periode_debut": "01/07/2025",
+      "periode_fin": "01/10/2025"
+    },
+    {
+      "id": "printemps_2025",
+      "label": "Printemps 2025",
+      "data_file": "noisy-le-grand_printemps_2025.json",
+      "content_file": "noisy-le-grand_printemps_2025_content.json",
+      "periode_debut": null,
+      "periode_fin": null
+    },
+    {
+      "id": "hiver_2024_2025",
+      "label": "Hiver 2024-2025",
+      "data_file": "noisy-le-grand_hiver_2024_2025.json",
+      "content_file": "noisy-le-grand_hiver_2024_2025_content.json",
+      "periode_debut": null,
+      "periode_fin": null
+    },
+    {
+      "id": "automne_2024",
+      "label": "Automne 2024",
+      "data_file": "noisy-le-grand_automne_2024.json",
+      "content_file": "noisy-le-grand_automne_2024_content.json",
+      "periode_debut": null,
+      "periode_fin": null
+    },
+    {
+      "id": "ete_2024",
+      "label": "Eté 2024",
+      "data_file": "noisy-le-grand_ete_2024.json",
+      "content_file": "noisy-le-grand_ete_2024_content.json",
+      "periode_debut": null,
+      "periode_fin": null
+    }
+  ],
+  "villejuif": [
+    {
+      "id": "ete_2025",
+      "label": "Eté 2025",
+      "data_file": "villejuif_ete_2025.json",
+      "content_file": "villejuif_ete_2025_content.json",
+      "periode_debut": "01/07/2025",
+      "periode_fin": "01/10/2025"
+    },
+    {
+      "id": "printemps_2025",
+      "label": "Printemps 2025",
+      "data_file": "villejuif_printemps_2025.json",
+      "content_file": "villejuif_printemps_2025_content.json",
+      "periode_debut": null,
+      "periode_fin": null
+    },
+    {
+      "id": "hiver_2024_2025",
+      "label": "Hiver 2024-2025",
+      "data_file": "villejuif_hiver_2024_2025.json",
+      "content_file": "villejuif_hiver_2024_2025_content.json",
+      "periode_debut": null,
+      "periode_fin": null
+    },
+    {
+      "id": "automne_2024",
+      "label": "Automne 2024",
+      "data_file": "villejuif_automne_2024.json",
+      "content_file": "villejuif_automne_2024_content.json",
+      "periode_debut": null,
+      "periode_fin": null
+    },
+    {
+      "id": "ete_2024",
+      "label": "Eté 2024",
+      "data_file": "villejuif_ete_2024.json",
+      "content_file": "villejuif_ete_2024_content.json",
+      "periode_debut": null,
+      "periode_fin": null
+    }
+  ],
+  "hacker": [
+    {
+      "id": "ete_2025",
+      "label": "Eté 2025",
+      "data_file": "hacker_ete_2025.json",
+      "content_file": "hacker_ete_2025_content.json",
+      "periode_debut": "01/07/2025",
+      "periode_fin": "01/10/2025"
+    },
+    {
+      "id": "printemps_2025",
+      "label": "Printemps 2025",
+      "data_file": "hacker_printemps_2025.json",
+      "content_file": "hacker_printemps_2025_content.json",
+      "periode_debut": null,
+      "periode_fin": null
+    },
+    {
+      "id": "hiver_2024_2025",
+      "label": "Hiver 2024-2025",
+      "data_file": "hacker_hiver_2024_2025.json",
+      "content_file": "hacker_hiver_2024_2025_content.json",
+      "periode_debut": null,
+      "periode_fin": null
+    },
+    {
+      "id": "automne_2024",
+      "label": "Automne 2024",
+      "data_file": "hacker_automne_2024.json",
+      "content_file": "hacker_automne_2024_content.json",
+      "periode_debut": null,
+      "periode_fin": null
+    },
+    {
+      "id": "ete_2024",
+      "label": "Eté 2024",
+      "data_file": "hacker_ete_2024.json",
+      "content_file": "hacker_ete_2024_content.json",
+      "periode_debut": null,
+      "periode_fin": null
+    }
+  ],
+  "palaiseau_1": [
+    {
+      "id": "ete_2025",
+      "label": "Eté 2025",
+      "data_file": "palaiseau_1_ete_2025.json",
+      "content_file": "palaiseau_1_ete_2025_content.json",
+      "periode_debut": "01/07/2025",
+      "periode_fin": "01/10/2025"
+    },
+    {
+      "id": "printemps_2025",
+      "label": "Printemps 2025",
+      "data_file": "palaiseau_1_printemps_2025.json",
+      "content_file": "palaiseau_1_printemps_2025_content.json",
+      "periode_debut": null,
+      "periode_fin": null
+    },
+    {
+      "id": "hiver_2024_2025",
+      "label": "Hiver 2024-2025",
+      "data_file": "palaiseau_1_hiver_2024_2025.json",
+      "content_file": "palaiseau_1_hiver_2024_2025_content.json",
+      "periode_debut": null,
+      "periode_fin": null
+    },
+    {
+      "id": "automne_2024",
+      "label": "Automne 2024",
+      "data_file": "palaiseau_1_automne_2024.json",
+      "content_file": "palaiseau_1_automne_2024_content.json",
+      "periode_debut": null,
+      "periode_fin": null
+    },
+    {
+      "id": "ete_2024",
+      "label": "Eté 2024",
+      "data_file": "palaiseau_1_ete_2024.json",
+      "content_file": "palaiseau_1_ete_2024_content.json",
+      "periode_debut": null,
+      "periode_fin": null
+    }
+  ],
+  "noisylegrand": [
+    {
+      "id": "ete_2025",
+      "label": "Eté 2025",
+      "data_file": "noisylegrand_ete_2025.json",
+      "content_file": "noisylegrand_ete_2025_content.json",
+      "periode_debut": "01/07/2025",
+      "periode_fin": "01/10/2025"
+    },
+    {
+      "id": "printemps_2025",
+      "label": "Printemps 2025",
+      "data_file": "noisylegrand_printemps_2025.json",
+      "content_file": "noisylegrand_printemps_2025_content.json",
+      "periode_debut": null,
+      "periode_fin": null
+    },
+    {
+      "id": "hiver_2024_2025",
+      "label": "Hiver 2024-2025",
+      "data_file": "noisylegrand_hiver_2024_2025.json",
+      "content_file": "noisylegrand_hiver_2024_2025_content.json",
+      "periode_debut": null,
+      "periode_fin": null
+    },
+    {
+      "id": "automne_2024",
+      "label": "Automne 2024",
+      "data_file": "noisylegrand_automne_2024.json",
+      "content_file": "noisylegrand_automne_2024_content.json",
+      "periode_debut": null,
+      "periode_fin": null
+    },
+    {
+      "id": "ete_2024",
+      "label": "Eté 2024",
+      "data_file": "noisylegrand_ete_2024.json",
+      "content_file": "noisylegrand_ete_2024_content.json",
+      "periode_debut": null,
+      "periode_fin": null
+    }
+  ]
+}
