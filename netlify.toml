@@ -1,6 +1,17 @@
 # Configuration principale Netlify
 
-# Route publique pour ECLA (SANS authentification)
+# Servir les fichiers statiques d'ECLA directement (pas de redirect)
+[[redirects]]
+  from = "/analyse/ECLA/static/*"
+  to = "/analyse/ECLA/static/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/analyse/ECLA/data/*"
+  to = "/analyse/ECLA/data/:splat"
+  status = 200
+
+# Route pour l'application ECLA (SPA routing)
 [[redirects]]
   from = "/analyse/ECLA/*"
   to = "/analyse/ECLA/index.html"
@@ -11,7 +22,7 @@
   to = "/analyse/ECLA/index.html"
   status = 200
 
-# Redirection des rapports vers une fonction d'authentification
+# Redirection des rapports vers authentification
 [[redirects]]
   from = "/reports/*"
   to = "/.netlify/functions/verify-auth"
