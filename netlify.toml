@@ -1,17 +1,22 @@
-# Configuration principale Netlify
-
-# Servir les fichiers statiques d'ECLA directement (pas de redirect)
+# Laisser passer les fichiers statiques d'ECLA
 [[redirects]]
   from = "/analyse/ECLA/static/*"
   to = "/analyse/ECLA/static/:splat"
   status = 200
 
+# Laisser passer les données JSON d'ECLA
 [[redirects]]
   from = "/analyse/ECLA/data/*"
   to = "/analyse/ECLA/data/:splat"
   status = 200
 
-# Route pour l'application ECLA (SPA routing)
+# (Optionnel) laisser passer manifest/favicons si présents
+[[redirects]]
+  from = "/analyse/ECLA/*.(json|png|ico|svg)"
+  to = "/analyse/ECLA/:splat"
+  status = 200
+
+# SPA fallback d'ECLA (tout le reste va sur son index)
 [[redirects]]
   from = "/analyse/ECLA/*"
   to = "/analyse/ECLA/index.html"
@@ -22,7 +27,7 @@
   to = "/analyse/ECLA/index.html"
   status = 200
 
-# Redirection des rapports vers authentification
+# Rapports protégés
 [[redirects]]
   from = "/reports/*"
   to = "/.netlify/functions/verify-auth"
@@ -30,7 +35,7 @@
   force = true
   conditions = {Role = ["!authenticated"]}
 
-# Règle par défaut pour l'application principale
+# Fallback global de la plateforme principale (login etc.)
 [[redirects]]
   from = "/*"
   to = "/index.html"
