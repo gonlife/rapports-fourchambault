@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/analyse/UXCO/static/css/main.10839d81.css",
-    "main.js": "/analyse/UXCO/static/js/main.66e11861.js",
+    "main.js": "/analyse/UXCO/static/js/main.e6c16aee.js",
     "static/js/453.7c696b46.chunk.js": "/analyse/UXCO/static/js/453.7c696b46.chunk.js",
     "index.html": "/analyse/UXCO/index.html",
     "main.10839d81.css.map": "/analyse/UXCO/static/css/main.10839d81.css.map",
-    "main.66e11861.js.map": "/analyse/UXCO/static/js/main.66e11861.js.map",
+    "main.e6c16aee.js.map": "/analyse/UXCO/static/js/main.e6c16aee.js.map",
     "453.7c696b46.chunk.js.map": "/analyse/UXCO/static/js/453.7c696b46.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.10839d81.css",
-    "static/js/main.66e11861.js"
+    "static/js/main.e6c16aee.js"
   ]
 }
