@@ -1,3 +1,7 @@
+# ===================================
+# RÈGLES POUR ECLA
+# ===================================
+
 # Laisser passer les fichiers statiques d'ECLA
 [[redirects]]
   from = "/analyse/ECLA/static/*"
@@ -26,6 +30,43 @@
   from = "/analyse/ECLA"
   to = "/analyse/ECLA/index.html"
   status = 200
+
+# ===================================
+# RÈGLES POUR UXCO (NOUVELLES !)
+# ===================================
+
+# Laisser passer les fichiers statiques d'UXCO
+[[redirects]]
+  from = "/analyse/UXCO/static/*"
+  to = "/analyse/UXCO/static/:splat"
+  status = 200
+
+# Laisser passer les données JSON d'UXCO
+[[redirects]]
+  from = "/analyse/UXCO/data/*"
+  to = "/analyse/UXCO/data/:splat"
+  status = 200
+
+# (Optionnel) laisser passer manifest/favicons si présents
+[[redirects]]
+  from = "/analyse/UXCO/*.(json|png|ico|svg)"
+  to = "/analyse/UXCO/:splat"
+  status = 200
+
+# SPA fallback d'UXCO (tout le reste va sur son index)
+[[redirects]]
+  from = "/analyse/UXCO/*"
+  to = "/analyse/UXCO/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/analyse/UXCO"
+  to = "/analyse/UXCO/index.html"
+  status = 200
+
+# ===================================
+# RÈGLES GLOBALES
+# ===================================
 
 # Rapports protégés
 [[redirects]]
