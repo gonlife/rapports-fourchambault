@@ -1,59 +1,50 @@
 # ===================================
-# RÈGLES POUR ECLA
+# RÈGLES SPÉCIFIQUES (PRIORITAIRES)
 # ===================================
-
-# Laisser passer les fichiers statiques d'ECLA
-[[redirects]]
-  from = "/analyse/ECLA/static/*"
-  to = "/analyse/ECLA/static/:splat"
-  status = 200
-
-# Laisser passer les données JSON d'ECLA
-[[redirects]]
-  from = "/analyse/ECLA/data/*"
-  to = "/analyse/ECLA/data/:splat"
-  status = 200
-
-# (Optionnel) laisser passer manifest/favicons si présents
-[[redirects]]
-  from = "/analyse/ECLA/*.(json|png|ico|svg)"
-  to = "/analyse/ECLA/:splat"
-  status = 200
-
-# SPA fallback d'ECLA (tout le reste va sur son index)
-[[redirects]]
-  from = "/analyse/ECLA/*"
-  to = "/analyse/ECLA/index.html"
-  status = 200
-
-[[redirects]]
-  from = "/analyse/ECLA"
-  to = "/analyse/ECLA/index.html"
-  status = 200
+# Important : Les règles spécifiques doivent être AVANT les règles globales
 
 # ===================================
-# RÈGLES POUR UXCO (NOUVELLES !)
+# RÈGLES POUR UXCO
 # ===================================
 
-# Laisser passer les fichiers statiques d'UXCO
+# Laisser passer les fichiers statiques d'UXCO (PRIORITÉ ABSOLUE)
 [[redirects]]
   from = "/analyse/UXCO/static/*"
   to = "/analyse/UXCO/static/:splat"
   status = 200
+  force = true
 
-# Laisser passer les données JSON d'UXCO
+# Laisser passer les données JSON d'UXCO (PRIORITÉ ABSOLUE)
 [[redirects]]
   from = "/analyse/UXCO/data/*"
   to = "/analyse/UXCO/data/:splat"
   status = 200
+  force = true
 
-# (Optionnel) laisser passer manifest/favicons si présents
+# Laisser passer les assets d'UXCO
 [[redirects]]
-  from = "/analyse/UXCO/*.(json|png|ico|svg)"
+  from = "/analyse/UXCO/assets/*"
+  to = "/analyse/UXCO/assets/:splat"
+  status = 200
+  force = true
+
+# Laisser passer manifest/favicons d'UXCO
+[[redirects]]
+  from = "/analyse/UXCO/*.json"
   to = "/analyse/UXCO/:splat"
   status = 200
 
-# SPA fallback d'UXCO (tout le reste va sur son index)
+[[redirects]]
+  from = "/analyse/UXCO/*.png"
+  to = "/analyse/UXCO/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/analyse/UXCO/*.ico"
+  to = "/analyse/UXCO/:splat"
+  status = 200
+
+# SPA fallback d'UXCO - TOUTES les routes vont sur index.html
 [[redirects]]
   from = "/analyse/UXCO/*"
   to = "/analyse/UXCO/index.html"
@@ -65,7 +56,59 @@
   status = 200
 
 # ===================================
-# RÈGLES GLOBALES
+# RÈGLES POUR ECLA
+# ===================================
+
+# Laisser passer les fichiers statiques d'ECLA
+[[redirects]]
+  from = "/analyse/ECLA/static/*"
+  to = "/analyse/ECLA/static/:splat"
+  status = 200
+  force = true
+
+# Laisser passer les données JSON d'ECLA
+[[redirects]]
+  from = "/analyse/ECLA/data/*"
+  to = "/analyse/ECLA/data/:splat"
+  status = 200
+  force = true
+
+# Laisser passer les assets d'ECLA
+[[redirects]]
+  from = "/analyse/ECLA/assets/*"
+  to = "/analyse/ECLA/assets/:splat"
+  status = 200
+  force = true
+
+# Laisser passer manifest/favicons d'ECLA
+[[redirects]]
+  from = "/analyse/ECLA/*.json"
+  to = "/analyse/ECLA/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/analyse/ECLA/*.png"
+  to = "/analyse/ECLA/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/analyse/ECLA/*.ico"
+  to = "/analyse/ECLA/:splat"
+  status = 200
+
+# SPA fallback d'ECLA
+[[redirects]]
+  from = "/analyse/ECLA/*"
+  to = "/analyse/ECLA/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/analyse/ECLA"
+  to = "/analyse/ECLA/index.html"
+  status = 200
+
+# ===================================
+# RÈGLES GLOBALES (EN DERNIER !)
 # ===================================
 
 # Rapports protégés
@@ -77,6 +120,7 @@
   conditions = {Role = ["!authenticated"]}
 
 # Fallback global de la plateforme principale (login etc.)
+# Cette règle doit être EN DERNIER
 [[redirects]]
   from = "/*"
   to = "/index.html"
