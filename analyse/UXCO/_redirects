@@ -7,4 +7,4 @@
 /analyse/UXCO/*             /analyse/UXCO/index.html        200!
 
 # (ensuite seulement) fallback global pour l'app racine (login)
-/*                          /index.html                     200
+#/*                          /index.html                     200
