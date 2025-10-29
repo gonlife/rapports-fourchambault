@@ -4,6 +4,58 @@
 # Important : Les règles spécifiques doivent être AVANT les règles globales
 
 # ===================================
+# RÈGLES POUR ECLA - VERSION MINUSCULES /analyse/ecla/
+# ===================================
+
+# Laisser passer les fichiers statiques d'ECLA (PRIORITÉ ABSOLUE)
+[[redirects]]
+  from = "/analyse/ecla/static/*"
+  to = "/analyse/ECLA/static/:splat"
+  status = 200
+  force = true
+
+# Laisser passer les données JSON d'ECLA (PRIORITÉ ABSOLUE)
+[[redirects]]
+  from = "/analyse/ecla/data/*"
+  to = "/analyse/ECLA/data/:splat"
+  status = 200
+  force = true
+
+# Laisser passer les assets d'ECLA
+[[redirects]]
+  from = "/analyse/ecla/assets/*"
+  to = "/analyse/ECLA/assets/:splat"
+  status = 200
+  force = true
+
+# Laisser passer manifest/favicons d'ECLA
+[[redirects]]
+  from = "/analyse/ecla/*.json"
+  to = "/analyse/ECLA/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/analyse/ecla/*.png"
+  to = "/analyse/ECLA/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/analyse/ecla/*.ico"
+  to = "/analyse/ECLA/:splat"
+  status = 200
+
+# SPA fallback d'ECLA (version minuscules) - TOUTES les routes vont sur index.html
+[[redirects]]
+  from = "/analyse/ecla/*"
+  to = "/analyse/ECLA/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/analyse/ecla"
+  to = "/analyse/ECLA/index.html"
+  status = 200
+
+# ===================================
 # RÈGLES POUR UXCO - VERSION MINUSCULES /analyse/uxco/
 # ===================================
 
@@ -108,17 +160,17 @@
   status = 200
 
 # ===================================
-# RÈGLES POUR ECLA
+# RÈGLES POUR ECLA - VERSION MAJUSCULES /analyse/ECLA/
 # ===================================
 
-# Laisser passer les fichiers statiques d'ECLA
+# Laisser passer les fichiers statiques d'ECLA (PRIORITÉ ABSOLUE)
 [[redirects]]
   from = "/analyse/ECLA/static/*"
   to = "/analyse/ECLA/static/:splat"
   status = 200
   force = true
 
-# Laisser passer les données JSON d'ECLA
+# Laisser passer les données JSON d'ECLA (PRIORITÉ ABSOLUE)
 [[redirects]]
   from = "/analyse/ECLA/data/*"
   to = "/analyse/ECLA/data/:splat"
@@ -148,7 +200,7 @@
   to = "/analyse/ECLA/:splat"
   status = 200
 
-# SPA fallback d'ECLA
+# SPA fallback d'ECLA - TOUTES les routes vont sur index.html
 [[redirects]]
   from = "/analyse/ECLA/*"
   to = "/analyse/ECLA/index.html"
