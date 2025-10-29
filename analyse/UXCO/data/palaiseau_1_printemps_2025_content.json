@@ -12,6 +12,7 @@
     ]
   },
   "_GUIDE_REDACTION": {
+    "⚠️_CRITIQUE_PARSING_JSX": "Les titres de sections dans summary.text DOIVENT rester EXACTEMENT comme définis ci-dessous. Toute modification (ajout d'émojis, de gras, de ponctuation) cassera l'affichage du dashboard !",
     "principes": [
       "Toujours utiliser le tutoiement et un ton positif, jeune et communautaire",
       "Mentionner UXCO Student (jamais Maison Ecla)",
@@ -20,11 +21,12 @@
       "Conseils UNIQUEMENT sur les espaces communs; aucune mention des logements individuels"
     ],
     "structure_summary": {
-      "1_synthese": "Vue d'ensemble positive avec score global et température moyenne",
-      "2_performances": "2-3 paramètres excellents avec valeurs moyennes et impact positif",
-      "3_points_attention": "1-2 observations avec valeurs max, local concerné, contextualisation positive",
-      "4_impact_bien_etre": "Exactement 3-4 bénéfices concrets sous forme de liste à puces",
-      "5_conseils": "EXCLUSIVEMENT sur les espaces communs et actions concrètes des habitant·e·s (ex: fréquenter les espaces à heures moins chargées si CO2 élevé, modérer le bruit si problème identifié, utiliser certains espaces plutôt que d'autres selon la qualité d'air). Ne JAMAIS donner de conseils sur les logements individuels."
+      "_AVERTISSEMENT": "Les titres FR/EN ci-dessous sont utilisés par le parser JSX et ne doivent JAMAIS être modifiés",
+      "1_synthese": "Vue d'ensemble positive avec score global et température moyenne | TITRE FR: 'Synthèse' | TITRE EN: 'Summary'",
+      "2_performances": "2-3 paramètres excellents avec valeurs moyennes et impact positif | TITRE FR: 'Performances observées' | TITRE EN: 'Observed Performances'",
+      "3_points_attention": "1-2 observations avec valeurs max, local concerné, contextualisation positive | TITRE FR: 'Points d'attention identifiés' | TITRE EN: 'Identified Points of Attention'",
+      "4_impact_bien_etre": "Exactement 3-4 bénéfices concrets sous forme de liste à puces | TITRE FR: 'Impact sur ton bien-être' | TITRE EN: 'Impact on Your Well-being'",
+      "5_conseils": "EXCLUSIVEMENT sur les espaces communs et actions concrètes des habitant·e·s (ex: fréquenter les espaces à heures moins chargées si CO2 élevé, modérer le bruit si problème identifié, utiliser certains espaces plutôt que d'autres selon la qualité d'air). Ne JAMAIS donner de conseils sur les logements individuels. | TITRE FR: 'Conseils pour en profiter à fond' | TITRE EN: 'Recommendations'"
     }
   },
   "_GUIDE_TRADUCTION_NOMS_LOCAUX": {
@@ -229,13 +231,30 @@
     }
   },
   "summary": {
+    "_IMPORTANT_STRUCTURE_PARSING": "⚠️ CRITIQUE : Le JSX parse ce texte avec des titres de sections FIXES. Ne PAS modifier les titres, sinon la section entière ne s'affichera pas !",
+    "_TITRES_OBLIGATOIRES_FR": [
+      "Synthèse",
+      "Performances observées",
+      "Points d'attention identifiés",
+      "Impact sur ton bien-être",
+      "Conseils pour en profiter à fond"
+    ],
+    "_TITRES_OBLIGATOIRES_EN": [
+      "Summary",
+      "Observed Performances",
+      "Identified Points of Attention",
+      "Impact on Your Well-being",
+      "Recommendations"
+    ],
+    "_FORMAT_CRITIQUE": "Chaque section = Titre seul sur une ligne + \\n\\n + contenu. Séparer les sections par \\n\\n. Les titres DOIVENT être exactement comme listés ci-dessus (sans gras, sans émojis, sans ponctuation supplémentaire).",
+    "_CONSEQUENCE_SI_NON_RESPECT": "Si les titres sont modifiés, le parser retournera null et TOUTE la section hero + synthèse sera invisible dans le dashboard.",
     "title": {
       "fr": "🌿 Ce qu'il faut retenir",
       "en": "🌿 Key Takeaways"
     },
     "text": {
-      "fr": "**Bilan global : excellent !** Ton espace UXCO affiche un score de **92/100** pour cette fin de printemps, avec une température moyenne confortable de **25,1°C**.\n\n**Les points forts :**\n- **Qualité de l'air au top** : l'Espace repas maintient un indice excellent (0) avec un CO₂ moyen de 519 ppm, bien en dessous du seuil optimal de 800 ppm. L'air y est vraiment respirable !\n- **Particules fines maîtrisées** : une moyenne de 4,3 µg/m³, très en dessous des recommandations de l'OMS. Parfait pour préserver ta santé respiratoire.\n- **COV sous contrôle** : 240 µg/m³ en moyenne, ce qui témoigne d'une bonne aération des espaces communs.\n\n**Ce qui mérite ton attention :**\n- **Cours collectifs plus fréquentés** : la Salle de cours collectifs affiche un indice 2 (bon) avec des pics de CO₂ jusqu'à 3098 ppm durant les sessions. C'est lié à une occupation plus dense qu'en été – tout à fait normal pour des cours en groupe ! Si tu y participes, privilégie les créneaux moins chargés ou profite d'une pause entre deux exercices pour laisser l'air se renouveler.\n\n**Concrètement, ça change quoi pour toi ?**\n💨 **Tu respires mieux** : un air de qualité favorise ta concentration et réduit la fatigue, idéal pour réviser ou travailler dans les espaces communs\n🌡️ **Tu te sens bien** : température et humidité équilibrées pour un confort optimal au quotidien\n🎯 **Tu profites pleinement de tes espaces** : tous les lieux (sauf les cours collectifs aux heures de pointe) offrent des conditions idéales pour étudier, te détendre ou socialiser\n\n**Nos conseils pour cette période :**\n- **Pour le fitness** : si tu veux éviter les pics de CO₂, privilégie les créneaux tôt le matin ou en fin d'après-midi pour les cours collectifs. La Salle fitness classique reste top avec un indice 1 !\n- **Pour l'Espace repas** : continue d'en profiter sans modération, les conditions y sont excellentes à toute heure.\n- **Ambiance sonore apaisée** : la résidence est plus calme durant cette période – parfait pour réviser ou te ressourcer dans les espaces communs.",
-      "en": "**Overall assessment: excellent!** Your UXCO space scores **92/100** for this late spring period, with a comfortable average temperature of **25.1°C**.\n\n**Highlights:**\n- **Top-notch air quality**: the Dining Area maintains an excellent rating (0) with an average CO₂ of 519 ppm, well below the optimal threshold of 800 ppm. The air is truly breathable!\n- **Fine particles under control**: an average of 4.3 µg/m³, well below WHO recommendations. Perfect for protecting your respiratory health.\n- **VOCs managed**: 240 µg/m³ on average, indicating good ventilation in common areas.\n\n**What needs your attention:**\n- **More crowded group classes**: the Group Class Room shows a rating of 2 (good) with CO₂ peaks up to 3098 ppm during sessions. This is due to denser occupancy than in summer – completely normal for group classes! If you attend, opt for less busy time slots or take breaks between exercises to let the air refresh.\n\n**What does this mean for you?**\n💨 **You breathe better**: quality air improves your focus and reduces fatigue, ideal for studying or working in common areas\n🌡️ **You feel good**: balanced temperature and humidity for optimal daily comfort\n🎯 **You fully enjoy your spaces**: all areas (except group classes during peak hours) offer ideal conditions for studying, relaxing, or socializing\n\n**Our tips for this period:**\n- **For fitness**: to avoid CO₂ peaks, choose early morning or late afternoon slots for group classes. The regular Fitness Room remains great with a rating of 1!\n- **For the Dining Area**: keep enjoying it without limits, conditions are excellent at all times.\n- **Peaceful atmosphere**: the residence is quieter during this period – perfect for studying or recharging in common areas."
+      "fr": "Synthèse\n\nTon printemps à UXCO affiche un excellent score de 92/100 ! Température moyenne de 25,1°C — parfait pour étudier, te détendre ou t'entraîner dans de bonnes conditions. Les espaces communs respirent bien.\n\nPerformances observées\n\nL'Espace repas maintient un indice de confinement 0/5 (excellent) : air de qualité optimale même aux heures de pointe. Les particules fines PM₂.₅ restent très basses (4,3 µg/m³), bien en dessous des recommandations OMS. L'humidité moyenne (54,3 %) est équilibrée et les COV sous contrôle (240 µg/m³).\n\nPoints d'attention identifiés\n\nLa salle de cours collectifs affiche un indice 2/5 (bon) avec des pics de CO₂ jusqu'à ~3100 ppm durant les sessions. C'est lié à une occupation plus dense qu'en été – tout à fait normal pour des cours en groupe ! Ces variations redescendent rapidement après. La salle de fitness classique garde un excellent indice 1/5.\n\nImpact sur ton bien-être\n\n• Tu respires mieux dans les espaces clés → concentration optimale et moins de fatigue.\n• Particules fines minimales → air plus sain pour réviser ou te détendre.\n• Température et humidité équilibrées → confort thermique au quotidien.\n• Ambiance calme → résidence apaisée, idéale pour se ressourcer.\n\nConseils pour en profiter à fond\n\n• Cours collectifs : privilégie les créneaux tôt le matin ou en fin d'après-midi pour éviter les pics de fréquentation. Ou profite d'une pause entre deux exercices pour laisser l'air se renouveler.\n• Salle fitness classique : excellente à toute heure avec son indice 1/5 – fonce !\n• Espace repas : continue d'en profiter sans modération, les conditions sont top du matin au soir.\n• Ambiance studieuse : la résidence est particulièrement calme durant cette période – parfait pour réviser dans les espaces communs.",
+      "en": "Summary\n\nYour spring at UXCO shows an excellent score of 92/100! Average temperature 25.1°C — perfect for studying, relaxing or working out in good conditions. Common areas breathe well.\n\nObserved Performances\n\nThe Dining Area maintains a confinement index 0/5 (excellent): optimal air quality even during peak hours. Fine particles PM2.5 remain very low (4.3 µg/m³), well below WHO recommendations. Relative humidity (54.3%) is balanced and VOCs under control (240 µg/m³).\n\nIdentified Points of Attention\n\nThe group class room shows an index 2/5 (good) with CO₂ peaks up to ~3100 ppm during sessions. This is due to denser occupancy than in summer – completely normal for group classes! These variations drop back quickly afterward. The regular fitness room keeps an excellent 1/5 index.\n\nImpact on Your Well-being\n\n• You breathe better in key spaces → optimal concentration and less fatigue.\n• Minimal fine particles → healthier air for studying or relaxing.\n• Balanced temperature and humidity → daily thermal comfort.\n• Calm atmosphere → peaceful residence, ideal for recharging.\n\nRecommendations\n\n• Group classes: choose early morning or late afternoon slots to avoid peak attendance. Or take breaks between exercises to let the air refresh.\n• Regular fitness room: excellent at any time with its 1/5 index – go for it!\n• Dining area: keep enjoying it without limits, conditions are top from morning to evening.\n• Study atmosphere: the residence is particularly quiet during this period – perfect for studying in common areas."
     },
     "score": {
       "value": 92,
@@ -437,6 +456,7 @@
   },
   "_CHECKLIST_TRADUCTIONS": {
     "description": "Liste de vérification pour s'assurer que tous les champs visibles sont traduits FR/EN",
+    "⚠️_CRITIQUE_TITRES_SUMMARY": "Les titres de sections dans summary.text ne doivent JAMAIS être modifiés (Synthèse, Performances observées, Points d'attention identifiés, Impact sur ton bien-être, Conseils pour en profiter à fond en FR | Summary, Observed Performances, Identified Points of Attention, Impact on Your Well-being, Recommendations en EN)",
     "champs_traduits": [
       "✓ hero.title - traduit FR/EN",
       "✓ hero.subtitle - traduit FR/EN",
@@ -466,16 +486,17 @@
       "ATTENTION: Vérifier que le fichier monitor JSON contient bien les champs metadata.salle_fitness_display et metadata.salle_graphiques_display avec traductions"
     ],
     "pour_futures_saisons": [
+      "⚠️ CRITIQUE: Ne JAMAIS modifier les titres de sections dans summary.text (Synthèse, Performances observées, Points d'attention identifiés, Impact sur ton bien-être, Conseils / Summary, Observed Performances, Identified Points of Attention, Impact on Your Well-being, Recommendations). Le parser JSX en dépend pour afficher le dashboard.",
       "1. Copier ce fichier comme template",
       "2. Mettre à jour hero.season_label avec le nouveau label de saison traduit",
       "3. Mettre à jour hero.title avec la nouvelle période traduite",
       "4. Mettre à jour hero.period avec les nouvelles dates traduites",
       "5. Si nouveaux locaux: ajouter les traductions dans heatmaps.*.title",
-      "6. Rédiger le nouveau texte summary.text en FR et EN",
+      "6. Rédiger le nouveau texte summary.text en FR et EN EN RESPECTANT LES TITRES DE SECTIONS FIXES",
       "7. Mettre à jour toutes les valeurs numériques dans metrics.items",
       "8. Vérifier que le fichier monitor JSON contient les metadata traduits",
       "9. Tester l'affichage en FR et EN dans le dashboard",
-      "10. Vérifier particulièrement: menu déroulant, titres heatmaps, label 'Good' en anglais"
+      "10. Vérifier particulièrement: menu déroulant, titres heatmaps, label 'Good' en anglais, ET QUE LA SECTION HERO + SYNTHÈSE S'AFFICHE"
     ]
   },
   "_MODIFICATIONS_JSX_REQUISES": {
