@@ -4,7 +4,59 @@
 # Important : Les règles spécifiques doivent être AVANT les règles globales
 
 # ===================================
-# RÈGLES POUR UXCO
+# RÈGLES POUR UXCO - VERSION MINUSCULES /analyse/uxco/
+# ===================================
+
+# Laisser passer les fichiers statiques d'UXCO (PRIORITÉ ABSOLUE)
+[[redirects]]
+  from = "/analyse/uxco/static/*"
+  to = "/analyse/UXCO/static/:splat"
+  status = 200
+  force = true
+
+# Laisser passer les données JSON d'UXCO (PRIORITÉ ABSOLUE)
+[[redirects]]
+  from = "/analyse/uxco/data/*"
+  to = "/analyse/UXCO/data/:splat"
+  status = 200
+  force = true
+
+# Laisser passer les assets d'UXCO
+[[redirects]]
+  from = "/analyse/uxco/assets/*"
+  to = "/analyse/UXCO/assets/:splat"
+  status = 200
+  force = true
+
+# Laisser passer manifest/favicons d'UXCO
+[[redirects]]
+  from = "/analyse/uxco/*.json"
+  to = "/analyse/UXCO/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/analyse/uxco/*.png"
+  to = "/analyse/UXCO/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/analyse/uxco/*.ico"
+  to = "/analyse/UXCO/:splat"
+  status = 200
+
+# SPA fallback d'UXCO (version minuscules) - TOUTES les routes vont sur index.html
+[[redirects]]
+  from = "/analyse/uxco/*"
+  to = "/analyse/UXCO/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/analyse/uxco"
+  to = "/analyse/UXCO/index.html"
+  status = 200
+
+# ===================================
+# RÈGLES POUR UXCO - VERSION MAJUSCULES /analyse/UXCO/
 # ===================================
 
 # Laisser passer les fichiers statiques d'UXCO (PRIORITÉ ABSOLUE)
