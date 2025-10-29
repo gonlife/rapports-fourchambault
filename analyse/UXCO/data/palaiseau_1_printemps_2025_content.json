@@ -375,6 +375,10 @@
       "explanation": {
         "fr": "Le CO₂ est un indicateur clé de la qualité d'air. Les données proviennent de",
         "en": "CO₂ is a key indicator of air quality. Data comes from"
+      },
+      "optimal_label_short": {
+        "fr": "Optimal",
+        "en": "Good"
       }
     },
     "heatmap": {
@@ -389,16 +393,63 @@
       "y_axis": {
         "fr": "Jour de la semaine",
         "en": "Day of Week"
+      },
+      "legend": {
+        "fr": "Légende",
+        "en": "Legend"
+      },
+      "no_data": {
+        "fr": "Pas de données",
+        "en": "No data"
+      },
+      "weekly_pattern_description": {
+        "fr": "N'hésite pas à utiliser les données ci-dessous pour mieux adapter tes périodes de présence dans les locaux :",
+        "en": "Feel free to use the data below to better adapt your presence periods in the spaces below:",
+        "_comment": "Description affichée sous le titre 'Profils hebdomadaires' - DOIT ÊTRE EN GRAS"
       }
     },
     "days_of_week": {
       "fr": {
-        "full": ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"],
-        "short": ["Lun", "Mar", "Mer", "Jeu", "Ven", "Sam", "Dim"]
+        "monday": "Lundi",
+        "monday_short": "Lun",
+        "tuesday": "Mardi",
+        "tuesday_short": "Mar",
+        "wednesday": "Mercredi",
+        "wednesday_short": "Mer",
+        "thursday": "Jeudi",
+        "thursday_short": "Jeu",
+        "friday": "Vendredi",
+        "friday_short": "Ven",
+        "saturday": "Samedi",
+        "saturday_short": "Sam",
+        "sunday": "Dimanche",
+        "sunday_short": "Dim"
       },
       "en": {
-        "full": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-        "short": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+        "monday": "Monday",
+        "monday_short": "Mon",
+        "tuesday": "Tuesday",
+        "tuesday_short": "Tue",
+        "wednesday": "Wednesday",
+        "wednesday_short": "Wed",
+        "thursday": "Thursday",
+        "thursday_short": "Thu",
+        "friday": "Friday",
+        "friday_short": "Fri",
+        "saturday": "Saturday",
+        "saturday_short": "Sat",
+        "sunday": "Sunday",
+        "sunday_short": "Sun"
+      }
+    },
+    "temp_humidity": {
+      "intro_prefix": {
+        "fr": "Les graphiques qui suivent présentent la température et l'humidité pour l'espace",
+        "en": "The following charts show temperature and humidity for"
+      },
+      "intro_suffix": {
+        "fr": "ainsi que les données extérieures.",
+        "en": "along with outdoor data."
       }
     }
   },
@@ -624,5 +675,11 @@
       "✓ FR/EN présents pour tous textes visibles",
       "✓ Conseils uniquement sur espaces communs"
     ]
+  },
+  "_SCHEMA_POLICY": {
+    "CRITICAL_SCHEMA": "Respecter scrupuleusement le schéma de l'Été 2025. Les clés/titres/structures attendues par le JSX ne doivent JAMAIS être modifiées.",
+    "DAYS_OF_WEEK_SHAPE": "Utiliser un mapping par jour: monday/monday_short/... pour FR et EN (pas de tableaux).",
+    "NO_FALLBACK_ROOM_NAMES": "Ne pas insérer de noms de locaux dans le content. Le JSX doit injecter dynamiquement le nom du local depuis le JSON données (metadata.salle_*_display ou metadata.salle_*).",
+    "SUMMARY_TITLES": "Les titres dans summary.text doivent rester EXACTEMENT: 'Synthèse', 'Performances observées', 'Points d'attention identifiés', 'Impact sur ton bien-être', 'Conseils pour en profiter à fond' (FR) | 'Summary', 'Observed Performances', 'Identified Points of Attention', 'Impact on Your Well-being', 'Recommendations' (EN)."
   }
 }
