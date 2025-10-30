@@ -1,0 +1,325 @@
+{
+  "_COMMENTAIRES_STRUCTURE": {
+    "description": "Ce fichier contient l'ensemble des textes narratifs pour le dashboard habitant·e de la marque ECLA",
+    "usage": "Les commentaires avec underscore (_) ne sont pas visibles côté frontend",
+    "charte": "Vouvoiement systématique, ton sobre et professionnel, marque Maison Ecla, périmètre = espaces communs uniquement.",
+    "sections_obligatoires": [
+      "hero",
+      "summary (avec score + text structuré en 5 parties)",
+      "metrics",
+      "heatmaps",
+      "ui_translations",
+      "section_titles",
+      "system_messages"
+    ],
+    "CRITIQUE_GUILLEMETS": {
+      "IMPORTANT": "Utiliser UNIQUEMENT des guillemets droits ASCII - JAMAIS de guillemets typographiques/courbes"
+    },
+    "CRITIQUE_CARACTERES_SPECIAUX": {
+        "IMPORTANT_FORMATAGE_TEXTE": "Éviter tout formatage HTML ou Markdown dans les chaînes de texte."
+    }
+  },
+  "_GUIDE_REDACTION": {
+    "principes": [
+      "Toujours utiliser le vouvoiement et un ton positif, mais rigoureux et professionnel",
+      "Mentionner Maison Ecla (jamais résidence Ecla)",
+      "Contexte d'usage réel : se baser sur les indices d'occupation (icônes 0–5)",
+      "Conseils UNIQUEMENT sur les espaces communs"
+    ],
+    "structure_summary_text": {
+      "CRITIQUE": "summary.text doit être UN SEUL texte avec 5 sections séparées par \\n\\n (double saut de ligne)",
+      "sections_requises": [
+        "Synthèse - Vue d'ensemble positive avec score global, température moyenne ET mention d'une plage min/max.",
+        "Performances observées - 2-3 paramètres excellents avec indices d'icônes, valeurs moyennes et impact positif",
+        "Points d'attention identifiés - 1-2 observations avec valeurs max ponctuelles (CO2 ou VOC), local concerné, contextualisation positive",
+        "Impact sur votre bien-être - Exactement 3-4 bénéfices concrets sous forme de liste à puces commençant par •",
+        "Conseils - EXCLUSIVEMENT sur les espaces communs."
+      ],
+      "IMPORTANT_INDICES": "Utiliser UNIQUEMENT les indices d'icônes (0-5) pour la qualité d'air."
+    },
+    "TITRE_RAPPORT_FORMAT": {
+      "MARQUE_A_UTILISER": "Maison Ecla"
+    }
+  },
+  "_GUIDE_TRADUCTION_NOMS_LOCAUX": {
+    "IMPORTANT": "Les clés techniques (room_name) ne sont jamais traduites."
+  },
+  "local_names": {
+    "_comment": "Traductions FR/EN des noms de locaux affichés.",
+    "_EXEMPLE_CLE": "NOM_TECHNIQUE_SALLE_GRAPHIQUES",
+    "NOM_TECHNIQUE_SALLE_GRAPHIQUES": {
+      "fr": "Nom Affiché en Français - RDC",
+      "en": "Displayed Name in English - Ground Floor"
+    },
+    "NOM_TECHNIQUE_SALLE_FITNESS": {
+      "fr": "Nom Affiché en Français - RDC",
+      "en": "Displayed Name in English - Ground Floor"
+    }
+  },
+  "hero": {
+    "_comment": "Section d'en-tête du dashboard - Utilisation de la marque Maison Ecla",
+    "season_label": {
+      "fr": "Saison AAAA",
+      "en": "Season YYYY"
+    },
+    "title": {
+      "fr": "Maison Ecla NomRésidence - Saison AAAA",
+      "en": "Ecla House ResidenceName - Season YYYY"
+    },
+    "period": {
+      "fr": "Du JJ mois au JJ mois AAAA",
+      "en": "From Month DD to Month DD, YYYY"
+    },
+    "subtitle": {
+      "fr": "Analyse de la qualité de l'air intérieur",
+      "en": "Indoor Air Quality Analysis"
+    }
+  },
+  "summary": {
+    "_comment": "Section principale d'analyse - STRUCTURE CRITIQUE (5 sections dans un seul 'text')",
+    "title": {
+      "fr": "Analyse de votre [saison] dans votre Maison Ecla",
+      "en": "Your [season] Analysis at Your Ecla House"
+    },
+    "score": {
+      "value": 90.5,
+      "label": {
+        "fr": "Excellent",
+        "en": "Excellent"
+      }
+    },
+    "text": {
+      "_comment_redaction": "UN SEUL texte avec 5 sections séparées par \\n\\n. Toujours utiliser le VOUVOIEMENT (vous, votre).",
+      "_STRUCTURE_REQUISE": "Synthèse\\n\\n[contenu]\\n\\nPerformances observées\\n\\n[contenu]\\n\\nPoints d'attention identifiés\\n\\n[contenu]\\n\\nImpact sur votre bien-être\\n\\n• [point 1]\\n• [point 2]\\n• [point 3]\\n• [point 4]\\n\\nConseils\\n\n[contenu]",
+      "fr": "Synthèse\n\nVotre Maison Ecla a maintenu un environnement de qualité [LABEL_SCORE] pendant la période [saison], avec un score global de [XX.X]/100. La température intérieure s'est stabilisée en moyenne à [XX.X]°C (avec des variations entre [MIN]°C et [MAX]°C) garantissant votre confort thermique.\n\nPerformances observées\n\n[Texte décrivant les locaux avec indice 0-1, mentionner les indices et les paramètres excellents - ex: PM2.5 / Humidité relative].\n\nPoints d'attention identifiés\n\n[Texte décrivant les locaux avec indice >1, mentionner les pics max ponctuels (CO2/VOC), contextualiser positivement (ex: normal pour ce type d'usage, témoigne de l'activité dans l'espace)].\n\nImpact sur votre bien-être\n\n• [Bénéfice concret 1 : Concentration / Qualité du sommeil]\n• [Bénéfice concret 2 : Confort thermique]\n• [Bénéfice concret 3 : Santé respiratoire]\n• [Bénéfice concret 4 : Profiter des espaces]\n\nConseils\n\n[Conseils concrets sur les espaces communs uniquement, basés sur les données de fréquentation hebdomadaire (weekly_pattern) et les écogestes saisonniers.]",
+      "en": "Summary\n\nYour Ecla House maintained a [LABEL_SCORE] quality environment during the [season] period, with an overall score of [XX.X]/100. The indoor temperature stabilized at an average of [XX.X]°C (with variations between [MIN]°C and [MAX]°C), ensuring your thermal comfort.\n\nObserved Performances\n\n[Text describing spaces with index 0-1, mention indices and excellent parameters - e.g. PM2.5 / Relative Humidity].\n\nIdentified Points of Attention\n\n[Text describing spaces with index >1, mention occasional max peaks (CO2/VOC), contextualize positively (e.g. normal for this type of use, reflects activity in the space)].\n\nImpact on Your Well-being\n\n• [Concrete benefit 1: Concentration / Sleep quality]\n• [Concrete benefit 2: Thermal comfort]\n• [Concrete benefit 3: Respiratory health]\n• [Concrete benefit 4: Enjoying the spaces]\n\nRecommendations\n\n[Concrete tips for common areas only, based on weekly occupancy data and seasonal eco-gestures.]"
+    }
+  },
+  "metrics": {
+    "_comment": "Indicateurs clés - Valeurs calculées depuis monitor JSON (Moyennes globales 24h). Unité COV corrigée à µg/m³.",
+    "title": {
+      "fr": "Indicateurs clés",
+      "en": "Key Indicators"
+    },
+    "items": [
+      {
+        "name": {
+          "fr": "CO₂ moyen",
+          "en": "Average CO₂"
+        },
+        "value": "XXX ppm",
+        "status": "excellent",
+        "description": {
+          "fr": "Plage : XXX-XXXX ppm",
+          "en": "Range: XXX-XXXX ppm"
+        }
+      },
+      {
+        "name": {
+          "fr": "Température moyenne",
+          "en": "Average temperature"
+        },
+        "value": "XX.X°C",
+        "status": "excellent",
+        "description": {
+          "fr": "Plage : XX.X-XX.X°C",
+          "en": "Range: XX.X-XX.X°C"
+        }
+      },
+      {
+        "name": {
+          "fr": "Humidité moyenne",
+          "en": "Average humidity"
+        },
+        "value": "XX%",
+        "status": "excellent",
+        "description": {
+          "fr": "Plage : XX-XX%",
+          "en": "Range: XX-XX%"
+        }
+      },
+      {
+        "name": {
+          "fr": "PM2.5 moyen",
+          "en": "Average PM2.5"
+        },
+        "value": "X.X µg/m³",
+        "status": "excellent",
+        "description": {
+          "fr": "Plage : X-XXX µg/m³",
+          "en": "Range: X-XXX µg/m³"
+        }
+      },
+      {
+        "name": {
+          "fr": "COV moyen",
+          "en": "Average VOC"
+        },
+        "value": "XXX µg/m³",
+        "status": "good",
+        "description": {
+          "fr": "Plage : XXX-XXXX µg/m³",
+          "en": "Range: XXX-XXXX µg/m³"
+        }
+      },
+      {
+        "name": {
+          "fr": "Niveau sonore L10",
+          "en": "Sound level L10"
+        },
+        "value": "XX.X dB",
+        "status": "attention",
+        "description": {
+          "fr": "Plage : XX-XXX dB",
+          "en": "Range: XX-XXX dB"
+        }
+      }
+    ]
+  },
+  "heatmaps": {
+    "_comment": "Titres des deux heatmaps CO2",
+    "fitness": {
+      "title": {
+        "fr": "Nom du Local Fitness",
+        "en": "Fitness Room Name"
+      },
+      "room_name": "NOM_TECHNIQUE_SALLE_FITNESS"
+    },
+    "common_area": {
+      "title": {
+        "fr": "Nom du Local Commun",
+        "en": "Common Area Name"
+      },
+      "room_name": "NOM_TECHNIQUE_SALLE_GRAPHIQUES"
+    }
+  },
+  "ui_translations": {
+    "_comment": "Traductions pour les éléments d'interface utilisateur du dashboard ECLA",
+    "co2_chart": {
+      "optimal_threshold_label": {
+        "fr": "Optimal (800 ppm)",
+        "en": "Good (800 ppm)"
+      },
+      "explanation": {
+        "fr": "Le CO₂ est un excellent indicateur de confinement : il révèle si l'aération est suffisante pour évacuer les polluants et assurer une bonne qualité de l'air intérieur. Les données du graphique ci-dessous proviennent de",
+        "en": "CO₂ is an excellent indicator of confinement: it reveals whether ventilation is sufficient to evacuate pollutants and ensure good indoor air quality. The data in the chart below comes from"
+      },
+      "optimal_label_short": {
+        "fr": "Optimal",
+        "en": "Good"
+      }
+    },
+    "heatmap": {
+      "legend": {
+        "fr": "Légende",
+        "en": "Legend"
+      },
+      "no_data": {
+        "fr": "Pas de données",
+        "en": "No data"
+      },
+      "weekly_pattern_description": {
+        "fr": "N'hésitez pas à utiliser les données ci-dessous pour mieux adapter vos périodes de présence dans les locaux ci-dessous :",
+        "en": "Feel free to use the data below to better adapt your presence periods in the spaces below:"
+      }
+    },
+    "days_of_week": {
+      "_comment": "Noms complets et abrégés des jours de la semaine",
+      "fr": {
+        "monday": "Lundi",
+        "tuesday": "Mardi",
+        "wednesday": "Mercredi",
+        "thursday": "Jeudi",
+        "friday": "Vendredi",
+        "saturday": "Samedi",
+        "sunday": "Dimanche",
+        "monday_short": "Lun",
+        "tuesday_short": "Mar",
+        "wednesday_short": "Mer",
+        "thursday_short": "Jeu",
+        "friday_short": "Ven",
+        "saturday_short": "Sam",
+        "sunday_short": "Dim"
+      },
+      "en": {
+        "monday": "Monday",
+        "tuesday": "Tuesday",
+        "wednesday": "Wednesday",
+        "thursday": "Thursday",
+        "friday": "Friday",
+        "saturday": "Saturday",
+        "sunday": "Sunday",
+        "monday_short": "Mon",
+        "tuesday_short": "Tue",
+        "wednesday_short": "Wed",
+        "thursday_short": "Thu",
+        "friday_short": "Fri",
+        "saturday_short": "Sat",
+        "sunday_short": "Sun"
+      }
+    },
+    "temp_humidity": {
+      "_comment": "Textes d'introduction pour la section Température & Humidité",
+      "intro_prefix": {
+        "fr": "Les graphiques qui suivent présentent la température et l'humidité pour l'espace",
+        "en": "The following charts show temperature and humidity for"
+      },
+      "intro_suffix": {
+        "fr": "ainsi que les données extérieures.",
+        "en": "along with outdoor data."
+      },
+      "legend_labels": {
+        "temp": {
+          "fr": "TEMP",
+          "en": "TEMP"
+        },
+        "temp_ext": {
+          "fr": "TEMP EXT",
+          "en": "TEMP OUT"
+        },
+        "humidity": {
+          "fr": "HUMIDITÉ",
+          "en": "HUMIDITY"
+        },
+        "humidity_ext": {
+          "fr": "HR EXT",
+          "en": "RH OUT"
+        }
+      }
+    }
+  },
+  "section_titles": {
+    "_comment": "Titres des différentes sections du dashboard",
+    "co2_air_quality": {
+      "fr": "Qualité de l'air (CO₂)",
+      "en": "Air Quality (CO₂)"
+    },
+    "weekly_analysis": {
+      "fr": "Analyse hebdomadaire",
+      "en": "Weekly Analysis"
+    },
+    "temp_humidity": {
+      "fr": "Température & Humidité",
+      "en": "Temperature & Humidity"
+    },
+    "global_comfort_score": {
+      "fr": "Score Global de Confort",
+      "en": "Global Comfort Score"
+    }
+  },
+  "system_messages": {
+    "_comment": "Messages système pour le chargement, erreurs, footer",
+    "loading": {
+      "fr": "Chargement des données...",
+      "en": "Loading data..."
+    },
+    "error_title": {
+      "fr": "Erreur de chargement",
+      "en": "Loading Error"
+    },
+    "footer": {
+      "fr": "Maison Ecla - Monitoring de la qualité de l'air",
+      "en": "Ecla House - Air Quality Monitoring"
+    }
+  }
+}

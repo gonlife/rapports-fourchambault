@@ -1,0 +1,373 @@
+{
+  "_COMMENTAIRES_STRUCTURE": {
+    "description": "Ce fichier contient l'ensemble des textes narratifs pour le dashboard habitant·e de la marque ECLA",
+    "usage": "Les commentaires avec underscore (_) ne sont pas visibles côté frontend",
+    "charte": "Vouvoiement systématique, ton sobre et professionnel, marque Maison Ecla, périmètre = espaces communs uniquement.",
+    "sections_obligatoires": [
+      "hero",
+      "summary (avec score + text structuré en 5 parties)",
+      "metrics",
+      "heatmaps",
+      "ui_translations",
+      "section_titles",
+      "system_messages"
+    ],
+    "CRITIQUE_GUILLEMETS": {
+      "IMPORTANT": "Utiliser UNIQUEMENT des guillemets droits ASCII - JAMAIS de guillemets typographiques/courbes"
+    },
+    "CRITIQUE_CARACTERES_SPECIAUX": {
+        "IMPORTANT_FORMATAGE_TEXTE": "Éviter tout formatage HTML ou Markdown dans les chaînes de texte."
+    }
+  },
+  "_GUIDE_REDACTION": {
+    "principes": [
+      "Toujours utiliser le vouvoiement et un ton positif, mais rigoureux et professionnel",
+      "Mentionner Maison Ecla (jamais résidence Ecla)",
+      "Contexte d'usage réel : se baser sur les indices d'occupation (icônes 0–5)",
+      "Conseils UNIQUEMENT sur les espaces communs"
+    ],
+    "structure_summary_text": {
+      "CRITIQUE": "summary.text doit être UN SEUL texte avec 5 sections séparées par \\n\\n (double saut de ligne)",
+      "sections_requises": [
+        "Synthèse - Vue d'ensemble positive avec score global, température moyenne ET mention d'une plage min/max.",
+        "Performances observées - 2-3 paramètres excellents avec indices d'icônes, valeurs moyennes et impact positif",
+        "Points d'attention identifiés - 1-2 observations avec valeurs max ponctuelles (CO2 ou VOC), local concerné, contextualisation positive",
+        "Impact sur votre bien-être - Exactement 3-4 bénéfices concrets sous forme de liste à puces commençant par •",
+        "Conseils - EXCLUSIVEMENT sur les espaces communs."
+      ],
+      "IMPORTANT_INDICES": "Utiliser UNIQUEMENT les indices d'icônes (0-5) pour la qualité d'air."
+    },
+    "TITRE_RAPPORT_FORMAT": {
+      "MARQUE_A_UTILISER": "Maison Ecla"
+    }
+  },
+  "_GUIDE_TRADUCTION_NOMS_LOCAUX": {
+    "IMPORTANT": "Les clés techniques (room_name) ne sont jamais traduites."
+  },
+  "local_names": {
+    "_comment": "Traductions FR/EN des noms de locaux affichés.",
+    "_EXEMPLE_CLE": "NOM_TECHNIQUE_SALLE_GRAPHIQUES",
+    "NOM_TECHNIQUE_SALLE_GRAPHIQUES": {
+      "fr": "Agora - RDR",
+      "en": "Agora - Ground Floor"
+    },
+    "NOM_TECHNIQUE_SALLE_FITNESS": {
+      "fr": "Fitness - ENTRESOL",
+      "en": "Fitness - Mezzanine"
+    },
+    "Salle administration - R+1": {
+      "fr": "Salle administration - R+1",
+      "en": "Admin Room - 1st Floor"
+    },
+    "Espace Coworking - RDR": {
+      "fr": "Espace Coworking - RDR",
+      "en": "Coworking Space - Ground Floor"
+    },
+    "Quiet room - RDR": {
+      "fr": "Quiet Room - RDR",
+      "en": "Quiet Room - Ground Floor"
+    },
+    "Bureau gestionnaire - R+1": {
+      "fr": "Bureau gestionnaire - R+1",
+      "en": "Manager's Office - 1st Floor"
+    },
+    "Atelier des métamorphoses - ENTRESOL": {
+      "fr": "Atelier des métamorphoses - ENTRESOL",
+      "en": "Metamorphosis Workshop - Mezzanine"
+    },
+    "Petits salons de jeux - RDR": {
+      "fr": "Petits salons de jeux - RDR",
+      "en": "Small Games Lounges - Ground Floor"
+    },
+    "Salle de réunion - R+1": {
+      "fr": "Salle de réunion - R+1",
+      "en": "Meeting Room - 1st Floor"
+    },
+    "Accueil - RDP": {
+      "fr": "Accueil - RDP",
+      "en": "Reception - RDP"
+    },
+    "Salle YOGA - ENTRESOL": {
+      "fr": "Salle YOGA - ENTRESOL",
+      "en": "YOGA Room - Mezzanine"
+    },
+    "Restaurant - RDR": {
+      "fr": "Restaurant - RDR",
+      "en": "Restaurant - Ground Floor"
+    },
+    "Boxe / Crossfit - ENTRESOL": {
+      "fr": "Boxe / Crossfit - ENTRESOL",
+      "en": "Boxing / Crossfit - Mezzanine"
+    },
+    "Studio musique - ENTRESOL": {
+      "fr": "Studio musique - ENTRESOL",
+      "en": "Music Studio - Mezzanine"
+    }
+  },
+  "hero": {
+    "_comment": "Section d'en-tête du dashboard - Utilisation de la marque Maison Ecla",
+    "season_label": {
+      "fr": "Saison Été 2025",
+      "en": "Season Summer 2025"
+    },
+    "title": {
+      "fr": "Maison Ecla Noisy-le-Grand - Saison Été 2025",
+      "en": "Ecla House Noisy-le-Grand - Season Summer 2025"
+    },
+    "period": {
+      "fr": "Du 01 juillet au 22 septembre 2025",
+      "en": "From July 01 to September 22, 2025"
+    },
+    "subtitle": {
+      "fr": "Analyse de la qualité de l'air intérieur",
+      "en": "Indoor Air Quality Analysis"
+    }
+  },
+  "summary": {
+    "_comment": "Section principale d'analyse - STRUCTURE CRITIQUE (5 sections dans un seul 'text')",
+    "title": {
+      "fr": "Analyse de votre Été 2025 dans votre Maison Ecla",
+      "en": "Your Summer 2025 Analysis at Your Ecla House"
+    },
+    "score": {
+      "value": 90.6,
+      "label": {
+        "fr": "Excellent",
+        "en": "Excellent"
+      }
+    },
+    "text": {
+      "_comment_redaction": "UN SEUL texte avec 5 sections séparées par \\n\\n. Toujours utiliser le VOUVOIEMENT (vous, votre).",
+      "_STRUCTURE_REQUISE": "Synthèse\\n\\n[contenu]\\n\\nPerformances observées\\n\\n[contenu]\\n\\nPoints d'attention identifiés\\n\\n[contenu]\\n\\nImpact sur votre bien-être\\n\\n• [point 1]\\n• [point 2]\\n• [point 3]\\n• [point 4]\\n\\nConseils\\n\n[contenu]",
+      "fr": "Synthèse\n\nVotre Maison Ecla a maintenu un environnement de qualité **Excellent** pendant la période **Été 2025**, avec un score global de **90.6/100**. La température intérieure s'est stabilisée en moyenne à **23.7°C** (avec des variations entre **16.8°C** et **31.1°C**) garantissant votre confort thermique.\n\nPerformances observées\n\nL'analyse de l'air de l'ensemble des espaces communs révèle d'excellents résultats (indice air 0) pour la majorité des locaux surveillés, incluant l'**Agora - RDR** et le **Fitness - ENTRESOL**. Les moyennes générales de **CO₂ (519 ppm)** et de **PM2.5 (2.1 µg/m³)** sont remarquablement faibles, témoignant d'une très bonne ventilation et d'un faible niveau de particules fines, des facteurs essentiels pour un environnement sain.\n\nPoints d'attention identifiés\n\nUn point de vigilance est identifié pour le **Bureau gestionnaire - R+1** (indice 2). Des pics de **CO₂** ont été observés ponctuellement, atteignant un maximum de **2503 ppm**. Des pics de Composés Organiques Volatils (COV) ont également été relevés ponctuellement dans certains espaces communs, avec un maximum global de **7043 µg/m³**. Ces pics, qui restent localisés et ne grèvent pas la moyenne globale, peuvent être la conséquence normale d'une occupation intense et temporaire de l'espace. Nous maintenons une surveillance pour assurer le retour rapide à des conditions optimales.\n\nImpact sur votre bien-être\n\n• **Améliorer votre concentration et votre productivité** grâce à une qualité d'air stable et un faible confinement.\n• **Assurer votre confort thermique** tout au long de la saison estivale grâce à une température moyenne bien maîtrisée.\n• **Préserver votre santé respiratoire** avec un niveau très faible de polluants atmosphériques (PM2.5 et COV).\n• **Profiter sereinement des espaces communs** sans être exposé à des nuisances sonores excessives (moyenne L10 à 50 dB).\n\nConseils\n\nLes données hebdomadaires des espaces communs révèlent des pics de fréquentation importants entre **18h et 21h** (avec un pic de CO2 autour de 898 ppm le lundi à 20h), notamment en début de semaine (Lundi-Mercredi). Pour un usage plus serein de l'**Agora - RDR** et du **Fitness - ENTRESOL**, nous vous suggérons de privilégier les créneaux en matinée ou en début d'après-midi, qui montrent une affluence plus modérée (le CO2 moyen reste bien inférieur à 600 ppm entre 9h et 16h). Pensez également aux écogestes saisonniers pour le confort thermique, comme fermer les stores ou rideaux lors des pics de chaleur extérieure, afin d'aider à maintenir une température intérieure agréable.\n",
+      "en": "Summary\n\nYour Ecla House maintained an **Excellent** quality environment during the **Summer 2025** period, with an overall score of **90.6/100**. The indoor temperature stabilized at an average of **23.7°C** (with variations between **16.8°C** and **31.1°C**), ensuring your thermal comfort.\n\nObserved Performances\n\nThe air analysis of all common areas reveals excellent results (air index 0) for most monitored spaces, including the **Agora - RDR** and the **Fitness - Mezzanine**. The general averages for **CO₂ (519 ppm)** and **PM2.5 (2.1 µg/m³)** are remarkably low, indicating very good ventilation and a low level of fine particles, which are essential factors for a healthy environment.\n\nIdentified Points of Attention\n\nA point of attention is identified for the **Manager's Office - 1st Floor** (index 2). Occasional **CO₂** peaks were observed, reaching a maximum of **2503 ppm**. Occasional peaks of Volatile Organic Compounds (VOCs) were also noted in certain common areas, with a global maximum of **7043 µg/m³**. These localized peaks, which do not affect the overall average, can be the normal consequence of intense and temporary use of the space. We maintain surveillance to ensure a quick return to optimal conditions.\n\nImpact on Your Well-being\n\n• **Improve your concentration and productivity** thanks to stable air quality and low confinement.\n• **Ensure your thermal comfort** throughout the summer season thanks to a well-controlled average temperature.\n• **Preserve your respiratory health** with a very low level of air pollutants (PM2.5 and VOCs).\n• **Enjoy the common areas serenely** without excessive noise exposure (L10 average at 50 dB).\n\nRecommendations\n\nWeekly data for common areas shows significant peak attendance between **6 PM and 9 PM** (with a CO2 peak around 898 ppm on Monday at 8 PM), particularly at the beginning of the week (Monday-Wednesday). For a calmer use of the **Agora - Ground Floor** and the **Fitness - Mezzanine**, we suggest favoring morning or early afternoon slots, which show more moderate attendance (the average CO2 remains well below 600 ppm between 9 AM and 4 PM). Also, remember seasonal eco-gestures for thermal comfort, such as closing blinds or curtains during outdoor heat peaks, to help maintain a pleasant indoor temperature.\n"
+    }
+  },
+  "metrics": {
+    "_comment": "Indicateurs clés - Valeurs calculées depuis monitor JSON (Moyennes globales 24h). Unité COV corrigée à µg/m³.",
+    "title": {
+      "fr": "Indicateurs clés",
+      "en": "Key Indicators"
+    },
+    "items": [
+      {
+        "name": {
+          "fr": "CO₂ moyen",
+          "en": "Average CO₂"
+        },
+        "value": "519 ppm",
+        "status": "excellent",
+        "description": {
+          "fr": "Plage : 376-3957 ppm",
+          "en": "Range: 376-3957 ppm"
+        }
+      },
+      {
+        "name": {
+          "fr": "Température moyenne",
+          "en": "Average temperature"
+        },
+        "value": "23.7°C",
+        "status": "excellent",
+        "description": {
+          "fr": "Plage : 16.8-31.1°C",
+          "en": "Range: 16.8-31.1°C"
+        }
+      },
+      {
+        "name": {
+          "fr": "Humidité moyenne",
+          "en": "Average humidity"
+        },
+        "value": "52%",
+        "status": "excellent",
+        "description": {
+          "fr": "Plage : 24-78%",
+          "en": "Range: 24-78%"
+        }
+      },
+      {
+        "name": {
+          "fr": "PM2.5 moyen",
+          "en": "Average PM2.5"
+        },
+        "value": "2.1 µg/m³",
+        "status": "excellent",
+        "description": {
+          "fr": "Plage : 0-1000 µg/m³",
+          "en": "Range: 0-1000 µg/m³"
+        }
+      },
+      {
+        "name": {
+          "fr": "COV moyen",
+          "en": "Average VOC"
+        },
+        "value": "327 µg/m³",
+        "status": "good",
+        "description": {
+          "fr": "Plage : 105-7043 µg/m³",
+          "en": "Range: 105-7043 µg/m³"
+        }
+      },
+      {
+        "name": {
+          "fr": "Niveau sonore L10",
+          "en": "Sound level L10"
+        },
+        "value": "50.0 dB",
+        "status": "attention",
+        "description": {
+          "fr": "Plage : 36-106 dB",
+          "en": "Range: 36-106 dB"
+        }
+      }
+    ]
+  },
+  "heatmaps": {
+    "_comment": "Titres des deux heatmaps CO2",
+    "fitness": {
+      "title": {
+        "fr": "Fitness - ENTRESOL",
+        "en": "Fitness - Mezzanine"
+      },
+      "room_name": "Fitness - ENTRESOL"
+    },
+    "common_area": {
+      "title": {
+        "fr": "Agora - RDR",
+        "en": "Agora - Ground Floor"
+      },
+      "room_name": "Agora - RDR"
+    }
+  },
+  "ui_translations": {
+    "_comment": "Traductions pour les éléments d'interface utilisateur du dashboard ECLA",
+    "co2_chart": {
+      "optimal_threshold_label": {
+        "fr": "Optimal (800 ppm)",
+        "en": "Good (800 ppm)"
+      },
+      "explanation": {
+        "fr": "Le CO₂ est un excellent indicateur de confinement : il révèle si l'aération est suffisante pour évacuer les polluants et assurer une bonne qualité de l'air intérieur. Les données du graphique ci-dessous proviennent de",
+        "en": "CO₂ is an excellent indicator of confinement: it reveals whether ventilation is sufficient to evacuate pollutants and ensure good indoor air quality. The data in the chart below comes from"
+      },
+      "optimal_label_short": {
+        "fr": "Optimal",
+        "en": "Good"
+      }
+    },
+    "heatmap": {
+      "legend": {
+        "fr": "Légende",
+        "en": "Legend"
+      },
+      "no_data": {
+        "fr": "Pas de données",
+        "en": "No data"
+      },
+      "weekly_pattern_description": {
+        "fr": "N'hésitez pas à utiliser les données ci-dessous pour mieux adapter vos périodes de présence dans les locaux ci-dessous :",
+        "en": "Feel free to use the data below to better adapt your presence periods in the spaces below:"
+      }
+    },
+    "days_of_week": {
+      "_comment": "Noms complets et abrégés des jours de la semaine",
+      "fr": {
+        "monday": "Lundi",
+        "tuesday": "Mardi",
+        "wednesday": "Mercredi",
+        "thursday": "Jeudi",
+        "friday": "Vendredi",
+        "saturday": "Samedi",
+        "sunday": "Dimanche",
+        "monday_short": "Lun",
+        "tuesday_short": "Mar",
+        "wednesday_short": "Mer",
+        "thursday_short": "Jeu",
+        "friday_short": "Ven",
+        "saturday_short": "Sam",
+        "sunday_short": "Dim"
+      },
+      "en": {
+        "monday": "Monday",
+        "tuesday": "Tuesday",
+        "wednesday": "Wednesday",
+        "thursday": "Thursday",
+        "friday": "Friday",
+        "saturday": "Saturday",
+        "sunday": "Sunday",
+        "monday_short": "Mon",
+        "tuesday_short": "Tue",
+        "wednesday_short": "Wed",
+        "thursday_short": "Thu",
+        "friday_short": "Fri",
+        "saturday_short": "Sat",
+        "sunday_short": "Sun"
+      }
+    },
+    "temp_humidity": {
+      "_comment": "Textes d'introduction pour la section Température & Humidité",
+      "intro_prefix": {
+        "fr": "Les graphiques qui suivent présentent la température et l'humidité pour l'espace",
+        "en": "The following charts show temperature and humidity for"
+      },
+      "intro_suffix": {
+        "fr": "ainsi que les données extérieures.",
+        "en": "along with outdoor data."
+      },
+      "legend_labels": {
+        "temp": {
+          "fr": "TEMP",
+          "en": "TEMP"
+        },
+        "temp_ext": {
+          "fr": "TEMP EXT",
+          "en": "TEMP OUT"
+        },
+        "humidity": {
+          "fr": "HUMIDITÉ",
+          "en": "HUMIDITY"
+        },
+        "humidity_ext": {
+          "fr": "HR EXT",
+          "en": "RH OUT"
+        }
+      }
+    }
+  },
+  "section_titles": {
+    "_comment": "Titres des différentes sections du dashboard",
+    "co2_air_quality": {
+      "fr": "Qualité de l'air (CO₂)",
+      "en": "Air Quality (CO₂)"
+    },
+    "weekly_analysis": {
+      "fr": "Analyse hebdomadaire",
+      "en": "Weekly Analysis"
+    },
+    "temp_humidity": {
+      "fr": "Température & Humidité",
+      "en": "Temperature & Humidity"
+    },
+    "global_comfort_score": {
+      "fr": "Score Global de Confort",
+      "en": "Global Comfort Score"
+    }
+  },
+  "system_messages": {
+    "_comment": "Messages système pour le chargement, erreurs, footer",
+    "loading": {
+      "fr": "Chargement des données...",
+      "en": "Loading data..."
+    },
+    "error_title": {
+      "fr": "Erreur de chargement",
+      "en": "Loading Error"
+    },
+    "footer": {
+      "fr": "Maison Ecla - Monitoring de la qualité de l'air",
+      "en": "Ecla House - Air Quality Monitoring"
+    }
+  }
+}
