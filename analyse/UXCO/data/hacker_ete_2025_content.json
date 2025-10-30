@@ -334,6 +334,38 @@
         "en": "Feel free to use the data below to better adapt your presence periods in the spaces:"
       }
     },
+    "temp_humidity": {
+      "_comment": "SECTION CRITIQUE - Textes d'introduction pour la section Température & Humidité",
+      "_UTILISATION_JSX": "Le JSX construit la phrase: [intro_prefix] + [nom du local depuis local_names] + [intro_suffix]",
+      "_EXEMPLE_RENDU_FR": "Les graphiques qui suivent présentent la température et l'humidité pour l'espace Co-Working - RDC ainsi que les données extérieures.",
+      "_EXEMPLE_RENDU_EN": "The following charts show temperature and humidity for Co-Working - Ground Floor along with outdoor data.",
+      "intro_prefix": {
+        "fr": "Les graphiques qui suivent présentent la température et l'humidité pour l'espace",
+        "en": "The following charts show temperature and humidity for"
+      },
+      "intro_suffix": {
+        "fr": "ainsi que les données extérieures.",
+        "en": "along with outdoor data."
+      },
+      "legend_labels": {
+        "temp": {
+          "fr": "TEMP",
+          "en": "TEMP"
+        },
+        "temp_ext": {
+          "fr": "TEMP EXT",
+          "en": "TEMP OUT"
+        },
+        "humidity": {
+          "fr": "HUMIDITÉ",
+          "en": "HUMIDITY"
+        },
+        "humidity_ext": {
+          "fr": "HR EXT",
+          "en": "RH OUT"
+        }
+      }
+    },
     "days_of_week": {
       "fr": {
         "monday": "Lundi",

@@ -257,7 +257,8 @@
   "ui_translations": {
     "_comment": "Traductions pour les éléments d'interface utilisateur du dashboard",
     "_IMPORTANT": "Ces traductions sont utilisées directement par le code JSX - toute modification doit être testée",
-    "_STRUCTURE_OBLIGATOIRE": "Cette section doit contenir: co2_chart, heatmap, days_of_week, temp_humidity",
+    "_STRUCTURE_OBLIGATOIRE": "Cette section doit contenir OBLIGATOIREMENT les 4 sous-sections: co2_chart, heatmap, temp_humidity, days_of_week",
+    "_CRITIQUE_TEMP_HUMIDITY": "La section temp_humidity est INDISPENSABLE - elle affiche la phrase 'Les graphiques qui suivent présentent la température et l'humidité pour l'espace [NOM]' et le nom du local. Sans elle, seul le nom du local s'affiche sans contexte explicatif.",
     "co2_chart": {
       "optimal_threshold_label": {
         "fr": "Optimal (800 ppm)",
@@ -324,6 +325,11 @@
       }
     },
     "temp_humidity": {
+      "_comment": "SECTION CRITIQUE - Textes d'introduction pour la section Température & Humidité",
+      "_UTILISATION_JSX": "Le JSX construit la phrase: [intro_prefix] + [nom du local depuis local_names] + [intro_suffix]",
+      "_EXEMPLE_RENDU_FR": "Les graphiques qui suivent présentent la température et l'humidité pour l'espace Co-Working - RDC ainsi que les données extérieures.",
+      "_EXEMPLE_RENDU_EN": "The following charts show temperature and humidity for Co-Working - Ground Floor along with outdoor data.",
+      "_IMPORTANT": "Si cette section est absente, seul le nom du local s'affiche sans contexte (ex: juste 'Co-Working - RDC'), ce qui est incompréhensible pour l'utilisateur.",
       "intro_prefix": {
         "fr": "Les graphiques qui suivent présentent la température et l'humidité pour l'espace",
         "en": "The following charts show temperature and humidity for"
@@ -430,7 +436,7 @@
       "10. OBTENIR les moyennes globales calculées par monitor.R (CO2, TEMP, HUMIDITY, PM25, VOC, NOISE)",
       "11. Mettre à jour metrics.items avec ces moyennes globales (value en STRING avec unité, plages min-max)",
       "12. Mettre à jour heatmaps avec les noms traduits des locaux",
-      "13. Vérifier que ui_translations est complet (ne PAS modifier)",
+      "13. Vérifier que ui_translations est complet: co2_chart, heatmap, temp_humidity (CRITIQUE), days_of_week",
       "14. Vérifier les guillemets: UNIQUEMENT guillemets droits (\" et '), JAMAIS de guillemets typographiques",
       "15. Vérifier le JSON avec: python3 -m json.tool fichier.json",
       "16. Tester dans l'application"
@@ -453,6 +459,7 @@
       "✓ metrics.items: status présent (excellent/good/attention)",
       "✓ metrics.items: utiliser les moyennes GLOBALES calculées par monitor.R",
       "✓ ui_translations.days_of_week: structure objet {fr: {monday: ...}, en: {monday: ...}}",
+      "✓ ui_translations.temp_humidity: présent avec intro_prefix et intro_suffix (CRITIQUE)",
       "✓ Toutes les traductions FR/EN présentes",
       "✓ Guillemets DROITS uniquement (\" et '), JAMAIS de guillemets typographiques",
       "✓ Aucune mention de 'Maison Ecla'",
@@ -502,6 +509,14 @@
       "description": "Calculer manuellement les moyennes globales pour metrics",
       "INCORRECT": "Faire la moyenne des statistiques de tous les locaux",
       "CORRECT": "Utiliser les moyennes globales déjà calculées par monitor.R (à obtenir séparément du monitor JSON)"
+    },
+    "ERREUR_9": {
+      "description": "Oublier la section ui_translations.temp_humidity",
+      "INCORRECT": "Ne pas inclure temp_humidity dans ui_translations",
+      "CORRECT": "TOUJOURS inclure temp_humidity avec intro_prefix et intro_suffix",
+      "CONSEQUENCE": "Sans cette section, seul le nom du local s'affiche (ex: 'Co-Working - RDC') sans la phrase explicative 'Les graphiques qui suivent présentent la température et l'humidité pour l'espace...'",
+      "SYMPTOME": "Dans le dashboard, la section Température & Humidité affiche seulement le nom du local sans contexte",
+      "note": "Cette erreur a été observée dans le fichier hacker_ete_2025_content.json. Le template contient cette section - ne pas l'oublier lors de la création de nouveaux fichiers."
     }
   }
 }
