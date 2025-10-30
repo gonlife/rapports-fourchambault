@@ -1,0 +1,507 @@
+{
+  "_COMMENTAIRES_STRUCTURE": {
+    "description": "Ce fichier contient l'ensemble des textes narratifs pour le dashboard habitant·e",
+    "usage": "Les commentaires avec underscore (_) ne sont pas visibles côté frontend",
+    "charte": "Tutoiement, ton jeune et convivial, marque UXCO Student (jamais Maison Ecla), périmètre = espaces communs uniquement.",
+    "sections_obligatoires": [
+      "hero",
+      "summary (avec score + text unique)",
+      "metrics",
+      "heatmaps",
+      "ui_translations",
+      "section_titles",
+      "system_messages"
+    ],
+    "CRITIQUE_GUILLEMETS": {
+      "IMPORTANT": "Utiliser UNIQUEMENT des guillemets droits ASCII - JAMAIS de guillemets typographiques/courbes",
+      "guillemets_interdits": "Guillemets courbes: ouvrant/fermant doubles et simples (souvent insérés par Word/Pages)",
+      "guillemets_autorises": "Guillemets droits ASCII: double quote et single quote standard du clavier",
+      "consequences": "Les guillemets typographiques causent des erreurs JSON et empêchent le chargement du fichier",
+      "verification": "Après édition, toujours vérifier avec: python3 -m json.tool fichier.json",
+      "exemple_correct": "\"text\": \"Exemple avec 'guillemets simples' corrects\""
+    }
+  },
+  "_GUIDE_REDACTION": {
+    "principes": [
+      "Toujours utiliser le tutoiement et un ton positif, jeune et communautaire",
+      "Mentionner UXCO Student (jamais Maison Ecla)",
+      "Contexte d'usage réel : se baser sur les indices d'occupation (icônes 0–5)",
+      "Vulgariser sans infantiliser; rester factuel et bienveillant",
+      "Conseils UNIQUEMENT sur les espaces communs; aucune mention des logements individuels"
+    ],
+    "structure_summary_text": {
+      "CRITIQUE": "summary.text doit être UN SEUL texte avec 5 sections séparées par \\n\\n (double saut de ligne)",
+      "sections_requises": [
+        "Synthèse - Vue d'ensemble positive avec score global et température moyenne",
+        "Performances observées - 2-3 paramètres excellents avec indices d'icônes et impact positif",
+        "Points d'attention identifiés - 1-2 observations avec valeurs max, local concerné, contextualisation positive",
+        "Impact sur ton bien-être - Exactement 3-4 bénéfices concrets sous forme de liste à puces commençant par •",
+        "Conseils pour en profiter à fond - EXCLUSIVEMENT sur les espaces communs et actions concrètes"
+      ],
+      "format": "Titre section\\n\\nContenu...\\n\\nTitre section suivante\\n\\nContenu...",
+      "IMPORTANT_INDICES": "Utiliser UNIQUEMENT les indices d'icônes (0-5) pour la qualité d'air, PAS les moyennes CO2"
+    }
+  },
+  "_GUIDE_TRADUCTION_NOMS_LOCAUX": {
+    "IMPORTANT": "Les noms de locaux apparaissent à plusieurs endroits dans le dashboard. Il est CRITIQUE de maintenir la cohérence entre les clés techniques (immuables) et les noms affichés (traduisibles).",
+    "convention_nommage": {
+      "room_name": "Clé technique immuable utilisée pour les requêtes de données - NE JAMAIS TRADUIRE",
+      "local_names": "SECTION OBLIGATOIRE - Dictionnaire des traductions FR/EN des noms de locaux affichés"
+    },
+    "PROCESSUS_MISE_A_JOUR": {
+      "etape_1": "Ouvrir le fichier monitor JSON et localiser la section metadata",
+      "etape_2": "Récupérer les valeurs EXACTES de metadata.salle_graphiques et metadata.salle_fitness",
+      "etape_3": "Dans ce fichier _content.json, section local_names, utiliser ces noms EXACTS comme clés",
+      "etape_4": "Pour chaque local, créer un objet avec fr (version française lisible) et en (traduction anglaise)",
+      "etape_5": "Règles de traduction: garder le nom du local, traduire 'RDC' en 'Ground Floor', 'RDR' en 'Upper Ground Floor', 'ENTRESOL' en 'Mezzanine', 'R+1' en '1st Floor', etc."
+    },
+    "CRITIQUE": "Les clés dans local_names DOIVENT correspondre EXACTEMENT aux valeurs dans metadata.salle_graphiques et metadata.salle_fitness du fichier monitor JSON. Aucun fallback n'est géré par le code."
+  },
+  "local_names": {
+    "_comment": "Traductions FR/EN des noms de locaux affichés. Les clés DOIVENT correspondre EXACTEMENT aux valeurs metadata.salle_graphiques et metadata.salle_fitness du fichier monitor JSON.",
+    "_EXEMPLE": "Si metadata.salle_graphiques = 'Agora - RDR', alors la clé doit être exactement 'Agora - RDR'",
+    "NOM_TECHNIQUE_SALLE_GRAPHIQUES": {
+      "fr": "Nom Affiché en Français",
+      "en": "Displayed Name in English"
+    },
+    "NOM_TECHNIQUE_SALLE_FITNESS": {
+      "fr": "Nom Affiché en Français",
+      "en": "Displayed Name in English"
+    }
+  },
+  "_DONNEES_PERIODE": {
+    "commentaire": "Section de référence pour les données - NE PAS SUPPRIMER - Utilisée pour documenter les sources",
+    "AVERTISSEMENT_CRITIQUE": "Les moyennes globales 24h/24 incluent les heures de nuit et ne sont PAS représentatives de l'expérience réelle. Utiliser OBLIGATOIREMENT les indices d'icônes du fichier monitor JSON.",
+    "IMPORTANT_INDICES_ICONES": "Pour la rédaction, utiliser les indices d'icônes (0-5) qui reflètent la qualité durant les heures d'occupation réelle.",
+    "source": "Fichier monitor JSON - statistiques_par_local.*.icone et statistiques_heures_occupation",
+    "CALCUL_DES_METRICS": {
+      "IMPORTANT": "Les valeurs pour la section metrics sont DÉJÀ CALCULÉES dans le fichier monitor JSON - NE PAS LES CALCULER MANUELLEMENT",
+      "ou_les_trouver": "Les moyennes globales ne sont PAS directement visibles dans le monitor JSON mais sont calculées automatiquement par monitor.R",
+      "que_faire": [
+        "1. Ces valeurs sont des moyennes globales 24h/24 sur TOUS les espaces communs",
+        "2. Elles sont calculées automatiquement et doivent être fournies séparément",
+        "3. Pour metrics.items[].value: utiliser ces moyennes globales avec l'unité en STRING",
+        "4. Pour metrics.items[].description: utiliser les min/max globaux pour la plage"
+      ],
+      "note_temperature": "Si les températures semblent élevées (29-30°C), c'est normal - ce sont des pics max sur 24h incluant les périodes chaudes. La moyenne sera plus raisonnable."
+    },
+    "PLAGES_MIN_MAX": {
+      "source": "Utiliser les min/max GLOBAUX de tous les locaux sur 24h",
+      "exemple": "Si Local A: 400-800 ppm, Local B: 450-900 ppm → Plage globale: 400-900 ppm"
+    }
+  },
+  "hero": {
+    "_comment": "Section d'en-tête du dashboard",
+    "season_label": {
+      "fr": "Saison AAAA",
+      "en": "Season YYYY",
+      "_exemple": "Été 2025 / Summer 2025"
+    },
+    "title": {
+      "fr": "Rapport Saison AAAA",
+      "en": "Season YYYY Report"
+    },
+    "period": {
+      "fr": "JJ mois - JJ mois AAAA",
+      "en": "Month DD - Month DD, YYYY",
+      "_exemple": "1er juillet - 1er octobre 2025 / July 1 - October 1, 2025"
+    },
+    "subtitle": {
+      "fr": "Qualité de l'air dans tes espaces communs UXCO Student",
+      "en": "Air quality in your UXCO Student common areas"
+    }
+  },
+  "summary": {
+    "_comment": "Section principale d'analyse - STRUCTURE CRITIQUE",
+    "_STRUCTURE_OBLIGATOIRE": "Cette section DOIT contenir: title, score (avec value + label), et text (UN SEUL texte avec 5 sections)",
+    "title": {
+      "fr": "Ton [saison] à UXCO — ça respire !",
+      "en": "Your [season] at UXCO — breathing easy!",
+      "_exemple": "Ton été à UXCO — ça respire !"
+    },
+    "score": {
+      "_comment": "Score global de confort calculé par monitor.R",
+      "value": 90.5,
+      "label": {
+        "fr": "Excellent",
+        "en": "Excellent"
+      }
+    },
+    "text": {
+      "_comment_redaction": "UN SEUL texte avec 5 sections séparées par \\n\\n (double saut de ligne). Les titres de section doivent apparaître tels quels.",
+      "_STRUCTURE_REQUISE": "Synthèse\\n\\n[contenu]\\n\\nPerformances observées\\n\\n[contenu]\\n\\nPoints d'attention identifiés\\n\\n[contenu]\\n\\nImpact sur ton bien-être\\n\\n• [point 1]\\n• [point 2]\\n• [point 3]\\n• [point 4]\\n\\nConseils pour en profiter à fond\\n\\n[contenu]",
+      "_IMPORTANT_REDACTION": "Utiliser UNIQUEMENT les indices d'icônes (0-5) du fichier monitor JSON. NE JAMAIS utiliser les moyennes CO2 globales.",
+      "_CONSEILS_REDACTION": [
+        "Section 1 (Synthèse): Vue d'ensemble avec score global et température moyenne",
+        "Section 2 (Performances): Citer UNIQUEMENT les 2 locaux principaux (salle_graphiques et salle_fitness) avec leurs indices 0-1. Mentionner UNIQUEMENT les indices (ex: 'indice de confinement 0/5'), JAMAIS les moyennes CO2. Pour humidité, PM2.5, etc. on peut donner les moyennes globales.",
+        "Section 3 (Points d'attention): Identifier les locaux avec indice >1 parmi les 2 principaux. Donner les PICS MAX PONCTUELS (ex: 'pics jusqu'à 2600 ppm'), pas les moyennes. Contextualiser positivement.",
+        "Section 4 (Impact): 3-4 bénéfices concrets, liste à puces commençant par •",
+        "Section 5 (Conseils): Actions concrètes sur espaces communs uniquement. Si un local a indice >1, suggérer les meilleurs créneaux horaires basés sur weekly_pattern. Orienter vers espaces à indice 0-1."
+      ],
+      "NIVEAU_DETAIL_LOCAUX": {
+        "locaux_a_mentionner": "UNIQUEMENT les 2 locaux principaux: metadata.salle_graphiques et metadata.salle_fitness",
+        "ne_pas_mentionner": "Les autres locaux (bureaux, salles de réunion, etc.) même s'ils sont excellents",
+        "exception": "Si un autre local a un problème majeur (indice >2), le mentionner brièvement",
+        "valeurs_a_citer": [
+          "✓ Indices d'icônes (0/5, 1/5, 2/5, etc.)",
+          "✓ Pics MAX ponctuels quand pertinent (ex: 'pics jusqu'à 2600 ppm')",
+          "✓ Moyennes globales pour température, humidité, PM2.5 (pas pour CO2)",
+          "✗ JAMAIS les moyennes CO2 des locaux"
+        ]
+      },
+      "fr": "Synthèse\n\n[Texte vue d'ensemble avec score global XX/100 et température moyenne XX°C]\n\nPerformances observées\n\n[Texte décrivant les locaux avec indice 0-1, mentionner les indices et les paramètres excellents]\n\nPoints d'attention identifiés\n\n[Texte décrivant les locaux avec indice >1, mentionner les pics max ponctuels, contextualiser positivement]\n\nImpact sur ton bien-être\n\n• [Bénéfice concret 1]\n• [Bénéfice concret 2]\n• [Bénéfice concret 3]\n• [Bénéfice concret 4]\n\nConseils pour en profiter à fond\n\n[Conseils concrets sur les espaces communs uniquement]\n",
+      "en": "Summary\n\n[Overview text with global score XX/100 and average temperature XX°C]\n\nObserved Performances\n\n[Text describing spaces with index 0-1, mention indices and excellent parameters]\n\nIdentified Points of Attention\n\n[Text describing spaces with index >1, mention occasional max peaks, contextualize positively]\n\nImpact on Your Well-being\n\n• [Concrete benefit 1]\n• [Concrete benefit 2]\n• [Concrete benefit 3]\n• [Concrete benefit 4]\n\nRecommendations\n\n[Concrete tips for common areas only]\n"
+    }
+  },
+  "metrics": {
+    "_comment": "Indicateurs clés - Valeurs calculées depuis monitor JSON",
+    "_STRUCTURE_CRITIQUE": "Chaque item DOIT avoir: name (FR/EN), value (STRING avec unité), status, description (FR/EN avec plage)",
+    "title": {
+      "fr": "Indicateurs clés",
+      "en": "Key Indicators"
+    },
+    "items": [
+      {
+        "_comment": "value DOIT être un STRING incluant l'unité (ex: '480 ppm', PAS 480)",
+        "name": {
+          "fr": "CO₂ moyen",
+          "en": "Average CO₂"
+        },
+        "value": "XXX ppm",
+        "status": "excellent",
+        "description": {
+          "fr": "Plage : XXX-XXX ppm",
+          "en": "Range: XXX-XXX ppm"
+        }
+      },
+      {
+        "name": {
+          "fr": "Température moyenne",
+          "en": "Average temperature"
+        },
+        "value": "XX.X°C",
+        "status": "excellent",
+        "description": {
+          "fr": "Plage : XX-XX°C",
+          "en": "Range: XX-XX°C"
+        }
+      },
+      {
+        "name": {
+          "fr": "Humidité moyenne",
+          "en": "Average humidity"
+        },
+        "value": "XX%",
+        "status": "excellent",
+        "description": {
+          "fr": "Plage : XX-XX%",
+          "en": "Range: XX-XX%"
+        }
+      },
+      {
+        "name": {
+          "fr": "PM2.5 moyen",
+          "en": "Average PM2.5"
+        },
+        "value": "X.X µg/m³",
+        "status": "excellent",
+        "description": {
+          "fr": "Plage : X-XX µg/m³",
+          "en": "Range: X-XX µg/m³"
+        }
+      },
+      {
+        "name": {
+          "fr": "COV moyen",
+          "en": "Average VOC"
+        },
+        "value": "XXX ppb",
+        "status": "excellent",
+        "description": {
+          "fr": "Plage : XXX-XXXX ppb",
+          "en": "Range: XXX-XXXX ppb"
+        }
+      },
+      {
+        "name": {
+          "fr": "Niveau sonore moyen",
+          "en": "Average sound level"
+        },
+        "value": "XX.X dB",
+        "status": "excellent",
+        "description": {
+          "fr": "Plage : XX-XXX dB",
+          "en": "Range: XX-XXX dB"
+        }
+      }
+    ]
+  },
+  "heatmaps": {
+    "_comment": "Titres des deux heatmaps CO2 - Utiliser les noms traduits depuis local_names",
+    "_IMPORTANT": "Les titres doivent correspondre aux traductions définies dans local_names",
+    "fitness": {
+      "title": {
+        "fr": "Nom du Local Fitness - Étage",
+        "en": "Fitness Room Name - Floor",
+        "_exemple": "Fitness - Entresol / Fitness - Mezzanine"
+      }
+    },
+    "common_area": {
+      "title": {
+        "fr": "Nom du Local Commun - Étage",
+        "en": "Common Area Name - Floor",
+        "_exemple": "Agora - RDR / Agora - Upper Ground Floor"
+      }
+    }
+  },
+  "ui_translations": {
+    "_comment": "Traductions pour les éléments d'interface utilisateur du dashboard",
+    "_IMPORTANT": "Ces traductions sont utilisées directement par le code JSX - toute modification doit être testée",
+    "_STRUCTURE_OBLIGATOIRE": "Cette section doit contenir: co2_chart, heatmap, days_of_week, temp_humidity",
+    "co2_chart": {
+      "optimal_threshold_label": {
+        "fr": "Optimal (800 ppm)",
+        "en": "Good (800 ppm)",
+        "_comment": "CRITIQUE: En anglais utiliser 'Good' et NON 'Optimal' pour cohérence terminologique"
+      },
+      "explanation": {
+        "fr": "Le CO₂ est un excellent indicateur de confinement : il révèle si l'aération est suffisante pour évacuer les polluants et assurer une bonne qualité de l'air intérieur. Les données du graphique ci-dessous proviennent de",
+        "en": "CO₂ is an excellent indicator of confinement: it reveals whether ventilation is sufficient to evacuate pollutants and ensure good indoor air quality. The data in the chart below comes from"
+      },
+      "optimal_label_short": {
+        "fr": "Optimal",
+        "en": "Good"
+      }
+    },
+    "heatmap": {
+      "legend": {
+        "fr": "Légende",
+        "en": "Legend"
+      },
+      "no_data": {
+        "fr": "Pas de données",
+        "en": "No data"
+      },
+      "weekly_pattern_description": {
+        "fr": "N'hésite pas à utiliser les données ci-dessous pour mieux adapter tes périodes de présence dans les locaux :",
+        "en": "Feel free to use the data below to better adapt your presence periods in the spaces below:"
+      }
+    },
+    "days_of_week": {
+      "_comment": "Structure OBLIGATOIRE: objet avec fr et en, chacun contenant les noms complets et abrégés",
+      "_STRUCTURE_CRITIQUE": "DOIT être {fr: {monday: ..., monday_short: ...}, en: {monday: ..., monday_short: ...}}",
+      "fr": {
+        "monday": "Lundi",
+        "tuesday": "Mardi",
+        "wednesday": "Mercredi",
+        "thursday": "Jeudi",
+        "friday": "Vendredi",
+        "saturday": "Samedi",
+        "sunday": "Dimanche",
+        "monday_short": "Lun",
+        "tuesday_short": "Mar",
+        "wednesday_short": "Mer",
+        "thursday_short": "Jeu",
+        "friday_short": "Ven",
+        "saturday_short": "Sam",
+        "sunday_short": "Dim"
+      },
+      "en": {
+        "monday": "Monday",
+        "tuesday": "Tuesday",
+        "wednesday": "Wednesday",
+        "thursday": "Thursday",
+        "friday": "Friday",
+        "saturday": "Saturday",
+        "sunday": "Sunday",
+        "monday_short": "Mon",
+        "tuesday_short": "Tue",
+        "wednesday_short": "Wed",
+        "thursday_short": "Thu",
+        "friday_short": "Fri",
+        "saturday_short": "Sat",
+        "sunday_short": "Sun"
+      }
+    },
+    "temp_humidity": {
+      "intro_prefix": {
+        "fr": "Les graphiques qui suivent présentent la température et l'humidité pour l'espace",
+        "en": "The following charts show temperature and humidity for"
+      },
+      "intro_suffix": {
+        "fr": "ainsi que les données extérieures.",
+        "en": "along with outdoor data."
+      },
+      "legend_labels": {
+        "temp": {
+          "fr": "TEMP",
+          "en": "TEMP"
+        },
+        "temp_ext": {
+          "fr": "TEMP EXT",
+          "en": "TEMP OUT"
+        },
+        "humidity": {
+          "fr": "HUMIDITÉ",
+          "en": "HUMIDITY"
+        },
+        "humidity_ext": {
+          "fr": "HR EXT",
+          "en": "RH OUT"
+        }
+      }
+    }
+  },
+  "section_titles": {
+    "_comment": "Titres des différentes sections du dashboard - utilisés par le JSX",
+    "co2_air_quality": {
+      "fr": "Qualité de l'air (CO₂)",
+      "en": "Air Quality (CO₂)"
+    },
+    "weekly_analysis": {
+      "fr": "Analyse hebdomadaire",
+      "en": "Weekly Analysis"
+    },
+    "temp_humidity": {
+      "fr": "Température & Humidité",
+      "en": "Temperature & Humidity"
+    },
+    "global_comfort_score": {
+      "fr": "Score Global de Confort",
+      "en": "Global Comfort Score"
+    }
+  },
+  "system_messages": {
+    "_comment": "Messages système pour le chargement, erreurs, footer",
+    "loading": {
+      "fr": "Chargement des données...",
+      "en": "Loading data..."
+    },
+    "error_title": {
+      "fr": "Erreur de chargement",
+      "en": "Loading Error"
+    },
+    "footer": {
+      "fr": "UXCO Student - Monitoring de la qualité de l'air",
+      "en": "UXCO Student - Air Quality Monitoring"
+    }
+  },
+  "_GUIDE_UXCO_STYLE": {
+    "but": "Garantir l'homogénéité de l'app avec l'identité UXCO Student.",
+    "ton": [
+      "Tutoiement, direct et chaleureux (ex. 'tu', 'ton espace', 'ta résidence UXCO').",
+      "Émojis autorisés avec parcimonie pour souligner (💨, 🌿, 💬).",
+      "Formulations brèves, actives, orientées action et communauté."
+    ],
+    "vocabulaire": {
+      "a_utiliser": [
+        "UXCO Student",
+        "ta résidence UXCO",
+        "ton espace commun",
+        "ta salle de sport",
+        "ton spot détente",
+        "la communauté"
+      ],
+      "a_eviter": [
+        "Maison Ecla",
+        "résidence Ecla",
+        "habitant·e (remplacer par 'toi', 'ta communauté')"
+      ]
+    },
+    "redaction_donnees": [
+      "La synthèse s'appuie sur les indices icone_salle_graphiques et icones_tous_locaux (heures d'occupation).",
+      "Pour CO₂, donner l'indice (0–5) et les pics max ponctuels si utiles; éviter les moyennes 24/24 anxiogènes.",
+      "Privilégier les bénéfices concrets pour l'étudiant: confort, concentration, énergie, ambiance.",
+      "Conseils : proposer des créneaux plus respirants et des écogestes en espace commun."
+    ]
+  },
+  "_CHECKLIST_MISE_A_JOUR": {
+    "description": "Checklist à suivre pour chaque nouvelle saison",
+    "etapes_obligatoires": [
+      "1. Ouvrir le fichier monitor JSON de la nouvelle période",
+      "2. Extraire metadata.residence, metadata.salle_graphiques, metadata.salle_fitness",
+      "3. Mettre à jour local_names avec les noms EXACTS des locaux",
+      "4. Mettre à jour hero (season_label, title, period) avec traductions FR/EN",
+      "5. Récupérer le score global depuis scores.global du monitor JSON",
+      "6. Récupérer les indices d'icônes: icone_salle_graphiques et icones_tous_locaux du monitor JSON",
+      "7. Récupérer les statistiques_heures_occupation des 2 locaux principaux pour connaître les pics max",
+      "8. Rédiger summary.text (UN SEUL texte avec 5 sections) en se basant sur les indices et pics max",
+      "9. Mettre à jour summary.score.value avec le score global",
+      "10. OBTENIR les moyennes globales calculées par monitor.R (CO2, TEMP, HUMIDITY, PM25, VOC, NOISE)",
+      "11. Mettre à jour metrics.items avec ces moyennes globales (value en STRING avec unité, plages min-max)",
+      "12. Mettre à jour heatmaps avec les noms traduits des locaux",
+      "13. Vérifier que ui_translations est complet (ne PAS modifier)",
+      "14. Vérifier les guillemets: UNIQUEMENT guillemets droits (\" et '), JAMAIS de guillemets typographiques",
+      "15. Vérifier le JSON avec: python3 -m json.tool fichier.json",
+      "16. Tester dans l'application"
+    ],
+    "SOURCE_DES_DONNEES": {
+      "score_global": "monitor JSON → scores.global",
+      "indices_icones": "monitor JSON → icone_salle_graphiques + icones_tous_locaux",
+      "pics_max_locaux": "monitor JSON → statistiques_par_local.[nom_local].statistiques_heures_occupation.[param].max",
+      "moyennes_globales_metrics": "CALCULÉES PAR monitor.R (pas dans le monitor JSON visible) - à obtenir séparément",
+      "temperature_summary": "Utiliser la moyenne globale calculée par monitor.R",
+      "humidite_pm25_summary": "Utiliser les moyennes globales calculées par monitor.R"
+    },
+    "verifications_critiques": [
+      "✓ local_names: clés = noms EXACTS du monitor JSON",
+      "✓ summary: structure avec title, score (value + label), text (UN texte avec \\n\\n)",
+      "✓ summary.text: 5 sections avec titres exacts (Synthèse, Performances observées, etc.)",
+      "✓ summary.text: mentionner UNIQUEMENT les 2 locaux principaux (salle_graphiques + salle_fitness)",
+      "✓ summary.text: utiliser INDICES (0/5, 1/5) et PICS MAX, JAMAIS les moyennes CO2",
+      "✓ metrics.items: value en STRING avec unité ('480 ppm' pas 480)",
+      "✓ metrics.items: status présent (excellent/good/attention)",
+      "✓ metrics.items: utiliser les moyennes GLOBALES calculées par monitor.R",
+      "✓ ui_translations.days_of_week: structure objet {fr: {monday: ...}, en: {monday: ...}}",
+      "✓ Toutes les traductions FR/EN présentes",
+      "✓ Guillemets DROITS uniquement (\" et '), JAMAIS de guillemets typographiques",
+      "✓ Aucune mention de 'Maison Ecla'",
+      "✓ Tutoiement partout"
+    ]
+  },
+  "_ERREURS_FREQUENTES_A_EVITER": {
+    "ERREUR_1": {
+      "description": "summary.text avec sections séparées en objets",
+      "INCORRECT": "summary: {sections: {synthese: {...}, performances: {...}}}",
+      "CORRECT": "summary: {text: {fr: 'Synthèse\\n\\n...\\n\\nPerformances observées\\n\\n...'}}"
+    },
+    "ERREUR_2": {
+      "description": "metrics.items avec value en number au lieu de string",
+      "INCORRECT": "value: 480, unit: 'ppm'",
+      "CORRECT": "value: '480 ppm'"
+    },
+    "ERREUR_3": {
+      "description": "days_of_week en tableau au lieu d'objet",
+      "INCORRECT": "days_of_week: {fr: ['Lundi', 'Mardi', ...]}",
+      "CORRECT": "days_of_week: {fr: {monday: 'Lundi', tuesday: 'Mardi', ...}}"
+    },
+    "ERREUR_4": {
+      "description": "Utiliser les moyennes CO2 au lieu des indices d'icônes",
+      "INCORRECT": "L'Agora affiche un CO2 moyen de 565 ppm",
+      "CORRECT": "L'Agora affiche un indice de confinement 0/5 (excellent)"
+    },
+    "ERREUR_5": {
+      "description": "Oublier les traductions EN",
+      "INCORRECT": "Avoir uniquement 'fr' dans un champ",
+      "CORRECT": "Toujours avoir 'fr' ET 'en' pour tous les textes visibles"
+    },
+    "ERREUR_6": {
+      "description": "Utiliser des guillemets typographiques au lieu de guillemets droits",
+      "INCORRECT": "text avec guillemets courbes insérés par Word/Pages",
+      "CORRECT": "text avec guillemets droits ASCII standard",
+      "note": "Les guillemets courbes/typographiques causent des erreurs JSON. Utiliser UNIQUEMENT les guillemets droits ASCII du clavier.",
+      "exemple_incorrect_visual": "Tutoiement (ex. [guillemet courbe]tu[guillemet courbe])",
+      "exemple_correct_visual": "Tutoiement (ex. 'tu' avec guillemets simples droits)"
+    },
+    "ERREUR_7": {
+      "description": "Mentionner trop de locaux dans summary.text",
+      "INCORRECT": "Mentionner tous les locaux (bureaux, salles de réunion, etc.)",
+      "CORRECT": "Mentionner UNIQUEMENT les 2 locaux principaux (salle_graphiques et salle_fitness)"
+    },
+    "ERREUR_8": {
+      "description": "Calculer manuellement les moyennes globales pour metrics",
+      "INCORRECT": "Faire la moyenne des statistiques de tous les locaux",
+      "CORRECT": "Utiliser les moyennes globales déjà calculées par monitor.R (à obtenir séparément du monitor JSON)"
+    }
+  }
+}
