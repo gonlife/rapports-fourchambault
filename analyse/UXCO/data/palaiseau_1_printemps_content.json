@@ -1,0 +1,279 @@
+{
+  "local_names": {
+    "Espace repas RDC": {
+      "fr": "Espace repas - RDC",
+      "en": "Dining area - Ground Floor"
+    },
+    "Fitness RDC": {
+      "fr": "Fitness - RDC",
+      "en": "Fitness - Ground Floor"
+    }
+  },
+  "hero": {
+    "season_label": {
+      "fr": "Printemps 2025",
+      "en": "Spring 2025"
+    },
+    "title": {
+      "fr": "Rapport Printemps 2025",
+      "en": "Spring 2025 Report"
+    },
+    "period": {
+      "fr": "18 juin - 1er juillet 2025",
+      "en": "June 18 - July 1, 2025"
+    },
+    "subtitle": {
+      "fr": "Qualité de l'air dans tes espaces communs UXCO Student",
+      "en": "Air quality in your UXCO Student common areas"
+    }
+  },
+  "summary": {
+    "title": {
+      "fr": "Ton printemps à UXCO — ça respire !",
+      "en": "Your Spring at UXCO — breathing easy!"
+    },
+    "score": {
+      "value": 92.0,
+      "label": {
+        "fr": "92/100",
+        "en": "92/100"
+      }
+    },
+    "text": {
+      "fr": "Synthèse\n\nScore global: 92/100. Température moyenne sur la période : 25.2°C. Humidité moyenne : 55.8%. CO₂ moyen : 600 ppm.\n\nPerformances\n\nEspace repas RDC: icône 0/5, pics CO₂ jusqu’à 1815 ppm. Fitness RDC: icône 1/5, pics CO₂ jusqu’à 2756 ppm. PM2.5 moyen global: 0.5 µg/m³; COV moyen global: 193 ppb; Niveau sonore moyen global: 54.2 dB.\n\nPoints d'attention\n\nSur la période, des pics CO₂ jusqu’à 2756 ppm ont été observés dans Fitness RDC.\n\nImpact\n\n• CO₂ moyen sur la période : 600 ppm\n• Température moyenne : 25.2°C\n• Humidité moyenne : 55.8%\n• PM2.5 moyen : 0.5 µg/m³\n\nConseils pour en profiter à fond\n\n• Privilégier les créneaux avec moins de pics CO₂ selon les graphiques horaires.\n• Aérer lorsque les pics apparaissent.",
+      "en": "Summary\n\nGlobal score: 92/100. Average temperature over the period: 25.2°C. Average humidity: 55.8%. Average CO₂: 600 ppm.\n\nPerformance\n\nEspace repas RDC: icon 0/5, CO₂ peaks up to 1815 ppm. Fitness RDC: icon 1/5, CO₂ peaks up to 2756 ppm. Global average PM2.5: 0.5 µg/m³; global average VOC: 193 ppb; global average noise level: 54.2 dB.\n\nWatch-outs\n\nDuring the period, CO₂ peaks up to 2756 ppm were observed in Fitness RDC.\n\nImpact\n\n• Average CO₂ over the period: 600 ppm\n• Average temperature: 25.2°C\n• Average humidity: 55.8%\n• Average PM2.5: 0.5 µg/m³\n\nRecommendations\n\n• Prefer time slots with fewer CO₂ peaks according to the hourly charts.\n• Ventilate when peaks appear."
+    }
+  },
+  "metrics": {
+    "title": {
+      "fr": "Indicateurs clés",
+      "en": "Key Indicators"
+    },
+    "items": [
+      {
+        "name": {
+          "fr": "CO₂ moyen",
+          "en": "Average CO₂"
+        },
+        "value": "600 ppm",
+        "status": "n/a",
+        "description": {
+          "fr": "Plage : 473-1636 ppm",
+          "en": "Range: 473-1636 ppm"
+        }
+      },
+      {
+        "name": {
+          "fr": "Température moyenne",
+          "en": "Average temperature"
+        },
+        "value": "25.2°C",
+        "status": "n/a",
+        "description": {
+          "fr": "Plage : 21.4-27.4°C",
+          "en": "Range: 21.4-27.4°C"
+        }
+      },
+      {
+        "name": {
+          "fr": "Humidité moyenne",
+          "en": "Average humidity"
+        },
+        "value": "55.8%",
+        "status": "n/a",
+        "description": {
+          "fr": "Plage : 38-65%",
+          "en": "Range: 38-65%"
+        }
+      },
+      {
+        "name": {
+          "fr": "PM2.5 moyen",
+          "en": "Average PM2.5"
+        },
+        "value": "0.5 µg/m³",
+        "status": "n/a",
+        "description": {
+          "fr": "Plage : 0-4.1 µg/m³",
+          "en": "Range: 0-4.1 µg/m³"
+        }
+      },
+      {
+        "name": {
+          "fr": "COV moyen",
+          "en": "Average VOC"
+        },
+        "value": "193 ppb",
+        "status": "n/a",
+        "description": {
+          "fr": "Plage : 105-449 ppb",
+          "en": "Range: 105-449 ppb"
+        }
+      },
+      {
+        "name": {
+          "fr": "Niveau sonore moyen",
+          "en": "Average sound level"
+        },
+        "value": "54.2 dB",
+        "status": "n/a",
+        "description": {
+          "fr": "Plage : 43-63 dB",
+          "en": "Range: 43-63 dB"
+        }
+      }
+    ]
+  },
+  "heatmaps": {
+    "fitness": {
+      "title": {
+        "fr": "Fitness - RDC",
+        "en": "Fitness - Ground Floor"
+      }
+    },
+    "common_area": {
+      "title": {
+        "fr": "Espace repas — quand l'air est au top",
+        "en": "Dining area — when the air is best"
+      }
+    }
+  },
+  "ui_translations": {
+    "_comment": "Traductions pour les éléments d'interface utilisateur du dashboard",
+    "_IMPORTANT": "Ces traductions sont utilisées directement par le code JSX - toute modification doit être testée",
+    "_STRUCTURE_OBLIGATOIRE": "Cette section doit contenir OBLIGATOIREMENT les 4 sous-sections: co2_chart, heatmap, temp_humidity, days_of_week",
+    "_CRITIQUE_TEMP_HUMIDITY": "La section temp_humidity est INDISPENSABLE - elle affiche la phrase 'Les graphiques qui suivent présentent la température et l'humidité pour l'espace [NOM]' et le nom du local. Sans elle, seul le nom du local s'affiche sans contexte explicatif.",
+    "co2_chart": {
+      "optimal_threshold_label": {
+        "fr": "Optimal (800 ppm)",
+        "en": "Good (800 ppm)",
+        "_comment": "CRITIQUE: En anglais utiliser 'Good' et NON 'Optimal' pour cohérence terminologique"
+      },
+      "explanation": {
+        "fr": "Le CO₂ est un excellent indicateur de confinement : il révèle si l'aération est suffisante pour évacuer les polluants et assurer une bonne qualité de l'air intérieur. Les données du graphique ci-dessous proviennent de",
+        "en": "CO₂ is an excellent indicator of confinement: it reveals whether ventilation is sufficient to evacuate pollutants and ensure good indoor air quality. The data in the chart below comes from"
+      },
+      "optimal_label_short": {
+        "fr": "Optimal",
+        "en": "Good"
+      }
+    },
+    "heatmap": {
+      "legend": {
+        "fr": "Légende",
+        "en": "Legend"
+      },
+      "no_data": {
+        "fr": "Pas de données",
+        "en": "No data"
+      },
+      "weekly_pattern_description": {
+        "fr": "N'hésite pas à utiliser les données ci-dessous pour mieux adapter tes périodes de présence dans les locaux :",
+        "en": "Feel free to use the data below to better adapt your presence periods in the spaces below:"
+      }
+    },
+    "days_of_week": {
+      "_comment": "Structure OBLIGATOIRE: objet avec fr et en, chacun contenant les noms complets et abrégés",
+      "_STRUCTURE_CRITIQUE": "DOIT être {fr: {monday: ..., monday_short: ...}, en: {monday: ..., monday_short: ...}}",
+      "fr": {
+        "monday": "Lundi",
+        "tuesday": "Mardi",
+        "wednesday": "Mercredi",
+        "thursday": "Jeudi",
+        "friday": "Vendredi",
+        "saturday": "Samedi",
+        "sunday": "Dimanche",
+        "monday_short": "Lun",
+        "tuesday_short": "Mar",
+        "wednesday_short": "Mer",
+        "thursday_short": "Jeu",
+        "friday_short": "Ven",
+        "saturday_short": "Sam",
+        "sunday_short": "Dim"
+      },
+      "en": {
+        "monday": "Monday",
+        "tuesday": "Tuesday",
+        "wednesday": "Wednesday",
+        "thursday": "Thursday",
+        "friday": "Friday",
+        "saturday": "Saturday",
+        "sunday": "Sunday",
+        "monday_short": "Mon",
+        "tuesday_short": "Tue",
+        "wednesday_short": "Wed",
+        "thursday_short": "Thu",
+        "friday_short": "Fri",
+        "saturday_short": "Sat",
+        "sunday_short": "Sun"
+      }
+    },
+    "temp_humidity": {
+      "_comment": "SECTION CRITIQUE - Textes d'introduction pour la section Température & Humidité",
+      "_UTILISATION_JSX": "Le JSX construit la phrase: [intro_prefix] + [nom du local depuis local_names] + [intro_suffix]",
+      "_EXEMPLE_RENDU_FR": "Les graphiques qui suivent présentent la température et l'humidité pour l'espace Co-Working - RDC ainsi que les données extérieures.",
+      "_EXEMPLE_RENDU_EN": "The following charts show temperature and humidity for Co-Working - Ground Floor along with outdoor data.",
+      "_IMPORTANT": "Si cette section est absente, seul le nom du local s'affiche sans contexte (ex: juste 'Co-Working - RDC'), ce qui est incompréhensible pour l'utilisateur.",
+      "intro_prefix": {
+        "fr": "Les graphiques qui suivent présentent la température et l'humidité pour l'espace",
+        "en": "The following charts show temperature and humidity for"
+      },
+      "intro_suffix": {
+        "fr": "ainsi que les données extérieures.",
+        "en": "along with outdoor data."
+      },
+      "legend_labels": {
+        "temp": {
+          "fr": "TEMP",
+          "en": "TEMP"
+        },
+        "temp_ext": {
+          "fr": "TEMP EXT",
+          "en": "TEMP OUT"
+        },
+        "humidity": {
+          "fr": "HUMIDITÉ",
+          "en": "HUMIDITY"
+        },
+        "humidity_ext": {
+          "fr": "HR EXT",
+          "en": "RH OUT"
+        }
+      }
+    }
+  },
+  "section_titles": {
+    "_comment": "Titres des différentes sections du dashboard - utilisés par le JSX",
+    "co2_air_quality": {
+      "fr": "Qualité de l'air (CO₂)",
+      "en": "Air Quality (CO₂)"
+    },
+    "weekly_analysis": {
+      "fr": "Analyse hebdomadaire",
+      "en": "Weekly Analysis"
+    },
+    "temp_humidity": {
+      "fr": "Température & Humidité",
+      "en": "Temperature & Humidity"
+    },
+    "global_comfort_score": {
+      "fr": "Score Global de Confort",
+      "en": "Global Comfort Score"
+    }
+  },
+  "system_messages": {
+    "_comment": "Messages système pour le chargement, erreurs, footer",
+    "loading": {
+      "fr": "Chargement des données...",
+      "en": "Loading data..."
+    },
+    "error_title": {
+      "fr": "Erreur de chargement",
+      "en": "Loading Error"
+    },
+    "footer": {
+      "fr": "UXCO Student - Monitoring de la qualité de l'air",
+      "en": "UXCO Student - Air Quality Monitoring"
+    }
+  }
+}
