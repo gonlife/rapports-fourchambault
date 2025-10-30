@@ -1,26 +1,110 @@
 {
+  "_COMMENTAIRES_STRUCTURE": {
+    "description": "Ce fichier contient l'ensemble des textes narratifs pour le dashboard habitant·e",
+    "usage": "Les commentaires avec underscore (_) ne sont pas visibles côté frontend",
+    "charte": "Tutoiement, ton jeune et convivial, marque UXCO Student (jamais Maison Ecla), périmètre = espaces communs uniquement.",
+    "sections_obligatoires": [
+      "hero",
+      "summary (avec score + text unique)",
+      "metrics",
+      "heatmaps",
+      "ui_translations",
+      "section_titles",
+      "system_messages"
+    ],
+    "CRITIQUE_GUILLEMETS": {
+      "IMPORTANT": "Utiliser UNIQUEMENT des guillemets droits ASCII - JAMAIS de guillemets typographiques/courbes",
+      "guillemets_interdits": "Guillemets courbes: ouvrant/fermant doubles et simples (souvent insérés par Word/Pages)",
+      "guillemets_autorises": "Guillemets droits ASCII: double quote et single quote standard du clavier",
+      "consequences": "Les guillemets typographiques causent des erreurs JSON et empêchent le chargement du fichier",
+      "verification": "Après édition, toujours vérifier avec: python3 -m json.tool fichier.json",
+      "exemple_correct": "\"text\": \"Exemple avec 'guillemets simples' corrects\""
+    }
+  },
+  "_GUIDE_REDACTION": {
+    "principes": [
+      "Toujours utiliser le tutoiement et un ton positif, jeune et communautaire",
+      "Mentionner UXCO Student (jamais Maison Ecla)",
+      "Contexte d'usage réel : se baser sur les indices d'occupation (icônes 0–5)",
+      "Vulgariser sans infantiliser; rester factuel et bienveillant",
+      "Conseils UNIQUEMENT sur les espaces communs; aucune mention des logements individuels"
+    ],
+    "structure_summary_text": {
+      "CRITIQUE": "summary.text doit être UN SEUL texte avec 5 sections séparées par \\n\\n (double saut de ligne)",
+      "sections_requises": [
+        "Synthèse - Vue d'ensemble positive avec score global et température moyenne",
+        "Performances observées - 2-3 paramètres excellents avec indices d'icônes et impact positif",
+        "Points d'attention identifiés - 1-2 observations avec valeurs max, local concerné, contextualisation positive",
+        "Impact sur ton bien-être - Exactement 3-4 bénéfices concrets sous forme de liste à puces commençant par •",
+        "Conseils pour en profiter à fond - EXCLUSIVEMENT sur les espaces communs et actions concrètes"
+      ],
+      "format": "Titre section\\n\\nContenu...\\n\\nTitre section suivante\\n\\nContenu...",
+      "IMPORTANT_INDICES": "Utiliser UNIQUEMENT les indices d'icônes (0-5) pour la qualité d'air, PAS les moyennes CO2"
+    }
+  },
+  "_GUIDE_TRADUCTION_NOMS_LOCAUX": {
+    "IMPORTANT": "Les noms de locaux apparaissent à plusieurs endroits dans le dashboard. Il est CRITIQUE de maintenir la cohérence entre les clés techniques (immuables) et les noms affichés (traduisibles).",
+    "convention_nommage": {
+      "room_name": "Clé technique immuable utilisée pour les requêtes de données - NE JAMAIS TRADUIRE",
+      "local_names": "SECTION OBLIGATOIRE - Dictionnaire des traductions FR/EN des noms de locaux affichés"
+    },
+    "PROCESSUS_MISE_A_JOUR": {
+      "etape_1": "Ouvrir le fichier monitor JSON et localiser la section metadata",
+      "etape_2": "Récupérer les valeurs EXACTES de metadata.salle_graphiques et metadata.salle_fitness",
+      "etape_3": "Dans ce fichier _content.json, section local_names, utiliser ces noms EXACTS comme clés",
+      "etape_4": "Pour chaque local, créer un objet avec fr (version française lisible) et en (traduction anglaise)",
+      "etape_5": "Règles de traduction: garder le nom du local, traduire 'RDC' en 'Ground Floor', 'RDR' en 'Upper Ground Floor', 'ENTRESOL' en 'Mezzanine', 'R+1' en '1st Floor', etc."
+    },
+    "CRITIQUE": "Les clés dans local_names DOIVENT correspondre EXACTEMENT aux valeurs dans metadata.salle_graphiques et metadata.salle_fitness du fichier monitor JSON. Aucun fallback n'est géré par le code."
+  },
   "local_names": {
+    "_comment": "Traductions FR/EN des noms de locaux affichés. Les clés DOIVENT correspondre EXACTEMENT aux valeurs metadata.salle_graphiques et metadata.salle_fitness du fichier monitor JSON.",
+    "_EXEMPLE": "Si metadata.salle_graphiques = 'Agora - RDR', alors la clé doit être exactement 'Agora - RDR'",
     "Espace repas RDC": {
-      "fr": "Espace repas - RDC",
-      "en": "Dining area - Ground Floor"
+      "fr": "Espace Repas - RDC",
+      "en": "Dining Area - Ground Floor"
     },
     "Fitness RDC": {
       "fr": "Fitness - RDC",
       "en": "Fitness - Ground Floor"
     }
   },
+  "_DONNEES_PERIODE": {
+    "commentaire": "Section de référence pour les données - NE PAS SUPPRIMER - Utilisée pour documenter les sources",
+    "AVERTISSEMENT_CRITIQUE": "Les moyennes globales 24h/24 incluent les heures de nuit et ne sont PAS représentatives de l'expérience réelle. Utiliser OBLIGATOIREMENT les indices d'icônes du fichier monitor JSON.",
+    "IMPORTANT_INDICES_ICONES": "Pour la rédaction, utiliser les indices d'icônes (0-5) qui reflètent la qualité durant les heures d'occupation réelle.",
+    "source": "Fichier monitor JSON - statistiques_par_local.*.icone et statistiques_heures_occupation",
+    "CALCUL_DES_METRICS": {
+      "IMPORTANT": "Les valeurs pour la section metrics sont DÉJÀ CALCULÉES dans le fichier monitor JSON - NE PAS LES CALCULER MANUELLEMENT",
+      "ou_les_trouver": "Les moyennes globales ne sont PAS directement visibles dans le monitor JSON mais sont calculées automatiquement par monitor.R",
+      "que_faire": [
+        "1. Ces valeurs sont des moyennes globales 24h/24 sur TOUS les espaces communs",
+        "2. Elles sont calculées automatiquement et doivent être fournies séparément",
+        "3. Pour metrics.items[].value: utiliser ces moyennes globales avec l'unité en STRING",
+        "4. Pour metrics.items[].description: utiliser les min/max globaux pour la plage"
+      ],
+      "note_temperature": "Si les températures semblent élevées (29-30°C), c'est normal - ce sont des pics max sur 24h incluant les périodes chaudes. La moyenne sera plus raisonnable."
+    },
+    "PLAGES_MIN_MAX": {
+      "source": "Utiliser les min/max GLOBAUX de tous les locaux sur 24h",
+      "exemple": "Si Local A: 400-800 ppm, Local B: 450-900 ppm → Plage globale: 400-900 ppm"
+    }
+  },
   "hero": {
+    "_comment": "Section d'en-tête du dashboard",
     "season_label": {
       "fr": "Printemps 2025",
-      "en": "Spring 2025"
+      "en": "Spring 2025",
+      "_exemple": "Été 2025 / Summer 2025"
     },
     "title": {
       "fr": "Rapport Printemps 2025",
       "en": "Spring 2025 Report"
     },
     "period": {
-      "fr": "18 juin - 1er juillet 2025",
-      "en": "June 18 - July 1, 2025"
+      "fr": "25 juin - 1er juillet 2025",
+      "en": "June 25 - July 1, 2025",
+      "_exemple": "1er juillet - 1er octobre 2025 / July 1 - October 1, 2025"
     },
     "subtitle": {
       "fr": "Qualité de l'air dans tes espaces communs UXCO Student",
@@ -28,38 +112,48 @@
     }
   },
   "summary": {
+    "_comment": "Section principale d'analyse - STRUCTURE CRITIQUE",
+    "_STRUCTURE_OBLIGATOIRE": "Cette section DOIT contenir: title, score (avec value + label), et text (UN SEUL texte avec 5 sections)",
     "title": {
-      "fr": "Ton printemps à UXCO — ça respire !",
-      "en": "Your Spring at UXCO — breathing easy!"
+      "fr": "Ton printemps à UXCO — ça respire ! 💨",
+      "en": "Your spring at UXCO — breathing easy! 💨",
+      "_exemple": "Ton été à UXCO — ça respire !"
     },
     "score": {
-      "value": 92.0,
+      "_comment": "Score global de confort calculé par monitor.R",
+      "value": 92,
       "label": {
-        "fr": "92/100",
-        "en": "92/100"
+        "fr": "Excellent",
+        "en": "Excellent"
       }
     },
     "text": {
-      "fr": "Synthèse\n\nScore global: 92/100. Température moyenne sur la période : 25.2°C. Humidité moyenne : 55.8%. CO₂ moyen : 600 ppm.\n\nPerformances\n\nEspace repas RDC: icône 0/5, pics CO₂ jusqu’à 1815 ppm. Fitness RDC: icône 1/5, pics CO₂ jusqu’à 2756 ppm. PM2.5 moyen global: 0.5 µg/m³; COV moyen global: 193 ppb; Niveau sonore moyen global: 54.2 dB.\n\nPoints d'attention\n\nSur la période, des pics CO₂ jusqu’à 2756 ppm ont été observés dans Fitness RDC.\n\nImpact\n\n• CO₂ moyen sur la période : 600 ppm\n• Température moyenne : 25.2°C\n• Humidité moyenne : 55.8%\n• PM2.5 moyen : 0.5 µg/m³\n\nConseils pour en profiter à fond\n\n• Privilégier les créneaux avec moins de pics CO₂ selon les graphiques horaires.\n• Aérer lorsque les pics apparaissent.",
-      "en": "Summary\n\nGlobal score: 92/100. Average temperature over the period: 25.2°C. Average humidity: 55.8%. Average CO₂: 600 ppm.\n\nPerformance\n\nEspace repas RDC: icon 0/5, CO₂ peaks up to 1815 ppm. Fitness RDC: icon 1/5, CO₂ peaks up to 2756 ppm. Global average PM2.5: 0.5 µg/m³; global average VOC: 193 ppb; global average noise level: 54.2 dB.\n\nWatch-outs\n\nDuring the period, CO₂ peaks up to 2756 ppm were observed in Fitness RDC.\n\nImpact\n\n• Average CO₂ over the period: 600 ppm\n• Average temperature: 25.2°C\n• Average humidity: 55.8%\n• Average PM2.5: 0.5 µg/m³\n\nRecommendations\n\n• Prefer time slots with fewer CO₂ peaks according to the hourly charts.\n• Ventilate when peaks appear."
+      "_comment_redaction": "UN SEUL texte avec 5 sections séparées par \\n\\n (double saut de ligne). Les titres de section doivent apparaître tels quels.",
+      "_STRUCTURE_REQUISE": "Synthèse\\n\\n[contenu]\\n\\nPerformances observées\\n\\n[contenu]\\n\\nPoints d'attention identifiés\\n\\n[contenu]\\n\\nImpact sur ton bien-être\\n\\n• [point 1]\\n• [point 2]\\n• [point 3]\\n• [point 4]\\n\\nConseils pour en profiter à fond\\n\\n[contenu]",
+      "_IMPORTANT_REDACTION": "Utiliser UNIQUEMENT les indices d'icônes (0-5) du fichier monitor JSON. NE JAMAIS utiliser les moyennes CO2 globales.",
+      "fr": "Synthèse\n\nFélicitations ! Ton score de **92/100** pour ce Printemps 2025 confirme l'excellente qualité de l'air dans tes espaces communs UXCO Student. 💨 Avec une température moyenne de **24,8°C**, ton confort est assuré, même en fin de printemps.\n\nPerformances observées\n\nTes espaces principaux affichent un air au top. L'**Espace Repas - RDC** est en mode 'Optimal' avec un **indice de confinement de 0/5**. Ton **Fitness - RDC** est également très performant, avec un indice de **1/5 ('Très bien')**, idéal pour tes sessions d'entraînement.\nNous observons également d'excellentes moyennes sur l'ensemble des locaux pour l'humidité (env. **57%**) et les microparticules PM2.5 (env. **0,3 µg/m³**).\n\nPoints d'attention identifiés\n\nQuelques pics de CO₂ ont été détectés, notamment lors des fortes affluences dans les zones de sport. Le local **Fitness Cours collectifs RDC** affiche un indice de confinement de **2/5 ('Attention')** avec des pics pouvant monter jusqu'à **2587 ppm**. Le **Fitness - RDC** a également atteint un pic de **2450 ppm**. Ces moments sont ponctuels et reflètent une forte concentration de la communauté en pleine activité.\n\nImpact sur ton bien-être\n\n• Plus d'**énergie** et de **concentration** grâce à un air bien oxygéné. \n• Moins de risque de transmission de **virus** et de **bactéries** grâce à une bonne aération.\n• Une **atmosphère agréable** pour tes moments de détente et tes repas.\n• Un **sommeil** potentiellement plus réparateur car ton corps n'est pas exposé à un air confiné.\n\nConseils pour en profiter à fond\n\nPour maximiser la qualité de l'air, surtout pendant les cours et les pics d'affluence au Fitness (vers 20h-21h les lundis et vendredis), pense à bien **ouvrir les fenêtres** quand c'est possible. L'**Espace Repas - RDC** est très bien aéré toute la semaine, c'est l'endroit parfait pour tes sessions de travail ou tes repas décontractés ! 💬",
+      "en": "Summary\n\nCongratulations! Your score of **92/100** for Spring 2025 confirms the excellent air quality in your UXCO Student common areas. 💨 With an average temperature of **24.8°C**, your comfort is guaranteed, even during warmer periods.\n\nObserved Performances\n\nYour main spaces show top-notch air quality. The **Dining Area - Ground Floor** is in 'Optimal' mode with a **confinement index of 0/5**. Your **Fitness - Ground Floor** also performs very well, rated **1/5 ('Very Good')**, which is ideal for your workout sessions.\nWe also observe excellent overall averages for humidity (approx. **57%**) and PM2.5 microparticles (approx. **0.3 µg/m³**) across all spaces.\n\nIdentified Points of Attention\n\nSome CO₂ peaks were detected, particularly during high attendance times in the sports areas. The **Fitness Cours collectifs RDC** area shows a confinement index of **2/5 ('Attention')** with peaks reaching up to **2587 ppm**. The **Fitness - Ground Floor** also reached a peak of **2450 ppm**. These moments are temporary and reflect a high concentration of the community during intense activity.\n\nImpact on Your Well-being\n\n• More **energy** and **concentration** thanks to well-oxygenated air. \n• Reduced risk of **virus** and **bacteria** transmission due to good ventilation.\n• A **more pleasant atmosphere** for your relaxation and meal times.\n• Potentially better **sleep** quality as your body is not exposed to confined air.\n\nRecommendations\n\nTo maximize air quality, especially during classes and peak times at the Fitness room (around 8-9 PM on Mondays and Fridays), remember to **open the windows** when possible. The **Dining Area - Ground Floor** is very well ventilated all week, making it the perfect spot for your work sessions or casual meals! 💬"
     }
   },
   "metrics": {
+    "_comment": "Indicateurs clés - Valeurs calculées depuis monitor JSON",
+    "_STRUCTURE_CRITIQUE": "Chaque item DOIT avoir: name (FR/EN), value (STRING avec unité), status, description (FR/EN avec plage)",
     "title": {
       "fr": "Indicateurs clés",
       "en": "Key Indicators"
     },
     "items": [
       {
+        "_comment": "value DOIT être un STRING incluant l'unité (ex: '480 ppm', PAS 480)",
         "name": {
           "fr": "CO₂ moyen",
           "en": "Average CO₂"
         },
-        "value": "600 ppm",
-        "status": "n/a",
+        "value": "636 ppm",
+        "status": "excellent",
         "description": {
-          "fr": "Plage : 473-1636 ppm",
-          "en": "Range: 473-1636 ppm"
+          "fr": "Plage : 372-2854 ppm",
+          "en": "Range: 372-2854 ppm"
         }
       },
       {
@@ -67,11 +161,11 @@
           "fr": "Température moyenne",
           "en": "Average temperature"
         },
-        "value": "25.2°C",
-        "status": "n/a",
+        "value": "24.8°C",
+        "status": "excellent",
         "description": {
-          "fr": "Plage : 21.4-27.4°C",
-          "en": "Range: 21.4-27.4°C"
+          "fr": "Plage : 20.5-30.2°C",
+          "en": "Range: 20.5-30.2°C"
         }
       },
       {
@@ -79,11 +173,11 @@
           "fr": "Humidité moyenne",
           "en": "Average humidity"
         },
-        "value": "55.8%",
-        "status": "n/a",
+        "value": "57%",
+        "status": "excellent",
         "description": {
-          "fr": "Plage : 38-65%",
-          "en": "Range: 38-65%"
+          "fr": "Plage : 41-92%",
+          "en": "Range: 41-92%"
         }
       },
       {
@@ -91,11 +185,11 @@
           "fr": "PM2.5 moyen",
           "en": "Average PM2.5"
         },
-        "value": "0.5 µg/m³",
-        "status": "n/a",
+        "value": "0.3 µg/m³",
+        "status": "excellent",
         "description": {
-          "fr": "Plage : 0-4.1 µg/m³",
-          "en": "Range: 0-4.1 µg/m³"
+          "fr": "Plage : 0-27 µg/m³",
+          "en": "Range: 0-27 µg/m³"
         }
       },
       {
@@ -103,11 +197,11 @@
           "fr": "COV moyen",
           "en": "Average VOC"
         },
-        "value": "193 ppb",
-        "status": "n/a",
+        "value": "166 ppb",
+        "status": "excellent",
         "description": {
-          "fr": "Plage : 105-449 ppb",
-          "en": "Range: 105-449 ppb"
+          "fr": "Plage : 0-1057 ppb",
+          "en": "Range: 0-1057 ppb"
         }
       },
       {
@@ -115,26 +209,32 @@
           "fr": "Niveau sonore moyen",
           "en": "Average sound level"
         },
-        "value": "54.2 dB",
-        "status": "n/a",
+        "value": "49 dB",
+        "status": "attention",
         "description": {
-          "fr": "Plage : 43-63 dB",
-          "en": "Range: 43-63 dB"
+          "fr": "Plage : 38-83 dB",
+          "en": "Range: 38-83 dB"
         }
       }
     ]
   },
   "heatmaps": {
+    "_comment": "Titres des deux heatmaps CO2 - Utiliser les noms traduits depuis local_names",
+    "_IMPORTANT": "Les titres doivent mentionner le NOM SPÉCIFIQUE du local, pas un terme générique",
+    "_CRITIQUE": "NE PAS utiliser 'Espaces communs' ou 'Salle de sport' - Utiliser le NOM EXACT du local (ex: 'Co-Working', 'Agora', 'Espace Repas')",
     "fitness": {
       "title": {
         "fr": "Fitness - RDC",
-        "en": "Fitness - Ground Floor"
+        "en": "Fitness - Ground Floor",
+        "_exemple": "Fitness - RDC / Fitness - Ground Floor"
       }
     },
     "common_area": {
       "title": {
-        "fr": "Espace repas — quand l'air est au top",
-        "en": "Dining area — when the air is best"
+        "fr": "Espace Repas - RDC — quand l'air est au top",
+        "en": "Dining Area - Ground Floor — when the air is best",
+        "_exemple": "Co-Working — quand l'air est au top / Co-Working — when the air is best",
+        "_NOTE": "Remplacer 'Nom du Local Commun' par le nom réel (Co-Working, Agora, Espace Repas, etc.)"
       }
     }
   },
