@@ -238,19 +238,21 @@
   },
   "heatmaps": {
     "_comment": "Titres des deux heatmaps CO2 - Utiliser les noms traduits depuis local_names",
-    "_IMPORTANT": "Les titres doivent correspondre aux traductions définies dans local_names",
+    "_IMPORTANT": "Les titres doivent mentionner le NOM SPÉCIFIQUE du local, pas un terme générique",
+    "_CRITIQUE": "NE PAS utiliser 'Espaces communs' ou 'Salle de sport' - Utiliser le NOM EXACT du local (ex: 'Co-Working', 'Agora', 'Espace Repas')",
     "fitness": {
       "title": {
         "fr": "Nom du Local Fitness - Étage",
         "en": "Fitness Room Name - Floor",
-        "_exemple": "Fitness - Entresol / Fitness - Mezzanine"
+        "_exemple": "Fitness - RDC / Fitness - Ground Floor"
       }
     },
     "common_area": {
       "title": {
-        "fr": "Nom du Local Commun - Étage",
-        "en": "Common Area Name - Floor",
-        "_exemple": "Agora - RDR / Agora - Upper Ground Floor"
+        "fr": "Nom du Local Commun — quand l'air est au top",
+        "en": "Common Area Name — when the air is best",
+        "_exemple": "Co-Working — quand l'air est au top / Co-Working — when the air is best",
+        "_NOTE": "Remplacer 'Nom du Local Commun' par le nom réel (Co-Working, Agora, Espace Repas, etc.)"
       }
     }
   },
@@ -435,7 +437,7 @@
       "9. Mettre à jour summary.score.value avec le score global",
       "10. OBTENIR les moyennes globales calculées par monitor.R (CO2, TEMP, HUMIDITY, PM25, VOC, NOISE)",
       "11. Mettre à jour metrics.items avec ces moyennes globales (value en STRING avec unité, plages min-max)",
-      "12. Mettre à jour heatmaps avec les noms traduits des locaux",
+      "12. Mettre à jour heatmaps avec les noms SPÉCIFIQUES des locaux (pas 'Espaces communs' générique)",
       "13. Vérifier que ui_translations est complet: co2_chart, heatmap, temp_humidity (CRITIQUE), days_of_week",
       "14. Vérifier les guillemets: UNIQUEMENT guillemets droits (\" et '), JAMAIS de guillemets typographiques",
       "15. Vérifier le JSON avec: python3 -m json.tool fichier.json",
@@ -460,6 +462,7 @@
       "✓ metrics.items: utiliser les moyennes GLOBALES calculées par monitor.R",
       "✓ ui_translations.days_of_week: structure objet {fr: {monday: ...}, en: {monday: ...}}",
       "✓ ui_translations.temp_humidity: présent avec intro_prefix et intro_suffix (CRITIQUE)",
+      "✓ heatmaps.fitness.title et heatmaps.common_area.title: noms SPÉCIFIQUES des locaux (pas génériques)",
       "✓ Toutes les traductions FR/EN présentes",
       "✓ Guillemets DROITS uniquement (\" et '), JAMAIS de guillemets typographiques",
       "✓ Aucune mention de 'Maison Ecla'",
@@ -517,6 +520,14 @@
       "CONSEQUENCE": "Sans cette section, seul le nom du local s'affiche (ex: 'Co-Working - RDC') sans la phrase explicative 'Les graphiques qui suivent présentent la température et l'humidité pour l'espace...'",
       "SYMPTOME": "Dans le dashboard, la section Température & Humidité affiche seulement le nom du local sans contexte",
       "note": "Cette erreur a été observée dans le fichier hacker_ete_2025_content.json. Le template contient cette section - ne pas l'oublier lors de la création de nouveaux fichiers."
+    },
+    "ERREUR_10": {
+      "description": "Utiliser des titres génériques au lieu de noms spécifiques dans les heatmaps",
+      "INCORRECT": "heatmaps.common_area.title = 'Espaces communs — quand l'air est au top'",
+      "CORRECT": "heatmaps.common_area.title = 'Co-Working — quand l'air est au top' (nom spécifique du local)",
+      "CONSEQUENCE": "L'utilisateur ne sait pas quel local spécifique est affiché dans la heatmap",
+      "SYMPTOME": "La heatmap de droite affiche 'Espaces communs' au lieu du nom du local (Co-Working, Agora, Espace Repas, etc.)",
+      "note": "TOUJOURS utiliser le nom spécifique du local tel qu'il apparaît dans local_names et metadata.salle_graphiques"
     }
   }
 }
