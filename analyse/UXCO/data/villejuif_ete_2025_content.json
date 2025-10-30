@@ -1,0 +1,300 @@
+{
+  "local_names": {
+    "_comment": "Traductions FR/EN des noms de locaux affichés. Les clés DOIVENT correspondre EXACTEMENT aux valeurs metadata.salle_graphiques et metadata.salle_fitness du fichier monitor JSON.",
+    "_EXEMPLE": "Si metadata.salle_graphiques = 'Agora - RDR', alors la clé doit être exactement 'Agora - RDR'",
+    "3 - RDJ - Bât C - Coworking": {
+      "fr": "Co-Working - Rez-de-jardin (Bât C)",
+      "en": "Co-Working - Garden Level (Bldg C)"
+    },
+    "7 - RDC - Bât B - Fitness": {
+      "fr": "Salle de Fitness - Rez-de-chaussée (Bât B)",
+      "en": "Fitness Room - Ground Floor (Bldg B)"
+    }
+  },
+  "hero": {
+    "_comment": "Section d'en-tête du dashboard",
+    "season_label": {
+      "fr": "Été 2025",
+      "en": "Summer 2025",
+      "_exemple": "Été 2025 / Summer 2025"
+    },
+    "title": {
+      "fr": "Rapport Été 2025 - Résidence Villejuif",
+      "en": "Summer 2025 Report - Residence Villejuif",
+      "_NOTE": "Adapter la marque (Résidence/Maison) en fonction du client (UXCO/ECLA)"
+    },
+    "period": {
+      "fr": "1er juillet - 22 septembre 2025",
+      "en": "July 1 - September 22, 2025",
+      "_exemple": "1er juillet - 1er octobre 2025 / July 1 - October 1, 2025"
+    },
+    "subtitle": {
+      "fr": "Qualité de l'air dans tes espaces communs UXCO Student",
+      "en": "Air quality in your UXCO Student common areas"
+    }
+  },
+  "summary": {
+    "_comment": "Section principale d'analyse - STRUCTURE CRITIQUE",
+    "_STRUCTURE_OBLIGATOIRE": "Cette section DOIT contenir: title, score (avec value + label), et text (UN SEUL texte avec 5 sections)",
+    "title": {
+      "fr": "Ton été à UXCO — ça respire !",
+      "en": "Your summer at UXCO — breathing easy!",
+      "_exemple": "Ton été à UXCO — ça respire !"
+    },
+    "score": {
+      "_comment": "Score global de confort calculé par monitor.R",
+      "value": 94,
+      "label": {
+        "fr": "Excellent",
+        "en": "Excellent"
+      }
+    },
+    "text": {
+      "_comment_redaction": "UN SEUL texte avec 5 sections séparées par \\n\\n (double saut de ligne). Les titres de section doivent apparaître tels quels.",
+      "_STRUCTURE_REQUISE": "Synthèse\\n\\n[contenu]\\n\\nPerformances observées\\n\\n[contenu]\\n\\nPoints d'attention identifiés\\n\\n[contenu]\\n\\nImpact sur ton bien-être\\n\\n• [point 1]\\n• [point 2]\\n• [point 3]\\n• [point 4]\\n\\nConseils pour en profiter à fond\\n\\n[contenu]",
+      "fr": "Synthèse\n\nFélicitations ! Ta résidence UXCO a obtenu un score de confort global de 94/100 cet été. La température moyenne a été très agréable, aux alentours de 23.6°C, et le confinement au CO₂ a été très bien géré.\n\nPerformances observées\n\nLe Co-Working - Rez-de-jardin (Bât C) affiche un excellent indice de confinement avec un score parfait de 0/5. Les niveaux de CO₂ y sont restés bas (pics max à 649 ppm), assurant une très bonne concentration. De plus, les niveaux moyens de PM2.5 et de COV (composés organiques volatils) sont globalement excellents dans toute la résidence.\n\nPoints d'attention identifiés\n\nLa Salle de Fitness - Rez-de-chaussée (Bât B) obtient elle aussi un très bon indice de confinement de 0/5, mais attention : des pics de CO₂ allant jusqu'à 1402 ppm ont été relevés lors des heures d'occupation, ce qui signale un besoin de ventilation accru pendant les moments d'affluence. Le niveau sonore moyen y est également plus élevé (64.4 dB) en raison de l'activité.\n\nImpact sur ton bien-être\n\n• Une excellente qualité d'air pour améliorer ta concentration dans les espaces d'étude.\n• Une température stable et agréable, idéale même en période de forte chaleur.\n• Un faible niveau de polluants (PM2.5, COV) qui protège tes voies respiratoires.\n• Un environnement général propice à la détente et aux activités sportives.\n\nConseils pour en profiter à fond\n\nPour la Salle de Fitness, essaye de la fréquenter en dehors des heures de pointe (le matin ou après 20h) ou pense à ouvrir les fenêtres si l'air te paraît lourd. Continue d'utiliser le Co-Working - Rez-de-jardin (Bât C) pour étudier aux heures les plus calmes (avant 9h ou après 17h, notamment le week-end) pour bénéficier d'un air optimal.",
+      "en": "Summary\n\nCongratulations! Your UXCO residence achieved an excellent overall comfort score of 94/100 this summer. The average temperature was very pleasant, around 23.6°C, and CO₂ confinement was very well managed.\n\nObserved Performances\n\nThe Co-Working - Garden Level (Bldg C) shows an excellent confinement index with a perfect score of 0/5. CO₂ levels remained low (max peaks at 649 ppm), ensuring very good concentration. Furthermore, average PM2.5 and VOC (Volatile Organic Compounds) levels are generally excellent throughout the residence.\n\nIdentified Points of Attention\n\nThe Fitness Room - Ground Floor (Bldg B) also achieved a very good confinement index of 0/5, but beware: CO₂ peaks up to 1402 ppm were recorded during occupied hours, signaling a need for increased ventilation during peak times. The average sound level is also higher there (64.4 dB) due to the activity.\n\nImpact on Your Well-being\n\n• Excellent air quality to improve your concentration in study spaces.\n• A stable and pleasant temperature, ideal even during hot weather.\n• Low levels of pollutants (PM2.5, VOC) protecting your respiratory system.\n• An overall environment conducive to relaxation and sports activities.\n\nRecommendations\n\nFor the Fitness Room, try visiting outside peak hours (in the morning or after 8 PM) or consider opening windows if the air feels heavy. Continue to use the Co-Working - Garden Level (Bldg C) for studying during quieter times (before 9 AM or after 5 PM, especially on weekends) to benefit from optimal air."
+    }
+  },
+  "metrics": {
+    "_comment": "Indicateurs clés - Valeurs calculées depuis monitor JSON",
+    "_STRUCTURE_CRITIQUE": "Chaque item DOIT avoir: name (FR/EN), value (STRING avec unité), status, description (FR/EN avec plage)",
+    "title": {
+      "fr": "Indicateurs clés",
+      "en": "Key Indicators"
+    },
+    "items": [
+      {
+        "_comment": "value DOIT être un STRING incluant l'unité (ex: '480 ppm', PAS 480)",
+        "name": {
+          "fr": "CO₂ moyen",
+          "en": "Average CO₂"
+        },
+        "value": "477 ppm",
+        "status": "excellent",
+        "description": {
+          "fr": "Plage : 376-3974 ppm",
+          "en": "Range: 376-3974 ppm"
+        }
+      },
+      {
+        "name": {
+          "fr": "Température moyenne",
+          "en": "Average temperature"
+        },
+        "value": "23.6°C",
+        "status": "excellent",
+        "description": {
+          "fr": "Plage : 18.7-33°C",
+          "en": "Range: 18.7-33°C"
+        }
+      },
+      {
+        "name": {
+          "fr": "Humidité moyenne",
+          "en": "Average humidity"
+        },
+        "value": "55%",
+        "status": "excellent",
+        "description": {
+          "fr": "Plage : 25-83%",
+          "en": "Range: 25-83%"
+        }
+      },
+      {
+        "name": {
+          "fr": "PM2.5 moyen",
+          "en": "Average PM2.5"
+        },
+        "value": "2.8 µg/m³",
+        "status": "excellent",
+        "description": {
+          "fr": "Plage : 0-277 µg/m³",
+          "en": "Range: 0-277 µg/m³"
+        }
+      },
+      {
+        "name": {
+          "fr": "COV moyen",
+          "en": "Average VOC"
+        },
+        "value": "400 ppb",
+        "status": "excellent",
+        "description": {
+          "fr": "Plage : 105-6357 ppb",
+          "en": "Range: 105-6357 ppb"
+        }
+      },
+      {
+        "name": {
+          "fr": "Niveau sonore moyen",
+          "en": "Average sound level"
+        },
+        "value": "53 dB",
+        "status": "excellent",
+        "description": {
+          "fr": "Plage : 37-92 dB",
+          "en": "Range: 37-92 dB"
+        }
+      }
+    ]
+  },
+  "heatmaps": {
+    "_comment": "Titres des deux heatmaps CO2 - Utiliser les noms traduits depuis local_names",
+    "_IMPORTANT": "Les titres doivent mentionner le NOM SPÉCIFIQUE du local, pas un terme générique",
+    "_CRITIQUE": "NE PAS utiliser 'Espaces communs' ou 'Salle de sport' - Utiliser le NOM EXACT du local (ex: 'Co-Working', 'Agora', 'Espace Repas')",
+    "fitness": {
+      "title": {
+        "fr": "Salle de Fitness - Rez-de-chaussée (Bât B)",
+        "en": "Fitness Room - Ground Floor (Bldg B)",
+        "_exemple": "Fitness - RDC / Fitness - Ground Floor"
+      }
+    },
+    "common_area": {
+      "title": {
+        "fr": "Co-Working - Rez-de-jardin (Bât C)",
+        "en": "Co-Working - Garden Level (Bldg C)",
+        "_exemple": "Co-Working - RDC / Co-Working - Ground Floor",
+        "_NOTE_SUPPRESSION_FALLBACK": "Suppression des suffixes comme '— quand l'air est au top' pour simplifier."
+      }
+    }
+  },
+  "ui_translations": {
+    "_comment": "Traductions pour les éléments d'interface utilisateur du dashboard",
+    "_IMPORTANT": "Ces traductions sont utilisées directement par le code JSX - toute modification doit être testée",
+    "_STRUCTURE_OBLIGATOIRE": "Cette section doit contenir OBLIGATOIREMENT les 4 sous-sections: co2_chart, heatmap, temp_humidity, days_of_week",
+    "_CRITIQUE_TEMP_HUMIDITY": "La section temp_humidity est INDISPENSABLE - elle affiche la phrase 'Les graphiques qui suivent présentent la température et l'humidité pour l'espace [NOM]' et le nom du local. Sans elle, seul le nom du local s'affiche sans contexte explicatif.",
+    "co2_chart": {
+      "optimal_threshold_label": {
+        "fr": "Optimal (800 ppm)",
+        "en": "Good (800 ppm)",
+        "_comment": "CRITIQUE: En anglais utiliser 'Good' et NON 'Optimal' pour cohérence terminologique"
+      },
+      "explanation": {
+        "fr": "Le CO₂ est un excellent indicateur de confinement : il révèle si l'aération est suffisante pour évacuer les polluants et assurer une bonne qualité de l'air intérieur. Les données du graphique ci-dessous proviennent de",
+        "en": "CO₂ is an excellent indicator of confinement: it reveals whether ventilation is sufficient to evacuate pollutants and ensure good indoor air quality. The data in the chart below comes from"
+      },
+      "optimal_label_short": {
+        "fr": "Optimal",
+        "en": "Good"
+      }
+    },
+    "heatmap": {
+      "legend": {
+        "fr": "Légende",
+        "en": "Legend"
+      },
+      "no_data": {
+        "fr": "Pas de données",
+        "en": "No data"
+      },
+      "weekly_pattern_description": {
+        "fr": "N'hésite pas à utiliser les données ci-dessous pour mieux adapter tes périodes de présence dans les locaux :",
+        "en": "Feel free to use the data below to better adapt your presence periods in the spaces below:"
+      }
+    },
+    "days_of_week": {
+      "_comment": "Structure OBLIGATOIRE: objet avec fr et en, chacun contenant les noms complets et abrégés",
+      "_STRUCTURE_CRITIQUE": "DOIT être {fr: {monday: ..., monday_short: ...}, en: {monday: ..., monday_short: ...}}",
+      "fr": {
+        "monday": "Lundi",
+        "tuesday": "Mardi",
+        "wednesday": "Mercredi",
+        "thursday": "Jeudi",
+        "friday": "Vendredi",
+        "saturday": "Samedi",
+        "sunday": "Dimanche",
+        "monday_short": "Lun",
+        "tuesday_short": "Mar",
+        "wednesday_short": "Mer",
+        "thursday_short": "Jeu",
+        "friday_short": "Ven",
+        "saturday_short": "Sam",
+        "sunday_short": "Dim"
+      },
+      "en": {
+        "monday": "Monday",
+        "tuesday": "Tuesday",
+        "wednesday": "Wednesday",
+        "thursday": "Thursday",
+        "friday": "Friday",
+        "saturday": "Saturday",
+        "sunday": "Sunday",
+        "monday_short": "Mon",
+        "tuesday_short": "Tue",
+        "wednesday_short": "Wed",
+        "thursday_short": "Thu",
+        "friday_short": "Fri",
+        "saturday_short": "Sat",
+        "sunday_short": "Sun"
+      }
+    },
+    "temp_humidity": {
+      "_comment": "SECTION CRITIQUE - Textes d'introduction pour la section Température & Humidité",
+      "_UTILISATION_JSX": "Le JSX construit la phrase: [intro_prefix] + [nom du local depuis local_names] + [intro_suffix]",
+      "_EXEMPLE_RENDU_FR": "Les graphiques qui suivent présentent la température et l'humidité pour l'espace Co-Working - RDC ainsi que les données extérieures.",
+      "_EXEMPLE_RENDU_EN": "The following charts show temperature and humidity for Co-Working - Ground Floor along with outdoor data.",
+      "_IMPORTANT": "Si cette section est absente, seul le nom du local s'affiche sans contexte (ex: juste 'Co-Working - RDC'), ce qui est incompréhensible pour l'utilisateur.",
+      "intro_prefix": {
+        "fr": "Les graphiques qui suivent présentent la température et l'humidité pour l'espace",
+        "en": "The following charts show temperature and humidity for"
+      },
+      "intro_suffix": {
+        "fr": "ainsi que les données extérieures.",
+        "en": "along with outdoor data."
+      },
+      "legend_labels": {
+        "temp": {
+          "fr": "TEMP",
+          "en": "TEMP"
+        },
+        "temp_ext": {
+          "fr": "TEMP EXT",
+          "en": "TEMP OUT"
+        },
+        "humidity": {
+          "fr": "HUMIDITÉ",
+          "en": "HUMIDITY"
+        },
+        "humidity_ext": {
+          "fr": "HR EXT",
+          "en": "RH OUT"
+        }
+      }
+    }
+  },
+  "section_titles": {
+    "_comment": "Titres des différentes sections du dashboard - utilisés par le JSX",
+    "co2_air_quality": {
+      "fr": "Qualité de l'air (CO₂)",
+      "en": "Air Quality (CO₂)"
+    },
+    "weekly_analysis": {
+      "fr": "Analyse hebdomadaire",
+      "en": "Weekly Analysis"
+    },
+    "temp_humidity": {
+      "fr": "Température & Humidité",
+      "en": "Temperature & Humidity"
+    },
+    "global_comfort_score": {
+      "fr": "Score Global de Confort",
+      "en": "Global Comfort Score"
+    }
+  },
+  "system_messages": {
+    "_comment": "Messages système pour le chargement, erreurs, footer",
+    "loading": {
+      "fr": "Chargement des données...",
+      "en": "Loading data..."
+    },
+    "error_title": {
+      "fr": "Erreur de chargement",
+      "en": "Loading Error"
+    },
+    "footer": {
+      "fr": "UXCO Student - Monitoring de la qualité de l'air",
+      "en": "UXCO Student - Air Quality Monitoring"
+    }
+  }
+}
