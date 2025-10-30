@@ -19,10 +19,6 @@
       "consequences": "Les guillemets typographiques causent des erreurs JSON et empêchent le chargement du fichier",
       "verification": "Après édition, toujours vérifier avec: python3 -m json.tool fichier.json",
       "exemple_correct": "\"text\": \"Exemple avec 'guillemets simples' corrects\""
-    },
-    "CRITIQUE_CARACTERES_SPECIAUX": {
-        "IMPORTANT_FORMATAGE_TEXTE": "Éviter tout formatage HTML ou Markdown dans les chaînes de texte (ex: PAS d'**astérisques** pour le gras). Le gras doit être géré par le frontend si nécessaire. Supprimer les **doubles astérisques** et les *astérisques simples* des textes.",
-        "ASTÉRISQUES_INTERDITS": "Les symboles *, **, et les guillemets courbes doivent être évités."
     }
   },
   "_GUIDE_REDACTION": {
@@ -44,11 +40,6 @@
       ],
       "format": "Titre section\\n\\nContenu...\\n\\nTitre section suivante\\n\\nContenu...",
       "IMPORTANT_INDICES": "Utiliser UNIQUEMENT les indices d'icônes (0-5) pour la qualité d'air, PAS les moyennes CO2"
-    },
-    "TITRE_RAPPORT_FORMAT": {
-      "CRITIQUE_FORMAT_GLOBAL": "Le titre doit inclure la saison, l'année et le nom de la résidence (ex: 'Rapport Été 2025 - Résidence Nanterre' OU 'Rapport Été 2025 - Maison Strasbourg').",
-      "UXCO": "Utiliser 'Résidence' devant le nom (ex: 'Résidence Palaiseau 1')",
-      "ECLA": "Utiliser 'Maison' devant le nom (ex: 'Maison Ecla Massy')"
     }
   },
   "_GUIDE_TRADUCTION_NOMS_LOCAUX": {
@@ -107,9 +98,8 @@
       "_exemple": "Été 2025 / Summer 2025"
     },
     "title": {
-      "fr": "Rapport Saison AAAA - [Résidence/Maison] NomRésidence",
-      "en": "Season YYYY Report - [Residence/Maison] ResidenceName",
-      "_NOTE": "Adapter la marque (Résidence/Maison) en fonction du client (UXCO/ECLA)"
+      "fr": "Rapport Saison AAAA",
+      "en": "Season YYYY Report"
     },
     "period": {
       "fr": "JJ mois - JJ mois AAAA",
@@ -140,13 +130,13 @@
     "text": {
       "_comment_redaction": "UN SEUL texte avec 5 sections séparées par \\n\\n (double saut de ligne). Les titres de section doivent apparaître tels quels.",
       "_STRUCTURE_REQUISE": "Synthèse\\n\\n[contenu]\\n\\nPerformances observées\\n\\n[contenu]\\n\\nPoints d'attention identifiés\\n\\n[contenu]\\n\\nImpact sur ton bien-être\\n\\n• [point 1]\\n• [point 2]\\n• [point 3]\\n• [point 4]\\n\\nConseils pour en profiter à fond\\n\\n[contenu]",
-      "_IMPORTANT_REDACTION": "Utiliser UNIQUEMENT les indices d'icônes (0-5) du fichier monitor JSON. NE JAMAIS utiliser les moyennes CO2 globales. NE PAS utiliser les caractères de formatage (**, *) dans le texte.",
+      "_IMPORTANT_REDACTION": "Utiliser UNIQUEMENT les indices d'icônes (0-5) du fichier monitor JSON. NE JAMAIS utiliser les moyennes CO2 globales.",
       "_CONSEILS_REDACTION": [
-        "Section 1 (Synthèse): Vue d'ensemble avec score global et température moyenne. Éviter les astérisques.",
-        "Section 2 (Performances): Citer UNIQUEMENT les 2 locaux principaux (salle_graphiques et salle_fitness) avec leurs indices 0-1. Mentionner UNIQUEMENT les indices (ex: 'indice de confinement 0/5'), JAMAIS les moyennes CO2. Pour humidité, PM2.5, etc. on peut donner les moyennes globales. Éviter les astérisques.",
-        "Section 3 (Points d'attention): Identifier les locaux avec indice >1 parmi les 2 principaux. Donner les PICS MAX PONCTUELS (ex: 'pics jusqu'à 2600 ppm'), pas les moyennes. Contextualiser positivement. Éviter les astérisques.",
-        "Section 4 (Impact): 3-4 bénéfices concrets, liste à puces commençant par •. Éviter les astérisques.",
-        "Section 5 (Conseils): Actions concrètes sur espaces communs uniquement. Si un local a indice >1, suggérer les meilleurs créneaux horaires basés sur weekly_pattern. Orienter vers espaces à indice 0-1. Éviter les astérisques."
+        "Section 1 (Synthèse): Vue d'ensemble avec score global et température moyenne",
+        "Section 2 (Performances): Citer UNIQUEMENT les 2 locaux principaux (salle_graphiques et salle_fitness) avec leurs indices 0-1. Mentionner UNIQUEMENT les indices (ex: 'indice de confinement 0/5'), JAMAIS les moyennes CO2. Pour humidité, PM2.5, etc. on peut donner les moyennes globales.",
+        "Section 3 (Points d'attention): Identifier les locaux avec indice >1 parmi les 2 principaux. Donner les PICS MAX PONCTUELS (ex: 'pics jusqu'à 2600 ppm'), pas les moyennes. Contextualiser positivement.",
+        "Section 4 (Impact): 3-4 bénéfices concrets, liste à puces commençant par •",
+        "Section 5 (Conseils): Actions concrètes sur espaces communs uniquement. Si un local a indice >1, suggérer les meilleurs créneaux horaires basés sur weekly_pattern. Orienter vers espaces à indice 0-1."
       ],
       "NIVEAU_DETAIL_LOCAUX": {
         "locaux_a_mentionner": "UNIQUEMENT les 2 locaux principaux: metadata.salle_graphiques et metadata.salle_fitness",
@@ -156,8 +146,7 @@
           "✓ Indices d'icônes (0/5, 1/5, 2/5, etc.)",
           "✓ Pics MAX ponctuels quand pertinent (ex: 'pics jusqu'à 2600 ppm')",
           "✓ Moyennes globales pour température, humidité, PM2.5 (pas pour CO2)",
-          "✗ JAMAIS les moyennes CO2 des locaux",
-          "✗ JAMAIS d'astérisques ou de mise en forme Markdown/HTML"
+          "✗ JAMAIS les moyennes CO2 des locaux"
         ]
       },
       "fr": "Synthèse\n\n[Texte vue d'ensemble avec score global XX/100 et température moyenne XX°C]\n\nPerformances observées\n\n[Texte décrivant les locaux avec indice 0-1, mentionner les indices et les paramètres excellents]\n\nPoints d'attention identifiés\n\n[Texte décrivant les locaux avec indice >1, mentionner les pics max ponctuels, contextualiser positivement]\n\nImpact sur ton bien-être\n\n• [Bénéfice concret 1]\n• [Bénéfice concret 2]\n• [Bénéfice concret 3]\n• [Bénéfice concret 4]\n\nConseils pour en profiter à fond\n\n[Conseils concrets sur les espaces communs uniquement]\n",
@@ -260,10 +249,10 @@
     },
     "common_area": {
       "title": {
-        "fr": "Nom du Local Commun - Étage",
-        "en": "Common Area Name - Floor",
-        "_exemple": "Co-Working - RDC / Co-Working - Ground Floor",
-        "_NOTE_SUPPRESSION_FALLBACK": "Suppression des suffixes comme '— quand l'air est au top' pour simplifier."
+        "fr": "Nom du Local Commun — quand l'air est au top",
+        "en": "Common Area Name — when the air is best",
+        "_exemple": "Co-Working — quand l'air est au top / Co-Working — when the air is best",
+        "_NOTE": "Remplacer 'Nom du Local Commun' par le nom réel (Co-Working, Agora, Espace Repas, etc.)"
       }
     }
   },
@@ -440,15 +429,15 @@
       "1. Ouvrir le fichier monitor JSON de la nouvelle période",
       "2. Extraire metadata.residence, metadata.salle_graphiques, metadata.salle_fitness",
       "3. Mettre à jour local_names avec les noms EXACTS des locaux",
-      "4. Mettre à jour hero (season_label, title, period) avec traductions FR/EN - RESPECTER le format [Résidence/Maison] NomRésidence",
+      "4. Mettre à jour hero (season_label, title, period) avec traductions FR/EN",
       "5. Récupérer le score global depuis scores.global du monitor JSON",
       "6. Récupérer les indices d'icônes: icone_salle_graphiques et icones_tous_locaux du monitor JSON",
       "7. Récupérer les statistiques_heures_occupation des 2 locaux principaux pour connaître les pics max",
-      "8. Rédiger summary.text (UN SEUL texte avec 5 sections) en se basant sur les indices et pics max - SANS ASTÉRISQUES/FORMATAGE",
+      "8. Rédiger summary.text (UN SEUL texte avec 5 sections) en se basant sur les indices et pics max",
       "9. Mettre à jour summary.score.value avec le score global",
       "10. OBTENIR les moyennes globales calculées par monitor.R (CO2, TEMP, HUMIDITY, PM25, VOC, NOISE)",
       "11. Mettre à jour metrics.items avec ces moyennes globales (value en STRING avec unité, plages min-max)",
-      "12. Mettre à jour heatmaps avec les noms SPÉCIFIQUES des locaux (nom + étage, SANS suffixes superflus)",
+      "12. Mettre à jour heatmaps avec les noms SPÉCIFIQUES des locaux (pas 'Espaces communs' générique)",
       "13. Vérifier que ui_translations est complet: co2_chart, heatmap, temp_humidity (CRITIQUE), days_of_week",
       "14. Vérifier les guillemets: UNIQUEMENT guillemets droits (\" et '), JAMAIS de guillemets typographiques",
       "15. Vérifier le JSON avec: python3 -m json.tool fichier.json",
@@ -466,7 +455,6 @@
       "✓ local_names: clés = noms EXACTS du monitor JSON",
       "✓ summary: structure avec title, score (value + label), text (UN texte avec \\n\\n)",
       "✓ summary.text: 5 sections avec titres exacts (Synthèse, Performances observées, etc.)",
-      "✓ summary.text: SANS astérisques ou formatage Markdown",
       "✓ summary.text: mentionner UNIQUEMENT les 2 locaux principaux (salle_graphiques + salle_fitness)",
       "✓ summary.text: utiliser INDICES (0/5, 1/5) et PICS MAX, JAMAIS les moyennes CO2",
       "✓ metrics.items: value en STRING avec unité ('480 ppm' pas 480)",
@@ -474,7 +462,7 @@
       "✓ metrics.items: utiliser les moyennes GLOBALES calculées par monitor.R",
       "✓ ui_translations.days_of_week: structure objet {fr: {monday: ...}, en: {monday: ...}}",
       "✓ ui_translations.temp_humidity: présent avec intro_prefix et intro_suffix (CRITIQUE)",
-      "✓ heatmaps.fitness.title et heatmaps.common_area.title: noms SPÉCIFIQUES des locaux (nom + étage)",
+      "✓ heatmaps.fitness.title et heatmaps.common_area.title: noms SPÉCIFIQUES des locaux (pas génériques)",
       "✓ Toutes les traductions FR/EN présentes",
       "✓ Guillemets DROITS uniquement (\" et '), JAMAIS de guillemets typographiques",
       "✓ Aucune mention de 'Maison Ecla'",
@@ -528,18 +516,18 @@
     "ERREUR_9": {
       "description": "Oublier la section ui_translations.temp_humidity",
       "INCORRECT": "Ne pas inclure temp_humidity dans ui_translations",
-      "CORRECT": "TOUJOURS inclure temp_humidity avec intro_prefix et intro_suffix"
+      "CORRECT": "TOUJOURS inclure temp_humidity avec intro_prefix et intro_suffix",
+      "CONSEQUENCE": "Sans cette section, seul le nom du local s'affiche (ex: 'Co-Working - RDC') sans la phrase explicative 'Les graphiques qui suivent présentent la température et l'humidité pour l'espace...'",
+      "SYMPTOME": "Dans le dashboard, la section Température & Humidité affiche seulement le nom du local sans contexte",
+      "note": "Cette erreur a été observée dans le fichier hacker_ete_2025_content.json. Le template contient cette section - ne pas l'oublier lors de la création de nouveaux fichiers."
     },
     "ERREUR_10": {
       "description": "Utiliser des titres génériques au lieu de noms spécifiques dans les heatmaps",
       "INCORRECT": "heatmaps.common_area.title = 'Espaces communs — quand l'air est au top'",
-      "CORRECT": "heatmaps.common_area.title = 'Co-Working - RDC' (nom spécifique du local)"
-    },
-    "ERREUR_11": {
-        "description": "Utiliser des astérisques ou formatage Markdown dans les chaînes de texte",
-        "INCORRECT": "Le score est de **92/100** et l'humidité est *excellente*.",
-        "CORRECT": "Le score est de 92/100 et l'humidité est excellente.",
-        "note": "Le gras (si besoin) doit être géré par le composant frontend (ex: React, Vue) et non inséré dans le JSON source."
+      "CORRECT": "heatmaps.common_area.title = 'Co-Working — quand l'air est au top' (nom spécifique du local)",
+      "CONSEQUENCE": "L'utilisateur ne sait pas quel local spécifique est affiché dans la heatmap",
+      "SYMPTOME": "La heatmap de droite affiche 'Espaces communs' au lieu du nom du local (Co-Working, Agora, Espace Repas, etc.)",
+      "note": "TOUJOURS utiliser le nom spécifique du local tel qu'il apparaît dans local_names et metadata.salle_graphiques"
     }
   }
 }
