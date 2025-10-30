@@ -1,0 +1,611 @@
+{
+  "_COMMENTAIRES_STRUCTURE": {
+    "description": "Ce fichier contient l'ensemble des textes narratifs pour le dashboard habitant·e",
+    "usage": "Les commentaires avec underscore (_) ne sont pas visibles côté frontend",
+    "charte": "Tutoiement, ton jeune et convivial, marque UXCO Student (jamais Maison Ecla), périmètre = espaces communs uniquement.",
+    "sections_obligatoires": [
+      "hero",
+      "summary (avec 5 sous-sections)",
+      "metrics",
+      "heatmaps",
+      "pour_aller_plus_loin"
+    ]
+  },
+  "_GUIDE_REDACTION": {
+    "principes": [
+      "Toujours utiliser le tutoiement et un ton positif, jeune et communautaire",
+      "Mentionner UXCO Student (jamais Maison Ecla)",
+      "Contexte d'usage réel : se baser sur les indices d'occupation (icônes 0–5)",
+      "Vulgariser sans infantiliser; rester factuel et bienveillant",
+      "Conseils UNIQUEMENT sur les espaces communs; aucune mention des logements individuels"
+    ],
+    "structure_summary": {
+      "1_synthese": "Vue d'ensemble positive avec score global et température moyenne",
+      "2_performances": "2-3 paramètres excellents avec valeurs moyennes et impact positif",
+      "3_points_attention": "1-2 observations avec valeurs max, local concerné, contextualisation positive",
+      "4_impact_bien_etre": "Exactement 3-4 bénéfices concrets sous forme de liste à puces",
+      "5_conseils": "EXCLUSIVEMENT sur les espaces communs et actions concrètes des habitant·e·s (ex: fréquenter les espaces à heures moins chargées si CO2 élevé, modérer le bruit si problème identifié, utiliser certains espaces plutôt que d'autres selon la qualité d'air). Ne JAMAIS donner de conseils sur les logements individuels."
+    }
+  },
+  "_GUIDE_TRADUCTION_NOMS_LOCAUX": {
+    "IMPORTANT": "Les noms de locaux apparaissent à plusieurs endroits dans le dashboard. Il est CRITIQUE de maintenir la cohérence entre les clés techniques (immuables) et les noms affichés (traduisibles).",
+    "convention_nommage": {
+      "room_name": "Clé technique immuable utilisée pour les requêtes de données - NE JAMAIS TRADUIRE",
+      "local_names": "SECTION OBLIGATOIRE - Dictionnaire des traductions FR/EN des noms de locaux affichés"
+    },
+    "PROCESSUS_MISE_A_JOUR": {
+      "etape_1": "Ouvrir le fichier monitor JSON (ex: noisy-le-grand_ete_2025.json) et localiser la section metadata",
+      "etape_2": "Récupérer les valeurs EXACTES de metadata.salle_graphiques et metadata.salle_fitness (ex: 'Agora - RDR', 'Fitness - ENTRESOL')",
+      "etape_3": "Dans ce fichier _content.json, section local_names, utiliser ces noms EXACTS comme clés",
+      "etape_4": "Pour chaque local, créer un objet avec fr (version française lisible) et en (traduction anglaise)",
+      "etape_5": "Règles de traduction: garder le nom du local, traduire 'RDR' en 'Upper Ground Floor', 'ENTRESOL' en 'Mezzanine', 'RDC' en 'Ground Floor', autres étages en '1st Floor', '2nd Floor', etc.",
+      "EXEMPLE": {
+        "si_metadata_dit": "Agora - RDR",
+        "alors_local_names": {
+          "Agora - RDR": {
+            "fr": "Agora - RDR",
+            "en": "Agora - Upper Ground Floor"
+          }
+        }
+      },
+      "CRITIQUE": "Les clés dans local_names DOIVENT correspondre EXACTEMENT aux valeurs dans metadata.salle_graphiques et metadata.salle_fitness du fichier monitor JSON. Aucun fallback n'est géré par le code."
+    },
+    "ou_sont_affiches_les_noms": [
+      "Au-dessus du graphique de concentration CO2 temporel - utilise local_names[metadata.salle_graphiques][language]",
+      "Dans les textes explicatifs sous les graphiques - utilise local_names[metadata.salle_graphiques][language]",
+      "Titre de la heatmap de gauche - utilise heatmaps.fitness.title",
+      "Titre de la heatmap de droite - utilise heatmaps.common_area.title",
+      "Menu déroulant des saisons - utilise hero.season_label"
+    ],
+    "checklist_verification": [
+      "✓ local_names contient EXACTEMENT les 2 locaux: celui de metadata.salle_graphiques ET celui de metadata.salle_fitness",
+      "✓ Les clés dans local_names correspondent EXACTEMENT aux noms techniques du monitor JSON",
+      "✓ Chaque local a une traduction fr ET en",
+      "✓ Le label 'Optimal' est bien traduit en 'Good' en anglais dans ui_translations",
+      "✓ hero.season_label est traduit pour la nouvelle saison"
+    ]
+  },
+  "local_names": {
+    "_comment": "Traductions FR/EN des noms de locaux affichés. Les clés DOIVENT correspondre EXACTEMENT aux valeurs metadata.salle_graphiques et metadata.salle_fitness du fichier monitor JSON.",
+    "Agora - RDR": {
+      "fr": "Agora - RDR",
+      "en": "Agora - Upper Ground Floor"
+    },
+    "Fitness - ENTRESOL": {
+      "fr": "Fitness - Entresol",
+      "en": "Fitness - Mezzanine"
+    }
+  },
+  "_DONNEES_PERIODE": {
+    "commentaire": "Données calculées par monitor.R - MISE À JOUR pour été 2025 Noisy-le-Grand",
+    "AVERTISSEMENT_CRITIQUE": "Les données dans cette section sont des MOYENNES GLOBALES 24h/24 incluant les heures de nuit. Elles ne sont PAS représentatives de l'expérience réelle des habitant·e·s. Pour la synthèse narrative, utiliser OBLIGATOIREMENT la section '_STATISTIQUES_DETAILLEES_PAR_LOCAL' ci-dessous avec les indices d'icônes.",
+    "IMPORTANT_INDICES_ICONES": "Pour la rédaction de la synthèse narrative, utiliser les indices d'icônes (icone_salle_graphiques et icones_tous_locaux) qui reflètent la qualité durant les heures d'occupation réelle. Ne PAS utiliser les moyennes globales ci-dessous qui incluent les heures 24/24 et sont donc non représentatives de l'expérience réelle des habitant·e·s.",
+    "STATISTIQUES_COMMENTEES": {
+      "note_generale": "Données extraites du fichier monitor JSON pour la période été 2025 (01/07/2025 - 01/10/2025) - Résidence Noisy-le-Grand",
+      "indices_qualite": {
+        "Agora_RDR": {
+          "icone": 0,
+          "interpretation": "EXCELLENT - Qualité d'air optimale durant les heures d'occupation. Idéal pour tous usages.",
+          "statistiques_heures_occupation": {
+            "co2_moyen": 565.3,
+            "co2_max": 1392,
+            "temp_moyenne": 23.3,
+            "humidity_moyenne": 52.3,
+            "voc_moyen": 385.3,
+            "pm25_moyen": 1.3,
+            "noise_moyen": 49.2
+          }
+        },
+        "Fitness_ENTRESOL": {
+          "icone": 0,
+          "interpretation": "EXCELLENT - Qualité d'air optimale durant les heures d'occupation. Idéal pour l'activité sportive.",
+          "statistiques_heures_occupation": {
+            "co2_moyen": 489.6,
+            "co2_max": 965,
+            "temp_moyenne": 22.9,
+            "humidity_moyenne": 50.5,
+            "voc_moyen": 344.7,
+            "pm25_moyen": 1.2,
+            "noise_moyen": 44.2
+          }
+        },
+        "Bureau_gestionnaire_R1": {
+          "icone": 1,
+          "interpretation": "TRÈS BON avec quelques pics occasionnels - Normal pour un bureau à occupation variable",
+          "statistiques_heures_occupation": {
+            "co2_moyen": 880.2,
+            "co2_max": 2503,
+            "temp_moyenne": 24.4,
+            "humidity_moyenne": 46.0,
+            "voc_moyen": 439.7,
+            "pm25_moyen": 1.8,
+            "noise_moyen": 49.0
+          },
+          "note": "Les pics de CO2 jusqu'à 2503 ppm sont ponctuels et liés à l'occupation soutenue du bureau, ce qui est attendu pour ce type d'espace"
+        }
+      },
+      "tous_les_locaux_excellents": [
+        "Salle administration - R+1 (icone 0)",
+        "Espace Coworking - RDR (icone 0)",
+        "Quiet room - RDR (icone 0)",
+        "Atelier des métamorphoses - ENTRESOL (icone 0)",
+        "Agora - RDR (icone 0)",
+        "Fitness - ENTRESOL (icone 0)",
+        "Petits salons de jeux - RDR (icone 0)",
+        "Salle de réunion - R+1 (icone 0)",
+        "Accueil - RDP (icone 0)",
+        "Salle YOGA - ENTRESOL (icone 0)",
+        "Restaurant - RDR (icone 0)",
+        "Boxe / Crossfit - ENTRESOL (icone 0)",
+        "Studio musique - ENTRESOL (icone 0)"
+      ],
+      "locaux_tres_bons": [
+        "Bureau gestionnaire - R+1 (icone 1)"
+      ]
+    },
+    "CO2": {
+      "moyenne_globale_24h": 480,
+      "min": 379,
+      "max": 858,
+      "unite": "ppm",
+      "indice_salle_graphiques": 0,
+      "note": "L'indice 0 signifie qualité excellente durant les heures d'occupation. IMPORTANT: Pour la synthèse, mentionner que l'Agora et le Fitness ont tous deux un indice 0 (excellent), avec seulement le Bureau gestionnaire à indice 1 (très bon avec pics occasionnels normaux)"
+    },
+    "TEMP": {
+      "moyenne": 23.2,
+      "min": 17.6,
+      "max": 30.7,
+      "unite": "°C"
+    },
+    "HUMIDITY": {
+      "moyenne": 50.2,
+      "min": 23.8,
+      "max": 77.4,
+      "unite": "%"
+    },
+    "VOC": {
+      "moyenne": 345,
+      "min": 104.5,
+      "max": 3143.1,
+      "unite": "ppb"
+    },
+    "PM2_5": {
+      "moyenne": 1.3,
+      "min": 0,
+      "max": 194,
+      "unite": "µg/m³"
+    },
+    "NOISE": {
+      "moyenne": 45.8,
+      "min": 37,
+      "max": 102,
+      "unite": "dB"
+    }
+  },
+  "hero": {
+    "season_label": {
+      "fr": "Été 2025",
+      "en": "Summer 2025"
+    },
+    "title": {
+      "fr": "Rapport Été 2025",
+      "en": "Summer 2025 Report"
+    },
+    "period": {
+      "fr": "1er juillet - 1er octobre 2025",
+      "en": "July 1 - October 1, 2025"
+    },
+    "subtitle": {
+      "fr": "Qualité de l'air dans tes espaces communs UXCO Student",
+      "en": "Air quality in your UXCO Student common areas"
+    }
+  },
+  "summary": {
+    "title": {
+      "fr": "Ce qu'il faut retenir",
+      "en": "Key Takeaways"
+    },
+    "sections": {
+      "synthese": {
+        "title": {
+          "fr": "Vue d'ensemble",
+          "en": "Overview"
+        },
+        "text": {
+          "fr": "Cet été, ta résidence UXCO à Noisy-le-Grand affiche un score global de confort de **90.5/100** 🌟 ! La température moyenne dans tes espaces communs s'est maintenue à **23.2°C**, parfaite pour bosser, te détendre ou faire du sport. Une ambiance estivale top pour profiter de tous tes espaces !",
+          "en": "This summer, your UXCO residence in Noisy-le-Grand achieves an overall comfort score of **90.5/100** 🌟! The average temperature in your common areas stayed at **23.2°C**, perfect for working, relaxing or exercising. A great summer atmosphere to enjoy all your spaces!"
+        }
+      },
+      "performances": {
+        "title": {
+          "fr": "Points forts",
+          "en": "Strengths"
+        },
+        "text": {
+          "fr": "Tes espaces communs respirent ! **13 locaux sur 14** affichent un indice de qualité d'air **excellent (icône 0)**, dont l'**Agora** (CO₂ moyen de **565 ppm**) et le **Fitness** (CO₂ moyen de **490 ppm**). Les taux d'humidité (**50.2%** en moyenne) et la qualité de l'air intérieur sont au top pour ton confort et ta concentration. Niveau particules fines (**1.3 µg/m³** en moyenne), c'est nickel pour ta santé respiratoire !",
+          "en": "Your common areas are breathing well! **13 out of 14 spaces** display an **excellent air quality index (icon 0)**, including the **Agora** (average CO₂ of **565 ppm**) and the **Fitness** (average CO₂ of **490 ppm**). Humidity levels (**50.2%** average) and indoor air quality are perfect for your comfort and concentration. Fine particle levels (**1.3 µg/m³** average) are excellent for your respiratory health!"
+        }
+      },
+      "points_attention": {
+        "title": {
+          "fr": "Points d'attention",
+          "en": "Points to Note"
+        },
+        "text": {
+          "fr": "Un seul espace présente quelques pics ponctuels : le **Bureau gestionnaire (R+1)** avec un indice 1 (très bon) et des pics de CO₂ atteignant **2503 ppm** lors des périodes d'occupation soutenue. Rien d'alarmant, c'est normal pour un bureau de travail intensif ! Ces variations restent ponctuelles et ne concernent pas tes espaces de vie communs.",
+          "en": "Only one space shows occasional peaks: the **Manager's Office (1st Floor)** with an index 1 (very good) and CO₂ peaks reaching **2503 ppm** during busy periods. Nothing alarming, this is normal for an intensive work office! These variations are occasional and don't affect your common living spaces."
+        }
+      },
+      "impact_bien_etre": {
+        "title": {
+          "fr": "Ce que ça change pour toi",
+          "en": "What This Means for You"
+        },
+        "text": {
+          "fr": "- **Concentration optimale** : un air de qualité pour bosser efficacement dans l'Espace Coworking, la Quiet Room ou l'Agora 📚\n- **Confort sportif** : des conditions idéales pour tes séances au Fitness, en Yoga, ou en Boxe/Crossfit sans suffocation 💪\n- **Détente maximale** : une ambiance saine dans le Restaurant, les Petits Salons de Jeux et l'Atelier des métamorphoses pour décompresser 🌿\n- **Bien-être général** : moins de fatigue, meilleur sommeil et plus d'énergie grâce à un air constamment renouvelé ✨",
+          "en": "- **Optimal concentration**: quality air for efficient work in the Coworking Space, Quiet Room or Agora 📚\n- **Sports comfort**: ideal conditions for your sessions at the Fitness, Yoga, or Boxing/Crossfit without suffocation 💪\n- **Maximum relaxation**: a healthy atmosphere in the Restaurant, Small Gaming Lounges and Metamorphosis Workshop to unwind 🌿\n- **Overall well-being**: less fatigue, better sleep and more energy thanks to constantly renewed air ✨"
+        }
+      },
+      "conseils": {
+        "title": {
+          "fr": "Nos conseils",
+          "en": "Our Tips"
+        },
+        "text": {
+          "fr": "Continue de profiter de tous tes espaces communs sans modération ! Pour garder cette qualité d'air au top, pense à **aérer régulièrement** après une session intensive dans l'Agora ou le Restaurant, et **privilégie les créneaux moins chargés** si tu veux un max de tranquillité dans l'Espace Coworking ou la Quiet Room. La communauté UXCO peut maintenir cet environnement sain ensemble ! 🙌",
+          "en": "Keep enjoying all your common areas without limits! To maintain this top air quality, remember to **ventilate regularly** after an intensive session in the Agora or Restaurant, and **choose quieter time slots** if you want maximum peace in the Coworking Space or Quiet Room. The UXCO community can maintain this healthy environment together! 🙌"
+        }
+      }
+    }
+  },
+  "metrics": {
+    "title": {
+      "fr": "Indicateurs clés",
+      "en": "Key Metrics"
+    },
+    "items": [
+      {
+        "id": "co2",
+        "name": {
+          "fr": "CO₂ moyen",
+          "en": "Average CO₂"
+        },
+        "value": 480,
+        "unit": "ppm",
+        "description": {
+          "fr": "Concentration moyenne en CO₂",
+          "en": "Average CO₂ concentration"
+        }
+      },
+      {
+        "id": "temperature",
+        "name": {
+          "fr": "Température moyenne",
+          "en": "Average Temperature"
+        },
+        "value": 23.2,
+        "unit": "°C",
+        "description": {
+          "fr": "Température moyenne des espaces",
+          "en": "Average temperature of spaces"
+        }
+      },
+      {
+        "id": "humidity",
+        "name": {
+          "fr": "Humidité moyenne",
+          "en": "Average Humidity"
+        },
+        "value": 50.2,
+        "unit": "%",
+        "description": {
+          "fr": "Taux d'humidité moyen",
+          "en": "Average humidity level"
+        }
+      },
+      {
+        "id": "pm25",
+        "name": {
+          "fr": "Particules fines (PM2.5)",
+          "en": "Fine Particles (PM2.5)"
+        },
+        "value": 1.3,
+        "unit": "µg/m³",
+        "description": {
+          "fr": "Concentration moyenne de particules fines",
+          "en": "Average fine particle concentration"
+        }
+      },
+      {
+        "id": "voc",
+        "name": {
+          "fr": "COV moyens",
+          "en": "Average VOCs"
+        },
+        "value": 345,
+        "unit": "ppb",
+        "description": {
+          "fr": "Composés organiques volatils",
+          "en": "Volatile organic compounds"
+        }
+      },
+      {
+        "id": "noise",
+        "name": {
+          "fr": "Niveau sonore moyen",
+          "en": "Average Noise Level"
+        },
+        "value": 45.8,
+        "unit": "dB",
+        "description": {
+          "fr": "Ambiance sonore moyenne",
+          "en": "Average sound ambiance"
+        }
+      }
+    ]
+  },
+  "heatmaps": {
+    "fitness": {
+      "title": {
+        "fr": "Fitness - Entresol",
+        "en": "Fitness - Mezzanine"
+      }
+    },
+    "common_area": {
+      "title": {
+        "fr": "Agora - RDR",
+        "en": "Agora - Upper Ground Floor"
+      }
+    }
+  },
+  "ui_translations": {
+    "co2_chart": {
+      "optimal_threshold_label": {
+        "fr": "Optimal (800 ppm)",
+        "en": "Good (800 ppm)"
+      },
+      "explanation": {
+        "fr": "Le CO₂ est un indicateur clé de la qualité d'air. Les données proviennent de",
+        "en": "CO₂ is a key indicator of air quality. Data comes from"
+      }
+    },
+    "heatmap": {
+      "title": {
+        "fr": "Affluence hebdomadaire (CO₂)",
+        "en": "Weekly Occupancy (CO₂)"
+      },
+      "low_label": {
+        "fr": "Faible",
+        "en": "Low"
+      },
+      "high_label": {
+        "fr": "Élevé",
+        "en": "High"
+      }
+    },
+    "days_of_week": {
+      "full": {
+        "fr": ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"],
+        "en": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+      },
+      "short": {
+        "fr": ["Lun", "Mar", "Mer", "Jeu", "Ven", "Sam", "Dim"],
+        "en": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+      }
+    }
+  },
+  "pour_aller_plus_loin": {
+    "title": {
+      "fr": "Pour aller plus loin",
+      "en": "Go Further"
+    },
+    "subtitle": {
+      "fr": "Quelques ressources utiles sur la qualité de l'air",
+      "en": "Useful resources on air quality"
+    },
+    "propositions": [
+      {
+        "category_label": {
+          "fr": "📚 Comprendre",
+          "en": "📚 Understand"
+        },
+        "text": {
+          "fr": "Pourquoi le CO₂ est-il un bon indicateur de la qualité de l'air intérieur ? Consulte les ressources de l'ADEME ou de l'ANSES pour mieux comprendre l'impact sur ta santé et ta concentration.",
+          "en": "Why is CO₂ a good indicator of indoor air quality? Check out ADEME or ANSES resources to better understand the impact on your health and concentration."
+        }
+      },
+      {
+        "category_label": {
+          "fr": "💡 Agir",
+          "en": "💡 Act"
+        },
+        "text": {
+          "fr": "Quelques gestes simples dans tes espaces communs : aérer 10 minutes après une réunion dans l'Agora, limiter les parfums intenses dans les petits espaces, et privilégier les créneaux moins chargés pour une expérience optimale.",
+          "en": "A few simple actions in your common areas: ventilate for 10 minutes after a meeting in the Agora, limit intense fragrances in small spaces, and choose less busy time slots for an optimal experience."
+        }
+      },
+      {
+        "category_label": {
+          "fr": "🌍 S'informer",
+          "en": "🌍 Stay Informed"
+        },
+        "text": {
+          "fr": "La qualité de l'air extérieur influence aussi ton confort intérieur. Suis les indices Atmo de ta région pour adapter tes habitudes d'aération les jours de forte pollution.",
+          "en": "Outdoor air quality also influences your indoor comfort. Follow your region's Atmo indices to adjust your ventilation habits on high pollution days."
+        }
+      }
+    ]
+  },
+  "_VERIFICATION_CHECKLIST": {
+    "description": "Checklist de vérification avant déploiement - Noisy-le-Grand été 2025",
+    "sections_principales": [
+      "✓ hero - titre, période, saison traduits FR/EN",
+      "✓ summary.sections[*].text - tous traduits FR/EN",
+      "✓ metrics.items[*] - toutes valeurs mises à jour avec données Noisy-le-Grand",
+      "✓ heatmaps.*.title - traduits FR/EN",
+      "✓ ui_translations.* - tous traduits FR/EN",
+      "✓ pour_aller_plus_loin - tout traduit FR/EN"
+    ],
+    "traductions_critiques": [
+      "✓ hero.season_label - traduit FR/EN avec 'Summer 2025'",
+      "✓ hero.period - traduit FR/EN avec dates correctes",
+      "✓ metrics.title - traduit FR/EN",
+      "✓ metrics.items[*].name - tous traduits FR/EN",
+      "✓ metrics.items[*].description - tous traduits FR/EN",
+      "✓ heatmaps.fitness.title - traduit FR/EN (CRITIQUE pour affichage)",
+      "✓ heatmaps.common_area.title - traduit FR/EN (CRITIQUE pour affichage)",
+      "✓ ui_translations.co2_chart.optimal_threshold_label - traduit FR/EN avec 'Good' en anglais",
+      "✓ ui_translations.co2_chart.explanation - traduit FR/EN",
+      "✓ ui_translations.heatmap.* - tous traduits FR/EN",
+      "✓ ui_translations.days_of_week - tous traduits FR/EN (complet et abrégé)",
+      "✓ pour_aller_plus_loin.title - traduit FR/EN",
+      "✓ pour_aller_plus_loin.subtitle - traduit FR/EN",
+      "✓ pour_aller_plus_loin.propositions[*].category_label - tous traduits FR/EN",
+      "✓ pour_aller_plus_loin.propositions[*].text - tous traduits FR/EN"
+    ],
+    "points_attention_developpeur": [
+      "ATTENTION: Le JSX utilise actuellement des labels en dur pour 'Optimal (800 ppm)' - à modifier pour utiliser ui_translations",
+      "ATTENTION: Le JSX utilise des noms de jours en dur dans la heatmap - à modifier pour utiliser ui_translations.days_of_week",
+      "ATTENTION: Les noms de locaux affichés au-dessus des graphiques doivent utiliser metadata.salle_*_display du fichier monitor JSON",
+      "ATTENTION: Vérifier que le fichier monitor JSON contient bien les champs metadata.salle_fitness_display et metadata.salle_graphiques_display avec traductions"
+    ],
+    "pour_futures_saisons": [
+      "1. Copier ce fichier comme template",
+      "2. Mettre à jour hero.season_label avec le nouveau label de saison traduit",
+      "3. Mettre à jour hero.title avec la nouvelle période traduite",
+      "4. Mettre à jour hero.period avec les nouvelles dates traduites",
+      "5. Si nouveaux locaux: ajouter les traductions dans heatmaps.*.title",
+      "6. Rédiger le nouveau texte summary.text en FR et EN",
+      "7. Mettre à jour toutes les valeurs numériques dans metrics.items",
+      "8. Vérifier que le fichier monitor JSON contient les metadata traduits",
+      "9. Tester l'affichage en FR et EN dans le dashboard",
+      "10. Vérifier particulièrement: menu déroulant, titres heatmaps, label 'Good' en anglais"
+    ]
+  },
+  "_MODIFICATIONS_JSX_REQUISES": {
+    "description": "Liste des modifications à apporter au code JSX pour utiliser pleinement les traductions",
+    "modifications": [
+      {
+        "ligne_approximative": 580,
+        "code_actuel": "<ReferenceLine y={thresholds.CO2.good} stroke=\"#4CAF50\" strokeDasharray=\"3 3\" label={{ value: 'Optimal (800 ppm)', position: 'topRight', fill: '#4CAF50' }} />",
+        "code_propose": "<ReferenceLine y={thresholds.CO2.good} stroke=\"#4CAF50\" strokeDasharray=\"3 3\" label={{ value: data.content.ui_translations.co2_chart.optimal_threshold_label[language], position: 'topRight', fill: '#4CAF50' }} />",
+        "justification": "Utiliser la traduction depuis le JSON content au lieu du label en dur"
+      },
+      {
+        "ligne_approximative": 443,
+        "code_actuel": "{['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi', 'Dimanche'].map(day => (...",
+        "code_propose": "Créer un tableau des jours depuis ui_translations.days_of_week[language] et l'utiliser",
+        "justification": "Éviter les noms de jours en dur pour supporter le bilinguisme"
+      },
+      {
+        "ligne_approximative": 570,
+        "code_actuel": "Le CO₂ est un indicateur clé de la qualité d'air. Les données proviennent de ${data.metadata.salle_graphiques || 'la salle principale'}.",
+        "code_propose": "${data.content.ui_translations.co2_chart.explanation[language]} ${data.metadata.salle_graphiques_display?.[language] || data.metadata.salle_graphiques}.",
+        "justification": "Utiliser les traductions et afficher le nom traduit du local"
+      }
+    ]
+  },
+  "_STRUCTURE_FICHIER_MONITOR_JSON_REQUISE": {
+    "description": "Structure attendue dans le fichier monitor JSON principal pour supporter les traductions",
+    "exemple_structure": {
+      "metadata": {
+        "saison": "Eté 2025",
+        "saison_id": "ete_2025",
+        "salle_fitness": "Fitness - ENTRESOL",
+        "salle_fitness_display": {
+          "fr": "Fitness - Entresol",
+          "en": "Fitness - Mezzanine",
+          "_comment": "NOUVEAU CHAMP - Nom affiché avec traduction"
+        },
+        "salle_graphiques": "Agora - RDR",
+        "salle_graphiques_display": {
+          "fr": "Agora - RDR",
+          "en": "Agora - Upper Ground Floor",
+          "_comment": "NOUVEAU CHAMP - Nom affiché avec traduction"
+        }
+      }
+    },
+    "note": "Ces champs *_display doivent être ajoutés au fichier monitor JSON pour que le JSX puisse afficher les noms traduits des locaux"
+  },
+  "section_titles": {
+    "_comment": "Titres des différentes sections du dashboard - utilisés par le JSX",
+    "co2_air_quality": {
+      "fr": "Qualité de l'air (CO₂)",
+      "en": "Air Quality (CO₂)"
+    },
+    "weekly_analysis": {
+      "fr": "Analyse hebdomadaire",
+      "en": "Weekly Analysis"
+    },
+    "temp_humidity": {
+      "fr": "Température & Humidité",
+      "en": "Temperature & Humidity"
+    },
+    "global_comfort_score": {
+      "fr": "Score Global de Confort",
+      "en": "Global Comfort Score"
+    }
+  },
+  "system_messages": {
+    "_comment": "Messages système pour le chargement, erreurs, footer",
+    "loading": {
+      "fr": "Chargement des données...",
+      "en": "Loading data..."
+    },
+    "error_title": {
+      "fr": "Erreur de chargement",
+      "en": "Loading Error"
+    },
+    "footer": {
+      "fr": "UXCO Student - Monitoring de la qualité de l'air",
+      "en": "UXCO Student - Air Quality Monitoring"
+    }
+  },
+  "_GUIDE_UXCO_STYLE": {
+    "but": "Garantir l'homogénéité de l'app avec l'identité UXCO Student.",
+    "ton": [
+      "Tutoiement, direct et chaleureux (ex. "tu", "ton espace", "ta résidence UXCO").",
+      "Émojis autorisés avec parcimonie pour souligner (💨, 🌿, 💬).",
+      "Formulations brèves, actives, orientées action et communauté."
+    ],
+    "vocabulaire": {
+      "a_utiliser": [
+        "UXCO Student",
+        "ta résidence UXCO",
+        "ton espace commun",
+        "ta salle de sport",
+        "ton spot détente",
+        "la communauté"
+      ],
+      "a_eviter": [
+        "Maison Ecla",
+        "résidence Ecla",
+        "habitant·e (remplacer par 'toi', 'ta communauté')"
+      ]
+    },
+    "visuel": {
+      "couleurs": {
+        "primaire": "#3A80E0",
+        "accent_fonce": "#1C3F7C",
+        "accent_lavande": "#A7B3FF"
+      },
+      "assets": {
+        "logo": "/assets/uxco-logo.svg",
+        "hero": "/assets/uxco-hero-image.jpg"
+      }
+    },
+    "redaction_donnees": [
+      "La synthèse s'appuie sur les indices icone_salle_graphiques et icones_tous_locaux (heures d'occupation).",
+      "Pour CO₂, donner l'indice (0–5) et les pics max ponctuels si utiles; éviter les moyennes 24/24 anxiogènes.",
+      "Privilégier les bénéfices concrets pour l'étudiant: confort, concentration, énergie, ambiance.",
+      "Conseils : proposer des créneaux plus respirants et des écogestes en espace commun."
+    ],
+    "checklist": [
+      "✓ Tutoiement partout",
+      "✓ Aucune mention de 'Maison Ecla'",
+      "✓ Labels de saison hydratés depuis hero.season_label",
+      "✓ FR/EN présents pour tous textes visibles",
+      "✓ Conseils uniquement sur espaces communs"
+    ]
+  }
+}

@@ -1,0 +1,7291 @@
+{
+  "metadata": {
+    "residence": "Noisy-le-Grand",
+    "saison": "Eté 2025",
+    "saison_id": "ete_2025",
+    "periode_debut": "01/07/2025",
+    "periode_fin": "01/10/2025",
+    "salle_graphiques": "Agora - RDR",
+    "salle_fitness": "Fitness - ENTRESOL",
+    "seasons_available": [
+      {
+        "id": "ete_2025",
+        "label": "Eté 2025",
+        "periode_debut": "01/07/2025",
+        "periode_fin": "01/10/2025"
+      },
+      {
+        "id": "printemps_2025",
+        "label": "Printemps 2025",
+        "periode_debut": null,
+        "periode_fin": null
+      },
+      {
+        "id": "hiver_2024_2025",
+        "label": "Hiver 2024-2025",
+        "periode_debut": null,
+        "periode_fin": null
+      },
+      {
+        "id": "automne_2024",
+        "label": "Automne 2024",
+        "periode_debut": null,
+        "periode_fin": null
+      },
+      {
+        "id": "ete_2024",
+        "label": "Eté 2024",
+        "periode_debut": null,
+        "periode_fin": null
+      }
+    ]
+  },
+  "scores": {
+    "global": 90.5,
+    "co2": 100,
+    "temperature": 93,
+    "humidity": 96,
+    "pm25": 92,
+    "voc": 97,
+    "noise": 40
+  },
+  "icone_salle_graphiques": 0,
+  "icones_tous_locaux": {
+    "Salle administration - R+1": 0,
+    "Espace Coworking - RDR": 0,
+    "Quiet room - RDR": 0,
+    "Bureau gestionnaire - R+1": 1,
+    "Atelier des métamorphoses - ENTRESOL": 0,
+    "Agora - RDR": 0,
+    "Fitness - ENTRESOL": 0,
+    "Petits salons de jeux - RDR": 0,
+    "Salle de réunion - R+1": 0,
+    "Accueil - RDP": 0,
+    "Salle YOGA - ENTRESOL": 0,
+    "Restaurant - RDR": 0,
+    "Boxe / Crossfit - ENTRESOL": 0,
+    "Studio musique - ENTRESOL": 0
+  },
+  "statistiques_par_local": {
+    "Salle administration - R+1": {
+      "icone": 0,
+      "statistiques_24h": {
+        "co2": {
+          "moyenne": 525.6,
+          "min": 384,
+          "max": 3012,
+          "ecart_type": 172.4
+        },
+        "temp": {
+          "moyenne": 24.8,
+          "min": 17.6,
+          "max": 30.7,
+          "ecart_type": 2.4
+        },
+        "humidity": {
+          "moyenne": 48.1,
+          "min": 23.8,
+          "max": 76.8,
+          "ecart_type": 8.3
+        },
+        "voc": {
+          "moyenne": 296.8,
+          "min": 104.5,
+          "max": 2568.2,
+          "ecart_type": 236.1
+        },
+        "pm2_5": {
+          "moyenne": 1,
+          "min": 0,
+          "max": 11,
+          "ecart_type": 1.3
+        },
+        "soundlevela": {
+          "moyenne": 46.1,
+          "min": 38,
+          "max": 87,
+          "ecart_type": 9
+        }
+      },
+      "statistiques_heures_occupation": {
+        "co2": {
+          "moyenne": 600.9,
+          "min": 384,
+          "max": 3012,
+          "ecart_type": 216.2
+        },
+        "temp": {
+          "moyenne": 24.9,
+          "min": 17.6,
+          "max": 30.7,
+          "ecart_type": 2.4
+        },
+        "humidity": {
+          "moyenne": 48.4,
+          "min": 23.8,
+          "max": 75,
+          "ecart_type": 8
+        },
+        "voc": {
+          "moyenne": 388.6,
+          "min": 104.5,
+          "max": 2568.2,
+          "ecart_type": 286.2
+        },
+        "pm2_5": {
+          "moyenne": 1.1,
+          "min": 0,
+          "max": 11,
+          "ecart_type": 1.4
+        },
+        "soundlevela": {
+          "moyenne": 49.4,
+          "min": 38,
+          "max": 87,
+          "ecart_type": 10.1
+        }
+      }
+    },
+    "Espace Coworking - RDR": {
+      "icone": 0,
+      "statistiques_24h": {
+        "co2": {
+          "moyenne": 478.1,
+          "min": 387,
+          "max": 858,
+          "ecart_type": 48.7
+        },
+        "temp": {
+          "moyenne": 23.4,
+          "min": 18.1,
+          "max": 27.8,
+          "ecart_type": 2
+        },
+        "humidity": {
+          "moyenne": 52,
+          "min": 31.6,
+          "max": 75.1,
+          "ecart_type": 7.8
+        },
+        "voc": {
+          "moyenne": 309.9,
+          "min": 104.5,
+          "max": 1097.7,
+          "ecart_type": 170.9
+        },
+        "pm2_5": {
+          "moyenne": 1.6,
+          "min": 0,
+          "max": 22,
+          "ecart_type": 1.7
+        },
+        "soundlevela": {
+          "moyenne": 44.7,
+          "min": 38,
+          "max": 94,
+          "ecart_type": 3.4
+        }
+      },
+      "statistiques_heures_occupation": {
+        "co2": {
+          "moyenne": 486.8,
+          "min": 397,
+          "max": 777,
+          "ecart_type": 44.2
+        },
+        "temp": {
+          "moyenne": 23.4,
+          "min": 18.1,
+          "max": 27.8,
+          "ecart_type": 2
+        },
+        "humidity": {
+          "moyenne": 51.8,
+          "min": 32,
+          "max": 74.1,
+          "ecart_type": 7.9
+        },
+        "voc": {
+          "moyenne": 306.1,
+          "min": 104.5,
+          "max": 1097.7,
+          "ecart_type": 166.7
+        },
+        "pm2_5": {
+          "moyenne": 1.4,
+          "min": 0,
+          "max": 15,
+          "ecart_type": 1.7
+        },
+        "soundlevela": {
+          "moyenne": 45.7,
+          "min": 39,
+          "max": 94,
+          "ecart_type": 3.2
+        }
+      }
+    },
+    "Quiet room - RDR": {
+      "icone": 0,
+      "statistiques_24h": {
+        "co2": {
+          "moyenne": 489.8,
+          "min": 379,
+          "max": 1249,
+          "ecart_type": 77.6
+        },
+        "temp": {
+          "moyenne": 22.6,
+          "min": 19.8,
+          "max": 26.4,
+          "ecart_type": 1.1
+        },
+        "humidity": {
+          "moyenne": 51.9,
+          "min": 30.4,
+          "max": 77.4,
+          "ecart_type": 8.4
+        },
+        "voc": {
+          "moyenne": 378.1,
+          "min": 104.5,
+          "max": 2522.7,
+          "ecart_type": 244.8
+        },
+        "pm2_5": {
+          "moyenne": 1.3,
+          "min": 0,
+          "max": 194,
+          "ecart_type": 2.3
+        },
+        "soundlevela": {
+          "moyenne": 43.5,
+          "min": 37,
+          "max": 102,
+          "ecart_type": 6
+        }
+      },
+      "statistiques_heures_occupation": {
+        "co2": {
+          "moyenne": 498.9,
+          "min": 394,
+          "max": 1249,
+          "ecart_type": 71.4
+        },
+        "temp": {
+          "moyenne": 22.6,
+          "min": 19.8,
+          "max": 25.8,
+          "ecart_type": 1.1
+        },
+        "humidity": {
+          "moyenne": 51.7,
+          "min": 30.4,
+          "max": 77.4,
+          "ecart_type": 8.6
+        },
+        "voc": {
+          "moyenne": 348.5,
+          "min": 104.5,
+          "max": 2522.7,
+          "ecart_type": 239.5
+        },
+        "pm2_5": {
+          "moyenne": 1.2,
+          "min": 0,
+          "max": 11,
+          "ecart_type": 1.5
+        },
+        "soundlevela": {
+          "moyenne": 44,
+          "min": 37,
+          "max": 102,
+          "ecart_type": 5.7
+        }
+      }
+    },
+    "Bureau gestionnaire - R+1": {
+      "icone": 1,
+      "statistiques_24h": {
+        "co2": {
+          "moyenne": 698.4,
+          "min": 382,
+          "max": 2503,
+          "ecart_type": 397.3
+        },
+        "temp": {
+          "moyenne": 24.2,
+          "min": 19.3,
+          "max": 28.5,
+          "ecart_type": 1.5
+        },
+        "humidity": {
+          "moyenne": 46,
+          "min": 24.6,
+          "max": 63,
+          "ecart_type": 7.1
+        },
+        "voc": {
+          "moyenne": 338.1,
+          "min": 104.5,
+          "max": 3143.1,
+          "ecart_type": 261.7
+        },
+        "pm2_5": {
+          "moyenne": 1.4,
+          "min": 0,
+          "max": 51,
+          "ecart_type": 3.1
+        },
+        "soundlevela": {
+          "moyenne": 46.4,
+          "min": 39,
+          "max": 83,
+          "ecart_type": 6.3
+        }
+      },
+      "statistiques_heures_occupation": {
+        "co2": {
+          "moyenne": 880.2,
+          "min": 387,
+          "max": 2503,
+          "ecart_type": 475.5
+        },
+        "temp": {
+          "moyenne": 24.4,
+          "min": 19.6,
+          "max": 28.5,
+          "ecart_type": 1.4
+        },
+        "humidity": {
+          "moyenne": 46,
+          "min": 24.6,
+          "max": 63,
+          "ecart_type": 7.2
+        },
+        "voc": {
+          "moyenne": 439.7,
+          "min": 104.5,
+          "max": 3143.1,
+          "ecart_type": 321
+        },
+        "pm2_5": {
+          "moyenne": 1.8,
+          "min": 0,
+          "max": 51,
+          "ecart_type": 3.4
+        },
+        "soundlevela": {
+          "moyenne": 49,
+          "min": 39,
+          "max": 83,
+          "ecart_type": 7.4
+        }
+      }
+    },
+    "Atelier des métamorphoses - ENTRESOL": {
+      "icone": 0,
+      "statistiques_24h": {
+        "co2": {
+          "moyenne": 443.1,
+          "min": 379,
+          "max": 860,
+          "ecart_type": 28.6
+        },
+        "temp": {
+          "moyenne": 22.6,
+          "min": 18.4,
+          "max": 26.7,
+          "ecart_type": 2
+        },
+        "humidity": {
+          "moyenne": 51,
+          "min": 32.5,
+          "max": 74.2,
+          "ecart_type": 7.9
+        },
+        "voc": {
+          "moyenne": 336.4,
+          "min": 104.5,
+          "max": 2063.6,
+          "ecart_type": 159.2
+        },
+        "pm2_5": {
+          "moyenne": 1.1,
+          "min": 0,
+          "max": 66,
+          "ecart_type": 1.5
+        },
+        "soundlevela": {
+          "moyenne": 41.8,
+          "min": 38,
+          "max": 78,
+          "ecart_type": 3.6
+        }
+      },
+      "statistiques_heures_occupation": {
+        "co2": {
+          "moyenne": 444.1,
+          "min": 386,
+          "max": 860,
+          "ecart_type": 26.7
+        },
+        "temp": {
+          "moyenne": 22.6,
+          "min": 18.4,
+          "max": 26.6,
+          "ecart_type": 2
+        },
+        "humidity": {
+          "moyenne": 50.8,
+          "min": 32.5,
+          "max": 72.9,
+          "ecart_type": 8
+        },
+        "voc": {
+          "moyenne": 318.2,
+          "min": 104.5,
+          "max": 2063.6,
+          "ecart_type": 157.1
+        },
+        "pm2_5": {
+          "moyenne": 1.1,
+          "min": 0,
+          "max": 66,
+          "ecart_type": 1.6
+        },
+        "soundlevela": {
+          "moyenne": 42,
+          "min": 38,
+          "max": 74,
+          "ecart_type": 3.8
+        }
+      }
+    },
+    "Agora - RDR": {
+      "icone": 0,
+      "statistiques_24h": {
+        "co2": {
+          "moyenne": 566.1,
+          "min": 387,
+          "max": 2242,
+          "ecart_type": 93.5
+        },
+        "temp": {
+          "moyenne": 24.9,
+          "min": 22.4,
+          "max": 28,
+          "ecart_type": 1.5
+        },
+        "humidity": {
+          "moyenne": 49.2,
+          "min": 34.8,
+          "max": 67.7,
+          "ecart_type": 7.1
+        },
+        "voc": {
+          "moyenne": 291.1,
+          "min": 104.5,
+          "max": 2820.4,
+          "ecart_type": 206.9
+        },
+        "pm2_5": {
+          "moyenne": 14.3,
+          "min": 0,
+          "max": 1000,
+          "ecart_type": 63.8
+        },
+        "soundlevela": {
+          "moyenne": 56.7,
+          "min": 40,
+          "max": 93,
+          "ecart_type": 7.7
+        }
+      },
+      "statistiques_heures_occupation": {
+        "co2": {
+          "moyenne": 584.6,
+          "min": 387,
+          "max": 2242,
+          "ecart_type": 116.7
+        },
+        "temp": {
+          "moyenne": 24.9,
+          "min": 22.4,
+          "max": 28,
+          "ecart_type": 1.5
+        },
+        "humidity": {
+          "moyenne": 49.6,
+          "min": 35.2,
+          "max": 66.9,
+          "ecart_type": 7.2
+        },
+        "voc": {
+          "moyenne": 304.1,
+          "min": 104.5,
+          "max": 2820.4,
+          "ecart_type": 238.3
+        },
+        "pm2_5": {
+          "moyenne": 27.1,
+          "min": 0,
+          "max": 1000,
+          "ecart_type": 88.3
+        },
+        "soundlevela": {
+          "moyenne": 58.1,
+          "min": 43,
+          "max": 91,
+          "ecart_type": 6
+        }
+      }
+    },
+    "Fitness - ENTRESOL": {
+      "icone": 0,
+      "statistiques_24h": {
+        "co2": {
+          "moyenne": 565.8,
+          "min": 385,
+          "max": 1496,
+          "ecart_type": 145
+        },
+        "temp": {
+          "moyenne": 23.3,
+          "min": 16.8,
+          "max": 26.6,
+          "ecart_type": 1.5
+        },
+        "humidity": {
+          "moyenne": 51,
+          "min": 27.4,
+          "max": 75.7,
+          "ecart_type": 8.6
+        },
+        "voc": {
+          "moyenne": 427,
+          "min": 104.5,
+          "max": 2497.7,
+          "ecart_type": 330.5
+        },
+        "pm2_5": {
+          "moyenne": 0.8,
+          "min": 0,
+          "max": 9,
+          "ecart_type": 1.2
+        },
+        "soundlevela": {
+          "moyenne": 50.3,
+          "min": 39,
+          "max": 83,
+          "ecart_type": 9.5
+        }
+      },
+      "statistiques_heures_occupation": {
+        "co2": {
+          "moyenne": 586.3,
+          "min": 399,
+          "max": 1381,
+          "ecart_type": 137.4
+        },
+        "temp": {
+          "moyenne": 23.2,
+          "min": 16.8,
+          "max": 26.6,
+          "ecart_type": 1.5
+        },
+        "humidity": {
+          "moyenne": 50.8,
+          "min": 27.4,
+          "max": 73.5,
+          "ecart_type": 8.8
+        },
+        "voc": {
+          "moyenne": 392.1,
+          "min": 104.5,
+          "max": 1902.2,
+          "ecart_type": 273.1
+        },
+        "pm2_5": {
+          "moyenne": 0.8,
+          "min": 0,
+          "max": 9,
+          "ecart_type": 1.2
+        },
+        "soundlevela": {
+          "moyenne": 53.3,
+          "min": 40,
+          "max": 83,
+          "ecart_type": 9.5
+        }
+      }
+    },
+    "Petits salons de jeux - RDR": {
+      "icone": 0,
+      "statistiques_24h": {
+        "co2": {
+          "moyenne": 480.4,
+          "min": 383,
+          "max": 1966,
+          "ecart_type": 56.9
+        },
+        "temp": {
+          "moyenne": 24.9,
+          "min": 21.5,
+          "max": 28.9,
+          "ecart_type": 1.6
+        },
+        "humidity": {
+          "moyenne": 49.6,
+          "min": 34.3,
+          "max": 68.4,
+          "ecart_type": 7.4
+        },
+        "voc": {
+          "moyenne": 283.3,
+          "min": 104.5,
+          "max": 4820.4,
+          "ecart_type": 132.2
+        },
+        "pm2_5": {
+          "moyenne": 1.4,
+          "min": 0,
+          "max": 73,
+          "ecart_type": 2.5
+        },
+        "soundlevela": {
+          "moyenne": 50.2,
+          "min": 40,
+          "max": 86,
+          "ecart_type": 6.1
+        }
+      },
+      "statistiques_heures_occupation": {
+        "co2": {
+          "moyenne": 479.5,
+          "min": 385,
+          "max": 1966,
+          "ecart_type": 53
+        },
+        "temp": {
+          "moyenne": 24.9,
+          "min": 21.5,
+          "max": 28.9,
+          "ecart_type": 1.6
+        },
+        "humidity": {
+          "moyenne": 49.8,
+          "min": 34.3,
+          "max": 67,
+          "ecart_type": 7.4
+        },
+        "voc": {
+          "moyenne": 277.4,
+          "min": 104.5,
+          "max": 4820.4,
+          "ecart_type": 124.5
+        },
+        "pm2_5": {
+          "moyenne": 1.8,
+          "min": 0,
+          "max": 51,
+          "ecart_type": 3
+        },
+        "soundlevela": {
+          "moyenne": 51.2,
+          "min": 41,
+          "max": 81,
+          "ecart_type": 5.7
+        }
+      }
+    },
+    "Salle de réunion - R+1": {
+      "icone": 0,
+      "statistiques_24h": {
+        "co2": {
+          "moyenne": 483.5,
+          "min": 389,
+          "max": 1727,
+          "ecart_type": 111.8
+        },
+        "temp": {
+          "moyenne": 24.4,
+          "min": 19.6,
+          "max": 31.1,
+          "ecart_type": 2.5
+        },
+        "humidity": {
+          "moyenne": 48.9,
+          "min": 27.7,
+          "max": 77.9,
+          "ecart_type": 8.4
+        },
+        "voc": {
+          "moyenne": 345,
+          "min": 104.5,
+          "max": 5115.8,
+          "ecart_type": 303.8
+        },
+        "pm2_5": {
+          "moyenne": 1.8,
+          "min": 0,
+          "max": 14,
+          "ecart_type": 1.7
+        },
+        "soundlevela": {
+          "moyenne": 52,
+          "min": 37,
+          "max": 79,
+          "ecart_type": 6.2
+        }
+      },
+      "statistiques_heures_occupation": {
+        "co2": {
+          "moyenne": 499.9,
+          "min": 395,
+          "max": 1727,
+          "ecart_type": 146.8
+        },
+        "temp": {
+          "moyenne": 24.5,
+          "min": 19.6,
+          "max": 31.1,
+          "ecart_type": 2.4
+        },
+        "humidity": {
+          "moyenne": 48.6,
+          "min": 28.7,
+          "max": 76.8,
+          "ecart_type": 8.3
+        },
+        "voc": {
+          "moyenne": 351.5,
+          "min": 104.5,
+          "max": 5115.8,
+          "ecart_type": 365.1
+        },
+        "pm2_5": {
+          "moyenne": 1.7,
+          "min": 0,
+          "max": 13,
+          "ecart_type": 1.7
+        },
+        "soundlevela": {
+          "moyenne": 52.6,
+          "min": 37,
+          "max": 79,
+          "ecart_type": 6.3
+        }
+      }
+    },
+    "Accueil - RDP": {
+      "icone": 0,
+      "statistiques_24h": {
+        "co2": {
+          "moyenne": 492.6,
+          "min": 377,
+          "max": 766,
+          "ecart_type": 50.8
+        },
+        "temp": {
+          "moyenne": 23,
+          "min": 19,
+          "max": 26.6,
+          "ecart_type": 1
+        },
+        "humidity": {
+          "moyenne": 51.5,
+          "min": 29.3,
+          "max": 70,
+          "ecart_type": 7.4
+        },
+        "voc": {
+          "moyenne": 329.7,
+          "min": 104.5,
+          "max": 7043.1,
+          "ecart_type": 168.4
+        },
+        "pm2_5": {
+          "moyenne": 1.1,
+          "min": 0,
+          "max": 12,
+          "ecart_type": 1.3
+        },
+        "soundlevela": {
+          "moyenne": 56.3,
+          "min": 38,
+          "max": 84,
+          "ecart_type": 6.7
+        }
+      },
+      "statistiques_heures_occupation": {
+        "co2": {
+          "moyenne": 513.2,
+          "min": 377,
+          "max": 766,
+          "ecart_type": 54.7
+        },
+        "temp": {
+          "moyenne": 23,
+          "min": 19.4,
+          "max": 26.6,
+          "ecart_type": 1
+        },
+        "humidity": {
+          "moyenne": 51.6,
+          "min": 29.3,
+          "max": 67.8,
+          "ecart_type": 7.5
+        },
+        "voc": {
+          "moyenne": 333.7,
+          "min": 104.5,
+          "max": 1872.7,
+          "ecart_type": 160.7
+        },
+        "pm2_5": {
+          "moyenne": 1.2,
+          "min": 0,
+          "max": 12,
+          "ecart_type": 1.4
+        },
+        "soundlevela": {
+          "moyenne": 58.9,
+          "min": 39,
+          "max": 84,
+          "ecart_type": 5.1
+        }
+      }
+    },
+    "Salle YOGA - ENTRESOL": {
+      "icone": 0,
+      "statistiques_24h": {
+        "co2": {
+          "moyenne": 511.5,
+          "min": 380,
+          "max": 2387,
+          "ecart_type": 111.9
+        },
+        "temp": {
+          "moyenne": 22.5,
+          "min": 19,
+          "max": 26.4,
+          "ecart_type": 1.5
+        },
+        "humidity": {
+          "moyenne": 54.2,
+          "min": 33.7,
+          "max": 77,
+          "ecart_type": 8.2
+        },
+        "voc": {
+          "moyenne": 341,
+          "min": 104.5,
+          "max": 2377.2,
+          "ecart_type": 214.2
+        },
+        "pm2_5": {
+          "moyenne": 1.3,
+          "min": 0,
+          "max": 12,
+          "ecart_type": 1.6
+        },
+        "soundlevela": {
+          "moyenne": 50.5,
+          "min": 45,
+          "max": 88,
+          "ecart_type": 5.8
+        }
+      },
+      "statistiques_heures_occupation": {
+        "co2": {
+          "moyenne": 521.9,
+          "min": 396,
+          "max": 2120,
+          "ecart_type": 106
+        },
+        "temp": {
+          "moyenne": 22.5,
+          "min": 19,
+          "max": 26.4,
+          "ecart_type": 1.5
+        },
+        "humidity": {
+          "moyenne": 53.9,
+          "min": 33.7,
+          "max": 77,
+          "ecart_type": 8.3
+        },
+        "voc": {
+          "moyenne": 309.9,
+          "min": 104.5,
+          "max": 1761.3,
+          "ecart_type": 179
+        },
+        "pm2_5": {
+          "moyenne": 1.3,
+          "min": 0,
+          "max": 11,
+          "ecart_type": 1.6
+        },
+        "soundlevela": {
+          "moyenne": 51.6,
+          "min": 45,
+          "max": 88,
+          "ecart_type": 6
+        }
+      }
+    },
+    "Restaurant - RDR": {
+      "icone": 0,
+      "statistiques_24h": {
+        "co2": {
+          "moyenne": 450.5,
+          "min": 384,
+          "max": 1725,
+          "ecart_type": 44.5
+        },
+        "temp": {
+          "moyenne": 22.9,
+          "min": 19,
+          "max": 27.9,
+          "ecart_type": 0.9
+        },
+        "humidity": {
+          "moyenne": 54.7,
+          "min": 35.9,
+          "max": 74.4,
+          "ecart_type": 7.3
+        },
+        "voc": {
+          "moyenne": 239.6,
+          "min": 104.5,
+          "max": 1518.2,
+          "ecart_type": 126.2
+        },
+        "pm2_5": {
+          "moyenne": 0.4,
+          "min": 0,
+          "max": 134,
+          "ecart_type": 1.5
+        },
+        "soundlevela": {
+          "moyenne": 61.3,
+          "min": 42,
+          "max": 93,
+          "ecart_type": 5.5
+        }
+      },
+      "statistiques_heures_occupation": {
+        "co2": {
+          "moyenne": 463.2,
+          "min": 386,
+          "max": 1725,
+          "ecart_type": 54.3
+        },
+        "temp": {
+          "moyenne": 23,
+          "min": 19,
+          "max": 27.9,
+          "ecart_type": 0.9
+        },
+        "humidity": {
+          "moyenne": 54.6,
+          "min": 35.9,
+          "max": 74.4,
+          "ecart_type": 7.4
+        },
+        "voc": {
+          "moyenne": 252.4,
+          "min": 104.5,
+          "max": 1518.2,
+          "ecart_type": 122.6
+        },
+        "pm2_5": {
+          "moyenne": 0.4,
+          "min": 0,
+          "max": 16,
+          "ecart_type": 1.1
+        },
+        "soundlevela": {
+          "moyenne": 62.4,
+          "min": 44,
+          "max": 93,
+          "ecart_type": 4.9
+        }
+      }
+    },
+    "Boxe / Crossfit - ENTRESOL": {
+      "icone": 0,
+      "statistiques_24h": {
+        "co2": {
+          "moyenne": 535.6,
+          "min": 378,
+          "max": 1812,
+          "ecart_type": 119.8
+        },
+        "temp": {
+          "moyenne": 22.3,
+          "min": 18.6,
+          "max": 26.8,
+          "ecart_type": 1.1
+        },
+        "humidity": {
+          "moyenne": 55.9,
+          "min": 33.6,
+          "max": 77.8,
+          "ecart_type": 8.7
+        },
+        "voc": {
+          "moyenne": 373.8,
+          "min": 104.5,
+          "max": 1638.6,
+          "ecart_type": 253.5
+        },
+        "pm2_5": {
+          "moyenne": 1.1,
+          "min": 0,
+          "max": 36,
+          "ecart_type": 1.4
+        },
+        "soundlevela": {
+          "moyenne": 49.7,
+          "min": 42,
+          "max": 98,
+          "ecart_type": 7.4
+        }
+      },
+      "statistiques_heures_occupation": {
+        "co2": {
+          "moyenne": 548.1,
+          "min": 395,
+          "max": 1812,
+          "ecart_type": 110.5
+        },
+        "temp": {
+          "moyenne": 22.3,
+          "min": 18.7,
+          "max": 26.5,
+          "ecart_type": 1.1
+        },
+        "humidity": {
+          "moyenne": 55.7,
+          "min": 33.6,
+          "max": 77.8,
+          "ecart_type": 9
+        },
+        "voc": {
+          "moyenne": 345.9,
+          "min": 104.5,
+          "max": 1415.9,
+          "ecart_type": 227.6
+        },
+        "pm2_5": {
+          "moyenne": 1.1,
+          "min": 0,
+          "max": 36,
+          "ecart_type": 1.5
+        },
+        "soundlevela": {
+          "moyenne": 51.2,
+          "min": 42,
+          "max": 98,
+          "ecart_type": 7.1
+        }
+      }
+    },
+    "Studio musique - ENTRESOL": {
+      "icone": 0,
+      "statistiques_24h": {
+        "co2": {
+          "moyenne": 569,
+          "min": 376,
+          "max": 3957,
+          "ecart_type": 294.2
+        },
+        "temp": {
+          "moyenne": 23.4,
+          "min": 18.6,
+          "max": 26.3,
+          "ecart_type": 1.1
+        },
+        "humidity": {
+          "moyenne": 55.4,
+          "min": 38.3,
+          "max": 68.4,
+          "ecart_type": 5
+        },
+        "voc": {
+          "moyenne": 271.5,
+          "min": 104.5,
+          "max": 2747.7,
+          "ecart_type": 175.8
+        },
+        "pm2_5": {
+          "moyenne": 0.9,
+          "min": 0,
+          "max": 273,
+          "ecart_type": 2.7
+        },
+        "soundlevela": {
+          "moyenne": 44,
+          "min": 36,
+          "max": 109,
+          "ecart_type": 10.4
+        }
+      },
+      "statistiques_heures_occupation": {
+        "co2": {
+          "moyenne": 519.8,
+          "min": 377,
+          "max": 3158,
+          "ecart_type": 207.6
+        },
+        "temp": {
+          "moyenne": 23.4,
+          "min": 19.9,
+          "max": 26.3,
+          "ecart_type": 1.1
+        },
+        "humidity": {
+          "moyenne": 55.3,
+          "min": 39,
+          "max": 68.4,
+          "ecart_type": 5
+        },
+        "voc": {
+          "moyenne": 238.8,
+          "min": 104.5,
+          "max": 1518.2,
+          "ecart_type": 112.2
+        },
+        "pm2_5": {
+          "moyenne": 0.9,
+          "min": 0,
+          "max": 8,
+          "ecart_type": 1.3
+        },
+        "soundlevela": {
+          "moyenne": 44.2,
+          "min": 36,
+          "max": 109,
+          "ecart_type": 10.6
+        }
+      }
+    }
+  },
+  "timeseries": [
+    {
+      "date_periode": "2025-07-01 03:00:00",
+      "date": "01/07/2025 03:00:00",
+      "CO2": 568,
+      "TEMP": 23.5,
+      "HUMIDITY": 63,
+      "VOC": 271,
+      "PM25": 0,
+      "NOISE": 62,
+      "OUTSIDE_TEMP": 20.575,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-01 09:00:00",
+      "date": "01/07/2025 09:00:00",
+      "CO2": 553,
+      "TEMP": 23.9,
+      "HUMIDITY": 63,
+      "VOC": 196,
+      "PM25": 2.3,
+      "NOISE": 61,
+      "OUTSIDE_TEMP": 26.0833,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-01 15:00:00",
+      "date": "01/07/2025 15:00:00",
+      "CO2": 684,
+      "TEMP": 25.8,
+      "HUMIDITY": 56,
+      "VOC": 297,
+      "PM25": 4.5,
+      "NOISE": 61,
+      "OUTSIDE_TEMP": 38.2333,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-01 21:00:00",
+      "date": "01/07/2025 21:00:00",
+      "CO2": 815,
+      "TEMP": 26.5,
+      "HUMIDITY": 53,
+      "VOC": 506,
+      "PM25": 5.2,
+      "NOISE": 61,
+      "OUTSIDE_TEMP": 34.6333,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-01 03:00:00",
+      "date": "01/08/2025 03:00:00",
+      "CO2": 565,
+      "TEMP": 24.8,
+      "HUMIDITY": 56,
+      "VOC": 234,
+      "PM25": 1.2,
+      "NOISE": 45,
+      "OUTSIDE_TEMP": 19.05,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-01 09:00:00",
+      "date": "01/08/2025 09:00:00",
+      "CO2": 681,
+      "TEMP": 24.8,
+      "HUMIDITY": 60,
+      "VOC": 323,
+      "PM25": 236.9,
+      "NOISE": 57,
+      "OUTSIDE_TEMP": 18.75,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-01 15:00:00",
+      "date": "01/08/2025 15:00:00",
+      "CO2": 831,
+      "TEMP": 25.1,
+      "HUMIDITY": 63,
+      "VOC": 467,
+      "PM25": 566.7,
+      "NOISE": 57,
+      "OUTSIDE_TEMP": 23.5,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-01 21:00:00",
+      "date": "01/08/2025 21:00:00",
+      "CO2": 544,
+      "TEMP": 24.9,
+      "HUMIDITY": 56,
+      "VOC": 154,
+      "PM25": 25.5,
+      "NOISE": 49,
+      "OUTSIDE_TEMP": 20.1333,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-01 03:00:00",
+      "date": "01/09/2025 03:00:00",
+      "CO2": 540,
+      "TEMP": 25.6,
+      "HUMIDITY": 50,
+      "VOC": 239,
+      "PM25": 0.5,
+      "NOISE": 50,
+      "OUTSIDE_TEMP": 14.8167,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-01 09:00:00",
+      "date": "01/09/2025 09:00:00",
+      "CO2": 542,
+      "TEMP": 25.4,
+      "HUMIDITY": 50,
+      "VOC": 156,
+      "PM25": 1.1,
+      "NOISE": 57,
+      "OUTSIDE_TEMP": 15.75,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-01 15:00:00",
+      "date": "01/09/2025 15:00:00",
+      "CO2": 567,
+      "TEMP": 25.6,
+      "HUMIDITY": 49,
+      "VOC": 212,
+      "PM25": 0.6,
+      "NOISE": 61,
+      "OUTSIDE_TEMP": 21.9,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-01 21:00:00",
+      "date": "01/09/2025 21:00:00",
+      "CO2": 564,
+      "TEMP": 25.6,
+      "HUMIDITY": 47,
+      "VOC": 290,
+      "PM25": 0.8,
+      "NOISE": 60,
+      "OUTSIDE_TEMP": 18.1667,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-10-01 03:00:00",
+      "date": "01/10/2025 03:00:00",
+      "CO2": 543,
+      "TEMP": 23.2,
+      "HUMIDITY": 46,
+      "VOC": 772,
+      "PM25": 0,
+      "NOISE": 45,
+      "OUTSIDE_TEMP": 8,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-02 03:00:00",
+      "date": "02/07/2025 03:00:00",
+      "CO2": 694,
+      "TEMP": 26.6,
+      "HUMIDITY": 55,
+      "VOC": 531,
+      "PM25": 3.8,
+      "NOISE": 50,
+      "OUTSIDE_TEMP": 24.7,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-02 09:00:00",
+      "date": "02/07/2025 09:00:00",
+      "CO2": 542,
+      "TEMP": 26.7,
+      "HUMIDITY": 56,
+      "VOC": 205,
+      "PM25": 3.2,
+      "NOISE": 57,
+      "OUTSIDE_TEMP": 24.9,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-02 15:00:00",
+      "date": "02/07/2025 15:00:00",
+      "CO2": 658,
+      "TEMP": 26.6,
+      "HUMIDITY": 57,
+      "VOC": 272,
+      "PM25": 2.8,
+      "NOISE": 63,
+      "OUTSIDE_TEMP": 32.9167,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-02 21:00:00",
+      "date": "02/07/2025 21:00:00",
+      "CO2": 603,
+      "TEMP": 25.1,
+      "HUMIDITY": 57,
+      "VOC": 151,
+      "PM25": 0.2,
+      "NOISE": 67,
+      "OUTSIDE_TEMP": 23.3,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-02 03:00:00",
+      "date": "02/08/2025 03:00:00",
+      "CO2": 526,
+      "TEMP": 24.8,
+      "HUMIDITY": 54,
+      "VOC": 222,
+      "PM25": 1.5,
+      "NOISE": 53,
+      "OUTSIDE_TEMP": 15.7833,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-02 09:00:00",
+      "date": "02/08/2025 09:00:00",
+      "CO2": 525,
+      "TEMP": 24.6,
+      "HUMIDITY": 52,
+      "VOC": 192,
+      "PM25": 8.3,
+      "NOISE": 55,
+      "OUTSIDE_TEMP": 15.8833,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-02 15:00:00",
+      "date": "02/08/2025 15:00:00",
+      "CO2": 548,
+      "TEMP": 24.8,
+      "HUMIDITY": 47,
+      "VOC": 188,
+      "PM25": 138.6,
+      "NOISE": 60,
+      "OUTSIDE_TEMP": 21.8167,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-02 21:00:00",
+      "date": "02/08/2025 21:00:00",
+      "CO2": 552,
+      "TEMP": 24.9,
+      "HUMIDITY": 47,
+      "VOC": 304,
+      "PM25": 1.9,
+      "NOISE": 61,
+      "OUTSIDE_TEMP": 19.3167,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-02 03:00:00",
+      "date": "02/09/2025 03:00:00",
+      "CO2": 552,
+      "TEMP": 25.4,
+      "HUMIDITY": 48,
+      "VOC": 313,
+      "PM25": 0.5,
+      "NOISE": 47,
+      "OUTSIDE_TEMP": 13.65,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-02 09:00:00",
+      "date": "02/09/2025 09:00:00",
+      "CO2": 529,
+      "TEMP": 25.2,
+      "HUMIDITY": 47,
+      "VOC": 215,
+      "PM25": 0.6,
+      "NOISE": 53,
+      "OUTSIDE_TEMP": 13.8167,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-02 15:00:00",
+      "date": "02/09/2025 15:00:00",
+      "CO2": 539,
+      "TEMP": 25.2,
+      "HUMIDITY": 49,
+      "VOC": 189,
+      "PM25": 0.8,
+      "NOISE": 50,
+      "OUTSIDE_TEMP": 17.7667,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-02 21:00:00",
+      "date": "02/09/2025 21:00:00",
+      "CO2": 546,
+      "TEMP": 25.3,
+      "HUMIDITY": 51,
+      "VOC": 289,
+      "PM25": 0.3,
+      "NOISE": 57,
+      "OUTSIDE_TEMP": 17.5333,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-03 03:00:00",
+      "date": "03/07/2025 03:00:00",
+      "CO2": 535,
+      "TEMP": 24.2,
+      "HUMIDITY": 57,
+      "VOC": 127,
+      "PM25": 0.4,
+      "NOISE": 62,
+      "OUTSIDE_TEMP": 18.2833,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-03 09:00:00",
+      "date": "03/07/2025 09:00:00",
+      "CO2": 510,
+      "TEMP": 23.8,
+      "HUMIDITY": 57,
+      "VOC": 137,
+      "PM25": 0.3,
+      "NOISE": 63,
+      "OUTSIDE_TEMP": 19.1167,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-03 15:00:00",
+      "date": "03/07/2025 15:00:00",
+      "CO2": 523,
+      "TEMP": 24,
+      "HUMIDITY": 49,
+      "VOC": 138,
+      "PM25": 0.3,
+      "NOISE": 64,
+      "OUTSIDE_TEMP": 26.2333,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-03 21:00:00",
+      "date": "03/07/2025 21:00:00",
+      "CO2": 551,
+      "TEMP": 23.8,
+      "HUMIDITY": 44,
+      "VOC": 146,
+      "PM25": 0.1,
+      "NOISE": 64,
+      "OUTSIDE_TEMP": 24.5333,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-03 03:00:00",
+      "date": "03/08/2025 03:00:00",
+      "CO2": 535,
+      "TEMP": 24.8,
+      "HUMIDITY": 48,
+      "VOC": 243,
+      "PM25": 1.4,
+      "NOISE": 50,
+      "OUTSIDE_TEMP": 13.6333,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-03 09:00:00",
+      "date": "03/08/2025 09:00:00",
+      "CO2": 499,
+      "TEMP": 24.8,
+      "HUMIDITY": 47,
+      "VOC": 228,
+      "PM25": 1,
+      "NOISE": 48,
+      "OUTSIDE_TEMP": 16.9333,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-03 15:00:00",
+      "date": "03/08/2025 15:00:00",
+      "CO2": 480,
+      "TEMP": 25,
+      "HUMIDITY": 45,
+      "VOC": 160,
+      "PM25": 1.1,
+      "NOISE": 59,
+      "OUTSIDE_TEMP": 23.9167,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-03 21:00:00",
+      "date": "03/08/2025 21:00:00",
+      "CO2": 499,
+      "TEMP": 25.2,
+      "HUMIDITY": 45,
+      "VOC": 175,
+      "PM25": 2.2,
+      "NOISE": 51,
+      "OUTSIDE_TEMP": 23.0833,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-03 03:00:00",
+      "date": "03/09/2025 03:00:00",
+      "CO2": 525,
+      "TEMP": 25.3,
+      "HUMIDITY": 52,
+      "VOC": 308,
+      "PM25": 0.5,
+      "NOISE": 45,
+      "OUTSIDE_TEMP": 17.35,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-03 09:00:00",
+      "date": "03/09/2025 09:00:00",
+      "CO2": 519,
+      "TEMP": 25.1,
+      "HUMIDITY": 53,
+      "VOC": 298,
+      "PM25": 1.2,
+      "NOISE": 55,
+      "OUTSIDE_TEMP": 18.3167,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-03 15:00:00",
+      "date": "03/09/2025 15:00:00",
+      "CO2": 532,
+      "TEMP": 25.3,
+      "HUMIDITY": 54,
+      "VOC": 360,
+      "PM25": 0.9,
+      "NOISE": 59,
+      "OUTSIDE_TEMP": 22.8167,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-03 21:00:00",
+      "date": "03/09/2025 21:00:00",
+      "CO2": 535,
+      "TEMP": 25.4,
+      "HUMIDITY": 54,
+      "VOC": 387,
+      "PM25": 1.4,
+      "NOISE": 59,
+      "OUTSIDE_TEMP": 22.4167,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-04 03:00:00",
+      "date": "04/07/2025 03:00:00",
+      "CO2": 507,
+      "TEMP": 23.5,
+      "HUMIDITY": 44,
+      "VOC": 129,
+      "PM25": 0,
+      "NOISE": 62,
+      "OUTSIDE_TEMP": 16.75,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-04 09:00:00",
+      "date": "04/07/2025 09:00:00",
+      "CO2": 489,
+      "TEMP": 23.8,
+      "HUMIDITY": 43,
+      "VOC": 125,
+      "PM25": 0.9,
+      "NOISE": 61,
+      "OUTSIDE_TEMP": 17.7167,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-04 15:00:00",
+      "date": "04/07/2025 15:00:00",
+      "CO2": 542,
+      "TEMP": 24.2,
+      "HUMIDITY": 39,
+      "VOC": 209,
+      "PM25": 0.8,
+      "NOISE": 63,
+      "OUTSIDE_TEMP": 26.8667,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-04 21:00:00",
+      "date": "04/07/2025 21:00:00",
+      "CO2": 520,
+      "TEMP": 23.8,
+      "HUMIDITY": 39,
+      "VOC": 220,
+      "PM25": 0,
+      "NOISE": 64,
+      "OUTSIDE_TEMP": 25.2167,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-04 03:00:00",
+      "date": "04/08/2025 03:00:00",
+      "CO2": 499,
+      "TEMP": 25.3,
+      "HUMIDITY": 49,
+      "VOC": 228,
+      "PM25": 0.6,
+      "NOISE": 45,
+      "OUTSIDE_TEMP": 20.45,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-04 09:00:00",
+      "date": "04/08/2025 09:00:00",
+      "CO2": 556,
+      "TEMP": 25.3,
+      "HUMIDITY": 52,
+      "VOC": 273,
+      "PM25": 60.5,
+      "NOISE": 58,
+      "OUTSIDE_TEMP": 20.3167,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-04 15:00:00",
+      "date": "04/08/2025 15:00:00",
+      "CO2": 566,
+      "TEMP": 25.6,
+      "HUMIDITY": 54,
+      "VOC": 324,
+      "PM25": 6.5,
+      "NOISE": 60,
+      "OUTSIDE_TEMP": 26.1833,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-04 21:00:00",
+      "date": "04/08/2025 21:00:00",
+      "CO2": 549,
+      "TEMP": 25.7,
+      "HUMIDITY": 53,
+      "VOC": 313,
+      "PM25": 1.7,
+      "NOISE": 60,
+      "OUTSIDE_TEMP": 27.45,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-04 03:00:00",
+      "date": "04/09/2025 03:00:00",
+      "CO2": 524,
+      "TEMP": 25.3,
+      "HUMIDITY": 53,
+      "VOC": 349,
+      "PM25": 1.2,
+      "NOISE": 47,
+      "OUTSIDE_TEMP": 17.6333,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-04 09:00:00",
+      "date": "04/09/2025 09:00:00",
+      "CO2": 521,
+      "TEMP": 25.1,
+      "HUMIDITY": 52,
+      "VOC": 279,
+      "PM25": 0.7,
+      "NOISE": 56,
+      "OUTSIDE_TEMP": 16.75,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-04 15:00:00",
+      "date": "04/09/2025 15:00:00",
+      "CO2": 532,
+      "TEMP": 25.2,
+      "HUMIDITY": 52,
+      "VOC": 296,
+      "PM25": 1.1,
+      "NOISE": 59,
+      "OUTSIDE_TEMP": 20.6333,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-04 21:00:00",
+      "date": "04/09/2025 21:00:00",
+      "CO2": 532,
+      "TEMP": 25.3,
+      "HUMIDITY": 50,
+      "VOC": 267,
+      "PM25": 1.1,
+      "NOISE": 58,
+      "OUTSIDE_TEMP": 19.2,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-05 03:00:00",
+      "date": "05/07/2025 03:00:00",
+      "CO2": 497,
+      "TEMP": 23.5,
+      "HUMIDITY": 43,
+      "VOC": 241,
+      "PM25": 0,
+      "NOISE": 62,
+      "OUTSIDE_TEMP": 16.75,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-05 09:00:00",
+      "date": "05/07/2025 09:00:00",
+      "CO2": 476,
+      "TEMP": 23.5,
+      "HUMIDITY": 41,
+      "VOC": 199,
+      "PM25": 0.2,
+      "NOISE": 63,
+      "OUTSIDE_TEMP": 17.9667,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-05 15:00:00",
+      "date": "05/07/2025 15:00:00",
+      "CO2": 498,
+      "TEMP": 23.5,
+      "HUMIDITY": 39,
+      "VOC": 174,
+      "PM25": 0.6,
+      "NOISE": 63,
+      "OUTSIDE_TEMP": 27,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-05 21:00:00",
+      "date": "05/07/2025 21:00:00",
+      "CO2": 486,
+      "TEMP": 23.4,
+      "HUMIDITY": 37,
+      "VOC": 170,
+      "PM25": 0.3,
+      "NOISE": 65,
+      "OUTSIDE_TEMP": 24.5333,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-05 03:00:00",
+      "date": "05/08/2025 03:00:00",
+      "CO2": 532,
+      "TEMP": 25.7,
+      "HUMIDITY": 53,
+      "VOC": 328,
+      "PM25": 1.3,
+      "NOISE": 45,
+      "OUTSIDE_TEMP": 21.9333,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-05 09:00:00",
+      "date": "05/08/2025 09:00:00",
+      "CO2": 523,
+      "TEMP": 25.6,
+      "HUMIDITY": 55,
+      "VOC": 289,
+      "PM25": 0.8,
+      "NOISE": 58,
+      "OUTSIDE_TEMP": 18.5,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-05 15:00:00",
+      "date": "05/08/2025 15:00:00",
+      "CO2": 550,
+      "TEMP": 25.9,
+      "HUMIDITY": 50,
+      "VOC": 263,
+      "PM25": 1.4,
+      "NOISE": 59,
+      "OUTSIDE_TEMP": 22.85,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-05 21:00:00",
+      "date": "05/08/2025 21:00:00",
+      "CO2": 557,
+      "TEMP": 25.9,
+      "HUMIDITY": 46,
+      "VOC": 226,
+      "PM25": 2.4,
+      "NOISE": 60,
+      "OUTSIDE_TEMP": 20,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-05 03:00:00",
+      "date": "05/09/2025 03:00:00",
+      "CO2": 526,
+      "TEMP": 25.1,
+      "HUMIDITY": 49,
+      "VOC": 200,
+      "PM25": 0.6,
+      "NOISE": 58,
+      "OUTSIDE_TEMP": 15.3833,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-05 09:00:00",
+      "date": "05/09/2025 09:00:00",
+      "CO2": 540,
+      "TEMP": 24.9,
+      "HUMIDITY": 48,
+      "VOC": 171,
+      "PM25": 0.7,
+      "NOISE": 59,
+      "OUTSIDE_TEMP": 15.5833,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-05 15:00:00",
+      "date": "05/09/2025 15:00:00",
+      "CO2": 534,
+      "TEMP": 25.3,
+      "HUMIDITY": 47,
+      "VOC": 186,
+      "PM25": 0.3,
+      "NOISE": 59,
+      "OUTSIDE_TEMP": 21.7333,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-05 21:00:00",
+      "date": "05/09/2025 21:00:00",
+      "CO2": 548,
+      "TEMP": 25.5,
+      "HUMIDITY": 45,
+      "VOC": 189,
+      "PM25": 0.5,
+      "NOISE": 69,
+      "OUTSIDE_TEMP": 18.7833,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-06 03:00:00",
+      "date": "06/07/2025 03:00:00",
+      "CO2": 507,
+      "TEMP": 23.5,
+      "HUMIDITY": 43,
+      "VOC": 242,
+      "PM25": 0.1,
+      "NOISE": 65,
+      "OUTSIDE_TEMP": 18.0167,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-06 09:00:00",
+      "date": "06/07/2025 09:00:00",
+      "CO2": 476,
+      "TEMP": 23.5,
+      "HUMIDITY": 50,
+      "VOC": 165,
+      "PM25": 0.6,
+      "NOISE": 62,
+      "OUTSIDE_TEMP": 14.2833,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-06 15:00:00",
+      "date": "06/07/2025 15:00:00",
+      "CO2": 513,
+      "TEMP": 23.6,
+      "HUMIDITY": 54,
+      "VOC": 263,
+      "PM25": 0.8,
+      "NOISE": 63,
+      "OUTSIDE_TEMP": 16.4167,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-06 21:00:00",
+      "date": "06/07/2025 21:00:00",
+      "CO2": 583,
+      "TEMP": 23.5,
+      "HUMIDITY": 59,
+      "VOC": 390,
+      "PM25": 0.1,
+      "NOISE": 68,
+      "OUTSIDE_TEMP": 18.3833,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-06 03:00:00",
+      "date": "06/08/2025 03:00:00",
+      "CO2": 537,
+      "TEMP": 25.6,
+      "HUMIDITY": 44,
+      "VOC": 222,
+      "PM25": 1.6,
+      "NOISE": 51,
+      "OUTSIDE_TEMP": 12.0333,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-06 09:00:00",
+      "date": "06/08/2025 09:00:00",
+      "CO2": 593,
+      "TEMP": 25.5,
+      "HUMIDITY": 44,
+      "VOC": 200,
+      "PM25": 13.3,
+      "NOISE": 56,
+      "OUTSIDE_TEMP": 14.5333,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-06 15:00:00",
+      "date": "06/08/2025 15:00:00",
+      "CO2": 551,
+      "TEMP": 25.9,
+      "HUMIDITY": 43,
+      "VOC": 286,
+      "PM25": 2,
+      "NOISE": 59,
+      "OUTSIDE_TEMP": 22.7833,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-06 21:00:00",
+      "date": "06/08/2025 21:00:00",
+      "CO2": 563,
+      "TEMP": 25.9,
+      "HUMIDITY": 42,
+      "VOC": 239,
+      "PM25": 1,
+      "NOISE": 59,
+      "OUTSIDE_TEMP": 20.7167,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-06 03:00:00",
+      "date": "06/09/2025 03:00:00",
+      "CO2": 575,
+      "TEMP": 25.4,
+      "HUMIDITY": 45,
+      "VOC": 159,
+      "PM25": 0.7,
+      "NOISE": 48,
+      "OUTSIDE_TEMP": 11.6667,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-06 09:00:00",
+      "date": "06/09/2025 09:00:00",
+      "CO2": 534,
+      "TEMP": 25.1,
+      "HUMIDITY": 44,
+      "VOC": 291,
+      "PM25": 0.5,
+      "NOISE": 54,
+      "OUTSIDE_TEMP": 13.5667,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-06 15:00:00",
+      "date": "06/09/2025 15:00:00",
+      "CO2": 531,
+      "TEMP": 25.4,
+      "HUMIDITY": 43,
+      "VOC": 476,
+      "PM25": 0.3,
+      "NOISE": 59,
+      "OUTSIDE_TEMP": 24.1667,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-06 21:00:00",
+      "date": "06/09/2025 21:00:00",
+      "CO2": 558,
+      "TEMP": 25.5,
+      "HUMIDITY": 43,
+      "VOC": 359,
+      "PM25": 0.2,
+      "NOISE": 56,
+      "OUTSIDE_TEMP": 20.45,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-07 03:00:00",
+      "date": "07/07/2025 03:00:00",
+      "CO2": 529,
+      "TEMP": 23.5,
+      "HUMIDITY": 56,
+      "VOC": 327,
+      "PM25": 0,
+      "NOISE": 63,
+      "OUTSIDE_TEMP": 16.6833,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-07 09:00:00",
+      "date": "07/07/2025 09:00:00",
+      "CO2": 521,
+      "TEMP": 23.4,
+      "HUMIDITY": 54,
+      "VOC": 259,
+      "PM25": 0.2,
+      "NOISE": 63,
+      "OUTSIDE_TEMP": 15.75,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-07 15:00:00",
+      "date": "07/07/2025 15:00:00",
+      "CO2": 536,
+      "TEMP": 23.4,
+      "HUMIDITY": 56,
+      "VOC": 296,
+      "PM25": 0.4,
+      "NOISE": 63,
+      "OUTSIDE_TEMP": 18.4667,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-07 21:00:00",
+      "date": "07/07/2025 21:00:00",
+      "CO2": 586,
+      "TEMP": 23.5,
+      "HUMIDITY": 54,
+      "VOC": 369,
+      "PM25": 0.2,
+      "NOISE": 66,
+      "OUTSIDE_TEMP": 17.5833,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-07 03:00:00",
+      "date": "07/08/2025 03:00:00",
+      "CO2": 518,
+      "TEMP": 25.7,
+      "HUMIDITY": 41,
+      "VOC": 257,
+      "PM25": 0.7,
+      "NOISE": 48,
+      "OUTSIDE_TEMP": 14,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-07 09:00:00",
+      "date": "07/08/2025 09:00:00",
+      "CO2": 517,
+      "TEMP": 25.5,
+      "HUMIDITY": 40,
+      "VOC": 128,
+      "PM25": 0.9,
+      "NOISE": 58,
+      "OUTSIDE_TEMP": 17.65,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-07 15:00:00",
+      "date": "07/08/2025 15:00:00",
+      "CO2": 539,
+      "TEMP": 25.9,
+      "HUMIDITY": 39,
+      "VOC": 217,
+      "PM25": 1.7,
+      "NOISE": 61,
+      "OUTSIDE_TEMP": 27.9667,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-07 21:00:00",
+      "date": "07/08/2025 21:00:00",
+      "CO2": 519,
+      "TEMP": 26,
+      "HUMIDITY": 37,
+      "VOC": 210,
+      "PM25": 1.9,
+      "NOISE": 51,
+      "OUTSIDE_TEMP": 25.5833,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-07 03:00:00",
+      "date": "07/09/2025 03:00:00",
+      "CO2": 531,
+      "TEMP": 25.4,
+      "HUMIDITY": 44,
+      "VOC": 451,
+      "PM25": 0.4,
+      "NOISE": 47,
+      "OUTSIDE_TEMP": 15.1833,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-07 09:00:00",
+      "date": "07/09/2025 09:00:00",
+      "CO2": 513,
+      "TEMP": 25.4,
+      "HUMIDITY": 44,
+      "VOC": 306,
+      "PM25": 0.5,
+      "NOISE": 54,
+      "OUTSIDE_TEMP": 16.3833,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-07 15:00:00",
+      "date": "07/09/2025 15:00:00",
+      "CO2": 537,
+      "TEMP": 25.8,
+      "HUMIDITY": 45,
+      "VOC": 257,
+      "PM25": 1.6,
+      "NOISE": 60,
+      "OUTSIDE_TEMP": 30.1167,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-07 21:00:00",
+      "date": "07/09/2025 21:00:00",
+      "CO2": 556,
+      "TEMP": 25.9,
+      "HUMIDITY": 46,
+      "VOC": 297,
+      "PM25": 1.4,
+      "NOISE": 58,
+      "OUTSIDE_TEMP": 24.5,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-08 03:00:00",
+      "date": "08/07/2025 03:00:00",
+      "CO2": 544,
+      "TEMP": 23.4,
+      "HUMIDITY": 49,
+      "VOC": 294,
+      "PM25": 0,
+      "NOISE": 61,
+      "OUTSIDE_TEMP": 13.4333,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-08 09:00:00",
+      "date": "08/07/2025 09:00:00",
+      "CO2": 522,
+      "TEMP": 23.4,
+      "HUMIDITY": 49,
+      "VOC": 187,
+      "PM25": 0.3,
+      "NOISE": 64,
+      "OUTSIDE_TEMP": 15.4167,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-08 15:00:00",
+      "date": "08/07/2025 15:00:00",
+      "CO2": 530,
+      "TEMP": 23.4,
+      "HUMIDITY": 44,
+      "VOC": 174,
+      "PM25": 0.5,
+      "NOISE": 63,
+      "OUTSIDE_TEMP": 21.8833,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-08 21:00:00",
+      "date": "08/07/2025 21:00:00",
+      "CO2": 554,
+      "TEMP": 23.4,
+      "HUMIDITY": 41,
+      "VOC": 189,
+      "PM25": 0.6,
+      "NOISE": 63,
+      "OUTSIDE_TEMP": 20.6333,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-08 03:00:00",
+      "date": "08/08/2025 03:00:00",
+      "CO2": 527,
+      "TEMP": 26,
+      "HUMIDITY": 38,
+      "VOC": 402,
+      "PM25": 1.9,
+      "NOISE": 48,
+      "OUTSIDE_TEMP": 15.5833,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-08 09:00:00",
+      "date": "08/08/2025 09:00:00",
+      "CO2": 524,
+      "TEMP": 25.9,
+      "HUMIDITY": 40,
+      "VOC": 927,
+      "PM25": 2.3,
+      "NOISE": 56,
+      "OUTSIDE_TEMP": 18.8667,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-08 15:00:00",
+      "date": "08/08/2025 15:00:00",
+      "CO2": 558,
+      "TEMP": 26.3,
+      "HUMIDITY": 42,
+      "VOC": 242,
+      "PM25": 1.6,
+      "NOISE": 59,
+      "OUTSIDE_TEMP": 27.7667,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-08 21:00:00",
+      "date": "08/08/2025 21:00:00",
+      "CO2": 568,
+      "TEMP": 26.5,
+      "HUMIDITY": 45,
+      "VOC": 223,
+      "PM25": 2.9,
+      "NOISE": 57,
+      "OUTSIDE_TEMP": 24.6167,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-08 03:00:00",
+      "date": "08/09/2025 03:00:00",
+      "CO2": 530,
+      "TEMP": 25.9,
+      "HUMIDITY": 49,
+      "VOC": 342,
+      "PM25": 1,
+      "NOISE": 44,
+      "OUTSIDE_TEMP": 20.8333,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-08 09:00:00",
+      "date": "08/09/2025 09:00:00",
+      "CO2": 521,
+      "TEMP": 25.8,
+      "HUMIDITY": 51,
+      "VOC": 313,
+      "PM25": 0.6,
+      "NOISE": 55,
+      "OUTSIDE_TEMP": 18.6667,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-08 15:00:00",
+      "date": "08/09/2025 15:00:00",
+      "CO2": 651,
+      "TEMP": 26.1,
+      "HUMIDITY": 49,
+      "VOC": 332,
+      "PM25": 1,
+      "NOISE": 57,
+      "OUTSIDE_TEMP": 22.8167,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-08 21:00:00",
+      "date": "08/09/2025 21:00:00",
+      "CO2": 588,
+      "TEMP": 25.9,
+      "HUMIDITY": 47,
+      "VOC": 643,
+      "PM25": 0.6,
+      "NOISE": 48,
+      "OUTSIDE_TEMP": 20.8333,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-09 03:00:00",
+      "date": "09/07/2025 03:00:00",
+      "CO2": 530,
+      "TEMP": 23.4,
+      "HUMIDITY": 43,
+      "VOC": 186,
+      "PM25": 0,
+      "NOISE": 62,
+      "OUTSIDE_TEMP": 11.8,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-09 09:00:00",
+      "date": "09/07/2025 09:00:00",
+      "CO2": 509,
+      "TEMP": 23.4,
+      "HUMIDITY": 44,
+      "VOC": 119,
+      "PM25": 0.5,
+      "NOISE": 63,
+      "OUTSIDE_TEMP": 14.85,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-09 15:00:00",
+      "date": "09/07/2025 15:00:00",
+      "CO2": 546,
+      "TEMP": 23.4,
+      "HUMIDITY": 42,
+      "VOC": 204,
+      "PM25": 0.6,
+      "NOISE": 64,
+      "OUTSIDE_TEMP": 24.4833,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-09 21:00:00",
+      "date": "09/07/2025 21:00:00",
+      "CO2": 588,
+      "TEMP": 23.4,
+      "HUMIDITY": 43,
+      "VOC": 298,
+      "PM25": 0.1,
+      "NOISE": 65,
+      "OUTSIDE_TEMP": 22.8167,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-09 03:00:00",
+      "date": "09/08/2025 03:00:00",
+      "CO2": 532,
+      "TEMP": 26.3,
+      "HUMIDITY": 46,
+      "VOC": 327,
+      "PM25": 4.2,
+      "NOISE": 48,
+      "OUTSIDE_TEMP": 17.4833,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-09 09:00:00",
+      "date": "09/08/2025 09:00:00",
+      "CO2": 512,
+      "TEMP": 26.2,
+      "HUMIDITY": 46,
+      "VOC": 122,
+      "PM25": 3.8,
+      "NOISE": 56,
+      "OUTSIDE_TEMP": 19.6167,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-09 15:00:00",
+      "date": "09/08/2025 15:00:00",
+      "CO2": 525,
+      "TEMP": 26.6,
+      "HUMIDITY": 45,
+      "VOC": 170,
+      "PM25": 4.3,
+      "NOISE": 60,
+      "OUTSIDE_TEMP": 27.8167,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-09 21:00:00",
+      "date": "09/08/2025 21:00:00",
+      "CO2": 517,
+      "TEMP": 26.6,
+      "HUMIDITY": 46,
+      "VOC": 171,
+      "PM25": 5.9,
+      "NOISE": 59,
+      "OUTSIDE_TEMP": 24.9167,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-09 03:00:00",
+      "date": "09/09/2025 03:00:00",
+      "CO2": 532,
+      "TEMP": 25.8,
+      "HUMIDITY": 45,
+      "VOC": 339,
+      "PM25": 0.3,
+      "NOISE": 48,
+      "OUTSIDE_TEMP": 15.1667,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-09 09:00:00",
+      "date": "09/09/2025 09:00:00",
+      "CO2": 518,
+      "TEMP": 25.7,
+      "HUMIDITY": 44,
+      "VOC": 120,
+      "PM25": 0.5,
+      "NOISE": 48,
+      "OUTSIDE_TEMP": 14.9,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-09 15:00:00",
+      "date": "09/09/2025 15:00:00",
+      "CO2": 512,
+      "TEMP": 25.9,
+      "HUMIDITY": 43,
+      "VOC": 236,
+      "PM25": 0.4,
+      "NOISE": 47,
+      "OUTSIDE_TEMP": 22.15,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-09 21:00:00",
+      "date": "09/09/2025 21:00:00",
+      "CO2": 527,
+      "TEMP": 25.8,
+      "HUMIDITY": 41,
+      "VOC": 232,
+      "PM25": 0.3,
+      "NOISE": 60,
+      "OUTSIDE_TEMP": 17.8333,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-10 03:00:00",
+      "date": "10/07/2025 03:00:00",
+      "CO2": 527,
+      "TEMP": 23.4,
+      "HUMIDITY": 44,
+      "VOC": 247,
+      "PM25": 0.1,
+      "NOISE": 62,
+      "OUTSIDE_TEMP": 14.0167,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-10 09:00:00",
+      "date": "10/07/2025 09:00:00",
+      "CO2": 536,
+      "TEMP": 23.3,
+      "HUMIDITY": 46,
+      "VOC": 247,
+      "PM25": 0.2,
+      "NOISE": 63,
+      "OUTSIDE_TEMP": 18.0833,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-10 15:00:00",
+      "date": "10/07/2025 15:00:00",
+      "CO2": 551,
+      "TEMP": 23.3,
+      "HUMIDITY": 47,
+      "VOC": 277,
+      "PM25": 0.4,
+      "NOISE": 63,
+      "OUTSIDE_TEMP": 27.5167,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-10 21:00:00",
+      "date": "10/07/2025 21:00:00",
+      "CO2": 558,
+      "TEMP": 23.2,
+      "HUMIDITY": 48,
+      "VOC": 296,
+      "PM25": 0.3,
+      "NOISE": 63,
+      "OUTSIDE_TEMP": 26.6333,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-10 03:00:00",
+      "date": "10/08/2025 03:00:00",
+      "CO2": 513,
+      "TEMP": 26.4,
+      "HUMIDITY": 45,
+      "VOC": 166,
+      "PM25": 1.1,
+      "NOISE": 56,
+      "OUTSIDE_TEMP": 15.3667,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-10 09:00:00",
+      "date": "10/08/2025 09:00:00",
+      "CO2": 509,
+      "TEMP": 26.3,
+      "HUMIDITY": 44,
+      "VOC": 161,
+      "PM25": 1,
+      "NOISE": 47,
+      "OUTSIDE_TEMP": 15.6167,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-10 15:00:00",
+      "date": "10/08/2025 15:00:00",
+      "CO2": 527,
+      "TEMP": 26.7,
+      "HUMIDITY": 44,
+      "VOC": 250,
+      "PM25": 1,
+      "NOISE": 58,
+      "OUTSIDE_TEMP": 26.3833,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-10 21:00:00",
+      "date": "10/08/2025 21:00:00",
+      "CO2": 519,
+      "TEMP": 26.7,
+      "HUMIDITY": 43,
+      "VOC": 178,
+      "PM25": 0.9,
+      "NOISE": 52,
+      "OUTSIDE_TEMP": 24.1333,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-10 03:00:00",
+      "date": "10/09/2025 03:00:00",
+      "CO2": 517,
+      "TEMP": 25.6,
+      "HUMIDITY": 40,
+      "VOC": 177,
+      "PM25": 0.3,
+      "NOISE": 47,
+      "OUTSIDE_TEMP": 12.05,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-10 09:00:00",
+      "date": "10/09/2025 09:00:00",
+      "CO2": 513,
+      "TEMP": 25.4,
+      "HUMIDITY": 40,
+      "VOC": 136,
+      "PM25": 0.4,
+      "NOISE": 47,
+      "OUTSIDE_TEMP": 13.6667,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-10 15:00:00",
+      "date": "10/09/2025 15:00:00",
+      "CO2": 574,
+      "TEMP": 25.5,
+      "HUMIDITY": 41,
+      "VOC": 244,
+      "PM25": 3.3,
+      "NOISE": 48,
+      "OUTSIDE_TEMP": 20.05,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-10 21:00:00",
+      "date": "10/09/2025 21:00:00",
+      "CO2": 566,
+      "TEMP": 25.6,
+      "HUMIDITY": 42,
+      "VOC": 265,
+      "PM25": 0.7,
+      "NOISE": 51,
+      "OUTSIDE_TEMP": 17.0167,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-11 03:00:00",
+      "date": "11/07/2025 03:00:00",
+      "CO2": 533,
+      "TEMP": 23.3,
+      "HUMIDITY": 52,
+      "VOC": 360,
+      "PM25": 0,
+      "NOISE": 61,
+      "OUTSIDE_TEMP": 19.5167,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-11 09:00:00",
+      "date": "11/07/2025 09:00:00",
+      "CO2": 543,
+      "TEMP": 23.3,
+      "HUMIDITY": 55,
+      "VOC": 320,
+      "PM25": 0.5,
+      "NOISE": 63,
+      "OUTSIDE_TEMP": 20.5,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-11 15:00:00",
+      "date": "11/07/2025 15:00:00",
+      "CO2": 555,
+      "TEMP": 23.3,
+      "HUMIDITY": 54,
+      "VOC": 365,
+      "PM25": 0.3,
+      "NOISE": 64,
+      "OUTSIDE_TEMP": 29.3,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-11 21:00:00",
+      "date": "11/07/2025 21:00:00",
+      "CO2": 559,
+      "TEMP": 23.2,
+      "HUMIDITY": 54,
+      "VOC": 395,
+      "PM25": 0.1,
+      "NOISE": 63,
+      "OUTSIDE_TEMP": 27.1833,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-11 03:00:00",
+      "date": "11/08/2025 03:00:00",
+      "CO2": 505,
+      "TEMP": 26.6,
+      "HUMIDITY": 42,
+      "VOC": 233,
+      "PM25": 3.2,
+      "NOISE": 48,
+      "OUTSIDE_TEMP": 14.55,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-11 09:00:00",
+      "date": "11/08/2025 09:00:00",
+      "CO2": 517,
+      "TEMP": 26.5,
+      "HUMIDITY": 42,
+      "VOC": 143,
+      "PM25": 7.5,
+      "NOISE": 59,
+      "OUTSIDE_TEMP": 17.6833,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-11 15:00:00",
+      "date": "11/08/2025 15:00:00",
+      "CO2": 532,
+      "TEMP": 26.9,
+      "HUMIDITY": 42,
+      "VOC": 169,
+      "PM25": 5.6,
+      "NOISE": 60,
+      "OUTSIDE_TEMP": 30.4,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-11 21:00:00",
+      "date": "11/08/2025 21:00:00",
+      "CO2": 534,
+      "TEMP": 26.9,
+      "HUMIDITY": 42,
+      "VOC": 182,
+      "PM25": 5,
+      "NOISE": 59,
+      "OUTSIDE_TEMP": 27.0333,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-11 03:00:00",
+      "date": "11/09/2025 03:00:00",
+      "CO2": 525,
+      "TEMP": 25.5,
+      "HUMIDITY": 45,
+      "VOC": 251,
+      "PM25": 0.3,
+      "NOISE": 49,
+      "OUTSIDE_TEMP": 15.45,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-11 09:00:00",
+      "date": "11/09/2025 09:00:00",
+      "CO2": 516,
+      "TEMP": 25.3,
+      "HUMIDITY": 46,
+      "VOC": 221,
+      "PM25": 13.1,
+      "NOISE": 49,
+      "OUTSIDE_TEMP": 14.9,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-11 15:00:00",
+      "date": "11/09/2025 15:00:00",
+      "CO2": 630,
+      "TEMP": 25.3,
+      "HUMIDITY": 46,
+      "VOC": 459,
+      "PM25": 87.1,
+      "NOISE": 55,
+      "OUTSIDE_TEMP": 18.8,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-11 21:00:00",
+      "date": "11/09/2025 21:00:00",
+      "CO2": 536,
+      "TEMP": 25.3,
+      "HUMIDITY": 46,
+      "VOC": 367,
+      "PM25": 7.6,
+      "NOISE": 55,
+      "OUTSIDE_TEMP": 14.9167,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-12 03:00:00",
+      "date": "12/07/2025 03:00:00",
+      "CO2": 537,
+      "TEMP": 23.2,
+      "HUMIDITY": 55,
+      "VOC": 425,
+      "PM25": 0,
+      "NOISE": 61,
+      "OUTSIDE_TEMP": 18.4667,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-12 09:00:00",
+      "date": "12/07/2025 09:00:00",
+      "CO2": 541,
+      "TEMP": 23.2,
+      "HUMIDITY": 56,
+      "VOC": 367,
+      "PM25": 0.4,
+      "NOISE": 63,
+      "OUTSIDE_TEMP": 20.3833,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-12 15:00:00",
+      "date": "12/07/2025 15:00:00",
+      "CO2": 551,
+      "TEMP": 23.3,
+      "HUMIDITY": 56,
+      "VOC": 373,
+      "PM25": 0.6,
+      "NOISE": 63,
+      "OUTSIDE_TEMP": 27.9667,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-12 21:00:00",
+      "date": "12/07/2025 21:00:00",
+      "CO2": 545,
+      "TEMP": 23.2,
+      "HUMIDITY": 55,
+      "VOC": 388,
+      "PM25": 0.2,
+      "NOISE": 63,
+      "OUTSIDE_TEMP": 26.4667,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-12 03:00:00",
+      "date": "12/08/2025 03:00:00",
+      "CO2": 506,
+      "TEMP": 26.8,
+      "HUMIDITY": 42,
+      "VOC": 173,
+      "PM25": 3.8,
+      "NOISE": 46,
+      "OUTSIDE_TEMP": 17.95,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-12 09:00:00",
+      "date": "12/08/2025 09:00:00",
+      "CO2": 506,
+      "TEMP": 26.7,
+      "HUMIDITY": 43,
+      "VOC": 160,
+      "PM25": 5.5,
+      "NOISE": 56,
+      "OUTSIDE_TEMP": 20.7833,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-12 15:00:00",
+      "date": "12/08/2025 15:00:00",
+      "CO2": 546,
+      "TEMP": 27.2,
+      "HUMIDITY": 44,
+      "VOC": 215,
+      "PM25": 7.7,
+      "NOISE": 58,
+      "OUTSIDE_TEMP": 33.8833,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-12 21:00:00",
+      "date": "12/08/2025 21:00:00",
+      "CO2": 554,
+      "TEMP": 27.2,
+      "HUMIDITY": 43,
+      "VOC": 240,
+      "PM25": 4.9,
+      "NOISE": 57,
+      "OUTSIDE_TEMP": 30.6833,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-12 03:00:00",
+      "date": "12/09/2025 03:00:00",
+      "CO2": 530,
+      "TEMP": 25.2,
+      "HUMIDITY": 45,
+      "VOC": 317,
+      "PM25": 0.7,
+      "NOISE": 51,
+      "OUTSIDE_TEMP": 13.4,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-12 09:00:00",
+      "date": "12/09/2025 09:00:00",
+      "CO2": 602,
+      "TEMP": 25.1,
+      "HUMIDITY": 45,
+      "VOC": 387,
+      "PM25": 112.4,
+      "NOISE": 54,
+      "OUTSIDE_TEMP": 13.4333,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-12 15:00:00",
+      "date": "12/09/2025 15:00:00",
+      "CO2": 676,
+      "TEMP": 25.2,
+      "HUMIDITY": 46,
+      "VOC": 461,
+      "PM25": 174.4,
+      "NOISE": 57,
+      "OUTSIDE_TEMP": 20.0333,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-12 21:00:00",
+      "date": "12/09/2025 21:00:00",
+      "CO2": 534,
+      "TEMP": 25.2,
+      "HUMIDITY": 47,
+      "VOC": 422,
+      "PM25": 26.4,
+      "NOISE": 58,
+      "OUTSIDE_TEMP": 18.7333,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-13 03:00:00",
+      "date": "13/07/2025 03:00:00",
+      "CO2": 578,
+      "TEMP": 23.2,
+      "HUMIDITY": 53,
+      "VOC": 500,
+      "PM25": 0,
+      "NOISE": 65,
+      "OUTSIDE_TEMP": 17.5333,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-13 09:00:00",
+      "date": "13/07/2025 09:00:00",
+      "CO2": 537,
+      "TEMP": 23.2,
+      "HUMIDITY": 52,
+      "VOC": 301,
+      "PM25": 0.8,
+      "NOISE": 62,
+      "OUTSIDE_TEMP": 19.9667,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-13 15:00:00",
+      "date": "13/07/2025 15:00:00",
+      "CO2": 562,
+      "TEMP": 23.3,
+      "HUMIDITY": 51,
+      "VOC": 310,
+      "PM25": 0.5,
+      "NOISE": 66,
+      "OUTSIDE_TEMP": 30.25,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-13 21:00:00",
+      "date": "13/07/2025 21:00:00",
+      "CO2": 610,
+      "TEMP": 23.5,
+      "HUMIDITY": 50,
+      "VOC": 419,
+      "PM25": 0.3,
+      "NOISE": 73,
+      "OUTSIDE_TEMP": 29.4833,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-13 03:00:00",
+      "date": "13/08/2025 03:00:00",
+      "CO2": 544,
+      "TEMP": 27.1,
+      "HUMIDITY": 44,
+      "VOC": 278,
+      "PM25": 4,
+      "NOISE": 46,
+      "OUTSIDE_TEMP": 20.1,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-13 09:00:00",
+      "date": "13/08/2025 09:00:00",
+      "CO2": 538,
+      "TEMP": 27.1,
+      "HUMIDITY": 46,
+      "VOC": 329,
+      "PM25": 5.5,
+      "NOISE": 56,
+      "OUTSIDE_TEMP": 22.9833,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-13 15:00:00",
+      "date": "13/08/2025 15:00:00",
+      "CO2": 604,
+      "TEMP": 27.4,
+      "HUMIDITY": 48,
+      "VOC": 272,
+      "PM25": 5,
+      "NOISE": 61,
+      "OUTSIDE_TEMP": 31.9167,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-13 21:00:00",
+      "date": "13/08/2025 21:00:00",
+      "CO2": 617,
+      "TEMP": 27.5,
+      "HUMIDITY": 50,
+      "VOC": 384,
+      "PM25": 4.7,
+      "NOISE": 66,
+      "OUTSIDE_TEMP": 26.4167,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-13 03:00:00",
+      "date": "13/09/2025 03:00:00",
+      "CO2": 492,
+      "TEMP": 25.1,
+      "HUMIDITY": 45,
+      "VOC": 287,
+      "PM25": 0.6,
+      "NOISE": 49,
+      "OUTSIDE_TEMP": 15.1333,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-13 09:00:00",
+      "date": "13/09/2025 09:00:00",
+      "CO2": 499,
+      "TEMP": 25,
+      "HUMIDITY": 45,
+      "VOC": 215,
+      "PM25": 0.1,
+      "NOISE": 49,
+      "OUTSIDE_TEMP": 14.6,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-13 15:00:00",
+      "date": "13/09/2025 15:00:00",
+      "CO2": 513,
+      "TEMP": 25,
+      "HUMIDITY": 46,
+      "VOC": 241,
+      "PM25": 0.4,
+      "NOISE": 49,
+      "OUTSIDE_TEMP": 19.2833,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-13 21:00:00",
+      "date": "13/09/2025 21:00:00",
+      "CO2": 497,
+      "TEMP": 25,
+      "HUMIDITY": 46,
+      "VOC": 274,
+      "PM25": 0.6,
+      "NOISE": 54,
+      "OUTSIDE_TEMP": 15.5667,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-14 03:00:00",
+      "date": "14/07/2025 03:00:00",
+      "CO2": 593,
+      "TEMP": 23.4,
+      "HUMIDITY": 58,
+      "VOC": 458,
+      "PM25": 0.1,
+      "NOISE": 67,
+      "OUTSIDE_TEMP": 21.8333,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-14 09:00:00",
+      "date": "14/07/2025 09:00:00",
+      "CO2": 540,
+      "TEMP": 23.3,
+      "HUMIDITY": 60,
+      "VOC": 357,
+      "PM25": 0.9,
+      "NOISE": 62,
+      "OUTSIDE_TEMP": 22.7333,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-14 15:00:00",
+      "date": "14/07/2025 15:00:00",
+      "CO2": 538,
+      "TEMP": 23.3,
+      "HUMIDITY": 58,
+      "VOC": 314,
+      "PM25": 0.4,
+      "NOISE": 62,
+      "OUTSIDE_TEMP": 26.7167,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-14 21:00:00",
+      "date": "14/07/2025 21:00:00",
+      "CO2": 540,
+      "TEMP": 23.2,
+      "HUMIDITY": 55,
+      "VOC": 311,
+      "PM25": 0.4,
+      "NOISE": 62,
+      "OUTSIDE_TEMP": 24.6333,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-14 03:00:00",
+      "date": "14/08/2025 03:00:00",
+      "CO2": 573,
+      "TEMP": 27.4,
+      "HUMIDITY": 52,
+      "VOC": 399,
+      "PM25": 3.5,
+      "NOISE": 48,
+      "OUTSIDE_TEMP": 20.5833,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-14 09:00:00",
+      "date": "14/08/2025 09:00:00",
+      "CO2": 554,
+      "TEMP": 27.2,
+      "HUMIDITY": 52,
+      "VOC": 248,
+      "PM25": 3.3,
+      "NOISE": 50,
+      "OUTSIDE_TEMP": 21.85,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-14 15:00:00",
+      "date": "14/08/2025 15:00:00",
+      "CO2": 613,
+      "TEMP": 27.6,
+      "HUMIDITY": 53,
+      "VOC": 322,
+      "PM25": 5.4,
+      "NOISE": 54,
+      "OUTSIDE_TEMP": 30.9333,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-14 21:00:00",
+      "date": "14/08/2025 21:00:00",
+      "CO2": 615,
+      "TEMP": 27.7,
+      "HUMIDITY": 54,
+      "VOC": 376,
+      "PM25": 5.5,
+      "NOISE": 54,
+      "OUTSIDE_TEMP": 27.7333,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-14 03:00:00",
+      "date": "14/09/2025 03:00:00",
+      "CO2": 513,
+      "TEMP": 25,
+      "HUMIDITY": 48,
+      "VOC": 292,
+      "PM25": 0.3,
+      "NOISE": 54,
+      "OUTSIDE_TEMP": 14.3667,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-14 09:00:00",
+      "date": "14/09/2025 09:00:00",
+      "CO2": 517,
+      "TEMP": 24.9,
+      "HUMIDITY": 49,
+      "VOC": 301,
+      "PM25": 0.1,
+      "NOISE": 49,
+      "OUTSIDE_TEMP": 14.7667,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-14 15:00:00",
+      "date": "14/09/2025 15:00:00",
+      "CO2": 547,
+      "TEMP": 24.9,
+      "HUMIDITY": 50,
+      "VOC": 514,
+      "PM25": 0.2,
+      "NOISE": 52,
+      "OUTSIDE_TEMP": 17.6167,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-14 21:00:00",
+      "date": "14/09/2025 21:00:00",
+      "CO2": 567,
+      "TEMP": 25,
+      "HUMIDITY": 53,
+      "VOC": 353,
+      "PM25": 0.1,
+      "NOISE": 58,
+      "OUTSIDE_TEMP": 20.2833,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-15 03:00:00",
+      "date": "15/07/2025 03:00:00",
+      "CO2": 525,
+      "TEMP": 23.2,
+      "HUMIDITY": 55,
+      "VOC": 332,
+      "PM25": 0,
+      "NOISE": 61,
+      "OUTSIDE_TEMP": 18.45,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-15 09:00:00",
+      "date": "15/07/2025 09:00:00",
+      "CO2": 527,
+      "TEMP": 23.2,
+      "HUMIDITY": 52,
+      "VOC": 244,
+      "PM25": 1,
+      "NOISE": 62,
+      "OUTSIDE_TEMP": 19.4833,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-15 15:00:00",
+      "date": "15/07/2025 15:00:00",
+      "CO2": 536,
+      "TEMP": 23.2,
+      "HUMIDITY": 46,
+      "VOC": 169,
+      "PM25": 0.4,
+      "NOISE": 62,
+      "OUTSIDE_TEMP": 24.2333,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-15 21:00:00",
+      "date": "15/07/2025 21:00:00",
+      "CO2": 565,
+      "TEMP": 23.2,
+      "HUMIDITY": 45,
+      "VOC": 233,
+      "PM25": 0.2,
+      "NOISE": 62,
+      "OUTSIDE_TEMP": 22.7167,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-15 03:00:00",
+      "date": "15/08/2025 03:00:00",
+      "CO2": 499,
+      "TEMP": 27.4,
+      "HUMIDITY": 50,
+      "VOC": 382,
+      "PM25": 0.5,
+      "NOISE": 43,
+      "OUTSIDE_TEMP": 20.2333,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-15 09:00:00",
+      "date": "15/08/2025 09:00:00",
+      "CO2": 511,
+      "TEMP": 27.3,
+      "HUMIDITY": 50,
+      "VOC": 372,
+      "PM25": 0.9,
+      "NOISE": 49,
+      "OUTSIDE_TEMP": 20.4,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-15 15:00:00",
+      "date": "15/08/2025 15:00:00",
+      "CO2": 550,
+      "TEMP": 27.7,
+      "HUMIDITY": 49,
+      "VOC": 258,
+      "PM25": 1.6,
+      "NOISE": 55,
+      "OUTSIDE_TEMP": 30.55,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-15 21:00:00",
+      "date": "15/08/2025 21:00:00",
+      "CO2": 531,
+      "TEMP": 27.7,
+      "HUMIDITY": 46,
+      "VOC": 141,
+      "PM25": 2.3,
+      "NOISE": 53,
+      "OUTSIDE_TEMP": 28.0833,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-15 03:00:00",
+      "date": "15/09/2025 03:00:00",
+      "CO2": 526,
+      "TEMP": 25.1,
+      "HUMIDITY": 55,
+      "VOC": 403,
+      "PM25": 0.3,
+      "NOISE": 50,
+      "OUTSIDE_TEMP": 20.0333,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-15 09:00:00",
+      "date": "15/09/2025 09:00:00",
+      "CO2": 648,
+      "TEMP": 24.9,
+      "HUMIDITY": 60,
+      "VOC": 543,
+      "PM25": 208.6,
+      "NOISE": 55,
+      "OUTSIDE_TEMP": 17.3667,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-15 15:00:00",
+      "date": "15/09/2025 15:00:00",
+      "CO2": 828,
+      "TEMP": 25,
+      "HUMIDITY": 57,
+      "VOC": 806,
+      "PM25": 266.5,
+      "NOISE": 57,
+      "OUTSIDE_TEMP": 20.8833,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-15 21:00:00",
+      "date": "15/09/2025 21:00:00",
+      "CO2": 653,
+      "TEMP": 24.9,
+      "HUMIDITY": 51,
+      "VOC": 408,
+      "PM25": 37.1,
+      "NOISE": 58,
+      "OUTSIDE_TEMP": 18.4667,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-16 03:00:00",
+      "date": "16/07/2025 03:00:00",
+      "CO2": 502,
+      "TEMP": 23.3,
+      "HUMIDITY": 46,
+      "VOC": 215,
+      "PM25": 0,
+      "NOISE": 61,
+      "OUTSIDE_TEMP": 20.7333,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-16 09:00:00",
+      "date": "16/07/2025 09:00:00",
+      "CO2": 508,
+      "TEMP": 23.3,
+      "HUMIDITY": 53,
+      "VOC": 195,
+      "PM25": 1.3,
+      "NOISE": 62,
+      "OUTSIDE_TEMP": 19.9333,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-16 15:00:00",
+      "date": "16/07/2025 15:00:00",
+      "CO2": 579,
+      "TEMP": 23.3,
+      "HUMIDITY": 57,
+      "VOC": 294,
+      "PM25": 1.1,
+      "NOISE": 62,
+      "OUTSIDE_TEMP": 21.15,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-16 21:00:00",
+      "date": "16/07/2025 21:00:00",
+      "CO2": 612,
+      "TEMP": 23.3,
+      "HUMIDITY": 62,
+      "VOC": 384,
+      "PM25": 0.3,
+      "NOISE": 63,
+      "OUTSIDE_TEMP": 20.6833,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-16 03:00:00",
+      "date": "16/08/2025 03:00:00",
+      "CO2": 520,
+      "TEMP": 27.6,
+      "HUMIDITY": 45,
+      "VOC": 137,
+      "PM25": 1.4,
+      "NOISE": 53,
+      "OUTSIDE_TEMP": 19.3,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-16 09:00:00",
+      "date": "16/08/2025 09:00:00",
+      "CO2": 517,
+      "TEMP": 27.4,
+      "HUMIDITY": 47,
+      "VOC": 129,
+      "PM25": 3.4,
+      "NOISE": 53,
+      "OUTSIDE_TEMP": 19.3167,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-16 15:00:00",
+      "date": "16/08/2025 15:00:00",
+      "CO2": 531,
+      "TEMP": 27.7,
+      "HUMIDITY": 49,
+      "VOC": 178,
+      "PM25": 7.4,
+      "NOISE": 55,
+      "OUTSIDE_TEMP": 25.85,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-16 21:00:00",
+      "date": "16/08/2025 21:00:00",
+      "CO2": 530,
+      "TEMP": 27.7,
+      "HUMIDITY": 48,
+      "VOC": 200,
+      "PM25": 3.1,
+      "NOISE": 54,
+      "OUTSIDE_TEMP": 24.6167,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-16 03:00:00",
+      "date": "16/09/2025 03:00:00",
+      "CO2": 556,
+      "TEMP": 24.7,
+      "HUMIDITY": 47,
+      "VOC": 197,
+      "PM25": 2.3,
+      "NOISE": 47,
+      "OUTSIDE_TEMP": 14.55,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-16 09:00:00",
+      "date": "16/09/2025 09:00:00",
+      "CO2": 587,
+      "TEMP": 24.6,
+      "HUMIDITY": 45,
+      "VOC": 140,
+      "PM25": 72.3,
+      "NOISE": 54,
+      "OUTSIDE_TEMP": 13.6167,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-16 15:00:00",
+      "date": "16/09/2025 15:00:00",
+      "CO2": 820,
+      "TEMP": 24.6,
+      "HUMIDITY": 48,
+      "VOC": 1268,
+      "PM25": 120.6,
+      "NOISE": 54,
+      "OUTSIDE_TEMP": 18.4167,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-16 21:00:00",
+      "date": "16/09/2025 21:00:00",
+      "CO2": 675,
+      "TEMP": 24.7,
+      "HUMIDITY": 47,
+      "VOC": 556,
+      "PM25": 35.7,
+      "NOISE": 59,
+      "OUTSIDE_TEMP": 16.8833,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-17 03:00:00",
+      "date": "17/07/2025 03:00:00",
+      "CO2": 567,
+      "TEMP": 23.3,
+      "HUMIDITY": 61,
+      "VOC": 371,
+      "PM25": 0,
+      "NOISE": 62,
+      "OUTSIDE_TEMP": 15.4667,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-17 09:00:00",
+      "date": "17/07/2025 09:00:00",
+      "CO2": 572,
+      "TEMP": 23.3,
+      "HUMIDITY": 61,
+      "VOC": 337,
+      "PM25": 0.3,
+      "NOISE": 62,
+      "OUTSIDE_TEMP": 17.9667,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-17 15:00:00",
+      "date": "17/07/2025 15:00:00",
+      "CO2": 575,
+      "TEMP": 23.3,
+      "HUMIDITY": 61,
+      "VOC": 379,
+      "PM25": 0.6,
+      "NOISE": 62,
+      "OUTSIDE_TEMP": 24.3333,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-17 21:00:00",
+      "date": "17/07/2025 21:00:00",
+      "CO2": 601,
+      "TEMP": 23.3,
+      "HUMIDITY": 62,
+      "VOC": 416,
+      "PM25": 0.1,
+      "NOISE": 62,
+      "OUTSIDE_TEMP": 24.4667,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-17 03:00:00",
+      "date": "17/08/2025 03:00:00",
+      "CO2": 532,
+      "TEMP": 27.5,
+      "HUMIDITY": 47,
+      "VOC": 274,
+      "PM25": 3,
+      "NOISE": 47,
+      "OUTSIDE_TEMP": 16.7167,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-17 09:00:00",
+      "date": "17/08/2025 09:00:00",
+      "CO2": 511,
+      "TEMP": 27.3,
+      "HUMIDITY": 46,
+      "VOC": 208,
+      "PM25": 3.2,
+      "NOISE": 48,
+      "OUTSIDE_TEMP": 17.4333,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-17 15:00:00",
+      "date": "17/08/2025 15:00:00",
+      "CO2": 503,
+      "TEMP": 27.7,
+      "HUMIDITY": 45,
+      "VOC": 139,
+      "PM25": 2.1,
+      "NOISE": 54,
+      "OUTSIDE_TEMP": 26.0667,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-17 21:00:00",
+      "date": "17/08/2025 21:00:00",
+      "CO2": 515,
+      "TEMP": 27.6,
+      "HUMIDITY": 41,
+      "VOC": 124,
+      "PM25": 0.2,
+      "NOISE": 54,
+      "OUTSIDE_TEMP": 24.7667,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-17 03:00:00",
+      "date": "17/09/2025 03:00:00",
+      "CO2": 578,
+      "TEMP": 24.5,
+      "HUMIDITY": 46,
+      "VOC": 190,
+      "PM25": 1.2,
+      "NOISE": 46,
+      "OUTSIDE_TEMP": 13.25,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-17 09:00:00",
+      "date": "17/09/2025 09:00:00",
+      "CO2": 686,
+      "TEMP": 24.3,
+      "HUMIDITY": 48,
+      "VOC": 491,
+      "PM25": 73.6,
+      "NOISE": 54,
+      "OUTSIDE_TEMP": 14.5833,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-17 15:00:00",
+      "date": "17/09/2025 15:00:00",
+      "CO2": 865,
+      "TEMP": 24.5,
+      "HUMIDITY": 50,
+      "VOC": 914,
+      "PM25": 162.3,
+      "NOISE": 56,
+      "OUTSIDE_TEMP": 21.9333,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-17 21:00:00",
+      "date": "17/09/2025 21:00:00",
+      "CO2": 620,
+      "TEMP": 24.6,
+      "HUMIDITY": 47,
+      "VOC": 294,
+      "PM25": 16.1,
+      "NOISE": 58,
+      "OUTSIDE_TEMP": 19.25,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-18 03:00:00",
+      "date": "18/07/2025 03:00:00",
+      "CO2": 562,
+      "TEMP": 23.3,
+      "HUMIDITY": 63,
+      "VOC": 421,
+      "PM25": 0,
+      "NOISE": 61,
+      "OUTSIDE_TEMP": 17.5167,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-18 09:00:00",
+      "date": "18/07/2025 09:00:00",
+      "CO2": 566,
+      "TEMP": 23.3,
+      "HUMIDITY": 64,
+      "VOC": 301,
+      "PM25": 31.6,
+      "NOISE": 62,
+      "OUTSIDE_TEMP": 20.7167,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-18 15:00:00",
+      "date": "18/07/2025 15:00:00",
+      "CO2": 548,
+      "TEMP": 23.3,
+      "HUMIDITY": 60,
+      "VOC": 276,
+      "PM25": 0.8,
+      "NOISE": 62,
+      "OUTSIDE_TEMP": 30.6833,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-18 21:00:00",
+      "date": "18/07/2025 21:00:00",
+      "CO2": 557,
+      "TEMP": 23.2,
+      "HUMIDITY": 57,
+      "VOC": 313,
+      "PM25": 0.3,
+      "NOISE": 64,
+      "OUTSIDE_TEMP": 28.15,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-18 03:00:00",
+      "date": "18/08/2025 03:00:00",
+      "CO2": 501,
+      "TEMP": 27.4,
+      "HUMIDITY": 41,
+      "VOC": 145,
+      "PM25": 0.7,
+      "NOISE": 46,
+      "OUTSIDE_TEMP": 17.65,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-18 09:00:00",
+      "date": "18/08/2025 09:00:00",
+      "CO2": 491,
+      "TEMP": 27.3,
+      "HUMIDITY": 42,
+      "VOC": 122,
+      "PM25": 1.9,
+      "NOISE": 54,
+      "OUTSIDE_TEMP": 17.8167,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-18 15:00:00",
+      "date": "18/08/2025 15:00:00",
+      "CO2": 530,
+      "TEMP": 27.6,
+      "HUMIDITY": 42,
+      "VOC": 179,
+      "PM25": 1.9,
+      "NOISE": 59,
+      "OUTSIDE_TEMP": 27.4833,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-18 21:00:00",
+      "date": "18/08/2025 21:00:00",
+      "CO2": 583,
+      "TEMP": 27.6,
+      "HUMIDITY": 42,
+      "VOC": 203,
+      "PM25": 0.9,
+      "NOISE": 55,
+      "OUTSIDE_TEMP": 24.75,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-18 03:00:00",
+      "date": "18/09/2025 03:00:00",
+      "CO2": 579,
+      "TEMP": 24.6,
+      "HUMIDITY": 46,
+      "VOC": 121,
+      "PM25": 0.7,
+      "NOISE": 62,
+      "OUTSIDE_TEMP": 12.3,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-18 09:00:00",
+      "date": "18/09/2025 09:00:00",
+      "CO2": 687,
+      "TEMP": 24.4,
+      "HUMIDITY": 48,
+      "VOC": 191,
+      "PM25": 38.2,
+      "NOISE": 53,
+      "OUTSIDE_TEMP": 13.0667,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-18 15:00:00",
+      "date": "18/09/2025 15:00:00",
+      "CO2": 1009,
+      "TEMP": 24.8,
+      "HUMIDITY": 52,
+      "VOC": 882,
+      "PM25": 185,
+      "NOISE": 55,
+      "OUTSIDE_TEMP": 24.6833,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-18 21:00:00",
+      "date": "18/09/2025 21:00:00",
+      "CO2": 791,
+      "TEMP": 24.9,
+      "HUMIDITY": 50,
+      "VOC": 505,
+      "PM25": 17.8,
+      "NOISE": 58,
+      "OUTSIDE_TEMP": 19.7,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-19 03:00:00",
+      "date": "19/07/2025 03:00:00",
+      "CO2": 521,
+      "TEMP": 23.2,
+      "HUMIDITY": 57,
+      "VOC": 325,
+      "PM25": 0,
+      "NOISE": 62,
+      "OUTSIDE_TEMP": 22.6833,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-19 09:00:00",
+      "date": "19/07/2025 09:00:00",
+      "CO2": 514,
+      "TEMP": 23.2,
+      "HUMIDITY": 59,
+      "VOC": 269,
+      "PM25": 0.9,
+      "NOISE": 62,
+      "OUTSIDE_TEMP": 23.15,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-19 15:00:00",
+      "date": "19/07/2025 15:00:00",
+      "CO2": 556,
+      "TEMP": 23.3,
+      "HUMIDITY": 64,
+      "VOC": 316,
+      "PM25": 0.8,
+      "NOISE": 63,
+      "OUTSIDE_TEMP": 23.2,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-19 21:00:00",
+      "date": "19/07/2025 21:00:00",
+      "CO2": 585,
+      "TEMP": 23.3,
+      "HUMIDITY": 64,
+      "VOC": 348,
+      "PM25": 0.4,
+      "NOISE": 64,
+      "OUTSIDE_TEMP": 24.85,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-19 03:00:00",
+      "date": "19/08/2025 03:00:00",
+      "CO2": 525,
+      "TEMP": 27.5,
+      "HUMIDITY": 42,
+      "VOC": 302,
+      "PM25": 2,
+      "NOISE": 47,
+      "OUTSIDE_TEMP": 16.5167,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-19 09:00:00",
+      "date": "19/08/2025 09:00:00",
+      "CO2": 518,
+      "TEMP": 27.3,
+      "HUMIDITY": 43,
+      "VOC": 133,
+      "PM25": 1.5,
+      "NOISE": 56,
+      "OUTSIDE_TEMP": 17.4833,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-19 15:00:00",
+      "date": "19/08/2025 15:00:00",
+      "CO2": 539,
+      "TEMP": 27.6,
+      "HUMIDITY": 43,
+      "VOC": 239,
+      "PM25": 1.8,
+      "NOISE": 58,
+      "OUTSIDE_TEMP": 27.2833,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-19 21:00:00",
+      "date": "19/08/2025 21:00:00",
+      "CO2": 549,
+      "TEMP": 27.6,
+      "HUMIDITY": 45,
+      "VOC": 177,
+      "PM25": 5.4,
+      "NOISE": 62,
+      "OUTSIDE_TEMP": 23.35,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-19 03:00:00",
+      "date": "19/09/2025 03:00:00",
+      "CO2": 657,
+      "TEMP": 24.8,
+      "HUMIDITY": 50,
+      "VOC": 268,
+      "PM25": 1.9,
+      "NOISE": 56,
+      "OUTSIDE_TEMP": 12.4333,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-19 09:00:00",
+      "date": "19/09/2025 09:00:00",
+      "CO2": 727,
+      "TEMP": 24.6,
+      "HUMIDITY": 51,
+      "VOC": 463,
+      "PM25": 103.9,
+      "NOISE": 54,
+      "OUTSIDE_TEMP": 13.7,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-19 15:00:00",
+      "date": "19/09/2025 15:00:00",
+      "CO2": 981,
+      "TEMP": 25.2,
+      "HUMIDITY": 53,
+      "VOC": 482,
+      "PM25": 64.1,
+      "NOISE": 56,
+      "OUTSIDE_TEMP": 29.2333,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-19 21:00:00",
+      "date": "19/09/2025 21:00:00",
+      "CO2": 725,
+      "TEMP": 25.2,
+      "HUMIDITY": 50,
+      "VOC": 153,
+      "PM25": 12,
+      "NOISE": 56,
+      "OUTSIDE_TEMP": 23.4,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-20 03:00:00",
+      "date": "20/07/2025 03:00:00",
+      "CO2": 583,
+      "TEMP": 23.4,
+      "HUMIDITY": 67,
+      "VOC": 392,
+      "PM25": 0.1,
+      "NOISE": 66,
+      "OUTSIDE_TEMP": 19.0333,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-20 09:00:00",
+      "date": "20/07/2025 09:00:00",
+      "CO2": 556,
+      "TEMP": 23.3,
+      "HUMIDITY": 65,
+      "VOC": 325,
+      "PM25": 0.9,
+      "NOISE": 62,
+      "OUTSIDE_TEMP": 18.3833,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-20 15:00:00",
+      "date": "20/07/2025 15:00:00",
+      "CO2": 576,
+      "TEMP": 23.3,
+      "HUMIDITY": 64,
+      "VOC": 321,
+      "PM25": 0.5,
+      "NOISE": 62,
+      "OUTSIDE_TEMP": 20.7833,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-20 21:00:00",
+      "date": "20/07/2025 21:00:00",
+      "CO2": 613,
+      "TEMP": 23.3,
+      "HUMIDITY": 58,
+      "VOC": 312,
+      "PM25": 0.3,
+      "NOISE": 70,
+      "OUTSIDE_TEMP": 22.8667,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-20 03:00:00",
+      "date": "20/08/2025 03:00:00",
+      "CO2": 524,
+      "TEMP": 27.5,
+      "HUMIDITY": 48,
+      "VOC": 183,
+      "PM25": 6.5,
+      "NOISE": 47,
+      "OUTSIDE_TEMP": 19.4167,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-20 09:00:00",
+      "date": "20/08/2025 09:00:00",
+      "CO2": 527,
+      "TEMP": 27.4,
+      "HUMIDITY": 50,
+      "VOC": 167,
+      "PM25": 5.7,
+      "NOISE": 52,
+      "OUTSIDE_TEMP": 18.6833,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-20 15:00:00",
+      "date": "20/08/2025 15:00:00",
+      "CO2": 546,
+      "TEMP": 27.3,
+      "HUMIDITY": 50,
+      "VOC": 263,
+      "PM25": 3.3,
+      "NOISE": 55,
+      "OUTSIDE_TEMP": 18.95,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-20 21:00:00",
+      "date": "20/08/2025 21:00:00",
+      "CO2": 565,
+      "TEMP": 27.2,
+      "HUMIDITY": 49,
+      "VOC": 172,
+      "PM25": 2.6,
+      "NOISE": 55,
+      "OUTSIDE_TEMP": 18.3667,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-20 03:00:00",
+      "date": "20/09/2025 03:00:00",
+      "CO2": 595,
+      "TEMP": 25.2,
+      "HUMIDITY": 50,
+      "VOC": 129,
+      "PM25": 1.1,
+      "NOISE": 50,
+      "OUTSIDE_TEMP": 19.7667,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-20 09:00:00",
+      "date": "20/09/2025 09:00:00",
+      "CO2": 570,
+      "TEMP": 25.2,
+      "HUMIDITY": 51,
+      "VOC": 131,
+      "PM25": 1.4,
+      "NOISE": 49,
+      "OUTSIDE_TEMP": 20.3167,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-20 15:00:00",
+      "date": "20/09/2025 15:00:00",
+      "CO2": 608,
+      "TEMP": 25.3,
+      "HUMIDITY": 53,
+      "VOC": 190,
+      "PM25": 1.6,
+      "NOISE": 52,
+      "OUTSIDE_TEMP": 19.8833,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-20 21:00:00",
+      "date": "20/09/2025 21:00:00",
+      "CO2": 607,
+      "TEMP": 25.3,
+      "HUMIDITY": 56,
+      "VOC": 234,
+      "PM25": 1.8,
+      "NOISE": 54,
+      "OUTSIDE_TEMP": 20.7333,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-21 03:00:00",
+      "date": "21/07/2025 03:00:00",
+      "CO2": 540,
+      "TEMP": 23.3,
+      "HUMIDITY": 55,
+      "VOC": 239,
+      "PM25": 0,
+      "NOISE": 62,
+      "OUTSIDE_TEMP": 18.25,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-21 09:00:00",
+      "date": "21/07/2025 09:00:00",
+      "CO2": 527,
+      "TEMP": 23.4,
+      "HUMIDITY": 58,
+      "VOC": 238,
+      "PM25": 0.7,
+      "NOISE": 62,
+      "OUTSIDE_TEMP": 17.6167,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-21 15:00:00",
+      "date": "21/07/2025 15:00:00",
+      "CO2": 567,
+      "TEMP": 23.4,
+      "HUMIDITY": 63,
+      "VOC": 297,
+      "PM25": 0.5,
+      "NOISE": 62,
+      "OUTSIDE_TEMP": 18.9667,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-21 21:00:00",
+      "date": "21/07/2025 21:00:00",
+      "CO2": 596,
+      "TEMP": 23.4,
+      "HUMIDITY": 62,
+      "VOC": 324,
+      "PM25": 0.1,
+      "NOISE": 63,
+      "OUTSIDE_TEMP": 20.6333,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-21 03:00:00",
+      "date": "21/08/2025 03:00:00",
+      "CO2": 516,
+      "TEMP": 27,
+      "HUMIDITY": 48,
+      "VOC": 133,
+      "PM25": 1.5,
+      "NOISE": 47,
+      "OUTSIDE_TEMP": 15.75,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-21 09:00:00",
+      "date": "21/08/2025 09:00:00",
+      "CO2": 505,
+      "TEMP": 26.8,
+      "HUMIDITY": 48,
+      "VOC": 241,
+      "PM25": 1.4,
+      "NOISE": 54,
+      "OUTSIDE_TEMP": 16.5167,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-21 15:00:00",
+      "date": "21/08/2025 15:00:00",
+      "CO2": 539,
+      "TEMP": 27,
+      "HUMIDITY": 46,
+      "VOC": 196,
+      "PM25": 1,
+      "NOISE": 54,
+      "OUTSIDE_TEMP": 23.45,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-21 21:00:00",
+      "date": "21/08/2025 21:00:00",
+      "CO2": 545,
+      "TEMP": 27,
+      "HUMIDITY": 43,
+      "VOC": 180,
+      "PM25": 0.7,
+      "NOISE": 54,
+      "OUTSIDE_TEMP": 21.6167,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-21 03:00:00",
+      "date": "21/09/2025 03:00:00",
+      "CO2": 592,
+      "TEMP": 25.1,
+      "HUMIDITY": 57,
+      "VOC": 205,
+      "PM25": 1.2,
+      "NOISE": 59,
+      "OUTSIDE_TEMP": 16.0167,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-21 09:00:00",
+      "date": "21/09/2025 09:00:00",
+      "CO2": 551,
+      "TEMP": 24.8,
+      "HUMIDITY": 53,
+      "VOC": 137,
+      "PM25": 0.4,
+      "NOISE": 48,
+      "OUTSIDE_TEMP": 14.1667,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-21 15:00:00",
+      "date": "21/09/2025 15:00:00",
+      "CO2": 583,
+      "TEMP": 24.7,
+      "HUMIDITY": 50,
+      "VOC": 239,
+      "PM25": 0.2,
+      "NOISE": 51,
+      "OUTSIDE_TEMP": 17.55,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-21 21:00:00",
+      "date": "21/09/2025 21:00:00",
+      "CO2": 605,
+      "TEMP": 24.7,
+      "HUMIDITY": 48,
+      "VOC": 255,
+      "PM25": 0.3,
+      "NOISE": 55,
+      "OUTSIDE_TEMP": 13.9667,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-22 03:00:00",
+      "date": "22/07/2025 03:00:00",
+      "CO2": 542,
+      "TEMP": 23.3,
+      "HUMIDITY": 60,
+      "VOC": 221,
+      "PM25": 0,
+      "NOISE": 62,
+      "OUTSIDE_TEMP": 17.8167,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-22 09:00:00",
+      "date": "22/07/2025 09:00:00",
+      "CO2": 518,
+      "TEMP": 23.3,
+      "HUMIDITY": 59,
+      "VOC": 181,
+      "PM25": 0.3,
+      "NOISE": 63,
+      "OUTSIDE_TEMP": 18,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-22 15:00:00",
+      "date": "22/07/2025 15:00:00",
+      "CO2": 552,
+      "TEMP": 23.4,
+      "HUMIDITY": 57,
+      "VOC": 200,
+      "PM25": 0.2,
+      "NOISE": 62,
+      "OUTSIDE_TEMP": 21.7667,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-22 21:00:00",
+      "date": "22/07/2025 21:00:00",
+      "CO2": 584,
+      "TEMP": 23.3,
+      "HUMIDITY": 55,
+      "VOC": 231,
+      "PM25": 0.4,
+      "NOISE": 62,
+      "OUTSIDE_TEMP": 21.2667,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-22 03:00:00",
+      "date": "22/08/2025 03:00:00",
+      "CO2": 517,
+      "TEMP": 26.7,
+      "HUMIDITY": 42,
+      "VOC": 141,
+      "PM25": 0.6,
+      "NOISE": 46,
+      "OUTSIDE_TEMP": 13.9167,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-22 09:00:00",
+      "date": "22/08/2025 09:00:00",
+      "CO2": 496,
+      "TEMP": 26.4,
+      "HUMIDITY": 40,
+      "VOC": 150,
+      "PM25": 0.6,
+      "NOISE": 53,
+      "OUTSIDE_TEMP": 14.8667,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-22 15:00:00",
+      "date": "22/08/2025 15:00:00",
+      "CO2": 517,
+      "TEMP": 26.8,
+      "HUMIDITY": 38,
+      "VOC": 197,
+      "PM25": 0.8,
+      "NOISE": 54,
+      "OUTSIDE_TEMP": 22.1,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-22 21:00:00",
+      "date": "22/08/2025 21:00:00",
+      "CO2": 513,
+      "TEMP": 26.8,
+      "HUMIDITY": 36,
+      "VOC": 130,
+      "PM25": 0.7,
+      "NOISE": 53,
+      "OUTSIDE_TEMP": 18.3833,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-22 03:00:00",
+      "date": "22/09/2025 03:00:00",
+      "CO2": 555,
+      "TEMP": 24.4,
+      "HUMIDITY": 46,
+      "VOC": 168,
+      "PM25": 0.4,
+      "NOISE": 47,
+      "OUTSIDE_TEMP": 10.8333,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-22 09:00:00",
+      "date": "22/09/2025 09:00:00",
+      "CO2": 529,
+      "TEMP": 24.2,
+      "HUMIDITY": 44,
+      "VOC": 126,
+      "PM25": 0.8,
+      "NOISE": 51,
+      "OUTSIDE_TEMP": 11.7167,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-22 15:00:00",
+      "date": "22/09/2025 15:00:00",
+      "CO2": 570,
+      "TEMP": 24.4,
+      "HUMIDITY": 42,
+      "VOC": 285,
+      "PM25": 0.8,
+      "NOISE": 52,
+      "OUTSIDE_TEMP": 16.2833,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-22 21:00:00",
+      "date": "22/09/2025 21:00:00",
+      "CO2": 611,
+      "TEMP": 24.5,
+      "HUMIDITY": 41,
+      "VOC": 213,
+      "PM25": 0.4,
+      "NOISE": 69,
+      "OUTSIDE_TEMP": 14.2333,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-23 03:00:00",
+      "date": "23/07/2025 03:00:00",
+      "CO2": 556,
+      "TEMP": 23.4,
+      "HUMIDITY": 56,
+      "VOC": 232,
+      "PM25": 0,
+      "NOISE": 61,
+      "OUTSIDE_TEMP": 17.3667,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-23 09:00:00",
+      "date": "23/07/2025 09:00:00",
+      "CO2": 571,
+      "TEMP": 23.4,
+      "HUMIDITY": 58,
+      "VOC": 220,
+      "PM25": 0.5,
+      "NOISE": 64,
+      "OUTSIDE_TEMP": 19.0833,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-23 15:00:00",
+      "date": "23/07/2025 15:00:00",
+      "CO2": 576,
+      "TEMP": 23.4,
+      "HUMIDITY": 56,
+      "VOC": 230,
+      "PM25": 0.7,
+      "NOISE": 63,
+      "OUTSIDE_TEMP": 21.65,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-23 21:00:00",
+      "date": "23/07/2025 21:00:00",
+      "CO2": 618,
+      "TEMP": 23.5,
+      "HUMIDITY": 61,
+      "VOC": 371,
+      "PM25": 0.2,
+      "NOISE": 66,
+      "OUTSIDE_TEMP": 17.3833,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-23 03:00:00",
+      "date": "23/08/2025 03:00:00",
+      "CO2": 505,
+      "TEMP": 26.6,
+      "HUMIDITY": 37,
+      "VOC": 433,
+      "PM25": 1.9,
+      "NOISE": 55,
+      "OUTSIDE_TEMP": 12.7333,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-23 09:00:00",
+      "date": "23/08/2025 09:00:00",
+      "CO2": 503,
+      "TEMP": 26.2,
+      "HUMIDITY": 37,
+      "VOC": 173,
+      "PM25": 0.7,
+      "NOISE": 51,
+      "OUTSIDE_TEMP": 14.1167,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-23 15:00:00",
+      "date": "23/08/2025 15:00:00",
+      "CO2": 498,
+      "TEMP": 26.6,
+      "HUMIDITY": 36,
+      "VOC": 358,
+      "PM25": 0.9,
+      "NOISE": 52,
+      "OUTSIDE_TEMP": 23.6167,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-23 21:00:00",
+      "date": "23/08/2025 21:00:00",
+      "CO2": 517,
+      "TEMP": 26.7,
+      "HUMIDITY": 37,
+      "VOC": 157,
+      "PM25": 1.8,
+      "NOISE": 52,
+      "OUTSIDE_TEMP": 20.6167,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-23 03:00:00",
+      "date": "23/09/2025 03:00:00",
+      "CO2": 544,
+      "TEMP": 24.2,
+      "HUMIDITY": 41,
+      "VOC": 283,
+      "PM25": 0.4,
+      "NOISE": 51,
+      "OUTSIDE_TEMP": 10.2667,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-23 09:00:00",
+      "date": "23/09/2025 09:00:00",
+      "CO2": 521,
+      "TEMP": 24,
+      "HUMIDITY": 41,
+      "VOC": 134,
+      "PM25": 1.1,
+      "NOISE": 53,
+      "OUTSIDE_TEMP": 10.2,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-23 15:00:00",
+      "date": "23/09/2025 15:00:00",
+      "CO2": 560,
+      "TEMP": 24,
+      "HUMIDITY": 41,
+      "VOC": 273,
+      "PM25": 1.5,
+      "NOISE": 53,
+      "OUTSIDE_TEMP": 14.2833,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-23 21:00:00",
+      "date": "23/09/2025 21:00:00",
+      "CO2": 603,
+      "TEMP": 23.9,
+      "HUMIDITY": 40,
+      "VOC": 193,
+      "PM25": 1.1,
+      "NOISE": 59,
+      "OUTSIDE_TEMP": 11.7333,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-24 03:00:00",
+      "date": "24/07/2025 03:00:00",
+      "CO2": 552,
+      "TEMP": 23.4,
+      "HUMIDITY": 62,
+      "VOC": 288,
+      "PM25": 0,
+      "NOISE": 62,
+      "OUTSIDE_TEMP": 16.2167,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-24 09:00:00",
+      "date": "24/07/2025 09:00:00",
+      "CO2": 536,
+      "TEMP": 23.4,
+      "HUMIDITY": 63,
+      "VOC": 247,
+      "PM25": 0.8,
+      "NOISE": 62,
+      "OUTSIDE_TEMP": 16.5667,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-24 15:00:00",
+      "date": "24/07/2025 15:00:00",
+      "CO2": 559,
+      "TEMP": 23.4,
+      "HUMIDITY": 64,
+      "VOC": 255,
+      "PM25": 1,
+      "NOISE": 62,
+      "OUTSIDE_TEMP": 21,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-24 21:00:00",
+      "date": "24/07/2025 21:00:00",
+      "CO2": 549,
+      "TEMP": 23.4,
+      "HUMIDITY": 63,
+      "VOC": 270,
+      "PM25": 0.6,
+      "NOISE": 62,
+      "OUTSIDE_TEMP": 19.6667,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-24 03:00:00",
+      "date": "24/08/2025 03:00:00",
+      "CO2": 512,
+      "TEMP": 26.5,
+      "HUMIDITY": 39,
+      "VOC": 376,
+      "PM25": 1.8,
+      "NOISE": 45,
+      "OUTSIDE_TEMP": 14.7667,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-24 09:00:00",
+      "date": "24/08/2025 09:00:00",
+      "CO2": 495,
+      "TEMP": 26.3,
+      "HUMIDITY": 39,
+      "VOC": 400,
+      "PM25": 0.8,
+      "NOISE": 48,
+      "OUTSIDE_TEMP": 15.1167,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-24 15:00:00",
+      "date": "24/08/2025 15:00:00",
+      "CO2": 498,
+      "TEMP": 26.7,
+      "HUMIDITY": 37,
+      "VOC": 200,
+      "PM25": 0.5,
+      "NOISE": 55,
+      "OUTSIDE_TEMP": 23.75,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-24 21:00:00",
+      "date": "24/08/2025 21:00:00",
+      "CO2": 517,
+      "TEMP": 26.7,
+      "HUMIDITY": 35,
+      "VOC": 138,
+      "PM25": 0.4,
+      "NOISE": 51,
+      "OUTSIDE_TEMP": 20.3667,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-24 03:00:00",
+      "date": "24/09/2025 03:00:00",
+      "CO2": 527,
+      "TEMP": 23.8,
+      "HUMIDITY": 42,
+      "VOC": 168,
+      "PM25": 0.2,
+      "NOISE": 50,
+      "OUTSIDE_TEMP": 10.6333,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-24 09:00:00",
+      "date": "24/09/2025 09:00:00",
+      "CO2": 669,
+      "TEMP": 23.8,
+      "HUMIDITY": 44,
+      "VOC": 269,
+      "PM25": 64.9,
+      "NOISE": 59,
+      "OUTSIDE_TEMP": 10.45,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-24 15:00:00",
+      "date": "24/09/2025 15:00:00",
+      "CO2": 691,
+      "TEMP": 23.8,
+      "HUMIDITY": 45,
+      "VOC": 420,
+      "PM25": 50.2,
+      "NOISE": 59,
+      "OUTSIDE_TEMP": 10.7833,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-24 21:00:00",
+      "date": "24/09/2025 21:00:00",
+      "CO2": 575,
+      "TEMP": 23.5,
+      "HUMIDITY": 44,
+      "VOC": 301,
+      "PM25": 1.8,
+      "NOISE": 57,
+      "OUTSIDE_TEMP": 10.3333,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-25 03:00:00",
+      "date": "25/07/2025 03:00:00",
+      "CO2": 538,
+      "TEMP": 23.4,
+      "HUMIDITY": 63,
+      "VOC": 254,
+      "PM25": 0.6,
+      "NOISE": 61,
+      "OUTSIDE_TEMP": 16.25,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-25 09:00:00",
+      "date": "25/07/2025 09:00:00",
+      "CO2": 542,
+      "TEMP": 23.3,
+      "HUMIDITY": 63,
+      "VOC": 251,
+      "PM25": 1.4,
+      "NOISE": 62,
+      "OUTSIDE_TEMP": 18.15,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-25 15:00:00",
+      "date": "25/07/2025 15:00:00",
+      "CO2": 552,
+      "TEMP": 23.4,
+      "HUMIDITY": 63,
+      "VOC": 240,
+      "PM25": 0.9,
+      "NOISE": 63,
+      "OUTSIDE_TEMP": 24.7,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-25 21:00:00",
+      "date": "25/07/2025 21:00:00",
+      "CO2": 546,
+      "TEMP": 23.4,
+      "HUMIDITY": 61,
+      "VOC": 244,
+      "PM25": 0.3,
+      "NOISE": 65,
+      "OUTSIDE_TEMP": 24.3333,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-25 03:00:00",
+      "date": "25/08/2025 03:00:00",
+      "CO2": 484,
+      "TEMP": 26.5,
+      "HUMIDITY": 35,
+      "VOC": 133,
+      "PM25": 0.7,
+      "NOISE": 49,
+      "OUTSIDE_TEMP": 12.1667,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-25 09:00:00",
+      "date": "25/08/2025 09:00:00",
+      "CO2": 511,
+      "TEMP": 26.3,
+      "HUMIDITY": 36,
+      "VOC": 132,
+      "PM25": 4.9,
+      "NOISE": 52,
+      "OUTSIDE_TEMP": 14.45,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-25 15:00:00",
+      "date": "25/08/2025 15:00:00",
+      "CO2": 710,
+      "TEMP": 26.8,
+      "HUMIDITY": 38,
+      "VOC": 701,
+      "PM25": 111.6,
+      "NOISE": 60,
+      "OUTSIDE_TEMP": 27.35,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-25 21:00:00",
+      "date": "25/08/2025 21:00:00",
+      "CO2": 563,
+      "TEMP": 26.8,
+      "HUMIDITY": 36,
+      "VOC": 210,
+      "PM25": 1.8,
+      "NOISE": 53,
+      "OUTSIDE_TEMP": 23.2,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-25 03:00:00",
+      "date": "25/09/2025 03:00:00",
+      "CO2": 545,
+      "TEMP": 23.5,
+      "HUMIDITY": 43,
+      "VOC": 315,
+      "PM25": 0.3,
+      "NOISE": 48,
+      "OUTSIDE_TEMP": 10.5,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-25 09:00:00",
+      "date": "25/09/2025 09:00:00",
+      "CO2": 564,
+      "TEMP": 23.3,
+      "HUMIDITY": 43,
+      "VOC": 319,
+      "PM25": 12,
+      "NOISE": 55,
+      "OUTSIDE_TEMP": 9.9333,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-25 15:00:00",
+      "date": "25/09/2025 15:00:00",
+      "CO2": 633,
+      "TEMP": 23.2,
+      "HUMIDITY": 42,
+      "VOC": 257,
+      "PM25": 51.1,
+      "NOISE": 60,
+      "OUTSIDE_TEMP": 12.1333,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-25 21:00:00",
+      "date": "25/09/2025 21:00:00",
+      "CO2": 603,
+      "TEMP": 23.3,
+      "HUMIDITY": 43,
+      "VOC": 287,
+      "PM25": 10.8,
+      "NOISE": 65,
+      "OUTSIDE_TEMP": 10.8667,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-26 03:00:00",
+      "date": "26/07/2025 03:00:00",
+      "CO2": 549,
+      "TEMP": 23.3,
+      "HUMIDITY": 63,
+      "VOC": 269,
+      "PM25": 0.1,
+      "NOISE": 62,
+      "OUTSIDE_TEMP": 18.8,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-26 09:00:00",
+      "date": "26/07/2025 09:00:00",
+      "CO2": 548,
+      "TEMP": 23.3,
+      "HUMIDITY": 62,
+      "VOC": 214,
+      "PM25": 0.8,
+      "NOISE": 62,
+      "OUTSIDE_TEMP": 19.1167,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-26 15:00:00",
+      "date": "26/07/2025 15:00:00",
+      "CO2": 525,
+      "TEMP": 23.3,
+      "HUMIDITY": 61,
+      "VOC": 158,
+      "PM25": 1.7,
+      "NOISE": 62,
+      "OUTSIDE_TEMP": 25.5667,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-26 21:00:00",
+      "date": "26/07/2025 21:00:00",
+      "CO2": 524,
+      "TEMP": 23.3,
+      "HUMIDITY": 59,
+      "VOC": 177,
+      "PM25": 0.6,
+      "NOISE": 64,
+      "OUTSIDE_TEMP": 23.5667,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-26 03:00:00",
+      "date": "26/08/2025 03:00:00",
+      "CO2": 510,
+      "TEMP": 26.6,
+      "HUMIDITY": 36,
+      "VOC": 186,
+      "PM25": 0.7,
+      "NOISE": 46,
+      "OUTSIDE_TEMP": 13.6667,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-26 09:00:00",
+      "date": "26/08/2025 09:00:00",
+      "CO2": 617,
+      "TEMP": 26.5,
+      "HUMIDITY": 38,
+      "VOC": 339,
+      "PM25": 165.7,
+      "NOISE": 55,
+      "OUTSIDE_TEMP": 17.4167,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-26 15:00:00",
+      "date": "26/08/2025 15:00:00",
+      "CO2": 889,
+      "TEMP": 26.8,
+      "HUMIDITY": 43,
+      "VOC": 880,
+      "PM25": 270.4,
+      "NOISE": 62,
+      "OUTSIDE_TEMP": 28.3333,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-26 21:00:00",
+      "date": "26/08/2025 21:00:00",
+      "CO2": 607,
+      "TEMP": 26.8,
+      "HUMIDITY": 41,
+      "VOC": 392,
+      "PM25": 35,
+      "NOISE": 53,
+      "OUTSIDE_TEMP": 26,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-26 03:00:00",
+      "date": "26/09/2025 03:00:00",
+      "CO2": 538,
+      "TEMP": 23.2,
+      "HUMIDITY": 43,
+      "VOC": 529,
+      "PM25": 1.7,
+      "NOISE": 50,
+      "OUTSIDE_TEMP": 10.35,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-26 09:00:00",
+      "date": "26/09/2025 09:00:00",
+      "CO2": 621,
+      "TEMP": 23,
+      "HUMIDITY": 45,
+      "VOC": 189,
+      "PM25": 34.3,
+      "NOISE": 59,
+      "OUTSIDE_TEMP": 9.9667,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-26 15:00:00",
+      "date": "26/09/2025 15:00:00",
+      "CO2": 630,
+      "TEMP": 22.9,
+      "HUMIDITY": 46,
+      "VOC": 239,
+      "PM25": 46.6,
+      "NOISE": 58,
+      "OUTSIDE_TEMP": 13.15,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-26 21:00:00",
+      "date": "26/09/2025 21:00:00",
+      "CO2": 576,
+      "TEMP": 23,
+      "HUMIDITY": 45,
+      "VOC": 379,
+      "PM25": 5.7,
+      "NOISE": 58,
+      "OUTSIDE_TEMP": 12.5167,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-27 03:00:00",
+      "date": "27/07/2025 03:00:00",
+      "CO2": 690,
+      "TEMP": 23.3,
+      "HUMIDITY": 62,
+      "VOC": 468,
+      "PM25": 0,
+      "NOISE": 68,
+      "OUTSIDE_TEMP": 18.5833,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-27 09:00:00",
+      "date": "27/07/2025 09:00:00",
+      "CO2": 556,
+      "TEMP": 23.3,
+      "HUMIDITY": 66,
+      "VOC": 313,
+      "PM25": 0.5,
+      "NOISE": 63,
+      "OUTSIDE_TEMP": 19,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-27 15:00:00",
+      "date": "27/07/2025 15:00:00",
+      "CO2": 530,
+      "TEMP": 23.3,
+      "HUMIDITY": 61,
+      "VOC": 195,
+      "PM25": 0.6,
+      "NOISE": 62,
+      "OUTSIDE_TEMP": 21.6,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-27 21:00:00",
+      "date": "27/07/2025 21:00:00",
+      "CO2": 567,
+      "TEMP": 23.3,
+      "HUMIDITY": 60,
+      "VOC": 212,
+      "PM25": 0.3,
+      "NOISE": 63,
+      "OUTSIDE_TEMP": 17.9667,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-27 03:00:00",
+      "date": "27/08/2025 03:00:00",
+      "CO2": 486,
+      "TEMP": 26.7,
+      "HUMIDITY": 42,
+      "VOC": 588,
+      "PM25": 0.4,
+      "NOISE": 49,
+      "OUTSIDE_TEMP": 19,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-27 09:00:00",
+      "date": "27/08/2025 09:00:00",
+      "CO2": 589,
+      "TEMP": 26.6,
+      "HUMIDITY": 47,
+      "VOC": 241,
+      "PM25": 66.3,
+      "NOISE": 56,
+      "OUTSIDE_TEMP": 19.05,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-27 15:00:00",
+      "date": "27/08/2025 15:00:00",
+      "CO2": 834,
+      "TEMP": 26.9,
+      "HUMIDITY": 52,
+      "VOC": 533,
+      "PM25": 90.3,
+      "NOISE": 58,
+      "OUTSIDE_TEMP": 25.4333,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-27 21:00:00",
+      "date": "27/08/2025 21:00:00",
+      "CO2": 652,
+      "TEMP": 26.9,
+      "HUMIDITY": 51,
+      "VOC": 267,
+      "PM25": 15.9,
+      "NOISE": 50,
+      "OUTSIDE_TEMP": 22.6333,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-27 03:00:00",
+      "date": "27/09/2025 03:00:00",
+      "CO2": 605,
+      "TEMP": 23,
+      "HUMIDITY": 46,
+      "VOC": 327,
+      "PM25": 2.4,
+      "NOISE": 60,
+      "OUTSIDE_TEMP": 9.9,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-27 09:00:00",
+      "date": "27/09/2025 09:00:00",
+      "CO2": 531,
+      "TEMP": 22.8,
+      "HUMIDITY": 46,
+      "VOC": 127,
+      "PM25": 1.4,
+      "NOISE": 53,
+      "OUTSIDE_TEMP": 10.5167,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-27 15:00:00",
+      "date": "27/09/2025 15:00:00",
+      "CO2": 548,
+      "TEMP": 22.9,
+      "HUMIDITY": 45,
+      "VOC": 197,
+      "PM25": 0.9,
+      "NOISE": 55,
+      "OUTSIDE_TEMP": 14.9667,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-27 21:00:00",
+      "date": "27/09/2025 21:00:00",
+      "CO2": 587,
+      "TEMP": 22.9,
+      "HUMIDITY": 45,
+      "VOC": 285,
+      "PM25": 1.4,
+      "NOISE": 63,
+      "OUTSIDE_TEMP": 11.6333,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-28 03:00:00",
+      "date": "28/07/2025 03:00:00",
+      "CO2": 530,
+      "TEMP": 23.3,
+      "HUMIDITY": 58,
+      "VOC": 151,
+      "PM25": 0.1,
+      "NOISE": 63,
+      "OUTSIDE_TEMP": 16.45,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-28 09:00:00",
+      "date": "28/07/2025 09:00:00",
+      "CO2": 531,
+      "TEMP": 23.3,
+      "HUMIDITY": 56,
+      "VOC": 129,
+      "PM25": 0.5,
+      "NOISE": 62,
+      "OUTSIDE_TEMP": 17.05,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-28 15:00:00",
+      "date": "28/07/2025 15:00:00",
+      "CO2": 549,
+      "TEMP": 23.3,
+      "HUMIDITY": 54,
+      "VOC": 144,
+      "PM25": 0.9,
+      "NOISE": 62,
+      "OUTSIDE_TEMP": 22,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-28 21:00:00",
+      "date": "28/07/2025 21:00:00",
+      "CO2": 561,
+      "TEMP": 23.3,
+      "HUMIDITY": 51,
+      "VOC": 172,
+      "PM25": 0.3,
+      "NOISE": 64,
+      "OUTSIDE_TEMP": 19.9667,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-28 03:00:00",
+      "date": "28/08/2025 03:00:00",
+      "CO2": 514,
+      "TEMP": 26.7,
+      "HUMIDITY": 47,
+      "VOC": 122,
+      "PM25": 1.5,
+      "NOISE": 44,
+      "OUTSIDE_TEMP": 18.2667,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-28 09:00:00",
+      "date": "28/08/2025 09:00:00",
+      "CO2": 661,
+      "TEMP": 26.5,
+      "HUMIDITY": 48,
+      "VOC": 174,
+      "PM25": 29.6,
+      "NOISE": 55,
+      "OUTSIDE_TEMP": 18.4167,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-28 15:00:00",
+      "date": "28/08/2025 15:00:00",
+      "CO2": 1045,
+      "TEMP": 26.8,
+      "HUMIDITY": 52,
+      "VOC": 475,
+      "PM25": 292.4,
+      "NOISE": 61,
+      "OUTSIDE_TEMP": 23.1333,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-28 21:00:00",
+      "date": "28/08/2025 21:00:00",
+      "CO2": 645,
+      "TEMP": 26.7,
+      "HUMIDITY": 46,
+      "VOC": 158,
+      "PM25": 64.1,
+      "NOISE": 53,
+      "OUTSIDE_TEMP": 22.0167,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-28 03:00:00",
+      "date": "28/09/2025 03:00:00",
+      "CO2": 601,
+      "TEMP": 22.8,
+      "HUMIDITY": 44,
+      "VOC": 304,
+      "PM25": 2.3,
+      "NOISE": 68,
+      "OUTSIDE_TEMP": 7.0333,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-28 09:00:00",
+      "date": "28/09/2025 09:00:00",
+      "CO2": 554,
+      "TEMP": 22.7,
+      "HUMIDITY": 43,
+      "VOC": 188,
+      "PM25": 1.4,
+      "NOISE": 50,
+      "OUTSIDE_TEMP": 7.85,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-28 15:00:00",
+      "date": "28/09/2025 15:00:00",
+      "CO2": 593,
+      "TEMP": 23.1,
+      "HUMIDITY": 44,
+      "VOC": 522,
+      "PM25": 0.9,
+      "NOISE": 53,
+      "OUTSIDE_TEMP": 19.2167,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-28 21:00:00",
+      "date": "28/09/2025 21:00:00",
+      "CO2": 582,
+      "TEMP": 23.1,
+      "HUMIDITY": 44,
+      "VOC": 521,
+      "PM25": 1,
+      "NOISE": 55,
+      "OUTSIDE_TEMP": 14.2667,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-29 03:00:00",
+      "date": "29/07/2025 03:00:00",
+      "CO2": 551,
+      "TEMP": 23.4,
+      "HUMIDITY": 51,
+      "VOC": 163,
+      "PM25": 0.2,
+      "NOISE": 64,
+      "OUTSIDE_TEMP": 12.95,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-29 09:00:00",
+      "date": "29/07/2025 09:00:00",
+      "CO2": 547,
+      "TEMP": 23.3,
+      "HUMIDITY": 52,
+      "VOC": 134,
+      "PM25": 1.5,
+      "NOISE": 64,
+      "OUTSIDE_TEMP": 16.0167,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-29 15:00:00",
+      "date": "29/07/2025 15:00:00",
+      "CO2": 536,
+      "TEMP": 23.4,
+      "HUMIDITY": 51,
+      "VOC": 163,
+      "PM25": 0.6,
+      "NOISE": 65,
+      "OUTSIDE_TEMP": 23.6167,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-29 21:00:00",
+      "date": "29/07/2025 21:00:00",
+      "CO2": 568,
+      "TEMP": 23.4,
+      "HUMIDITY": 54,
+      "VOC": 220,
+      "PM25": 0.2,
+      "NOISE": 66,
+      "OUTSIDE_TEMP": 19.4667,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-29 03:00:00",
+      "date": "29/08/2025 03:00:00",
+      "CO2": 510,
+      "TEMP": 26.5,
+      "HUMIDITY": 44,
+      "VOC": 113,
+      "PM25": 3.7,
+      "NOISE": 53,
+      "OUTSIDE_TEMP": 17.3833,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-29 09:00:00",
+      "date": "29/08/2025 09:00:00",
+      "CO2": 616,
+      "TEMP": 26.3,
+      "HUMIDITY": 44,
+      "VOC": 233,
+      "PM25": 174.4,
+      "NOISE": 58,
+      "OUTSIDE_TEMP": 16.5,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-29 15:00:00",
+      "date": "29/08/2025 15:00:00",
+      "CO2": 643,
+      "TEMP": 26.4,
+      "HUMIDITY": 48,
+      "VOC": 291,
+      "PM25": 142.8,
+      "NOISE": 57,
+      "OUTSIDE_TEMP": 17.75,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-29 21:00:00",
+      "date": "29/08/2025 21:00:00",
+      "CO2": 522,
+      "TEMP": 26.4,
+      "HUMIDITY": 48,
+      "VOC": 140,
+      "PM25": 2.9,
+      "NOISE": 56,
+      "OUTSIDE_TEMP": 16.9833,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-29 03:00:00",
+      "date": "29/09/2025 03:00:00",
+      "CO2": 542,
+      "TEMP": 23,
+      "HUMIDITY": 45,
+      "VOC": 354,
+      "PM25": 1,
+      "NOISE": 49,
+      "OUTSIDE_TEMP": 9.05,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-29 09:00:00",
+      "date": "29/09/2025 09:00:00",
+      "CO2": 601,
+      "TEMP": 22.9,
+      "HUMIDITY": 45,
+      "VOC": 182,
+      "PM25": 30.9,
+      "NOISE": 56,
+      "OUTSIDE_TEMP": 10.0167,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-29 15:00:00",
+      "date": "29/09/2025 15:00:00",
+      "CO2": 921,
+      "TEMP": 23.3,
+      "HUMIDITY": 53,
+      "VOC": 1067,
+      "PM25": 89.8,
+      "NOISE": 55,
+      "OUTSIDE_TEMP": 20.5333,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-29 21:00:00",
+      "date": "29/09/2025 21:00:00",
+      "CO2": 710,
+      "TEMP": 23.2,
+      "HUMIDITY": 54,
+      "VOC": 1589,
+      "PM25": 0.6,
+      "NOISE": 54,
+      "OUTSIDE_TEMP": 14.4833,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-30 03:00:00",
+      "date": "30/07/2025 03:00:00",
+      "CO2": 539,
+      "TEMP": 23.4,
+      "HUMIDITY": 57,
+      "VOC": 237,
+      "PM25": 0.1,
+      "NOISE": 63,
+      "OUTSIDE_TEMP": 17.5667,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-30 09:00:00",
+      "date": "30/07/2025 09:00:00",
+      "CO2": 557,
+      "TEMP": 23.4,
+      "HUMIDITY": 60,
+      "VOC": 178,
+      "PM25": 0.8,
+      "NOISE": 64,
+      "OUTSIDE_TEMP": 18.9333,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-30 15:00:00",
+      "date": "30/07/2025 15:00:00",
+      "CO2": 645,
+      "TEMP": 24.1,
+      "HUMIDITY": 62,
+      "VOC": 568,
+      "PM25": 3.4,
+      "NOISE": 54,
+      "OUTSIDE_TEMP": 22,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-30 21:00:00",
+      "date": "30/07/2025 21:00:00",
+      "CO2": 610,
+      "TEMP": 24.5,
+      "HUMIDITY": 60,
+      "VOC": 717,
+      "PM25": 1.4,
+      "NOISE": 55,
+      "OUTSIDE_TEMP": 22.3333,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-30 03:00:00",
+      "date": "30/08/2025 03:00:00",
+      "CO2": 535,
+      "TEMP": 26.2,
+      "HUMIDITY": 48,
+      "VOC": 125,
+      "PM25": 1,
+      "NOISE": 51,
+      "OUTSIDE_TEMP": 14.3667,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-30 09:00:00",
+      "date": "30/08/2025 09:00:00",
+      "CO2": 535,
+      "TEMP": 25.8,
+      "HUMIDITY": 47,
+      "VOC": 130,
+      "PM25": 0.7,
+      "NOISE": 48,
+      "OUTSIDE_TEMP": 14.9667,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-30 15:00:00",
+      "date": "30/08/2025 15:00:00",
+      "CO2": 526,
+      "TEMP": 25.9,
+      "HUMIDITY": 46,
+      "VOC": 175,
+      "PM25": 0.6,
+      "NOISE": 52,
+      "OUTSIDE_TEMP": 21.1833,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-30 21:00:00",
+      "date": "30/08/2025 21:00:00",
+      "CO2": 505,
+      "TEMP": 26,
+      "HUMIDITY": 46,
+      "VOC": 209,
+      "PM25": 0.6,
+      "NOISE": 51,
+      "OUTSIDE_TEMP": 19.5333,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-30 03:00:00",
+      "date": "30/09/2025 03:00:00",
+      "CO2": 556,
+      "TEMP": 23.1,
+      "HUMIDITY": 49,
+      "VOC": 1440,
+      "PM25": 0.1,
+      "NOISE": 43,
+      "OUTSIDE_TEMP": 9.2333,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-30 09:00:00",
+      "date": "30/09/2025 09:00:00",
+      "CO2": 649,
+      "TEMP": 23,
+      "HUMIDITY": 51,
+      "VOC": 635,
+      "PM25": 0.1,
+      "NOISE": 50,
+      "OUTSIDE_TEMP": 9.8667,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-30 15:00:00",
+      "date": "30/09/2025 15:00:00",
+      "CO2": 876,
+      "TEMP": 23.3,
+      "HUMIDITY": 54,
+      "VOC": 897,
+      "PM25": 0.8,
+      "NOISE": 52,
+      "OUTSIDE_TEMP": 18.6667,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-09-30 21:00:00",
+      "date": "30/09/2025 21:00:00",
+      "CO2": 621,
+      "TEMP": 23.4,
+      "HUMIDITY": 49,
+      "VOC": 606,
+      "PM25": 0.1,
+      "NOISE": 53,
+      "OUTSIDE_TEMP": 12.9167,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-31 03:00:00",
+      "date": "31/07/2025 03:00:00",
+      "CO2": 543,
+      "TEMP": 24.5,
+      "HUMIDITY": 58,
+      "VOC": 416,
+      "PM25": 1.4,
+      "NOISE": 47,
+      "OUTSIDE_TEMP": 17.2667,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-31 09:00:00",
+      "date": "31/07/2025 09:00:00",
+      "CO2": 584,
+      "TEMP": 24.5,
+      "HUMIDITY": 58,
+      "VOC": 204,
+      "PM25": 11.9,
+      "NOISE": 54,
+      "OUTSIDE_TEMP": 18.05,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-31 15:00:00",
+      "date": "31/07/2025 15:00:00",
+      "CO2": 708,
+      "TEMP": 24.7,
+      "HUMIDITY": 58,
+      "VOC": 302,
+      "PM25": 85.1,
+      "NOISE": 55,
+      "OUTSIDE_TEMP": 25.0333,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-07-31 21:00:00",
+      "date": "31/07/2025 21:00:00",
+      "CO2": 565,
+      "TEMP": 24.8,
+      "HUMIDITY": 55,
+      "VOC": 237,
+      "PM25": 4.3,
+      "NOISE": 56,
+      "OUTSIDE_TEMP": 22.65,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-31 03:00:00",
+      "date": "31/08/2025 03:00:00",
+      "CO2": 532,
+      "TEMP": 25.9,
+      "HUMIDITY": 49,
+      "VOC": 277,
+      "PM25": 1,
+      "NOISE": 48,
+      "OUTSIDE_TEMP": 18.5833,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-31 09:00:00",
+      "date": "31/08/2025 09:00:00",
+      "CO2": 512,
+      "TEMP": 25.9,
+      "HUMIDITY": 52,
+      "VOC": 331,
+      "PM25": 0.8,
+      "NOISE": 46,
+      "OUTSIDE_TEMP": 18.5667,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-31 15:00:00",
+      "date": "31/08/2025 15:00:00",
+      "CO2": 527,
+      "TEMP": 25.9,
+      "HUMIDITY": 52,
+      "VOC": 363,
+      "PM25": 0.7,
+      "NOISE": 54,
+      "OUTSIDE_TEMP": 20.8667,
+      "OUTSIDE_HUMIDITY": null
+    },
+    {
+      "date_periode": "2025-08-31 21:00:00",
+      "date": "31/08/2025 21:00:00",
+      "CO2": 554,
+      "TEMP": 25.8,
+      "HUMIDITY": 52,
+      "VOC": 346,
+      "PM25": 0.6,
+      "NOISE": 55,
+      "OUTSIDE_TEMP": 17.4333,
+      "OUTSIDE_HUMIDITY": null
+    }
+  ],
+  "weekly_pattern": [
+    {
+      "day": "Lundi",
+      "hour": 0,
+      "CO2": 504
+    },
+    {
+      "day": "Lundi",
+      "hour": 1,
+      "CO2": 468
+    },
+    {
+      "day": "Lundi",
+      "hour": 2,
+      "CO2": 454
+    },
+    {
+      "day": "Lundi",
+      "hour": 3,
+      "CO2": 454
+    },
+    {
+      "day": "Lundi",
+      "hour": 4,
+      "CO2": 454
+    },
+    {
+      "day": "Lundi",
+      "hour": 5,
+      "CO2": 456
+    },
+    {
+      "day": "Lundi",
+      "hour": 6,
+      "CO2": 485
+    },
+    {
+      "day": "Lundi",
+      "hour": 7,
+      "CO2": 502
+    },
+    {
+      "day": "Lundi",
+      "hour": 8,
+      "CO2": 485
+    },
+    {
+      "day": "Lundi",
+      "hour": 9,
+      "CO2": 542
+    },
+    {
+      "day": "Lundi",
+      "hour": 10,
+      "CO2": 562
+    },
+    {
+      "day": "Lundi",
+      "hour": 11,
+      "CO2": 567
+    },
+    {
+      "day": "Lundi",
+      "hour": 12,
+      "CO2": 574
+    },
+    {
+      "day": "Lundi",
+      "hour": 13,
+      "CO2": 562
+    },
+    {
+      "day": "Lundi",
+      "hour": 14,
+      "CO2": 551
+    },
+    {
+      "day": "Lundi",
+      "hour": 15,
+      "CO2": 539
+    },
+    {
+      "day": "Lundi",
+      "hour": 16,
+      "CO2": 539
+    },
+    {
+      "day": "Lundi",
+      "hour": 17,
+      "CO2": 599
+    },
+    {
+      "day": "Lundi",
+      "hour": 18,
+      "CO2": 726
+    },
+    {
+      "day": "Lundi",
+      "hour": 19,
+      "CO2": 874
+    },
+    {
+      "day": "Lundi",
+      "hour": 20,
+      "CO2": 932
+    },
+    {
+      "day": "Lundi",
+      "hour": 21,
+      "CO2": 814
+    },
+    {
+      "day": "Lundi",
+      "hour": 22,
+      "CO2": 705
+    },
+    {
+      "day": "Lundi",
+      "hour": 23,
+      "CO2": 610
+    },
+    {
+      "day": "Mardi",
+      "hour": 0,
+      "CO2": 525
+    },
+    {
+      "day": "Mardi",
+      "hour": 1,
+      "CO2": 467
+    },
+    {
+      "day": "Mardi",
+      "hour": 2,
+      "CO2": 456
+    },
+    {
+      "day": "Mardi",
+      "hour": 3,
+      "CO2": 455
+    },
+    {
+      "day": "Mardi",
+      "hour": 4,
+      "CO2": 453
+    },
+    {
+      "day": "Mardi",
+      "hour": 5,
+      "CO2": 459
+    },
+    {
+      "day": "Mardi",
+      "hour": 6,
+      "CO2": 512
+    },
+    {
+      "day": "Mardi",
+      "hour": 7,
+      "CO2": 547
+    },
+    {
+      "day": "Mardi",
+      "hour": 8,
+      "CO2": 506
+    },
+    {
+      "day": "Mardi",
+      "hour": 9,
+      "CO2": 548
+    },
+    {
+      "day": "Mardi",
+      "hour": 10,
+      "CO2": 604
+    },
+    {
+      "day": "Mardi",
+      "hour": 11,
+      "CO2": 631
+    },
+    {
+      "day": "Mardi",
+      "hour": 12,
+      "CO2": 606
+    },
+    {
+      "day": "Mardi",
+      "hour": 13,
+      "CO2": 551
+    },
+    {
+      "day": "Mardi",
+      "hour": 14,
+      "CO2": 551
+    },
+    {
+      "day": "Mardi",
+      "hour": 15,
+      "CO2": 533
+    },
+    {
+      "day": "Mardi",
+      "hour": 16,
+      "CO2": 531
+    },
+    {
+      "day": "Mardi",
+      "hour": 17,
+      "CO2": 618
+    },
+    {
+      "day": "Mardi",
+      "hour": 18,
+      "CO2": 755
+    },
+    {
+      "day": "Mardi",
+      "hour": 19,
+      "CO2": 930
+    },
+    {
+      "day": "Mardi",
+      "hour": 20,
+      "CO2": 924
+    },
+    {
+      "day": "Mardi",
+      "hour": 21,
+      "CO2": 779
+    },
+    {
+      "day": "Mardi",
+      "hour": 22,
+      "CO2": 713
+    },
+    {
+      "day": "Mardi",
+      "hour": 23,
+      "CO2": 626
+    },
+    {
+      "day": "Mercredi",
+      "hour": 0,
+      "CO2": 533
+    },
+    {
+      "day": "Mercredi",
+      "hour": 1,
+      "CO2": 470
+    },
+    {
+      "day": "Mercredi",
+      "hour": 2,
+      "CO2": 449
+    },
+    {
+      "day": "Mercredi",
+      "hour": 3,
+      "CO2": 451
+    },
+    {
+      "day": "Mercredi",
+      "hour": 4,
+      "CO2": 448
+    },
+    {
+      "day": "Mercredi",
+      "hour": 5,
+      "CO2": 460
+    },
+    {
+      "day": "Mercredi",
+      "hour": 6,
+      "CO2": 476
+    },
+    {
+      "day": "Mercredi",
+      "hour": 7,
+      "CO2": 520
+    },
+    {
+      "day": "Mercredi",
+      "hour": 8,
+      "CO2": 530
+    },
+    {
+      "day": "Mercredi",
+      "hour": 9,
+      "CO2": 546
+    },
+    {
+      "day": "Mercredi",
+      "hour": 10,
+      "CO2": 521
+    },
+    {
+      "day": "Mercredi",
+      "hour": 11,
+      "CO2": 561
+    },
+    {
+      "day": "Mercredi",
+      "hour": 12,
+      "CO2": 549
+    },
+    {
+      "day": "Mercredi",
+      "hour": 13,
+      "CO2": 564
+    },
+    {
+      "day": "Mercredi",
+      "hour": 14,
+      "CO2": 557
+    },
+    {
+      "day": "Mercredi",
+      "hour": 15,
+      "CO2": 517
+    },
+    {
+      "day": "Mercredi",
+      "hour": 16,
+      "CO2": 532
+    },
+    {
+      "day": "Mercredi",
+      "hour": 17,
+      "CO2": 574
+    },
+    {
+      "day": "Mercredi",
+      "hour": 18,
+      "CO2": 680
+    },
+    {
+      "day": "Mercredi",
+      "hour": 19,
+      "CO2": 840
+    },
+    {
+      "day": "Mercredi",
+      "hour": 20,
+      "CO2": 845
+    },
+    {
+      "day": "Mercredi",
+      "hour": 21,
+      "CO2": 729
+    },
+    {
+      "day": "Mercredi",
+      "hour": 22,
+      "CO2": 681
+    },
+    {
+      "day": "Mercredi",
+      "hour": 23,
+      "CO2": 612
+    },
+    {
+      "day": "Jeudi",
+      "hour": 0,
+      "CO2": 527
+    },
+    {
+      "day": "Jeudi",
+      "hour": 1,
+      "CO2": 472
+    },
+    {
+      "day": "Jeudi",
+      "hour": 2,
+      "CO2": 460
+    },
+    {
+      "day": "Jeudi",
+      "hour": 3,
+      "CO2": 459
+    },
+    {
+      "day": "Jeudi",
+      "hour": 4,
+      "CO2": 459
+    },
+    {
+      "day": "Jeudi",
+      "hour": 5,
+      "CO2": 463
+    },
+    {
+      "day": "Jeudi",
+      "hour": 6,
+      "CO2": 482
+    },
+    {
+      "day": "Jeudi",
+      "hour": 7,
+      "CO2": 503
+    },
+    {
+      "day": "Jeudi",
+      "hour": 8,
+      "CO2": 515
+    },
+    {
+      "day": "Jeudi",
+      "hour": 9,
+      "CO2": 558
+    },
+    {
+      "day": "Jeudi",
+      "hour": 10,
+      "CO2": 552
+    },
+    {
+      "day": "Jeudi",
+      "hour": 11,
+      "CO2": 589
+    },
+    {
+      "day": "Jeudi",
+      "hour": 12,
+      "CO2": 591
+    },
+    {
+      "day": "Jeudi",
+      "hour": 13,
+      "CO2": 556
+    },
+    {
+      "day": "Jeudi",
+      "hour": 14,
+      "CO2": 556
+    },
+    {
+      "day": "Jeudi",
+      "hour": 15,
+      "CO2": 540
+    },
+    {
+      "day": "Jeudi",
+      "hour": 16,
+      "CO2": 574
+    },
+    {
+      "day": "Jeudi",
+      "hour": 17,
+      "CO2": 592
+    },
+    {
+      "day": "Jeudi",
+      "hour": 18,
+      "CO2": 684
+    },
+    {
+      "day": "Jeudi",
+      "hour": 19,
+      "CO2": 858
+    },
+    {
+      "day": "Jeudi",
+      "hour": 20,
+      "CO2": 832
+    },
+    {
+      "day": "Jeudi",
+      "hour": 21,
+      "CO2": 718
+    },
+    {
+      "day": "Jeudi",
+      "hour": 22,
+      "CO2": 651
+    },
+    {
+      "day": "Jeudi",
+      "hour": 23,
+      "CO2": 610
+    },
+    {
+      "day": "Vendredi",
+      "hour": 0,
+      "CO2": 532
+    },
+    {
+      "day": "Vendredi",
+      "hour": 1,
+      "CO2": 475
+    },
+    {
+      "day": "Vendredi",
+      "hour": 2,
+      "CO2": 463
+    },
+    {
+      "day": "Vendredi",
+      "hour": 3,
+      "CO2": 459
+    },
+    {
+      "day": "Vendredi",
+      "hour": 4,
+      "CO2": 457
+    },
+    {
+      "day": "Vendredi",
+      "hour": 5,
+      "CO2": 462
+    },
+    {
+      "day": "Vendredi",
+      "hour": 6,
+      "CO2": 492
+    },
+    {
+      "day": "Vendredi",
+      "hour": 7,
+      "CO2": 501
+    },
+    {
+      "day": "Vendredi",
+      "hour": 8,
+      "CO2": 498
+    },
+    {
+      "day": "Vendredi",
+      "hour": 9,
+      "CO2": 543
+    },
+    {
+      "day": "Vendredi",
+      "hour": 10,
+      "CO2": 559
+    },
+    {
+      "day": "Vendredi",
+      "hour": 11,
+      "CO2": 585
+    },
+    {
+      "day": "Vendredi",
+      "hour": 12,
+      "CO2": 603
+    },
+    {
+      "day": "Vendredi",
+      "hour": 13,
+      "CO2": 552
+    },
+    {
+      "day": "Vendredi",
+      "hour": 14,
+      "CO2": 538
+    },
+    {
+      "day": "Vendredi",
+      "hour": 15,
+      "CO2": 529
+    },
+    {
+      "day": "Vendredi",
+      "hour": 16,
+      "CO2": 542
+    },
+    {
+      "day": "Vendredi",
+      "hour": 17,
+      "CO2": 538
+    },
+    {
+      "day": "Vendredi",
+      "hour": 18,
+      "CO2": 553
+    },
+    {
+      "day": "Vendredi",
+      "hour": 19,
+      "CO2": 598
+    },
+    {
+      "day": "Vendredi",
+      "hour": 20,
+      "CO2": 650
+    },
+    {
+      "day": "Vendredi",
+      "hour": 21,
+      "CO2": 679
+    },
+    {
+      "day": "Vendredi",
+      "hour": 22,
+      "CO2": 662
+    },
+    {
+      "day": "Vendredi",
+      "hour": 23,
+      "CO2": 556
+    },
+    {
+      "day": "Samedi",
+      "hour": 0,
+      "CO2": 499
+    },
+    {
+      "day": "Samedi",
+      "hour": 1,
+      "CO2": 464
+    },
+    {
+      "day": "Samedi",
+      "hour": 2,
+      "CO2": 456
+    },
+    {
+      "day": "Samedi",
+      "hour": 3,
+      "CO2": 455
+    },
+    {
+      "day": "Samedi",
+      "hour": 4,
+      "CO2": 458
+    },
+    {
+      "day": "Samedi",
+      "hour": 5,
+      "CO2": 458
+    },
+    {
+      "day": "Samedi",
+      "hour": 6,
+      "CO2": 465
+    },
+    {
+      "day": "Samedi",
+      "hour": 7,
+      "CO2": 478
+    },
+    {
+      "day": "Samedi",
+      "hour": 8,
+      "CO2": 498
+    },
+    {
+      "day": "Samedi",
+      "hour": 9,
+      "CO2": 498
+    },
+    {
+      "day": "Samedi",
+      "hour": 10,
+      "CO2": 554
+    },
+    {
+      "day": "Samedi",
+      "hour": 11,
+      "CO2": 611
+    },
+    {
+      "day": "Samedi",
+      "hour": 12,
+      "CO2": 588
+    },
+    {
+      "day": "Samedi",
+      "hour": 13,
+      "CO2": 563
+    },
+    {
+      "day": "Samedi",
+      "hour": 14,
+      "CO2": 594
+    },
+    {
+      "day": "Samedi",
+      "hour": 15,
+      "CO2": 598
+    },
+    {
+      "day": "Samedi",
+      "hour": 16,
+      "CO2": 626
+    },
+    {
+      "day": "Samedi",
+      "hour": 17,
+      "CO2": 608
+    },
+    {
+      "day": "Samedi",
+      "hour": 18,
+      "CO2": 560
+    },
+    {
+      "day": "Samedi",
+      "hour": 19,
+      "CO2": 559
+    },
+    {
+      "day": "Samedi",
+      "hour": 20,
+      "CO2": 578
+    },
+    {
+      "day": "Samedi",
+      "hour": 21,
+      "CO2": 571
+    },
+    {
+      "day": "Samedi",
+      "hour": 22,
+      "CO2": 573
+    },
+    {
+      "day": "Samedi",
+      "hour": 23,
+      "CO2": 571
+    },
+    {
+      "day": "Dimanche",
+      "hour": 0,
+      "CO2": 505
+    },
+    {
+      "day": "Dimanche",
+      "hour": 1,
+      "CO2": 465
+    },
+    {
+      "day": "Dimanche",
+      "hour": 2,
+      "CO2": 458
+    },
+    {
+      "day": "Dimanche",
+      "hour": 3,
+      "CO2": 455
+    },
+    {
+      "day": "Dimanche",
+      "hour": 4,
+      "CO2": 460
+    },
+    {
+      "day": "Dimanche",
+      "hour": 5,
+      "CO2": 457
+    },
+    {
+      "day": "Dimanche",
+      "hour": 6,
+      "CO2": 458
+    },
+    {
+      "day": "Dimanche",
+      "hour": 7,
+      "CO2": 475
+    },
+    {
+      "day": "Dimanche",
+      "hour": 8,
+      "CO2": 482
+    },
+    {
+      "day": "Dimanche",
+      "hour": 9,
+      "CO2": 508
+    },
+    {
+      "day": "Dimanche",
+      "hour": 10,
+      "CO2": 519
+    },
+    {
+      "day": "Dimanche",
+      "hour": 11,
+      "CO2": 546
+    },
+    {
+      "day": "Dimanche",
+      "hour": 12,
+      "CO2": 580
+    },
+    {
+      "day": "Dimanche",
+      "hour": 13,
+      "CO2": 606
+    },
+    {
+      "day": "Dimanche",
+      "hour": 14,
+      "CO2": 620
+    },
+    {
+      "day": "Dimanche",
+      "hour": 15,
+      "CO2": 640
+    },
+    {
+      "day": "Dimanche",
+      "hour": 16,
+      "CO2": 568
+    },
+    {
+      "day": "Dimanche",
+      "hour": 17,
+      "CO2": 652
+    },
+    {
+      "day": "Dimanche",
+      "hour": 18,
+      "CO2": 668
+    },
+    {
+      "day": "Dimanche",
+      "hour": 19,
+      "CO2": 716
+    },
+    {
+      "day": "Dimanche",
+      "hour": 20,
+      "CO2": 717
+    },
+    {
+      "day": "Dimanche",
+      "hour": 21,
+      "CO2": 620
+    },
+    {
+      "day": "Dimanche",
+      "hour": 22,
+      "CO2": 593
+    },
+    {
+      "day": "Dimanche",
+      "hour": 23,
+      "CO2": 590
+    }
+  ],
+  "weekly_pattern_graph": [
+    {
+      "day": "Lundi",
+      "hour": 0,
+      "CO2": 554
+    },
+    {
+      "day": "Lundi",
+      "hour": 1,
+      "CO2": 542
+    },
+    {
+      "day": "Lundi",
+      "hour": 2,
+      "CO2": 534
+    },
+    {
+      "day": "Lundi",
+      "hour": 3,
+      "CO2": 524
+    },
+    {
+      "day": "Lundi",
+      "hour": 4,
+      "CO2": 511
+    },
+    {
+      "day": "Lundi",
+      "hour": 5,
+      "CO2": 506
+    },
+    {
+      "day": "Lundi",
+      "hour": 6,
+      "CO2": 513
+    },
+    {
+      "day": "Lundi",
+      "hour": 7,
+      "CO2": 511
+    },
+    {
+      "day": "Lundi",
+      "hour": 8,
+      "CO2": 519
+    },
+    {
+      "day": "Lundi",
+      "hour": 9,
+      "CO2": 551
+    },
+    {
+      "day": "Lundi",
+      "hour": 10,
+      "CO2": 565
+    },
+    {
+      "day": "Lundi",
+      "hour": 11,
+      "CO2": 588
+    },
+    {
+      "day": "Lundi",
+      "hour": 12,
+      "CO2": 579
+    },
+    {
+      "day": "Lundi",
+      "hour": 13,
+      "CO2": 579
+    },
+    {
+      "day": "Lundi",
+      "hour": 14,
+      "CO2": 612
+    },
+    {
+      "day": "Lundi",
+      "hour": 15,
+      "CO2": 642
+    },
+    {
+      "day": "Lundi",
+      "hour": 16,
+      "CO2": 686
+    },
+    {
+      "day": "Lundi",
+      "hour": 17,
+      "CO2": 624
+    },
+    {
+      "day": "Lundi",
+      "hour": 18,
+      "CO2": 603
+    },
+    {
+      "day": "Lundi",
+      "hour": 19,
+      "CO2": 585
+    },
+    {
+      "day": "Lundi",
+      "hour": 20,
+      "CO2": 582
+    },
+    {
+      "day": "Lundi",
+      "hour": 21,
+      "CO2": 579
+    },
+    {
+      "day": "Lundi",
+      "hour": 22,
+      "CO2": 587
+    },
+    {
+      "day": "Lundi",
+      "hour": 23,
+      "CO2": 588
+    },
+    {
+      "day": "Mardi",
+      "hour": 0,
+      "CO2": 575
+    },
+    {
+      "day": "Mardi",
+      "hour": 1,
+      "CO2": 559
+    },
+    {
+      "day": "Mardi",
+      "hour": 2,
+      "CO2": 539
+    },
+    {
+      "day": "Mardi",
+      "hour": 3,
+      "CO2": 529
+    },
+    {
+      "day": "Mardi",
+      "hour": 4,
+      "CO2": 519
+    },
+    {
+      "day": "Mardi",
+      "hour": 5,
+      "CO2": 513
+    },
+    {
+      "day": "Mardi",
+      "hour": 6,
+      "CO2": 512
+    },
+    {
+      "day": "Mardi",
+      "hour": 7,
+      "CO2": 515
+    },
+    {
+      "day": "Mardi",
+      "hour": 8,
+      "CO2": 524
+    },
+    {
+      "day": "Mardi",
+      "hour": 9,
+      "CO2": 553
+    },
+    {
+      "day": "Mardi",
+      "hour": 10,
+      "CO2": 581
+    },
+    {
+      "day": "Mardi",
+      "hour": 11,
+      "CO2": 587
+    },
+    {
+      "day": "Mardi",
+      "hour": 12,
+      "CO2": 584
+    },
+    {
+      "day": "Mardi",
+      "hour": 13,
+      "CO2": 583
+    },
+    {
+      "day": "Mardi",
+      "hour": 14,
+      "CO2": 616
+    },
+    {
+      "day": "Mardi",
+      "hour": 15,
+      "CO2": 642
+    },
+    {
+      "day": "Mardi",
+      "hour": 16,
+      "CO2": 653
+    },
+    {
+      "day": "Mardi",
+      "hour": 17,
+      "CO2": 637
+    },
+    {
+      "day": "Mardi",
+      "hour": 18,
+      "CO2": 609
+    },
+    {
+      "day": "Mardi",
+      "hour": 19,
+      "CO2": 593
+    },
+    {
+      "day": "Mardi",
+      "hour": 20,
+      "CO2": 591
+    },
+    {
+      "day": "Mardi",
+      "hour": 21,
+      "CO2": 592
+    },
+    {
+      "day": "Mardi",
+      "hour": 22,
+      "CO2": 597
+    },
+    {
+      "day": "Mardi",
+      "hour": 23,
+      "CO2": 587
+    },
+    {
+      "day": "Mercredi",
+      "hour": 0,
+      "CO2": 572
+    },
+    {
+      "day": "Mercredi",
+      "hour": 1,
+      "CO2": 555
+    },
+    {
+      "day": "Mercredi",
+      "hour": 2,
+      "CO2": 544
+    },
+    {
+      "day": "Mercredi",
+      "hour": 3,
+      "CO2": 535
+    },
+    {
+      "day": "Mercredi",
+      "hour": 4,
+      "CO2": 527
+    },
+    {
+      "day": "Mercredi",
+      "hour": 5,
+      "CO2": 521
+    },
+    {
+      "day": "Mercredi",
+      "hour": 6,
+      "CO2": 516
+    },
+    {
+      "day": "Mercredi",
+      "hour": 7,
+      "CO2": 525
+    },
+    {
+      "day": "Mercredi",
+      "hour": 8,
+      "CO2": 541
+    },
+    {
+      "day": "Mercredi",
+      "hour": 9,
+      "CO2": 587
+    },
+    {
+      "day": "Mercredi",
+      "hour": 10,
+      "CO2": 595
+    },
+    {
+      "day": "Mercredi",
+      "hour": 11,
+      "CO2": 616
+    },
+    {
+      "day": "Mercredi",
+      "hour": 12,
+      "CO2": 594
+    },
+    {
+      "day": "Mercredi",
+      "hour": 13,
+      "CO2": 608
+    },
+    {
+      "day": "Mercredi",
+      "hour": 14,
+      "CO2": 621
+    },
+    {
+      "day": "Mercredi",
+      "hour": 15,
+      "CO2": 654
+    },
+    {
+      "day": "Mercredi",
+      "hour": 16,
+      "CO2": 668
+    },
+    {
+      "day": "Mercredi",
+      "hour": 17,
+      "CO2": 639
+    },
+    {
+      "day": "Mercredi",
+      "hour": 18,
+      "CO2": 610
+    },
+    {
+      "day": "Mercredi",
+      "hour": 19,
+      "CO2": 593
+    },
+    {
+      "day": "Mercredi",
+      "hour": 20,
+      "CO2": 587
+    },
+    {
+      "day": "Mercredi",
+      "hour": 21,
+      "CO2": 588
+    },
+    {
+      "day": "Mercredi",
+      "hour": 22,
+      "CO2": 596
+    },
+    {
+      "day": "Mercredi",
+      "hour": 23,
+      "CO2": 590
+    },
+    {
+      "day": "Jeudi",
+      "hour": 0,
+      "CO2": 573
+    },
+    {
+      "day": "Jeudi",
+      "hour": 1,
+      "CO2": 555
+    },
+    {
+      "day": "Jeudi",
+      "hour": 2,
+      "CO2": 548
+    },
+    {
+      "day": "Jeudi",
+      "hour": 3,
+      "CO2": 528
+    },
+    {
+      "day": "Jeudi",
+      "hour": 4,
+      "CO2": 520
+    },
+    {
+      "day": "Jeudi",
+      "hour": 5,
+      "CO2": 515
+    },
+    {
+      "day": "Jeudi",
+      "hour": 6,
+      "CO2": 515
+    },
+    {
+      "day": "Jeudi",
+      "hour": 7,
+      "CO2": 521
+    },
+    {
+      "day": "Jeudi",
+      "hour": 8,
+      "CO2": 531
+    },
+    {
+      "day": "Jeudi",
+      "hour": 9,
+      "CO2": 563
+    },
+    {
+      "day": "Jeudi",
+      "hour": 10,
+      "CO2": 594
+    },
+    {
+      "day": "Jeudi",
+      "hour": 11,
+      "CO2": 629
+    },
+    {
+      "day": "Jeudi",
+      "hour": 12,
+      "CO2": 624
+    },
+    {
+      "day": "Jeudi",
+      "hour": 13,
+      "CO2": 622
+    },
+    {
+      "day": "Jeudi",
+      "hour": 14,
+      "CO2": 660
+    },
+    {
+      "day": "Jeudi",
+      "hour": 15,
+      "CO2": 662
+    },
+    {
+      "day": "Jeudi",
+      "hour": 16,
+      "CO2": 680
+    },
+    {
+      "day": "Jeudi",
+      "hour": 17,
+      "CO2": 660
+    },
+    {
+      "day": "Jeudi",
+      "hour": 18,
+      "CO2": 615
+    },
+    {
+      "day": "Jeudi",
+      "hour": 19,
+      "CO2": 593
+    },
+    {
+      "day": "Jeudi",
+      "hour": 20,
+      "CO2": 578
+    },
+    {
+      "day": "Jeudi",
+      "hour": 21,
+      "CO2": 576
+    },
+    {
+      "day": "Jeudi",
+      "hour": 22,
+      "CO2": 573
+    },
+    {
+      "day": "Jeudi",
+      "hour": 23,
+      "CO2": 577
+    },
+    {
+      "day": "Vendredi",
+      "hour": 0,
+      "CO2": 561
+    },
+    {
+      "day": "Vendredi",
+      "hour": 1,
+      "CO2": 562
+    },
+    {
+      "day": "Vendredi",
+      "hour": 2,
+      "CO2": 554
+    },
+    {
+      "day": "Vendredi",
+      "hour": 3,
+      "CO2": 533
+    },
+    {
+      "day": "Vendredi",
+      "hour": 4,
+      "CO2": 523
+    },
+    {
+      "day": "Vendredi",
+      "hour": 5,
+      "CO2": 519
+    },
+    {
+      "day": "Vendredi",
+      "hour": 6,
+      "CO2": 520
+    },
+    {
+      "day": "Vendredi",
+      "hour": 7,
+      "CO2": 521
+    },
+    {
+      "day": "Vendredi",
+      "hour": 8,
+      "CO2": 551
+    },
+    {
+      "day": "Vendredi",
+      "hour": 9,
+      "CO2": 607
+    },
+    {
+      "day": "Vendredi",
+      "hour": 10,
+      "CO2": 622
+    },
+    {
+      "day": "Vendredi",
+      "hour": 11,
+      "CO2": 621
+    },
+    {
+      "day": "Vendredi",
+      "hour": 12,
+      "CO2": 622
+    },
+    {
+      "day": "Vendredi",
+      "hour": 13,
+      "CO2": 608
+    },
+    {
+      "day": "Vendredi",
+      "hour": 14,
+      "CO2": 639
+    },
+    {
+      "day": "Vendredi",
+      "hour": 15,
+      "CO2": 637
+    },
+    {
+      "day": "Vendredi",
+      "hour": 16,
+      "CO2": 636
+    },
+    {
+      "day": "Vendredi",
+      "hour": 17,
+      "CO2": 607
+    },
+    {
+      "day": "Vendredi",
+      "hour": 18,
+      "CO2": 574
+    },
+    {
+      "day": "Vendredi",
+      "hour": 19,
+      "CO2": 558
+    },
+    {
+      "day": "Vendredi",
+      "hour": 20,
+      "CO2": 542
+    },
+    {
+      "day": "Vendredi",
+      "hour": 21,
+      "CO2": 549
+    },
+    {
+      "day": "Vendredi",
+      "hour": 22,
+      "CO2": 556
+    },
+    {
+      "day": "Vendredi",
+      "hour": 23,
+      "CO2": 564
+    },
+    {
+      "day": "Samedi",
+      "hour": 0,
+      "CO2": 558
+    },
+    {
+      "day": "Samedi",
+      "hour": 1,
+      "CO2": 551
+    },
+    {
+      "day": "Samedi",
+      "hour": 2,
+      "CO2": 539
+    },
+    {
+      "day": "Samedi",
+      "hour": 3,
+      "CO2": 532
+    },
+    {
+      "day": "Samedi",
+      "hour": 4,
+      "CO2": 522
+    },
+    {
+      "day": "Samedi",
+      "hour": 5,
+      "CO2": 523
+    },
+    {
+      "day": "Samedi",
+      "hour": 6,
+      "CO2": 521
+    },
+    {
+      "day": "Samedi",
+      "hour": 7,
+      "CO2": 519
+    },
+    {
+      "day": "Samedi",
+      "hour": 8,
+      "CO2": 526
+    },
+    {
+      "day": "Samedi",
+      "hour": 9,
+      "CO2": 526
+    },
+    {
+      "day": "Samedi",
+      "hour": 10,
+      "CO2": 523
+    },
+    {
+      "day": "Samedi",
+      "hour": 11,
+      "CO2": 527
+    },
+    {
+      "day": "Samedi",
+      "hour": 12,
+      "CO2": 531
+    },
+    {
+      "day": "Samedi",
+      "hour": 13,
+      "CO2": 530
+    },
+    {
+      "day": "Samedi",
+      "hour": 14,
+      "CO2": 540
+    },
+    {
+      "day": "Samedi",
+      "hour": 15,
+      "CO2": 536
+    },
+    {
+      "day": "Samedi",
+      "hour": 16,
+      "CO2": 540
+    },
+    {
+      "day": "Samedi",
+      "hour": 17,
+      "CO2": 535
+    },
+    {
+      "day": "Samedi",
+      "hour": 18,
+      "CO2": 530
+    },
+    {
+      "day": "Samedi",
+      "hour": 19,
+      "CO2": 527
+    },
+    {
+      "day": "Samedi",
+      "hour": 20,
+      "CO2": 541
+    },
+    {
+      "day": "Samedi",
+      "hour": 21,
+      "CO2": 540
+    },
+    {
+      "day": "Samedi",
+      "hour": 22,
+      "CO2": 544
+    },
+    {
+      "day": "Samedi",
+      "hour": 23,
+      "CO2": 553
+    },
+    {
+      "day": "Dimanche",
+      "hour": 0,
+      "CO2": 568
+    },
+    {
+      "day": "Dimanche",
+      "hour": 1,
+      "CO2": 567
+    },
+    {
+      "day": "Dimanche",
+      "hour": 2,
+      "CO2": 562
+    },
+    {
+      "day": "Dimanche",
+      "hour": 3,
+      "CO2": 555
+    },
+    {
+      "day": "Dimanche",
+      "hour": 4,
+      "CO2": 541
+    },
+    {
+      "day": "Dimanche",
+      "hour": 5,
+      "CO2": 540
+    },
+    {
+      "day": "Dimanche",
+      "hour": 6,
+      "CO2": 535
+    },
+    {
+      "day": "Dimanche",
+      "hour": 7,
+      "CO2": 518
+    },
+    {
+      "day": "Dimanche",
+      "hour": 8,
+      "CO2": 512
+    },
+    {
+      "day": "Dimanche",
+      "hour": 9,
+      "CO2": 517
+    },
+    {
+      "day": "Dimanche",
+      "hour": 10,
+      "CO2": 522
+    },
+    {
+      "day": "Dimanche",
+      "hour": 11,
+      "CO2": 530
+    },
+    {
+      "day": "Dimanche",
+      "hour": 12,
+      "CO2": 523
+    },
+    {
+      "day": "Dimanche",
+      "hour": 13,
+      "CO2": 526
+    },
+    {
+      "day": "Dimanche",
+      "hour": 14,
+      "CO2": 530
+    },
+    {
+      "day": "Dimanche",
+      "hour": 15,
+      "CO2": 538
+    },
+    {
+      "day": "Dimanche",
+      "hour": 16,
+      "CO2": 550
+    },
+    {
+      "day": "Dimanche",
+      "hour": 17,
+      "CO2": 552
+    },
+    {
+      "day": "Dimanche",
+      "hour": 18,
+      "CO2": 551
+    },
+    {
+      "day": "Dimanche",
+      "hour": 19,
+      "CO2": 553
+    },
+    {
+      "day": "Dimanche",
+      "hour": 20,
+      "CO2": 560
+    },
+    {
+      "day": "Dimanche",
+      "hour": 21,
+      "CO2": 565
+    },
+    {
+      "day": "Dimanche",
+      "hour": 22,
+      "CO2": 568
+    },
+    {
+      "day": "Dimanche",
+      "hour": 23,
+      "CO2": 567
+    }
+  ]
+}
