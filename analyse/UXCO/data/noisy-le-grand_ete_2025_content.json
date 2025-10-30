@@ -15,7 +15,7 @@
     "principes": [
       "Toujours utiliser le tutoiement et un ton positif, jeune et communautaire",
       "Mentionner UXCO Student (jamais Maison Ecla)",
-      "Contexte d'usage réel : se baser sur les indices d'occupation (icônes 0–5)",
+      "Contexte d’usage réel : se baser sur les indices d’occupation (icônes 0–5)",
       "Vulgariser sans infantiliser; rester factuel et bienveillant",
       "Conseils UNIQUEMENT sur les espaces communs; aucune mention des logements individuels"
     ],
@@ -34,17 +34,17 @@
       "local_names": "SECTION OBLIGATOIRE - Dictionnaire des traductions FR/EN des noms de locaux affichés"
     },
     "PROCESSUS_MISE_A_JOUR": {
-      "etape_1": "Ouvrir le fichier monitor JSON (ex: noisy-le-grand_ete_2025.json) et localiser la section metadata",
-      "etape_2": "Récupérer les valeurs EXACTES de metadata.salle_graphiques et metadata.salle_fitness (ex: 'Agora - RDR', 'Fitness - ENTRESOL')",
+      "etape_1": "Ouvrir le fichier monitor JSON (ex: palaiseau_1_ete_2025.json) et localiser la section metadata",
+      "etape_2": "Récupérer les valeurs EXACTES de metadata.salle_graphiques et metadata.salle_fitness (ex: 'Espace repas RDC', 'Fitness RDC')",
       "etape_3": "Dans ce fichier _content.json, section local_names, utiliser ces noms EXACTS comme clés",
       "etape_4": "Pour chaque local, créer un objet avec fr (version française lisible) et en (traduction anglaise)",
-      "etape_5": "Règles de traduction: garder le nom du local, traduire 'RDR' en 'Upper Ground Floor', 'ENTRESOL' en 'Mezzanine', 'RDC' en 'Ground Floor', autres étages en '1st Floor', '2nd Floor', etc.",
+      "etape_5": "Règles de traduction: garder le nom du local, traduire uniquement 'RDC' en 'Ground Floor', autres étages en '1st Floor', '2nd Floor', etc.",
       "EXEMPLE": {
-        "si_metadata_dit": "Agora - RDR",
+        "si_metadata_dit": "Espace repas RDC",
         "alors_local_names": {
-          "Agora - RDR": {
-            "fr": "Agora - RDR",
-            "en": "Agora - Upper Ground Floor"
+          "Espace repas RDC": {
+            "fr": "Espace Repas - RDC",
+            "en": "Dining Area - Ground Floor"
           }
         }
       },
@@ -77,7 +77,7 @@
     }
   },
   "_DONNEES_PERIODE": {
-    "commentaire": "Données calculées par monitor.R - MISE À JOUR pour été 2025 Noisy-le-Grand",
+    "commentaire": "Données calculées par monitor.R - MISE À JOUR pour été 2025",
     "AVERTISSEMENT_CRITIQUE": "Les données dans cette section sont des MOYENNES GLOBALES 24h/24 incluant les heures de nuit. Elles ne sont PAS représentatives de l'expérience réelle des habitant·e·s. Pour la synthèse narrative, utiliser OBLIGATOIREMENT la section '_STATISTIQUES_DETAILLEES_PAR_LOCAL' ci-dessous avec les indices d'icônes.",
     "IMPORTANT_INDICES_ICONES": "Pour la rédaction de la synthèse narrative, utiliser les indices d'icônes (icone_salle_graphiques et icones_tous_locaux) qui reflètent la qualité durant les heures d'occupation réelle. Ne PAS utiliser les moyennes globales ci-dessous qui incluent les heures 24/24 et sont donc non représentatives de l'expérience réelle des habitant·e·s.",
     "STATISTIQUES_COMMENTEES": {
@@ -87,26 +87,26 @@
           "icone": 0,
           "interpretation": "EXCELLENT - Qualité d'air optimale durant les heures d'occupation. Idéal pour tous usages.",
           "statistiques_heures_occupation": {
-            "co2_moyen": 565.3,
-            "co2_max": 1392,
-            "temp_moyenne": 23.3,
-            "humidity_moyenne": 52.3,
-            "voc_moyen": 385.3,
-            "pm25_moyen": 1.3,
-            "noise_moyen": 49.2
+            "co2_moyen": 584.6,
+            "co2_max": 2242,
+            "temp_moyenne": 24.9,
+            "humidity_moyenne": 49.6,
+            "voc_moyen": 304.1,
+            "pm25_moyen": 27.1,
+            "noise_moyen": 58.1
           }
         },
         "Fitness_ENTRESOL": {
           "icone": 0,
           "interpretation": "EXCELLENT - Qualité d'air optimale durant les heures d'occupation. Idéal pour l'activité sportive.",
           "statistiques_heures_occupation": {
-            "co2_moyen": 489.6,
-            "co2_max": 965,
-            "temp_moyenne": 22.9,
-            "humidity_moyenne": 50.5,
-            "voc_moyen": 344.7,
-            "pm25_moyen": 1.2,
-            "noise_moyen": 44.2
+            "co2_moyen": 586.3,
+            "co2_max": 1381,
+            "temp_moyenne": 23.2,
+            "humidity_moyenne": 50.8,
+            "voc_moyen": 392.1,
+            "pm25_moyen": 0.8,
+            "noise_moyen": 53.3
           }
         },
         "Bureau_gestionnaire_R1": {
@@ -116,10 +116,10 @@
             "co2_moyen": 880.2,
             "co2_max": 2503,
             "temp_moyenne": 24.4,
-            "humidity_moyenne": 46.0,
+            "humidity_moyenne": 46,
             "voc_moyen": 439.7,
             "pm25_moyen": 1.8,
-            "noise_moyen": 49.0
+            "noise_moyen": 49
           },
           "note": "Les pics de CO2 jusqu'à 2503 ppm sont ponctuels et liés à l'occupation soutenue du bureau, ce qui est attendu pour ce type d'espace"
         }
@@ -169,17 +169,521 @@
       "max": 3143.1,
       "unite": "ppb"
     },
-    "PM2_5": {
-      "moyenne": 1.3,
+    "PM25": {
+      "moyenne": 5.7,
       "min": 0,
-      "max": 194,
-      "unite": "µg/m³"
+      "max": 46.4,
+      "unite": "µg/m³",
+      "note": "Moyenne excellente, bien en dessous des recommandations OMS"
     },
     "NOISE": {
       "moyenne": 45.8,
       "min": 37,
       "max": 102,
       "unite": "dB"
+    },
+    "SCORE_GLOBAL": 90.5,
+    "INDICES_PAR_LOCAL": {
+      "Espace_repas_RDC": {
+        "indice": 0,
+        "interpretation": "Excellent"
+      },
+      "Fitness_RDC": {
+        "indice": 1,
+        "interpretation": "Très bon avec quelques pics occasionnels"
+      }
+    },
+    "PM2_5": {
+      "moyenne": 1.3,
+      "min": 0,
+      "max": 194,
+      "unite": "µg/m³"
+    }
+  },
+  "_STATISTIQUES_DETAILLEES_PAR_LOCAL": {
+    "commentaire": "SECTION OBLIGATOIRE POUR LA RÉDACTION DE LA SYNTHÈSE - Statistiques complètes 24h pour tous les locaux extraites du monitor JSON",
+    "note_utilisation": "Ces statistiques sont sur 24h pour cohérence avec les graphiques. Pour la synthèse narrative, toujours préciser 'moyenne sur toute la période', 'maximum ponctuel', etc.",
+    "locaux": {
+      "Bureau_Direction_RDC": {
+        "icone": 0,
+        "interpretation": "Excellent",
+        "co2": {
+          "moyenne_24h": 505.9,
+          "min": 387,
+          "max": 1265,
+          "ecart_type": 111.9,
+          "unite": "ppm"
+        },
+        "temperature": {
+          "moyenne_24h": 24.5,
+          "min": 20.5,
+          "max": 30.7,
+          "ecart_type": 1.7,
+          "unite": "°C"
+        },
+        "humidity": {
+          "moyenne_24h": 48.6,
+          "min": 29.4,
+          "max": 69.9,
+          "ecart_type": 7.8,
+          "unite": "%"
+        }
+      },
+      "Bureau_service_RDC": {
+        "icone": 0,
+        "interpretation": "Excellent",
+        "co2": {
+          "moyenne_24h": 499.6,
+          "min": 378,
+          "max": 939,
+          "ecart_type": 85.4,
+          "unite": "ppm"
+        },
+        "temperature": {
+          "moyenne_24h": 23.2,
+          "min": 22.1,
+          "max": 25.9,
+          "ecart_type": 0.8,
+          "unite": "°C"
+        },
+        "humidity": {
+          "moyenne_24h": 51.9,
+          "min": 35.9,
+          "max": 70.6,
+          "ecart_type": 7.7,
+          "unite": "%"
+        }
+      },
+      "Bureau_RDC": {
+        "icone": 0,
+        "interpretation": "Excellent",
+        "co2": {
+          "moyenne_24h": 512.4,
+          "min": 380,
+          "max": 1280,
+          "ecart_type": 102,
+          "unite": "ppm"
+        },
+        "temperature": {
+          "moyenne_24h": 24.4,
+          "min": 22,
+          "max": 28.3,
+          "ecart_type": 1.2,
+          "unite": "°C"
+        },
+        "humidity": {
+          "moyenne_24h": 49.5,
+          "min": 27.2,
+          "max": 67.8,
+          "ecart_type": 7.6,
+          "unite": "%"
+        }
+      },
+      "PC_securite_RDC": {
+        "icone": 0,
+        "interpretation": "Excellent",
+        "co2": {
+          "moyenne_24h": 513.4,
+          "min": 370,
+          "max": 792,
+          "ecart_type": 49.9,
+          "unite": "ppm"
+        },
+        "temperature": {
+          "moyenne_24h": 24.1,
+          "min": 19.5,
+          "max": 31.3,
+          "ecart_type": 1.8,
+          "unite": "°C"
+        },
+        "humidity": {
+          "moyenne_24h": 49.4,
+          "min": 26.9,
+          "max": 72.1,
+          "ecart_type": 8.6,
+          "unite": "%"
+        }
+      },
+      "E_Sport_RDC": {
+        "icone": 0,
+        "interpretation": "Excellent",
+        "co2": {
+          "moyenne_24h": 500.9,
+          "min": 382,
+          "max": 1492,
+          "ecart_type": 95.6,
+          "unite": "ppm"
+        },
+        "temperature": {
+          "moyenne_24h": 23.1,
+          "min": 21.6,
+          "max": 27.8,
+          "ecart_type": 1.1,
+          "unite": "°C"
+        },
+        "humidity": {
+          "moyenne_24h": 51.4,
+          "min": 35.6,
+          "max": 69.8,
+          "ecart_type": 7.8,
+          "unite": "%"
+        },
+        "voc": {
+          "moyenne_24h": 244.4,
+          "min": 104.5,
+          "max": 1315.9,
+          "ecart_type": 106,
+          "unite": "µg/m³"
+        },
+        "pm25": {
+          "moyenne_24h": 1.4,
+          "min": 0,
+          "max": 22,
+          "ecart_type": 2.3,
+          "unite": "µg/m³"
+        },
+        "noise": {
+          "moyenne_24h": 45.6,
+          "min": 36,
+          "max": 86,
+          "ecart_type": 5.3,
+          "unite": "dB"
+        }
+      },
+      "Openspace_RDC": {
+        "icone": 0,
+        "interpretation": "Excellent",
+        "co2": {
+          "moyenne_24h": 530.3,
+          "min": 384,
+          "max": 1315,
+          "ecart_type": 125.7,
+          "unite": "ppm"
+        },
+        "temperature": {
+          "moyenne_24h": 24.3,
+          "min": 21.8,
+          "max": 27.8,
+          "ecart_type": 1,
+          "unite": "°C"
+        },
+        "humidity": {
+          "moyenne_24h": 48.5,
+          "min": 31.3,
+          "max": 61.6,
+          "ecart_type": 6.7,
+          "unite": "%"
+        },
+        "voc": {
+          "moyenne_24h": 329,
+          "min": 104.5,
+          "max": 2318.2,
+          "ecart_type": 227.1,
+          "unite": "µg/m³"
+        },
+        "pm25": {
+          "moyenne_24h": 1.9,
+          "min": 0,
+          "max": 66,
+          "ecart_type": 2.3,
+          "unite": "µg/m³"
+        },
+        "noise": {
+          "moyenne_24h": 46.4,
+          "min": 38,
+          "max": 85,
+          "ecart_type": 4.5,
+          "unite": "dB"
+        }
+      },
+      "Fitness_RDC": {
+        "icone": 1,
+        "interpretation": "Très bon avec quelques pics occasionnels normaux pour un espace sport",
+        "co2": {
+          "moyenne_24h": 741.9,
+          "min": 370,
+          "max": 2848,
+          "ecart_type": 308.4,
+          "unite": "ppm",
+          "note": "Maximum ponctuel de 2848 ppm observé lors de séances d'activité physique intense - valeur normale pour ce type d'espace"
+        },
+        "temperature": {
+          "moyenne_24h": 24.7,
+          "min": 20.7,
+          "max": 28.7,
+          "ecart_type": 0.8,
+          "unite": "°C"
+        },
+        "humidity": {
+          "moyenne_24h": 53.8,
+          "min": 33.5,
+          "max": 72.7,
+          "ecart_type": 7,
+          "unite": "%"
+        },
+        "voc": {
+          "moyenne_24h": 439.2,
+          "min": 104.5,
+          "max": 2640.9,
+          "ecart_type": 272.7,
+          "unite": "µg/m³"
+        },
+        "pm25": {
+          "moyenne_24h": 3,
+          "min": 0,
+          "max": 143,
+          "ecart_type": 3.5,
+          "unite": "µg/m³"
+        },
+        "noise": {
+          "moyenne_24h": 60.8,
+          "min": 47,
+          "max": 93,
+          "ecart_type": 7.3,
+          "unite": "dB"
+        }
+      },
+      "Espace_repas_RDC": {
+        "icone": 0,
+        "interpretation": "Excellent - Espace idéal pour tous usages",
+        "co2": {
+          "moyenne_24h": 528.9,
+          "min": 370,
+          "max": 1013,
+          "ecart_type": 78.2,
+          "unite": "ppm",
+          "note": "Qualité d'air optimale même lors des moments de forte fréquentation"
+        },
+        "temperature": {
+          "moyenne_24h": 24.2,
+          "min": 18.6,
+          "max": 28.7,
+          "ecart_type": 1.5,
+          "unite": "°C"
+        },
+        "humidity": {
+          "moyenne_24h": 50.1,
+          "min": 29.1,
+          "max": 71.3,
+          "ecart_type": 7.4,
+          "unite": "%"
+        },
+        "voc": {
+          "moyenne_24h": 386,
+          "min": 104.5,
+          "max": 3793.1,
+          "ecart_type": 250,
+          "unite": "µg/m³"
+        },
+        "pm25": {
+          "moyenne_24h": 5,
+          "min": 0,
+          "max": 153,
+          "ecart_type": 6.2,
+          "unite": "µg/m³"
+        },
+        "noise": {
+          "moyenne_24h": 56.4,
+          "min": 39,
+          "max": 91,
+          "ecart_type": 6.2,
+          "unite": "dB"
+        }
+      },
+      "RDC_Cuisine_collective": {
+        "icone": 0,
+        "interpretation": "Excellent",
+        "co2": {
+          "moyenne_24h": 502.5,
+          "min": 381,
+          "max": 1349,
+          "ecart_type": 67.2,
+          "unite": "ppm"
+        },
+        "temperature": {
+          "moyenne_24h": 24.2,
+          "min": 18.8,
+          "max": 28.8,
+          "ecart_type": 1.3,
+          "unite": "°C"
+        },
+        "humidity": {
+          "moyenne_24h": 49.1,
+          "min": 30.6,
+          "max": 74.5,
+          "ecart_type": 6.5,
+          "unite": "%"
+        },
+        "voc": {
+          "moyenne_24h": 357.3,
+          "min": 104.5,
+          "max": 5163.6,
+          "ecart_type": 291.8,
+          "unite": "µg/m³"
+        },
+        "pm25": {
+          "moyenne_24h": 6.2,
+          "min": 0,
+          "max": 330,
+          "ecart_type": 12.7,
+          "unite": "µg/m³"
+        },
+        "noise": {
+          "moyenne_24h": 54.6,
+          "min": 43,
+          "max": 98,
+          "ecart_type": 5.8,
+          "unite": "dB"
+        }
+      },
+      "Salle_de_reunion_RDC": {
+        "icone": 0,
+        "interpretation": "Excellent",
+        "co2": {
+          "moyenne_24h": 533.9,
+          "min": 370,
+          "max": 1144,
+          "ecart_type": 92.7,
+          "unite": "ppm"
+        },
+        "temperature": {
+          "moyenne_24h": 23.5,
+          "min": 20,
+          "max": 27.9,
+          "ecart_type": 1.3,
+          "unite": "°C"
+        },
+        "humidity": {
+          "moyenne_24h": 49,
+          "min": 32.7,
+          "max": 72,
+          "ecart_type": 8.2,
+          "unite": "%"
+        },
+        "voc": {
+          "moyenne_24h": 325.4,
+          "min": 104.5,
+          "max": 2084.1,
+          "ecart_type": 206.5,
+          "unite": "µg/m³"
+        },
+        "pm25": {
+          "moyenne_24h": 2.4,
+          "min": 0,
+          "max": 361,
+          "ecart_type": 6.2,
+          "unite": "µg/m³"
+        },
+        "noise": {
+          "moyenne_24h": 54.5,
+          "min": 42,
+          "max": 85,
+          "ecart_type": 6.1,
+          "unite": "dB"
+        }
+      },
+      "Agora_RDC": {
+        "icone": 0,
+        "interpretation": "Excellent",
+        "co2": {
+          "moyenne_24h": 527.7,
+          "min": 376,
+          "max": 1242,
+          "ecart_type": 78.5,
+          "unite": "ppm"
+        },
+        "temperature": {
+          "moyenne_24h": 24.1,
+          "min": 20.9,
+          "max": 32.6,
+          "ecart_type": 1.1,
+          "unite": "°C"
+        },
+        "humidity": {
+          "moyenne_24h": 49.9,
+          "min": 26.7,
+          "max": 66.3,
+          "ecart_type": 6.6,
+          "unite": "%"
+        },
+        "voc": {
+          "moyenne_24h": 351.5,
+          "min": 104.5,
+          "max": 1568.2,
+          "ecart_type": 196.9,
+          "unite": "µg/m³"
+        },
+        "pm25": {
+          "moyenne_24h": 3.7,
+          "min": 0,
+          "max": 47,
+          "ecart_type": 3.3,
+          "unite": "µg/m³"
+        },
+        "noise": {
+          "moyenne_24h": 58.3,
+          "min": 40,
+          "max": 85,
+          "ecart_type": 6.3,
+          "unite": "dB"
+        }
+      },
+      "Fitness_Cours_collectifs_RDC": {
+        "icone": 1,
+        "interpretation": "Très bon avec pics lors des cours collectifs - variations normales",
+        "co2": {
+          "moyenne_24h": 804.9,
+          "min": 370,
+          "max": 3513,
+          "ecart_type": 364.7,
+          "unite": "ppm",
+          "note": "Maximum ponctuel de 3513 ppm observé pendant les sessions collectives intenses - valeur attendue pour ce type d'activité"
+        },
+        "temperature": {
+          "moyenne_24h": 23.8,
+          "min": 20.7,
+          "max": 26.5,
+          "ecart_type": 0.7,
+          "unite": "°C"
+        },
+        "humidity": {
+          "moyenne_24h": 56.9,
+          "min": 37.9,
+          "max": 74.1,
+          "ecart_type": 6.3,
+          "unite": "%"
+        },
+        "voc": {
+          "moyenne_24h": 341.1,
+          "min": 104.5,
+          "max": 1700,
+          "ecart_type": 185.7,
+          "unite": "µg/m³"
+        },
+        "pm25": {
+          "moyenne_24h": 3.3,
+          "min": 0,
+          "max": 55,
+          "ecart_type": 3,
+          "unite": "µg/m³"
+        },
+        "noise": {
+          "moyenne_24h": 49.4,
+          "min": 38,
+          "max": 79,
+          "ecart_type": 6.3,
+          "unite": "dB"
+        }
+      }
+    },
+    "synthese_globale": {
+      "note": "Valeurs moyennes globales sur toute la période pour l'ensemble des espaces communs mesurés",
+      "co2_moyen_global": 529,
+      "temperature_moyenne_globale": 24.2,
+      "humidity_moyenne_globale": 51,
+      "voc_moyen_global": 362,
+      "pm25_moyen_global": 5.7,
+      "noise_moyen_global": 57.8
     }
   },
   "hero": {
@@ -359,96 +863,119 @@
     }
   },
   "ui_translations": {
+    "_comment": "Traductions pour les éléments d'interface utilisateur du dashboard",
+    "_IMPORTANT": "Ces traductions sont utilisées directement par le code JSX - toute modification doit être testée",
     "co2_chart": {
       "optimal_threshold_label": {
         "fr": "Optimal (800 ppm)",
-        "en": "Good (800 ppm)"
+        "en": "Good (800 ppm)",
+        "_comment": "CRITIQUE: Label pour le seuil de référence sur le graphique temporel CO2. En anglais utiliser 'Good' et NON 'Optimal' pour cohérence terminologique",
+        "_utilisation_jsx": "Ligne ~580: <ReferenceLine y={thresholds.CO2.good} ... label={{ value: 'Optimal (800 ppm)', ... }} />",
+        "_TODO": "Le JSX utilise actuellement un label en dur 'Optimal (800 ppm)'. Il faut modifier le code pour utiliser ui_translations.co2_chart.optimal_threshold_label[language]"
       },
       "explanation": {
-        "fr": "Le CO₂ est un indicateur clé de la qualité d'air. Les données proviennent de",
-        "en": "CO₂ is a key indicator of air quality. Data comes from"
+        "fr": "Le CO₂ est un excellent indicateur de confinement : il révèle si l'aération est suffisante pour évacuer les polluants et assurer une bonne qualité de l'air intérieur. Les données du graphique ci-dessous proviennent de",
+        "en": "CO₂ is an excellent indicator of confinement: it reveals whether ventilation is sufficient to evacuate pollutants and ensure good indoor air quality. The data in the chart below comes from",
+        "_comment": "Texte explicatif affiché au-dessus du graphique CO2 - utilisé dans le bloc bg-blue-50 - DOIT ÊTRE EN GRAS"
+      },
+      "optimal_label_short": {
+        "fr": "Optimal",
+        "en": "Good",
+        "_comment": "Label court pour 'optimal' affiché juste en dessous des traits pointillés sur le graphique CO2"
       }
     },
     "heatmap": {
-      "title": {
-        "fr": "Affluence hebdomadaire (CO₂)",
-        "en": "Weekly Occupancy (CO₂)"
+      "legend": {
+        "fr": "Légende",
+        "en": "Legend"
       },
-      "low_label": {
-        "fr": "Faible",
-        "en": "Low"
+      "no_data": {
+        "fr": "Pas de données",
+        "en": "No data"
       },
-      "high_label": {
-        "fr": "Élevé",
-        "en": "High"
+      "weekly_pattern_description": {
+        "fr": "N'hésite pas à utiliser les données ci-dessous pour mieux adapter tes périodes de présence dans les locaux :",
+        "en": "Feel free to use the data below to better adapt your presence periods in the spaces below:",
+        "_comment": "Description affichée sous le titre 'Profils hebdomadaires' - DOIT ÊTRE EN GRAS"
       }
     },
     "days_of_week": {
-      "full": {
-        "fr": ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"],
-        "en": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+      "fr": {
+        "monday": "Lundi",
+        "tuesday": "Mardi",
+        "wednesday": "Mercredi",
+        "thursday": "Jeudi",
+        "friday": "Vendredi",
+        "saturday": "Samedi",
+        "sunday": "Dimanche",
+        "monday_short": "Lun",
+        "tuesday_short": "Mar",
+        "wednesday_short": "Mer",
+        "thursday_short": "Jeu",
+        "friday_short": "Ven",
+        "saturday_short": "Sam",
+        "sunday_short": "Dim"
       },
-      "short": {
-        "fr": ["Lun", "Mar", "Mer", "Jeu", "Ven", "Sam", "Dim"],
-        "en": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+      "en": {
+        "monday": "Monday",
+        "tuesday": "Tuesday",
+        "wednesday": "Wednesday",
+        "thursday": "Thursday",
+        "friday": "Friday",
+        "saturday": "Saturday",
+        "sunday": "Sunday",
+        "monday_short": "Mon",
+        "tuesday_short": "Tue",
+        "wednesday_short": "Wed",
+        "thursday_short": "Thu",
+        "friday_short": "Fri",
+        "saturday_short": "Sat",
+        "sunday_short": "Sun"
+      },
+      "_comment": "Jours de la semaine pour les heatmaps - actuellement en dur dans le JSX ligne ~443",
+      "_TODO": "Modifier le JSX pour utiliser ces traductions au lieu des labels en dur"
+    },
+    "temp_humidity": {
+      "intro_prefix": {
+        "fr": "Les graphiques qui suivent présentent la température et l'humidité pour l'espace",
+        "en": "The following charts show temperature and humidity for"
+      },
+      "intro_suffix": {
+        "fr": "ainsi que les données extérieures.",
+        "en": "along with outdoor data."
+      },
+      "legend_labels": {
+        "temp": {
+          "fr": "TEMP",
+          "en": "TEMP"
+        },
+        "temp_ext": {
+          "fr": "TEMP EXT",
+          "en": "TEMP OUT"
+        },
+        "humidity": {
+          "fr": "HUMIDITÉ",
+          "en": "HUMIDITY"
+        },
+        "humidity_ext": {
+          "fr": "HR EXT",
+          "en": "RH OUT"
+        },
+        "_comment": "Labels pour les légendes des graphiques température et humidité"
       }
     }
   },
-  "pour_aller_plus_loin": {
-    "title": {
-      "fr": "Pour aller plus loin",
-      "en": "Go Further"
-    },
-    "subtitle": {
-      "fr": "Quelques ressources utiles sur la qualité de l'air",
-      "en": "Useful resources on air quality"
-    },
-    "propositions": [
-      {
-        "category_label": {
-          "fr": "📚 Comprendre",
-          "en": "📚 Understand"
-        },
-        "text": {
-          "fr": "Pourquoi le CO₂ est-il un bon indicateur de la qualité de l'air intérieur ? Consulte les ressources de l'ADEME ou de l'ANSES pour mieux comprendre l'impact sur ta santé et ta concentration.",
-          "en": "Why is CO₂ a good indicator of indoor air quality? Check out ADEME or ANSES resources to better understand the impact on your health and concentration."
-        }
-      },
-      {
-        "category_label": {
-          "fr": "💡 Agir",
-          "en": "💡 Act"
-        },
-        "text": {
-          "fr": "Quelques gestes simples dans tes espaces communs : aérer 10 minutes après une réunion dans l'Agora, limiter les parfums intenses dans les petits espaces, et privilégier les créneaux moins chargés pour une expérience optimale.",
-          "en": "A few simple actions in your common areas: ventilate for 10 minutes after a meeting in the Agora, limit intense fragrances in small spaces, and choose less busy time slots for an optimal experience."
-        }
-      },
-      {
-        "category_label": {
-          "fr": "🌍 S'informer",
-          "en": "🌍 Stay Informed"
-        },
-        "text": {
-          "fr": "La qualité de l'air extérieur influence aussi ton confort intérieur. Suis les indices Atmo de ta région pour adapter tes habitudes d'aération les jours de forte pollution.",
-          "en": "Outdoor air quality also influences your indoor comfort. Follow your region's Atmo indices to adjust your ventilation habits on high pollution days."
-        }
-      }
-    ]
-  },
-  "_VERIFICATION_CHECKLIST": {
-    "description": "Checklist de vérification avant déploiement - Noisy-le-Grand été 2025",
-    "sections_principales": [
-      "✓ hero - titre, période, saison traduits FR/EN",
-      "✓ summary.sections[*].text - tous traduits FR/EN",
-      "✓ metrics.items[*] - toutes valeurs mises à jour avec données Noisy-le-Grand",
-      "✓ heatmaps.*.title - traduits FR/EN",
-      "✓ ui_translations.* - tous traduits FR/EN",
-      "✓ pour_aller_plus_loin - tout traduit FR/EN"
-    ],
-    "traductions_critiques": [
-      "✓ hero.season_label - traduit FR/EN avec 'Summer 2025'",
-      "✓ hero.period - traduit FR/EN avec dates correctes",
+  "_CHECKLIST_TRADUCTION_COMPLETE": {
+    "description": "Checklist de vérification pour s'assurer que TOUS les éléments sont traduits",
+    "status_fichier_actuel": "COMPLET avec tous les champs traduits",
+    "elements_verifies": [
+      "✓ hero.title - traduit FR/EN",
+      "✓ hero.subtitle - traduit FR/EN",
+      "✓ hero.period - traduit FR/EN",
+      "✓ hero.season_label - traduit FR/EN (CRITIQUE pour menu déroulant)",
+      "✓ summary.title - traduit FR/EN",
+      "✓ summary.text - traduit FR/EN (texte complet d'analyse)",
+      "✓ summary.score.label - traduit FR/EN",
       "✓ metrics.title - traduit FR/EN",
       "✓ metrics.items[*].name - tous traduits FR/EN",
       "✓ metrics.items[*].description - tous traduits FR/EN",
@@ -509,18 +1036,18 @@
     "description": "Structure attendue dans le fichier monitor JSON principal pour supporter les traductions",
     "exemple_structure": {
       "metadata": {
-        "saison": "Eté 2025",
+        "saison": "Été 2025",
         "saison_id": "ete_2025",
-        "salle_fitness": "Fitness - ENTRESOL",
+        "salle_fitness": "Fitness RDC",
         "salle_fitness_display": {
-          "fr": "Fitness - Entresol",
-          "en": "Fitness - Mezzanine",
+          "fr": "Salle Fitness - RDC",
+          "en": "Fitness Room - Ground Floor",
           "_comment": "NOUVEAU CHAMP - Nom affiché avec traduction"
         },
-        "salle_graphiques": "Agora - RDR",
+        "salle_graphiques": "Espace repas RDC",
         "salle_graphiques_display": {
-          "fr": "Agora - RDR",
-          "en": "Agora - Upper Ground Floor",
+          "fr": "Espace Repas - RDC",
+          "en": "Dining Area - Ground Floor",
           "_comment": "NOUVEAU CHAMP - Nom affiché avec traduction"
         }
       }
@@ -562,9 +1089,9 @@
     }
   },
   "_GUIDE_UXCO_STYLE": {
-    "but": "Garantir l'homogénéité de l'app avec l'identité UXCO Student.",
+    "but": "Garantir l’homogénéité de l’app avec l’identité UXCO Student.",
     "ton": [
-      "Tutoiement, direct et chaleureux (ex. 'tu', 'ton espace', 'ta résidence UXCO').",
+      "Tutoiement, direct et chaleureux (ex. “tu”, “ton espace”, “ta résidence UXCO”).",
       "Émojis autorisés avec parcimonie pour souligner (💨, 🌿, 💬).",
       "Formulations brèves, actives, orientées action et communauté."
     ],
@@ -595,14 +1122,14 @@
       }
     },
     "redaction_donnees": [
-      "La synthèse s'appuie sur les indices icone_salle_graphiques et icones_tous_locaux (heures d'occupation).",
-      "Pour CO₂, donner l'indice (0–5) et les pics max ponctuels si utiles; éviter les moyennes 24/24 anxiogènes.",
-      "Privilégier les bénéfices concrets pour l'étudiant: confort, concentration, énergie, ambiance.",
+      "La synthèse s’appuie sur les indices icone_salle_graphiques et icones_tous_locaux (heures d’occupation).",
+      "Pour CO₂, donner l’indice (0–5) et les pics max ponctuels si utiles; éviter les moyennes 24/24 anxiogènes.",
+      "Privilégier les bénéfices concrets pour l’étudiant: confort, concentration, énergie, ambiance.",
       "Conseils : proposer des créneaux plus respirants et des écogestes en espace commun."
     ],
     "checklist": [
       "✓ Tutoiement partout",
-      "✓ Aucune mention de 'Maison Ecla'",
+      "✓ Aucune mention de ‘Maison Ecla’",
       "✓ Labels de saison hydratés depuis hero.season_label",
       "✓ FR/EN présents pour tous textes visibles",
       "✓ Conseils uniquement sur espaces communs"
