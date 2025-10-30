@@ -3,6 +3,18 @@
     "version": "1.0",
     "note": "La structure de ce fichier DOIT rester identique à celle des fichiers *_content de l'été (ex: palaiseau_1_ete_2025_content.json). Toute mise à jour future doit respecter scrupuleusement cette structure, les clés et la casse. Aucun fallback ne doit être ajouté côté contenu : les noms de locaux (ex: salle affichée au-dessus de la heatmap, nom de la salle des graphiques) sont tirés dynamiquement du JSON des données (metadata.salle_* ou metadata.salle_*_display)."
   },
+  "local_names": {
+    "_comment": "CRITIQUE: Traductions FR/EN des noms de locaux affichés. Les clés DOIVENT correspondre EXACTEMENT aux valeurs metadata.salle_graphiques et metadata.salle_fitness du fichier monitor JSON (hacker_ete_2025.json).",
+    "_PROCESSUS_MISE_A_JOUR": "1) Ouvrir hacker_ete_2025.json, section metadata. 2) Copier EXACTEMENT les valeurs de salle_graphiques et salle_fitness comme clés ici. 3) Créer les traductions fr et en pour chaque local. 4) Règle: traduire 'RDC' en 'Ground Floor', garder le reste du nom.",
+    "Co-Working RDC": {
+      "fr": "Co-Working - RDC",
+      "en": "Co-Working - Ground Floor"
+    },
+    "Fitness RDC": {
+      "fr": "Fitness - RDC",
+      "en": "Fitness - Ground Floor"
+    }
+  },
   "ui_translations": {
     "_comment": "Traductions pour les éléments d'interface utilisateur du dashboard",
     "_IMPORTANT": "Ces traductions sont utilisées directement par le code JSX - toute modification doit être testée",

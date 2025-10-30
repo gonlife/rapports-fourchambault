@@ -31,23 +31,50 @@
     "IMPORTANT": "Les noms de locaux apparaissent à plusieurs endroits dans le dashboard. Il est CRITIQUE de maintenir la cohérence entre les clés techniques (immuables) et les noms affichés (traduisibles).",
     "convention_nommage": {
       "room_name": "Clé technique immuable utilisée pour les requêtes de données - NE JAMAIS TRADUIRE",
-      "room_display_name": "NOUVEAU CHAMP - Nom complet affiché au-dessus des graphiques - TOUJOURS TRADUIRE FR/EN",
-      "title": "Titre court pour les heatmaps - TOUJOURS TRADUIRE FR/EN"
+      "local_names": "SECTION OBLIGATOIRE - Dictionnaire des traductions FR/EN des noms de locaux affichés"
+    },
+    "PROCESSUS_MISE_A_JOUR": {
+      "etape_1": "Ouvrir le fichier monitor JSON (ex: palaiseau_1_ete_2025.json) et localiser la section metadata",
+      "etape_2": "Récupérer les valeurs EXACTES de metadata.salle_graphiques et metadata.salle_fitness (ex: 'Espace repas RDC', 'Fitness RDC')",
+      "etape_3": "Dans ce fichier _content.json, section local_names, utiliser ces noms EXACTS comme clés",
+      "etape_4": "Pour chaque local, créer un objet avec fr (version française lisible) et en (traduction anglaise)",
+      "etape_5": "Règles de traduction: garder le nom du local, traduire uniquement 'RDC' en 'Ground Floor', autres étages en '1st Floor', '2nd Floor', etc.",
+      "EXEMPLE": {
+        "si_metadata_dit": "Espace repas RDC",
+        "alors_local_names": {
+          "Espace repas RDC": {
+            "fr": "Espace Repas - RDC",
+            "en": "Dining Area - Ground Floor"
+          }
+        }
+      },
+      "CRITIQUE": "Les clés dans local_names DOIVENT correspondre EXACTEMENT aux valeurs dans metadata.salle_graphiques et metadata.salle_fitness du fichier monitor JSON. Aucun fallback n'est géré par le code."
     },
     "ou_sont_affiches_les_noms": [
-      "Au-dessus du graphique de concentration CO2 temporel - utilise metadata.salle_graphiques_display",
+      "Au-dessus du graphique de concentration CO2 temporel - utilise local_names[metadata.salle_graphiques][language]",
+      "Dans les textes explicatifs sous les graphiques - utilise local_names[metadata.salle_graphiques][language]",
       "Titre de la heatmap de gauche - utilise heatmaps.fitness.title",
       "Titre de la heatmap de droite - utilise heatmaps.common_area.title",
-      "Dans les textes explicatifs sous les graphiques - utilise les champs *_display",
       "Menu déroulant des saisons - utilise hero.season_label"
     ],
     "checklist_verification": [
-      "✓ Tous les champs *_display ont des traductions FR/EN",
-      "✓ Les champs room_name ne sont JAMAIS traduits (clés techniques)",
-      "✓ Les metadata.salle_*_display sont créés avec traductions",
-      "✓ Le label 'Optimal' est bien traduit en 'Good' en anglais",
+      "✓ local_names contient EXACTEMENT les 2 locaux: celui de metadata.salle_graphiques ET celui de metadata.salle_fitness",
+      "✓ Les clés dans local_names correspondent EXACTEMENT aux noms techniques du monitor JSON",
+      "✓ Chaque local a une traduction fr ET en",
+      "✓ Le label 'Optimal' est bien traduit en 'Good' en anglais dans ui_translations",
       "✓ hero.season_label est traduit pour la nouvelle saison"
     ]
+  },
+  "local_names": {
+    "_comment": "Traductions FR/EN des noms de locaux affichés. Les clés DOIVENT correspondre EXACTEMENT aux valeurs metadata.salle_graphiques et metadata.salle_fitness du fichier monitor JSON.",
+    "Espace repas RDC": {
+      "fr": "Espace Repas - RDC",
+      "en": "Dining Area - Ground Floor"
+    },
+    "Fitness RDC": {
+      "fr": "Fitness - RDC",
+      "en": "Fitness - Ground Floor"
+    }
   },
   "_DONNEES_PERIODE": {
     "commentaire": "Données calculées par monitor.R - MISE À JOUR pour été 2025",
