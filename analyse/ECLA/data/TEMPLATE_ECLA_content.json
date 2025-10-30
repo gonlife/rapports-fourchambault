@@ -11,13 +11,7 @@
       "ui_translations",
       "section_titles",
       "system_messages"
-    ],
-    "CRITIQUE_GUILLEMETS": {
-      "IMPORTANT": "Utiliser UNIQUEMENT des guillemets droits ASCII - JAMAIS de guillemets typographiques/courbes"
-    },
-    "CRITIQUE_CARACTERES_SPECIAUX": {
-        "IMPORTANT_FORMATAGE_TEXTE": "Éviter tout formatage HTML ou Markdown dans les chaînes de texte."
-    }
+    ]
   },
   "_GUIDE_REDACTION": {
     "principes": [
@@ -36,17 +30,11 @@
         "Conseils - EXCLUSIVEMENT sur les espaces communs."
       ],
       "IMPORTANT_INDICES": "Utiliser UNIQUEMENT les indices d'icônes (0-5) pour la qualité d'air."
-    },
-    "TITRE_RAPPORT_FORMAT": {
-      "MARQUE_A_UTILISER": "Maison Ecla"
     }
   },
-  "_GUIDE_TRADUCTION_NOMS_LOCAUX": {
-    "IMPORTANT": "Les clés techniques (room_name) ne sont jamais traduites."
-  },
   "local_names": {
-    "_comment": "Traductions FR/EN des noms de locaux affichés.",
-    "_EXEMPLE_CLE": "NOM_TECHNIQUE_SALLE_GRAPHIQUES",
+    "_comment": "Traductions FR/EN des noms de locaux affichés. Les clés DOIVENT correspondre EXACTEMENT aux valeurs metadata.salle_graphiques et metadata.salle_fitness du fichier monitor JSON.",
+    "_EXEMPLE_CLE_TECHNIQUE": "Espace Repas RDC",
     "NOM_TECHNIQUE_SALLE_GRAPHIQUES": {
       "fr": "Nom Affiché en Français - RDC",
       "en": "Displayed Name in English - Ground Floor"
@@ -96,7 +84,7 @@
     }
   },
   "metrics": {
-    "_comment": "Indicateurs clés - Valeurs calculées depuis monitor JSON (Moyennes globales 24h). Unité COV corrigée à µg/m³.",
+    "_comment": "Indicateurs clés - Valeurs calculées depuis monitor JSON (Moyennes globales 24h). L'unité des COV est en µg/m³.",
     "title": {
       "fr": "Indicateurs clés",
       "en": "Key Indicators"
@@ -177,7 +165,7 @@
     ]
   },
   "heatmaps": {
-    "_comment": "Titres des deux heatmaps CO2",
+    "_comment": "Titres des deux heatmaps CO2 - Utiliser les noms traduits depuis local_names ou titres spécifiques",
     "fitness": {
       "title": {
         "fr": "Nom du Local Fitness",
@@ -196,6 +184,7 @@
   "ui_translations": {
     "_comment": "Traductions pour les éléments d'interface utilisateur du dashboard ECLA",
     "co2_chart": {
+      "_NOTE_INJECTION": "Le nom du local (traduit via local_names) est injecté dynamiquement après cette phrase.",
       "optimal_threshold_label": {
         "fr": "Optimal (800 ppm)",
         "en": "Good (800 ppm)"
@@ -260,6 +249,7 @@
     },
     "temp_humidity": {
       "_comment": "Textes d'introduction pour la section Température & Humidité",
+      "_NOTE_INJECTION": "Le nom du local (traduit via local_names) est injecté dynamiquement entre intro_prefix et intro_suffix.",
       "intro_prefix": {
         "fr": "Les graphiques qui suivent présentent la température et l'humidité pour l'espace",
         "en": "The following charts show temperature and humidity for"
