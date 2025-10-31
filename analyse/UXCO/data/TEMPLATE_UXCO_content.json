@@ -1,0 +1,340 @@
+{
+  "_COMMENTAIRES_STRUCTURE": {
+    "description": "Ce fichier contient l'ensemble des textes narratifs pour le dashboard habitant·e",
+    "usage": "Les commentaires avec underscore (_) ne sont pas visibles côté frontend",
+    "charte": "Tutoiement, ton jeune et convivial, marque UXCO Student (jamais Maison Ecla), périmètre = espaces communs uniquement.",
+    "sections_obligatoires": [
+      "hero",
+      "summary (avec score + text unique)",
+      "metrics",
+      "heatmaps",
+      "ui_translations",
+      "section_titles",
+      "system_messages"
+    ],
+    "CRITIQUE_GUILLEMETS": {
+      "IMPORTANT": "Utiliser UNIQUEMENT des guillemets droits ASCII - JAMAIS de guillemets typographiques/courbes",
+      "guillemets_interdits": "Guillemets courbes: ouvrant/fermant doubles et simples (souvent insérés par Word/Pages)",
+      "guillemets_autorises": "Guillemets droits ASCII: double quote et single quote standard du clavier",
+      "consequences": "Les guillemets typographiques causent des erreurs JSON et empêchent le chargement du fichier",
+      "verification": "Après édition, toujours vérifier avec: python3 -m json.tool fichier.json",
+      "exemple_correct": "\"text\": \"Exemple avec 'guillemets simples' corrects\""
+    },
+    "CRITIQUE_CARACTERES_SPECIAUX": {
+        "IMPORTANT_FORMATAGE_TEXTE": "Éviter tout formatage HTML ou Markdown dans les chaînes de texte (ex: PAS d'**astérisques** pour le gras). Le gras doit être géré par le frontend si nécessaire. Supprimer les **doubles astérisques** et les *astérisques simples* des textes.",
+        "ASTÉRISQUES_INTERDITS": "Les symboles *, **, et les guillemets courbes doivent être évités."
+    }
+  },
+  "_GUIDE_REDACTION": {
+    "principes": [
+      "Toujours utiliser le tutoiement et un ton positif, jeune et communautaire",
+      "Mentionner UXCO Student (jamais Maison Ecla)",
+      "Contexte d'usage réel : se baser sur les indices d'occupation (icônes 0–5)",
+      "Vulgariser sans infantiliser; rester factuel et bienveillant",
+      "Conseils UNIQUEMENT sur les espaces communs; aucune mention des logements individuels"
+    ],
+    "structure_summary_text": {
+      "CRITIQUE": "summary.text doit être UN SEUL texte avec 5 sections séparées par \\n\\n (double saut de ligne)",
+      "sections_requises": [
+        "Synthèse - Vue d'ensemble positive avec score global, température moyenne ET mention d'une plage min/max pour contextualiser la moyenne.",
+        "Performances observées - 2-3 paramètres excellents avec indices d'icônes, valeurs moyennes et impact positif",
+        "Points d'attention identifiés - 1-2 observations avec valeurs max ponctuelles (CO2 ou VOC), local concerné, contextualisation positive",
+        "Impact sur ton bien-être - Exactement 3-4 bénéfices concrets sous forme de liste à puces commençant par •",
+        "Conseils pour en profiter à fond - EXCLUSIVEMENT sur les espaces communs et actions concrètes"
+      ],
+      "format": "Titre section\\n\\nContenu...\\n\\nTitre section suivante\\n\\nContenu...",
+      "IMPORTANT_INDICES": "Utiliser UNIQUEMENT les indices d'icônes (0-5) pour la qualité d'air, PAS les moyennes CO2"
+    },
+    "TITRE_RAPPORT_FORMAT": {
+      "CRITIQUE_FORMAT_GLOBAL": "Le titre doit inclure la saison, l'année et le nom de la résidence (ex: 'Rapport Été 2025 - Résidence Nanterre').",
+      "UXCO": "Utiliser 'Résidence' devant le nom (ex: 'Résidence Palaiseau 1')"
+    }
+  },
+  "_GUIDE_TRADUCTION_NOMS_LOCAUX": {
+    "IMPORTANT": "Les noms de locaux apparaissent à plusieurs endroits dans le dashboard. Il est CRITIQUE de maintenir la cohérence entre les clés techniques (immuables) et les noms affichés (traduisibles)."
+  },
+  "local_names": {
+    "_comment": "Traductions FR/EN des noms de locaux affichés. Les clés DOIVENT correspondre EXACTEMENT aux valeurs metadata.salle_graphiques et metadata.salle_fitness du fichier monitor JSON.",
+    "_EXEMPLE": "Si metadata.salle_graphiques = 'Agora - RDR', alors la clé doit être exactement 'Agora - RDR'",
+    "NOM_TECHNIQUE_SALLE_GRAPHIQUES": {
+      "fr": "Nom Affiché en Français",
+      "en": "Displayed Name in English"
+    },
+    "NOM_TECHNIQUE_SALLE_FITNESS": {
+      "fr": "Nom Affiché en Français",
+      "en": "Displayed Name in English"
+    }
+  },
+  "hero": {
+    "_comment": "Section d'en-tête du dashboard",
+    "season_label": {
+      "fr": "Saison AAAA",
+      "en": "Season YYYY",
+      "_exemple": "Été 2025 / Summer 2025"
+    },
+    "title": {
+      "fr": "Rapport Saison AAAA - [Résidence] NomRésidence",
+      "en": "Season YYYY Report - [Residence] ResidenceName",
+      "_NOTE": "Adapter la marque (Résidence/Maison) en fonction du client (UXCO/ECLA)"
+    },
+    "period": {
+      "fr": "JJ mois - JJ mois AAAA",
+      "en": "Month DD - Month DD, YYYY",
+      "_exemple": "1er juillet - 1er octobre 2025 / July 1 - October 1, 2025"
+    },
+    "subtitle": {
+      "fr": "Qualité de l'air dans tes espaces communs UXCO Student",
+      "en": "Air quality in your UXCO Student common areas"
+    }
+  },
+  "summary": {
+    "_comment": "Section principale d'analyse - STRUCTURE CRITIQUE",
+    "_STRUCTURE_OBLIGATOIRE": "Cette section DOIT contenir: title, score (avec value + label), et text (UN SEUL texte avec 5 sections)",
+    "title": {
+      "fr": "Ton [saison] à UXCO — [Accroche de 4 mots max]",
+      "en": "Your [season] at UXCO — [Hook 4 words max]",
+      "_exemple": "Ton été à UXCO — parfait pour étudier !"
+    },
+    "score": {
+      "_comment": "Score global de confort calculé par monitor.R",
+      "value": 90.5,
+      "label": {
+        "fr": "Excellent",
+        "en": "Excellent"
+      }
+    },
+    "text": {
+      "_comment_redaction": "UN SEUL texte avec 5 sections séparées par \\n\\n (double saut de ligne). Les titres de section doivent apparaître tels quels.",
+      "_STRUCTURE_REQUISE": "Synthèse\\n\\n[contenu]\\n\\nPerformances observées\\n\\n[contenu]\\n\\nPoints d'attention identifiés\\n\\n[contenu]\\n\\nImpact sur ton bien-être\\n\\n• [point 1]\\n• [point 2]\\n• [point 3]\\n• [point 4]\\n\\nConseils pour en profiter à fond\\n\\n[contenu]",
+      "fr": "Synthèse\n\n[Texte vue d'ensemble avec score global XX/100, température moyenne XX°C et mention des min/max pertinents (ex: T°C ou CO2)]\n\nPerformances observées\n\n[Texte décrivant les locaux avec indice 0-1, mentionner les indices et les paramètres excellents]\n\nPoints d'attention identifiés\n\n[Texte décrivant les locaux avec indice >1, mentionner les pics max ponctuels, contextualiser positivement]\n\nImpact sur ton bien-être\n\n• [Bénéfice concret 1]\n• [Bénéfice concret 2]\n• [Bénéfice concret 3]\n• [Bénéfice concret 4]\n\nConseils pour en profiter à fond\n\n[Conseils concrets sur les espaces communs uniquement, incluant un conseil saisonnier général.]",
+      "en": "Summary\n\n[Overview text with global score XX/100, average temperature XX°C and mention of relevant min/max (e.g. Temp or CO2)]\n\nObserved Performances\n\n[Text describing spaces with index 0-1, mention indices and excellent parameters]\n\nIdentified Points of Attention\n\n[Text describing spaces with index >1, mention occasional max peaks, contextualize positively]\n\nImpact on Your Well-being\n\n• [Concrete benefit 1]\n• [Concrete benefit 2]\n• [Concrete benefit 3]\n• [Concrete benefit 4]\n\nRecommendations\n\n[Concrete tips for common areas only, including a general seasonal tip.]"
+    }
+  },
+  "metrics": {
+    "_comment": "Indicateurs clés - Valeurs calculées depuis monitor JSON. L'unité des COV est en µg/m³.",
+    "_STRUCTURE_CRITIQUE": "Chaque item DOIT avoir: name (FR/EN), value (STRING avec unité), status, description (FR/EN avec plage)",
+    "title": {
+      "fr": "Indicateurs clés",
+      "en": "Key Indicators"
+    },
+    "items": [
+      {
+        "_comment": "value DOIT être un STRING incluant l'unité (ex: '480 ppm', PAS 480)",
+        "name": {
+          "fr": "CO₂ moyen",
+          "en": "Average CO₂"
+        },
+        "value": "XXX ppm",
+        "status": "excellent",
+        "description": {
+          "fr": "Plage : XXX-XXXX ppm",
+          "en": "Range: XXX-XXXX ppm"
+        }
+      },
+      {
+        "name": {
+          "fr": "Température moyenne",
+          "en": "Average temperature"
+        },
+        "value": "XX.X°C",
+        "status": "excellent",
+        "description": {
+          "fr": "Plage : XX-XX°C",
+          "en": "Range: XX-XX°C"
+        }
+      },
+      {
+        "name": {
+          "fr": "Humidité moyenne",
+          "en": "Average humidity"
+        },
+        "value": "XX%",
+        "status": "excellent",
+        "description": {
+          "fr": "Plage : XX-XX%",
+          "en": "Range: XX-XX%"
+        }
+      },
+      {
+        "name": {
+          "fr": "PM2.5 moyen",
+          "en": "Average PM2.5"
+        },
+        "value": "X.X µg/m³",
+        "status": "excellent",
+        "description": {
+          "fr": "Plage : X-XX µg/m³",
+          "en": "Range: X-XX µg/m³"
+        }
+      },
+      {
+        "name": {
+          "fr": "COV moyen",
+          "en": "Average VOC"
+        },
+        "value": "XXX µg/m³",
+        "status": "excellent",
+        "description": {
+          "fr": "Plage : XXX-XXXX µg/m³",
+          "en": "Range: XXX-XXXX µg/m³"
+        }
+      },
+      {
+        "name": {
+          "fr": "Niveau sonore moyen",
+          "en": "Average sound level"
+        },
+        "value": "XX.X dB",
+        "status": "excellent",
+        "description": {
+          "fr": "Plage : XX-XXX dB",
+          "en": "Range: XX-XXX dB"
+        }
+      }
+    ]
+  },
+  "heatmaps": {
+    "_comment": "Titres des deux heatmaps CO2 - Utiliser les noms traduits depuis local_names",
+    "fitness": {
+      "title": {
+        "fr": "Nom du Local Fitness - Étage",
+        "en": "Fitness Room Name - Floor"
+      }
+    },
+    "common_area": {
+      "title": {
+        "fr": "Nom du Local Commun - Étage",
+        "en": "Common Area Name - Floor"
+      }
+    }
+  },
+  "ui_translations": {
+    "_comment": "Traductions pour les éléments d'interface utilisateur du dashboard",
+    "co2_chart": {
+      "optimal_threshold_label": {
+        "fr": "Optimal (800 ppm)",
+        "en": "Good (800 ppm)"
+      },
+      "explanation": {
+        "fr": "Le CO₂ est un excellent indicateur de confinement : il révèle si l'aération est suffisante pour évacuer les polluants et assurer une bonne qualité de l'air intérieur. Les données du graphique ci-dessous proviennent de",
+        "en": "CO₂ is an excellent indicator of confinement: it reveals whether ventilation is sufficient to evacuate pollutants and ensure good indoor air quality. The data in the chart below comes from"
+      },
+      "optimal_label_short": {
+        "fr": "Optimal",
+        "en": "Good"
+      }
+    },
+    "heatmap": {
+      "legend": {
+        "fr": "Légende",
+        "en": "Legend"
+      },
+      "no_data": {
+        "fr": "Pas de données",
+        "en": "No data"
+      },
+      "weekly_pattern_description": {
+        "fr": "N'hésite pas à utiliser les données ci-dessous pour mieux adapter tes périodes de présence dans les locaux :",
+        "en": "Feel free to use the data below to better adapt your presence periods in the spaces below:"
+      }
+    },
+    "days_of_week": {
+      "_comment": "Structure OBLIGATOIRE: objet avec fr et en, chacun contenant les noms complets et abrégés",
+      "fr": {
+        "monday": "Lundi",
+        "tuesday": "Mardi",
+        "wednesday": "Mercredi",
+        "thursday": "Jeudi",
+        "friday": "Vendredi",
+        "saturday": "Samedi",
+        "sunday": "Dimanche",
+        "monday_short": "Lun",
+        "tuesday_short": "Mar",
+        "wednesday_short": "Mer",
+        "thursday_short": "Jeu",
+        "friday_short": "Ven",
+        "saturday_short": "Sam",
+        "sunday_short": "Dim"
+      },
+      "en": {
+        "monday": "Monday",
+        "tuesday": "Tuesday",
+        "wednesday": "Wednesday",
+        "thursday": "Thursday",
+        "friday": "Friday",
+        "saturday": "Saturday",
+        "sunday": "Sunday",
+        "monday_short": "Mon",
+        "tuesday_short": "Tue",
+        "wednesday_short": "Wed",
+        "thursday_short": "Thu",
+        "friday_short": "Fri",
+        "saturday_short": "Sat",
+        "sunday_short": "Sun"
+      }
+    },
+    "temp_humidity": {
+      "_comment": "SECTION CRITIQUE - Textes d'introduction pour la section Température & Humidité",
+      "intro_prefix": {
+        "fr": "Les graphiques qui suivent présentent la température et l'humidité pour l'espace",
+        "en": "The following charts show temperature and humidity for"
+      },
+      "intro_suffix": {
+        "fr": "ainsi que les données extérieures.",
+        "en": "along with outdoor data."
+      },
+      "legend_labels": {
+        "temp": {
+          "fr": "TEMP",
+          "en": "TEMP"
+        },
+        "temp_ext": {
+          "fr": "TEMP EXT",
+          "en": "TEMP OUT"
+        },
+        "humidity": {
+          "fr": "HUMIDITÉ",
+          "en": "HUMIDITY"
+        },
+        "humidity_ext": {
+          "fr": "HR EXT",
+          "en": "RH OUT"
+        }
+      }
+    }
+  },
+  "section_titles": {
+    "_comment": "Titres des différentes sections du dashboard - utilisés par le JSX",
+    "co2_air_quality": {
+      "fr": "Qualité de l'air (CO₂)",
+      "en": "Air Quality (CO₂)"
+    },
+    "weekly_analysis": {
+      "fr": "Analyse hebdomadaire",
+      "en": "Weekly Analysis"
+    },
+    "temp_humidity": {
+      "fr": "Température & Humidité",
+      "en": "Temperature & Humidity"
+    },
+    "global_comfort_score": {
+      "fr": "Score Global de Confort",
+      "en": "Global Comfort Score"
+    }
+  },
+  "system_messages": {
+    "_comment": "Messages système pour le chargement, erreurs, footer",
+    "loading": {
+      "fr": "Chargement des données...",
+      "en": "Loading data..."
+    },
+    "error_title": {
+      "fr": "Erreur de chargement",
+      "en": "Loading Error"
+    },
+    "footer": {
+      "fr": "UXCO Student - Monitoring de la qualité de l'air",
+      "en": "UXCO Student - Air Quality Monitoring"
+    }
+  }
+}
