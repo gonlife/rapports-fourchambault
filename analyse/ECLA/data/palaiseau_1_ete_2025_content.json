@@ -1,0 +1,281 @@
+{
+  "_COMMENTAIRES_STRUCTURE": {
+    "description": "Fichier de contenu narratif pour le dashboard habitant·e de Maison Ecla Palaiseau 1",
+    "usage": "Les commentaires avec underscore (_) ne sont pas visibles côté frontend",
+    "charte": "Vouvoiement systématique, ton sobre et professionnel, marque Maison Ecla, périmètre = espaces communs uniquement.",
+    "genere_depuis": "palaiseau_1_ete_2025.json - Score global: 83.5/100 (min de tous les locaux)"
+  },
+  "local_names": {
+    "_comment": "Traductions FR/EN des noms de locaux - Valeurs copiées EXACTEMENT depuis metadata du fichier monitor JSON",
+    "Espace repas RDC": {
+      "fr": "Espace Repas - RDC",
+      "en": "Dining Area - Ground Floor"
+    },
+    "Fitness RDC": {
+      "fr": "Salle Fitness - RDC",
+      "en": "Fitness Room - Ground Floor"
+    }
+  },
+  "hero": {
+    "_comment": "Section d'en-tête du dashboard",
+    "season_label": {
+      "fr": "Été 2025",
+      "en": "Summer 2025"
+    },
+    "title": {
+      "fr": "Maison Ecla Palaiseau 1 - Été 2025",
+      "en": "Ecla House Palaiseau 1 - Summer 2025"
+    },
+    "period": {
+      "fr": "Du 1er juillet au 22 septembre 2025",
+      "en": "From July 1st to September 22nd, 2025"
+    },
+    "subtitle": {
+      "fr": "Analyse de la qualité de l'air intérieur",
+      "en": "Indoor Air Quality Analysis"
+    }
+  },
+  "summary": {
+    "_comment": "Section principale d'analyse - Score global = minimum de tous les locaux (83.5/100)",
+    "title": {
+      "fr": "Analyse de votre été dans votre Maison Ecla",
+      "en": "Your Summer Analysis at Your Ecla House"
+    },
+    "score": {
+      "value": 83.5,
+      "label": {
+        "fr": "Très bien",
+        "en": "Very Good"
+      }
+    },
+    "text": {
+      "fr": "Synthèse\n\nVotre Maison Ecla Palaiseau 1 a maintenu un environnement de qualité très satisfaisante pendant la période estivale 2025, avec un score global de 83.5/100. La température intérieure s'est stabilisée en moyenne à 24.1°C (avec des variations entre 18.6°C et 31.3°C) garantissant votre confort thermique malgré les fortes chaleurs extérieures. Le système de ventilation a permis de maintenir un renouvellement d'air efficace dans l'ensemble des espaces communs.\n\nPerformances observées\n\nLa majorité des espaces communs ont affiché d'excellentes performances tout au long de l'été. L'Espace Repas RDC, le Bureau Direction RDC, et l'Agora RDC ont maintenu un indice ICONE de 0, témoignant d'une qualité d'air optimale avec des niveaux de CO₂ systématiquement inférieurs à 800 ppm. Les particules fines PM2.5 sont restées à un niveau excellent avec une moyenne de 3.3 µg/m³, bien en-dessous des recommandations de l'OMS. L'humidité relative s'est maintenue dans la plage de confort (51% en moyenne), contribuant à limiter les risques de développement de moisissures et à préserver le confort des résidents.\n\nPoints d'attention identifiés\n\nLes salles Fitness RDC et Fitness Cours collectifs RDC ont enregistré un indice ICONE de 1, ce qui reste dans une plage acceptable et témoigne de l'utilisation intensive de ces espaces par les résidents. Des pics ponctuels de CO₂ ont été observés (maximum de 3256 ppm) lors des heures de forte affluence, ce qui est normal pour des espaces d'activité physique et ne remet pas en cause la qualité globale de l'air. Les composés organiques volatils (COV) ont montré une moyenne de 347 µg/m³ avec des pics ponctuels atteignant 5164 µg/m³, principalement liés à l'utilisation de produits d'entretien et aux matériaux récents, une situation courante qui s'améliore naturellement avec le temps.\n\nImpact sur votre bien-être\n\n• Préservation de vos capacités cognitives : un air de qualité optimale dans les espaces de travail et de détente favorise votre concentration et votre productivité au quotidien\n• Confort thermique maintenu : malgré les températures estivales élevées, l'environnement intérieur est resté dans une plage agréable pour vos activités\n• Protection de votre santé respiratoire : des niveaux très bas de particules fines réduisent significativement les risques d'irritations et de troubles respiratoires\n• Espaces propices à la socialisation : la qualité de l'air dans les zones communes vous permet de profiter pleinement de ces lieux de convivialité sans inconfort\n\nConseils\n\nPour optimiser votre confort dans les espaces communs pendant les périodes estivales, nous vous recommandons de privilégier l'utilisation de l'Espace Repas et de l'Agora aux heures creuses (avant 11h ou après 15h) où la qualité de l'air est optimale. Pour les activités sportives, la salle Fitness est moins fréquentée en matinée (7h-9h) et en soirée après 20h, comme l'indiquent nos données hebdomadaires. N'hésitez pas à signaler tout dysfonctionnement des systèmes de ventilation dans les espaces communs afin que nous puissions intervenir rapidement. Enfin, pensez à adapter votre consommation énergétique en évitant d'ouvrir les fenêtres pendant les heures les plus chaudes de la journée, le système de climatisation étant plus efficace portes et fenêtres fermées.",
+      "en": "Summary\n\nYour Ecla House Palaiseau 1 maintained a very satisfactory quality environment during the summer period of 2025, with an overall score of 83.5/100. The indoor temperature stabilized at an average of 24.1°C (with variations between 18.6°C and 31.3°C), ensuring your thermal comfort despite high outdoor temperatures. The ventilation system maintained effective air renewal throughout all common areas.\n\nObserved Performances\n\nMost common spaces displayed excellent performance throughout the summer. The Dining Area Ground Floor, Management Office Ground Floor, and Agora Ground Floor maintained an ICONE index of 0, demonstrating optimal air quality with CO₂ levels consistently below 800 ppm. Fine particles PM2.5 remained at an excellent level with an average of 3.3 µg/m³, well below WHO recommendations. Relative humidity stayed within the comfort range (51% average), helping to limit mold development risks and preserve residents' comfort.\n\nIdentified Points of Attention\n\nThe Fitness Room Ground Floor and Fitness Group Classes Ground Floor recorded an ICONE index of 1, which remains within an acceptable range and reflects the intensive use of these spaces by residents. Occasional CO₂ peaks were observed (maximum of 3256 ppm) during peak hours, which is normal for physical activity spaces and does not compromise the overall air quality. Volatile Organic Compounds (VOCs) showed an average of 347 µg/m³ with occasional peaks reaching 5164 µg/m³, mainly linked to cleaning products and recent materials, a common situation that naturally improves over time.\n\nImpact on Your Well-being\n\n• Preservation of your cognitive abilities: optimal air quality in work and relaxation spaces promotes your concentration and daily productivity\n• Maintained thermal comfort: despite high summer temperatures, the indoor environment remained in a pleasant range for your activities\n• Protection of your respiratory health: very low levels of fine particles significantly reduce the risks of irritation and respiratory disorders\n• Spaces conducive to socialization: air quality in common areas allows you to fully enjoy these convivial spaces without discomfort\n\nRecommendations\n\nTo optimize your comfort in common areas during summer periods, we recommend using the Dining Area and Agora during off-peak hours (before 11am or after 3pm) when air quality is optimal. For sports activities, the Fitness Room is less crowded in the morning (7am-9am) and evening after 8pm, as indicated by our weekly data. Please report any malfunction of ventilation systems in common areas so we can intervene quickly. Finally, remember to adapt your energy consumption by avoiding opening windows during the hottest hours of the day, as the air conditioning system is more efficient with doors and windows closed."
+    }
+  },
+  "metrics": {
+    "_comment": "Indicateurs clés - Valeurs extraites de metrics_globals du fichier monitor JSON",
+    "title": {
+      "fr": "Indicateurs clés",
+      "en": "Key Indicators"
+    },
+    "items": [
+      {
+        "name": {
+          "fr": "CO₂ moyen",
+          "en": "Average CO₂"
+        },
+        "value": "557 ppm",
+        "status": "excellent",
+        "description": {
+          "fr": "Plage : 370-3256 ppm",
+          "en": "Range: 370-3256 ppm"
+        }
+      },
+      {
+        "name": {
+          "fr": "Température moyenne",
+          "en": "Average temperature"
+        },
+        "value": "24.1°C",
+        "status": "excellent",
+        "description": {
+          "fr": "Plage : 18.6-31.3°C",
+          "en": "Range: 18.6-31.3°C"
+        }
+      },
+      {
+        "name": {
+          "fr": "Humidité moyenne",
+          "en": "Average humidity"
+        },
+        "value": "51%",
+        "status": "excellent",
+        "description": {
+          "fr": "Plage : 27-74%",
+          "en": "Range: 27-74%"
+        }
+      },
+      {
+        "name": {
+          "fr": "PM2.5 moyen",
+          "en": "Average PM2.5"
+        },
+        "value": "3.3 µg/m³",
+        "status": "excellent",
+        "description": {
+          "fr": "Plage : 0-361 µg/m³",
+          "en": "Range: 0-361 µg/m³"
+        }
+      },
+      {
+        "name": {
+          "fr": "COV moyens",
+          "en": "Average VOCs"
+        },
+        "value": "347 µg/m³",
+        "status": "good",
+        "description": {
+          "fr": "Plage : 105-5164 µg/m³",
+          "en": "Range: 105-5164 µg/m³"
+        }
+      },
+      {
+        "name": {
+          "fr": "Niveau sonore moyen",
+          "en": "Average sound level"
+        },
+        "value": "53 dB",
+        "status": "good",
+        "description": {
+          "fr": "Plage : 36-98 dB",
+          "en": "Range: 36-98 dB"
+        }
+      }
+    ]
+  },
+  "heatmaps": {
+    "_comment": "Configuration des deux heatmaps CO2 hebdomadaires - room_name DOIT correspondre EXACTEMENT aux clés de local_names",
+    "fitness": {
+      "title": {
+        "fr": "Salle Fitness - RDC",
+        "en": "Fitness Room - Ground Floor"
+      },
+      "room_name": "Fitness RDC"
+    },
+    "common_area": {
+      "title": {
+        "fr": "Espace Repas - RDC",
+        "en": "Dining Area - Ground Floor"
+      },
+      "room_name": "Espace repas RDC"
+    }
+  },
+  "ui_translations": {
+    "_comment": "Traductions pour les éléments d'interface utilisateur du dashboard ECLA",
+    "co2_chart": {
+      "optimal_threshold_label": {
+        "fr": "Optimal (800 ppm)",
+        "en": "Optimal (800 ppm)"
+      },
+      "explanation": {
+        "fr": "Le CO₂ est un excellent indicateur de confinement : il révèle si l'aération est suffisante pour évacuer les polluants et assurer une bonne qualité de l'air intérieur. Les données du graphique ci-dessous proviennent de",
+        "en": "CO₂ is an excellent indicator of confinement: it reveals whether ventilation is sufficient to evacuate pollutants and ensure good indoor air quality. The data in the chart below comes from"
+      },
+      "optimal_label_short": {
+        "fr": "Optimal",
+        "en": "Good"
+      }
+    },
+    "heatmap": {
+      "legend": {
+        "fr": "Légende",
+        "en": "Legend"
+      },
+      "no_data": {
+        "fr": "Pas de données",
+        "en": "No data"
+      },
+      "weekly_pattern_description": {
+        "fr": "N'hésitez pas à utiliser les données ci-dessous pour mieux adapter vos périodes de présence dans les locaux ci-dessous :",
+        "en": "Feel free to use the data below to better adapt your presence periods in the spaces below:"
+      }
+    },
+    "days_of_week": {
+      "fr": {
+        "monday": "Lundi",
+        "tuesday": "Mardi",
+        "wednesday": "Mercredi",
+        "thursday": "Jeudi",
+        "friday": "Vendredi",
+        "saturday": "Samedi",
+        "sunday": "Dimanche",
+        "monday_short": "Lun",
+        "tuesday_short": "Mar",
+        "wednesday_short": "Mer",
+        "thursday_short": "Jeu",
+        "friday_short": "Ven",
+        "saturday_short": "Sam",
+        "sunday_short": "Dim"
+      },
+      "en": {
+        "monday": "Monday",
+        "tuesday": "Tuesday",
+        "wednesday": "Wednesday",
+        "thursday": "Thursday",
+        "friday": "Friday",
+        "saturday": "Saturday",
+        "sunday": "Sunday",
+        "monday_short": "Mon",
+        "tuesday_short": "Tue",
+        "wednesday_short": "Wed",
+        "thursday_short": "Thu",
+        "friday_short": "Fri",
+        "saturday_short": "Sat",
+        "sunday_short": "Sun"
+      }
+    },
+    "temp_humidity": {
+      "intro_prefix": {
+        "fr": "Les graphiques qui suivent présentent la température et l'humidité pour l'espace",
+        "en": "The following charts show temperature and humidity for"
+      },
+      "intro_suffix": {
+        "fr": "ainsi que les données extérieures.",
+        "en": "along with outdoor data."
+      },
+      "legend_labels": {
+        "temp": {
+          "fr": "TEMP",
+          "en": "TEMP"
+        },
+        "temp_ext": {
+          "fr": "TEMP EXT",
+          "en": "TEMP OUT"
+        },
+        "humidity": {
+          "fr": "HUMIDITÉ",
+          "en": "HUMIDITY"
+        },
+        "humidity_ext": {
+          "fr": "HR EXT",
+          "en": "RH OUT"
+        }
+      }
+    }
+  },
+  "section_titles": {
+    "_comment": "Titres des différentes sections du dashboard",
+    "co2_air_quality": {
+      "fr": "Qualité de l'air (CO₂)",
+      "en": "Air Quality (CO₂)"
+    },
+    "weekly_analysis": {
+      "fr": "Analyse hebdomadaire",
+      "en": "Weekly Analysis"
+    },
+    "temp_humidity": {
+      "fr": "Température & Humidité",
+      "en": "Temperature & Humidity"
+    },
+    "global_comfort_score": {
+      "fr": "Score Global de Confort",
+      "en": "Global Comfort Score"
+    }
+  },
+  "system_messages": {
+    "_comment": "Messages système pour le chargement, erreurs, footer",
+    "loading": {
+      "fr": "Chargement des données...",
+      "en": "Loading data..."
+    },
+    "error_title": {
+      "fr": "Erreur de chargement",
+      "en": "Loading Error"
+    },
+    "footer": {
+      "fr": "Maison Ecla - Monitoring de la qualité de l'air",
+      "en": "Ecla House - Air Quality Monitoring"
+    }
+  }
+}
