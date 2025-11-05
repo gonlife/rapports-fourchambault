@@ -3,13 +3,6 @@
 # ===================================
 # Important : Les règles spécifiques doivent être AVANT les règles globales
 
-[[redirects]]
-  from = "/reports/uxco_ecla/*"
-  to = "/.netlify/functions/verify-auth"
-  status = 200
-  force = true
-  conditions = {Role = ["!authenticated"]}
-
 # ===================================
 # RÈGLES POUR ECLA - VERSION MINUSCULES /analyse/ecla/
 # ===================================
