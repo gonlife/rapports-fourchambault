@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/reports/uxco_ecla/Et%C3%A9-2025/static/css/main.3b384e5e.css",
-    "main.js": "/reports/uxco_ecla/Et%C3%A9-2025/static/js/main.71781c78.js",
-    "index.html": "/reports/uxco_ecla/Et%C3%A9-2025/index.html",
-    "main.3b384e5e.css.map": "/reports/uxco_ecla/Et%C3%A9-2025/static/css/main.3b384e5e.css.map",
-    "main.71781c78.js.map": "/reports/uxco_ecla/Et%C3%A9-2025/static/js/main.71781c78.js.map"
+    "main.css": "/reports/uxco_ecla/ete-2025/static/css/main.3b384e5e.css",
+    "main.js": "/reports/uxco_ecla/ete-2025/static/js/main.71781c78.js",
+    "index.html": "/reports/uxco_ecla/ete-2025/index.html",
+    "main.3b384e5e.css.map": "/reports/uxco_ecla/ete-2025/static/css/main.3b384e5e.css.map",
+    "main.71781c78.js.map": "/reports/uxco_ecla/ete-2025/static/js/main.71781c78.js.map"
   },
   "entrypoints": [
     "static/css/main.3b384e5e.css",
