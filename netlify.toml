@@ -3,6 +3,14 @@
 # ===================================
 # Important : Les règles spécifiques doivent être AVANT les règles globales
 
+# Rapports protégés
+[[redirects]]
+  from = "/reports/*"
+  to = "/.netlify/functions/verify-auth"
+  status = 200
+  force = true
+  conditions = {Role = ["!authenticated"]}
+
 # ===================================
 # RÈGLES POUR ECLA - VERSION MINUSCULES /analyse/ecla/
 # ===================================
@@ -215,13 +223,7 @@
 # RÈGLES GLOBALES (EN DERNIER !)
 # ===================================
 
-# Rapports protégés
-[[redirects]]
-  from = "/reports/*"
-  to = "/.netlify/functions/verify-auth"
-  status = 200
-  force = true
-  conditions = {Role = ["!authenticated"]}
+
 
 # Fallback global de la plateforme principale (login etc.)
 # Cette règle doit être EN DERNIER
