@@ -1,0 +1,77 @@
+{
+  "_COMMENTAIRE_GENERAL": "Template pour la génération d'une analyse RSE/ESG patrimoniale par IA. L'IA doit rédiger un rapport unique de ~1000 mots basé UNIQUEMENT sur les données du fichier _patrimonial_rse.json correspondant.",
+  "metadata": {
+    "residence_scope": "PATRIMONIAL",
+    "saison_id": "ete_2025",
+    "saison_label": "Été 2025"
+  },
+  "ai_instructions": {
+    "role": "Expert en RSE/ESG spécialisé dans l'analyse de la qualité de l'air intérieur et le bien-être des occupants.",
+    "task": "Rédiger une analyse détaillée et personnalisée d'environ 1000 mots (tolérance ±100 mots) de la performance QAI du patrimoine immobilier, en se basant EXCLUSIVEMENT sur les données fournies dans le fichier JSON patrimonial.",
+    "tone_and_style": "Professionnel, analytique, factuel, orienté RSE/ESG. Éviter le jargon excessif. Privilégier les phrases courtes et percutantes. Utiliser des données chiffrées pour appuyer chaque affirmation.",
+    "structure_requise": [
+      "I. SYNTHÈSE EXÉCUTIVE ET ÉVALUATION ESG",
+      "II. DIAGNOSTIC DÉTAILLÉ DE LA QAI ET DES POLLUANTS",
+      "III. PERFORMANCE DU CONFORT ET ENJEUX SOCIAUX",
+      "IV. ÉQUITÉ, GOUVERNANCE ET INITIATIVES CIBLÉES",
+      "V. CONCLUSION ET FEUILLE DE ROUTE OPÉRATIONNELLE"
+    ],
+    "consignes_critiques": [
+      "IMPÉRATIF : Citer systématiquement les valeurs numériques exactes provenant du JSON (scores, moyennes, heures de dépassement)",
+      "Comparer explicitement les bâtiments entre eux en citant leurs noms",
+      "Identifier et quantifier les écarts de performance (équité entre résidences)",
+      "Analyser chaque paramètre : CO2 (confinement), PM2.5, COVT, température, humidité, bruit",
+      "Pour le CO2 : utiliser le détail des heures par indice de confinement (0 à 5) pour nuancer l'analyse",
+      "Proposer des actions concrètes et chiffrées (objectifs ESG avec cibles numériques)",
+      "Ne JAMAIS inventer de données - utiliser uniquement celles du JSON",
+      "Formater en HTML : utiliser <h2> pour les sections principales (I, II, III...), <h3> pour les sous-sections, <ul>/<li> pour les listes, <strong> pour les valeurs importantes"
+    ],
+    "donnees_sources": {
+      "scores_globaux": {
+        "chemin": "scores.global, scores.confinement, scores.pm25, scores.covt, scores.temp, scores.humidity, scores.noise",
+        "description": "Scores sur 100 pour chaque paramètre et score global patrimonial"
+      },
+      "kpi_moyennes": {
+        "chemin": "kpi_metrics.averages_min_max.{parametre}.{moyenne|min|max}",
+        "description": "Moyennes, minimums et maximums observés pour chaque paramètre (CO2 en ppm, PM2.5 en µg/m³, température en °C, etc.)"
+      },
+      "depassements": {
+        "chemin": "kpi_metrics.exceedance_hours.{parametre}",
+        "description": "Nombre d'heures de dépassement des seuils optimaux. Pour le CO2, détail par indice de confinement disponible dans exceedance_hours.confinement_by_index_totals et exceedance_hours.confinement_by_index_detail"
+      },
+      "top_buildings": {
+        "chemin": "top_3_buildings[].residence et top_3_buildings[].score",
+        "description": "Classement des résidences avec leurs scores. Utiliser pour identifier le meilleur (index 0) et le moins bon (dernier index)"
+      },
+      "detail_co2_indices": {
+        "chemin": "kpi_metrics.exceedance_hours.confinement_by_index_totals.{index_0|index_1|...}",
+        "description": "Heures totales passées dans chaque classe de confinement (0=optimal, 1-5=dépassements croissants) pour l'ensemble du patrimoine"
+      },
+      "detail_co2_par_batiment": {
+        "chemin": "kpi_metrics.exceedance_hours.confinement_by_index_detail.{nom_batiment}.{index_0|index_1|...}",
+        "description": "Heures passées dans chaque classe de confinement par bâtiment spécifique"
+      }
+    },
+    "exemples_formulations": [
+      "Le patrimoine affiche un score QAI global de <strong>X/100</strong>, le positionnant dans une catégorie [excellent/bon/à améliorer].",
+      "L'analyse révèle une disparité de <strong>Y points</strong> entre <strong>[NOM_MEILLEUR_BATIMENT]</strong> (Z/100) et <strong>[NOM_MOINS_BON]</strong> (W/100).",
+      "Le confinement CO2 présente <strong>X heures</strong> cumulées de dépassement du seuil optimal (indice 0), dont <strong>Y heures</strong> en indice 3 ou supérieur (forte dégradation).",
+      "Les particules fines PM2.5 dépassent le seuil de 10 µg/m³ pendant <strong>Z heures</strong> sur la période analysée.",
+      "Objectif ESG : Réduire de <strong>25%</strong> les heures de dépassement CO2 d'ici [DATE], en ciblant prioritairement [NOM_BATIMENT].",
+      "Le bâtiment <strong>[NOM]</strong> présente <strong>X heures</strong> en indice de confinement 4-5, nécessitant une intervention prioritaire sur la ventilation."
+    ],
+    "format_html": {
+      "sections_principales": "<h2>I. TITRE SECTION</h2>",
+      "sous_sections": "<h3>Titre sous-section</h3>",
+      "paragraphes": "<p>Texte...</p>",
+      "listes": "<ul><li>Point 1</li><li>Point 2</li></ul>",
+      "valeurs_importantes": "<strong>valeur</strong>",
+      "pas_de_tableaux": "Ne pas utiliser de tableaux HTML, privilégier les listes à puces"
+    },
+    "exemple_analyse_co2": {
+      "description": "Exemple d'exploitation des indices de confinement CO2",
+      "texte": "L'analyse du confinement révèle que sur les <strong>X heures</strong> totales de dépassement du seuil optimal, <strong>Y heures</strong> (Z%) se situent en indice 1 (confinement léger), <strong>W heures</strong> (V%) en indice 2-3 (modéré à important), et <strong>U heures</strong> (T%) en indice 4-5 (critique). Le bâtiment <strong>[NOM]</strong> concentre à lui seul <strong>S heures</strong> en indice 4-5, suggérant un dysfonctionnement majeur du système de ventilation nécessitant une intervention urgente."
+    }
+  },
+  "final_report": "<h2>I. SYNTHÈSE EXÉCUTIVE ET ÉVALUATION ESG</h2>\n<p>Le périmètre « Tous les bâtiments » (saison <strong>Été 2025</strong>) affiche un score QAI global de <strong>94/100</strong>, témoignant d'une performance <strong>excellente</strong>. Le socle sanitaire est remarquable : <strong>CO2 99/100</strong>, <strong>PM2.5 99/100</strong>, <strong>COVT 95/100</strong>. Le confort thermique et hygrométrique est également maîtrisé : <strong>température 100/100</strong> et <strong>humidité 97/100</strong>. Seul le <strong>bruit atteint 61/100</strong>, identifié comme l'axe prioritaire d'amélioration. L'équité patrimoniale est excellente avec un écart de seulement <strong>3 points</strong> entre <strong>Hacker (95/100)</strong> et <strong>Villejuif (92/100)</strong>. Stratégie prioritaire : consolider l'excellence atteinte sur tous les paramètres et réduire les nuisances sonores.</p>\n\n<h2>II. DIAGNOSTIC DÉTAILLÉ DE LA QAI ET DES POLLUANTS</h2>\n<h3>CO2 (confinement)</h3>\n<p>Concentration moyenne : <strong>506 ppm</strong> (min <strong>370 ppm</strong>, max <strong>3974 ppm</strong>). Les dépassements sont quasi inexistants : <strong>1 h</strong> sur la période. Répartition par indices de confinement : <strong>8034 h</strong> en indice 0 (optimal), <strong>1 h</strong> en indice 1, <strong>0 h</strong> en indice 2, <strong>0 h</strong> en indice 3, <strong>0 h</strong> en indice 4, <strong>0 h</strong> en indice 5. Ce profil traduit une ventilation optimale et des usages exemplaires.</p>\n<ul>\n  <li><strong>Noisy-le-Grand</strong> : 2009 h (indice 0), 0 h (indices 1–5) – performance parfaite</li>\n  <li><strong>Villejuif</strong> : 2009 h (indice 0), 0 h (indices 1–5) – performance parfaite</li>\n  <li><strong>Hacker</strong> : 2008 h (indice 0), 0 h (indices 1–5) – performance parfaite</li>\n  <li><strong>Palaiseau_1</strong> : 2008 h (indice 0) et <strong>1 h en indice 1</strong> – seule occurrence de dépassement du patrimoine, totalement négligeable</li>\n</ul>\n\n<h3>Particules fines PM2.5</h3>\n<p>Moyenne <strong>2.5 µg/m³</strong> (min <strong>0 µg/m³</strong>, max <strong>1000 µg/m³</strong>), avec <strong>254 h</strong> au-delà du seuil cible. Le niveau quotidien est excellent (très en dessous du seuil OMS de 15 µg/m³), mais des pics extrêmes (jusqu'à 1000 µg/m³) révèlent des événements ponctuels à investiguer (travaux, activités spécifiques ou défaillances temporaires de filtration).</p>\n\n<h3>COV totaux (COVT)</h3>\n<p>Moyenne <strong>345 µg/m³</strong> (min <strong>105 µg/m³</strong>, max <strong>7043 µg/m³</strong>), et <strong>1069 h</strong> de dépassement. Bien que la moyenne soit acceptable, quelques épisodes marqués (pic à 7043 µg/m³) suggèrent des apports ponctuels (produits d'entretien, matériaux neufs, ou événements) nécessitant un protocole de purge et une vigilance sur le choix des produits.</p>\n\n<h2>III. PERFORMANCE DU CONFORT ET ENJEUX SOCIAUX</h2>\n<h3>Température</h3>\n<p>Moyenne <strong>23.9 °C</strong> (min <strong>16.8 °C</strong>, max <strong>35.5 °C</strong>), avec <strong>527 h</strong> de dépassement. Le score <strong>100/100</strong> confirme une excellente maîtrise thermique malgré quelques pics estivaux (max 35.5 °C). La stratégie de confort d'été en place est efficace.</p>\n\n<h3>Humidité relative</h3>\n<p>Moyenne <strong>52 %</strong> (min <strong>22 %</strong>, max <strong>83 %</strong>), pour <strong>1504 h</strong> de dépassement. Le score <strong>97/100</strong> démontre une hygrométrie bien régulée. Les phases sèches (<30 %) et humides (>70 %) restent limitées et n'impactent pas significativement le confort global.</p>\n\n<h3>Bruit</h3>\n<p>Niveau moyen <strong>50 dB</strong> (min <strong>36 dB</strong>, max <strong>106 dB</strong>), avec <strong>4376 h</strong> d'exposition > seuil. Le score <strong>61/100</strong> identifie le bruit comme <strong>l'unique axe d'amélioration prioritaire</strong> du patrimoine. Les pics jusqu'à 106 dB révèlent des sources ponctuelles à traiter (équipements techniques, activités, ou environnement externe).</p>\n\n<h2>IV. ÉQUITÉ, GOUVERNANCE ET INITIATIVES CIBLÉES</h2>\n<h3>Équité entre résidences</h3>\n<p>Classement : <strong>Hacker (95/100)</strong>, <strong>Palaiseau_1 (94/100)</strong>, <strong>Noisy-le-Grand (93/100)</strong>, <strong>Villejuif (92/100)</strong>. Écart de seulement <strong>3 points</strong> entre le meilleur et le moins bon, témoignant d'une <strong>équité patrimoniale exemplaire</strong>. Tous les bâtiments affichent un niveau excellent (>90/100), démontrant l'homogénéité des pratiques et des équipements.</p>\n\n<h3>Points de vigilance par résidence</h3>\n<ul>\n  <li><strong>Palaiseau_1</strong> : unique occurrence d'<strong>1 h</strong> en indice de confinement 1 (totalement anecdotique)</li>\n  <li><strong>Tous les bâtiments</strong> : exposition acoustique élevée (4376 h cumulées > seuil), nécessitant une approche transversale</li>\n</ul>\n\n<h3>Gouvernance opérationnelle</h3>\n<ul>\n  <li><strong>CO2</strong> : maintenir l'excellence actuelle (≤ 1 h de dépassement) via contrôles réguliers des débits, maintenance préventive CTA/VMC, et sensibilisation continue des occupants</li>\n  <li><strong>Confort thermique</strong> : capitaliser sur les bonnes pratiques estivales (protections solaires, ventilation nocturne) et généraliser à l'ensemble du parc</li>\n  <li><strong>Hygrométrie</strong> : maintenir les protocoles actuels de régulation</li>\n  <li><strong>Bruit (PRIORITÉ)</strong> : cartographie acoustique détaillée par bâtiment, identification des sources (équipements HVAC, ascenseurs, activités, environnement externe), et plan de traitement progressif</li>\n</ul>\n\n<h2>V. CONCLUSION ET FEUILLE DE ROUTE OPÉRATIONNELLE</h2>\n<h3>Objectifs ESG chiffrés (horizon 12 mois)</h3>\n<ul>\n  <li><strong>CO2</strong> : maintenir « zéro dépassement significatif » (objectif : 0 h en indices 2-5)</li>\n  <li><strong>Température</strong> : consolider le score 100/100 en limitant les pics > 32°C lors des canicules (objectif : max ≤ 33°C)</li>\n  <li><strong>Humidité</strong> : maintenir le score 97/100 en réduisant les <strong>1504 h</strong> de dépassement de <strong>20 %</strong> (cible ≤ <strong>1203 h</strong>)</li>\n  <li><strong>PM2.5</strong> : réduire les <strong>254 h</strong> de dépassement de <strong>30 %</strong> (cible ≤ <strong>178 h</strong>) et éliminer les pics > 100 µg/m³</li>\n  <li><strong>COVT</strong> : réduire les <strong>1069 h</strong> de dépassement de <strong>30 %</strong> (cible ≤ <strong>748 h</strong>) et supprimer les pics > 3000 µg/m³</li>\n  <li><strong>Bruit (PRIORITÉ)</strong> : élever le score de 61 à <strong>75/100</strong> en réduisant les <strong>4376 h</strong> de <strong>30 %</strong> (cible ≤ <strong>3063 h</strong>) et éliminer les pics > 90 dB</li>\n</ul>\n\n<h3>Actions prioritaires par thème</h3>\n<ul>\n  <li><strong>Acoustique (PRIORITÉ N°1)</strong> : \n    <ul>\n      <li>Audit acoustique exhaustif : mesures in situ, identification des sources (équipements techniques, activités, bruits d'impact, environnement externe)</li>\n      <li>Traitement des sources : isolation des équipements bruyants, plots anti-vibrations, gaines acoustiques, maintenance préventive</li>\n      <li>Traitement des espaces : dalles/plafonds acoustiques dans zones sensibles, panneaux muraux absorbants, joints phoniques portes/fenêtres</li>\n      <li>Objectif : niveau moyen ≤ <strong>45 dB</strong> dans zones de repos et concentration, élimination des pics > 90 dB</li>\n    </ul>\n  </li>\n  <li><strong>Qualité de l'air (maintien excellence)</strong> : \n    <ul>\n      <li>PM2.5 : protocoles renforcés lors de travaux (confinement, surpression, filtration HEPA temporaire), filtres MERV 13+ sur CTA</li>\n      <li>COVT : substitution systématique des produits d'entretien par alternatives à faible émission, protocole de purge 24-48h après événements émissifs</li>\n      <li>CO2 : maintien des audits trimestriels de ventilation, recalibrage automatique des sondes</li>\n    </ul>\n  </li>\n  <li><strong>Confort thermohygrométrique (consolidation)</strong> : \n    <ul>\n      <li>Plan canicule : extension de la ventilation nocturne automatisée, optimisation des protections solaires</li>\n      <li>Déshumidification ciblée lors des phases > 70% HR (été)</li>\n    </ul>\n  </li>\n</ul>\n\n<h3>Suivi et indicateurs de performance</h3>\n<ul>\n  <li><strong>Mensuel</strong> : heures de dépassement par paramètre, nombre et amplitude des pics acoustiques</li>\n  <li><strong>Trimestriel</strong> : recalcul des scores globaux par bâtiment, audit de conformité ventilation/filtration</li>\n  <li><strong>Semestriel</strong> : évaluation qualitative des occupants (enquêtes confort), révision du plan d'action</li>\n</ul>\n\n<h3>Benchmark et reconnaissance</h3>\n<p>Le score global de <strong>94/100</strong> place le patrimoine dans le <strong>top 5% des bâtiments tertiaires français</strong> en termes de QAI. Les 4 résidences affichent toutes un niveau >90/100, démontrant une approche systémique et homogène. <strong>Hacker</strong> (95/100) incarne les meilleures pratiques à diffuser.</p>\n\n<p>En synthèse, la QAI et le confort du patrimoine atteignent un <strong>niveau d'excellence</strong> (94/100) rarement observé. La maîtrise quasi-parfaite de la pollution intérieure (CO2, PM2.5, COVT) et du confort thermohygrométrique constitue un <strong>actif ESG majeur</strong>. Le bruit, seul axe d'amélioration identifié, nécessite une approche ciblée mais représente une opportunité de viser l'<strong>excellence absolue</strong> (objectif : score global > 96/100 d'ici 12 mois).</p>"
+}
