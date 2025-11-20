@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/reports/uxco_ecla/ete-2025-maintenance/static/css/main.11969bd7.css",
-    "main.js": "/reports/uxco_ecla/ete-2025-maintenance/static/js/main.5f5028ef.js",
-    "static/js/453.7c696b46.chunk.js": "/reports/uxco_ecla/ete-2025-maintenance/static/js/453.7c696b46.chunk.js",
-    "index.html": "/reports/uxco_ecla/ete-2025-maintenance/index.html",
-    "main.11969bd7.css.map": "/reports/uxco_ecla/ete-2025-maintenance/static/css/main.11969bd7.css.map",
-    "main.5f5028ef.js.map": "/reports/uxco_ecla/ete-2025-maintenance/static/js/main.5f5028ef.js.map",
-    "453.7c696b46.chunk.js.map": "/reports/uxco_ecla/ete-2025-maintenance/static/js/453.7c696b46.chunk.js.map"
+    "main.css": "/reports/uxco_ecla/ete-2025_maintenance/static/css/main.11969bd7.css",
+    "main.js": "/reports/uxco_ecla/ete-2025_maintenance/static/js/main.7dcce81d.js",
+    "static/js/453.7c696b46.chunk.js": "/reports/uxco_ecla/ete-2025_maintenance/static/js/453.7c696b46.chunk.js",
+    "index.html": "/reports/uxco_ecla/ete-2025_maintenance/index.html",
+    "main.11969bd7.css.map": "/reports/uxco_ecla/ete-2025_maintenance/static/css/main.11969bd7.css.map",
+    "main.7dcce81d.js.map": "/reports/uxco_ecla/ete-2025_maintenance/static/js/main.7dcce81d.js.map",
+    "453.7c696b46.chunk.js.map": "/reports/uxco_ecla/ete-2025_maintenance/static/js/453.7c696b46.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.11969bd7.css",
-    "static/js/main.5f5028ef.js"
+    "static/js/main.7dcce81d.js"
   ]
 }
