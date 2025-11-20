@@ -1,0 +1,72 @@
+========================================
+DEBUG MAINTENANCE - juillet 2025
+Date: 2025-11-18 16:40:11.625189
+========================================
+
+=== RÉSIDENCES À TRAITER ===
+Total: 4
+Liste: Noisy_le_Grand, Villejuif, Hacker, Palaiseau_1
+
+=== DÉTAIL PAR RÉSIDENCE ===
+
+--- Noisy_le_Grand ---
+  Nom nettoyé: noisy_le_grand
+  Type: ECLA
+  Nb lignes: 300030
+  Ajouté: TRUE
+  Erreur: NA
+
+--- Villejuif ---
+  Nom nettoyé: villejuif
+  Type: ECLA
+  Nb lignes: 190400
+  Ajouté: TRUE
+  Erreur: NA
+
+--- Hacker ---
+  Nom nettoyé: hacker
+  Type: UXCO
+  Nb lignes: 106533
+  Ajouté: TRUE
+  Erreur: NA
+
+--- Palaiseau_1 ---
+  Nom nettoyé: palaiseau_1
+  Type: UXCO
+  Nb lignes: 221575
+  Ajouté: TRUE
+  Erreur: NA
+
+=== LISTE MAINTENANCE ===
+Entrées: 4
+
+  Noisy_le_Grand [ECLA] Score QAI:93.5 Temp:15.3% HR:32.9%
+
+  Villejuif [ECLA] Score QAI:92 Temp:6.7% HR:37.5%
+
+  Hacker [UXCO] Score QAI:95.1 Temp:33.8% HR:26.1%
+
+  Palaiseau_1 [UXCO] Score QAI:93.7 Temp:8.2% HR:28.7%
+
+=== DF_MAINT_RES ===
+Avant filter: 4
+Après filter: 4
+Colonnes: residence, type_residence, score_global, exceedance_temp_pct, exceedance_hr_pct
+
+Résidences: Noisy_le_Grand, Villejuif, Hacker, Palaiseau_1
+
+Types:
+  ECLA=2
+  UXCO=2
+
+=== AGRÉGATION ===
+ALL:
+  Nb: 4
+  Résidences: Noisy_le_Grand, Villejuif, Hacker, Palaiseau_1
+UXCO:
+  Nb: 2
+  Résidences: Hacker, Palaiseau_1
+ECLA:
+  Nb: 2
+  Résidences: Noisy_le_Grand, Villejuif
+========================================

@@ -1,0 +1,27 @@
+{
+  "metadata": {
+    "residence_label": "Entité UXCO",
+    "mois_id": "juil._2025",
+    "mois_label": "juillet 2025"
+  },
+  "scores": {
+    "occupation_index": null,
+    "exceedance_temp_pct": 21,
+    "exceedance_hr_pct": 27.4
+  },
+  "patrimonial_metrics": {
+    "moyenne_residence": null
+  },
+  "top_n_inspection": [
+    {
+      "residence": "Hacker",
+      "score_priorite": 59.9,
+      "type_residence": "UXCO"
+    },
+    {
+      "residence": "Palaiseau_1",
+      "score_priorite": 36.9,
+      "type_residence": "UXCO"
+    }
+  ]
+}

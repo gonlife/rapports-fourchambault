@@ -1,0 +1,27 @@
+{
+  "metadata": {
+    "residence_label": "Entité ECLA",
+    "mois_id": "sept._2025",
+    "mois_label": "septembre 2025"
+  },
+  "scores": {
+    "occupation_index": null,
+    "exceedance_temp_pct": 1.1,
+    "exceedance_hr_pct": 26.5
+  },
+  "patrimonial_metrics": {
+    "moyenne_residence": null
+  },
+  "top_n_inspection": [
+    {
+      "residence": "Noisy_le_Grand",
+      "score_priorite": 93.4582,
+      "type_residence": "ECLA"
+    },
+    {
+      "residence": "Villejuif",
+      "score_priorite": 91.9843,
+      "type_residence": "ECLA"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "residence_label": "Patrimoine Global",
+    "mois_id": "juil._2025",
+    "mois_label": "juillet 2025"
+  },
+  "scores": {
+    "occupation_index": null,
+    "exceedance_temp_pct": 16,
+    "exceedance_hr_pct": 31.3
+  },
+  "patrimonial_metrics": {
+    "moyenne_residence": null
+  },
+  "top_n_inspection": [
+    {
+      "residence": "Hacker",
+      "score_priorite": 59.9,
+      "type_residence": "UXCO"
+    },
+    {
+      "residence": "Noisy_le_Grand",
+      "score_priorite": 48.2,
+      "type_residence": "ECLA"
+    },
+    {
+      "residence": "Villejuif",
+      "score_priorite": 44.2,
+      "type_residence": "ECLA"
+    },
+    {
+      "residence": "Palaiseau_1",
+      "score_priorite": 36.9,
+      "type_residence": "UXCO"
+    }
+  ]
+}

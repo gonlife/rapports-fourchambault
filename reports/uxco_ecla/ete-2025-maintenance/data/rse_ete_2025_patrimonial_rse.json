@@ -1,0 +1,135 @@
+{
+  "metadata": {
+    "residence_label": "Tous les bâtiments",
+    "saison_id": "ete_2025",
+    "saison_label": "Eté 2025",
+    "date_generation": "2025-11-18 16:36:04 CET"
+  },
+  "scores": {
+    "global": 93,
+    "confinement": 99,
+    "pm25": 99,
+    "covt": 95,
+    "temp": 95,
+    "humidity": 92,
+    "noise": 61
+  },
+  "kpi_metrics": {
+    "averages_min_max": {
+      "confinement": {
+        "moyenne": 506,
+        "min": 370,
+        "max": 3974
+      },
+      "covt": {
+        "moyenne": 345,
+        "min": 105,
+        "max": 7043
+      },
+      "pm25": {
+        "moyenne": 2.5,
+        "min": 0,
+        "max": 1000
+      },
+      "temp": {
+        "moyenne": 23.9,
+        "min": 16.8,
+        "max": 35.5
+      },
+      "humidity": {
+        "moyenne": 52,
+        "min": 22,
+        "max": 83
+      },
+      "noise": {
+        "moyenne": 50,
+        "min": 36,
+        "max": 106
+      }
+    },
+    "exceedance_hours": {
+      "confinement": 1508,
+      "temp": 9501,
+      "humidity": 21265,
+      "pm25": 1728,
+      "covt": 12301,
+      "noise": 36023,
+      "confinement_by_index_detail": {
+        "Noisy_le_Grand": {
+          "index_0": 27500,
+          "index_1": 308,
+          "index_2": 193,
+          "index_3": 76,
+          "index_4": 29,
+          "index_5": 11
+        },
+        "Villejuif": {
+          "index_0": 16832,
+          "index_1": 59,
+          "index_2": 16,
+          "index_3": 0,
+          "index_4": 0,
+          "index_5": 2
+        },
+        "Hacker": {
+          "index_0": 10010,
+          "index_1": 17,
+          "index_2": 3,
+          "index_3": 0,
+          "index_4": 0,
+          "index_5": 0
+        },
+        "Palaiseau_1": {
+          "index_0": 23307,
+          "index_1": 471,
+          "index_2": 253,
+          "index_3": 47,
+          "index_4": 14,
+          "index_5": 9
+        }
+      },
+      "confinement_by_index_totals": {
+        "index_0": 77649,
+        "index_1": 855,
+        "index_2": 465,
+        "index_3": 123,
+        "index_4": 43,
+        "index_5": 22
+      },
+      "confinement_percentage": 1.9,
+      "confinement_total_measured": 79157,
+      "temp_percentage": 12,
+      "temp_total_measured": 79157,
+      "humidity_percentage": 26.9,
+      "humidity_total_measured": 79157,
+      "pm25_percentage": 2.4,
+      "pm25_total_measured": 71091,
+      "covt_percentage": 17.3,
+      "covt_total_measured": 71117,
+      "noise_percentage": 50.7,
+      "noise_total_measured": 71117
+    }
+  },
+  "top_3_buildings": [
+    {
+      "residence": "Hacker",
+      "score": 95,
+      "type_residence": "UXCO"
+    },
+    {
+      "residence": "Palaiseau_1",
+      "score": 94,
+      "type_residence": "UXCO"
+    },
+    {
+      "residence": "Noisy_le_Grand",
+      "score": 93,
+      "type_residence": "ECLA"
+    },
+    {
+      "residence": "Villejuif",
+      "score": 92,
+      "type_residence": "ECLA"
+    }
+  ]
+}
