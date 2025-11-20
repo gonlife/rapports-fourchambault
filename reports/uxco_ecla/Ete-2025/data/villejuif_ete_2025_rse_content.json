@@ -3,56 +3,64 @@
     "residence": "Villejuif",
     "saison": "Eté 2025",
     "saison_id": "ete_2025",
-    "periode_debut": "21/06/2025",
-    "periode_fin": "22/09/2025",
-    "seasons_available": [
-      {
-        "id": "ete_2025",
-        "label": "Eté 2025",
-        "data_file": "villejuif_ete_2025.json",
-        "content_file": "villejuif_ete_2025_content.json",
-        "rse_file": "villejuif_ete_2025_rse.json",
-        "periode_debut": "01/07/2025",
-        "periode_fin": "22/09/2025"
-      },
-      {
-        "id": "printemps_2025",
-        "label": "Printemps 2025",
-        "data_file": "villejuif_printemps_2025.json",
-        "content_file": "villejuif_printemps_2025_content.json",
-        "rse_file": "villejuif_printemps_2025_rse.json",
-        "periode_debut": null,
-        "periode_fin": null
-      },
-      {
-        "id": "hiver_2024_2025",
-        "label": "Hiver 2024-2025",
-        "data_file": "villejuif_hiver_2024_2025.json",
-        "content_file": "villejuif_hiver_2024_2025_content.json",
-        "rse_file": "villejuif_hiver_2024_2025_rse.json",
-        "periode_debut": null,
-        "periode_fin": null
-      },
-      {
-        "id": "automne_2024",
-        "label": "Automne 2024",
-        "data_file": "villejuif_automne_2024.json",
-        "content_file": "villejuif_automne_2024_content.json",
-        "rse_file": "villejuif_automne_2024_rse.json",
-        "periode_debut": null,
-        "periode_fin": null
-      },
-      {
-        "id": "ete_2024",
-        "label": "Eté 2024",
-        "data_file": "villejuif_ete_2024.json",
-        "content_file": "villejuif_ete_2024_content.json",
-        "rse_file": "villejuif_ete_2024_rse.json",
-        "periode_debut": null,
-        "periode_fin": null
-      }
-    ],
-    "type_residence": "ECLA"
+    "type_residence": "ECLA",
+    "date_generation": "2025-11-20 11:35:25 CET"
   },
-  "final_report": "<h2 style='color:#2196F3;'>I. SYNTHÈSE EXÉCUTIVE ET POSITIONNEMENT ESG</h2><p>Sur la saison <strong>Eté 2025</strong>, la résidence <strong>Villejuif</strong> obtient une note globale de qualité d’air intérieur de <strong>92/100</strong>, à comparer à une moyenne patrimoniale de <strong>93/100</strong>. Elle se classe <strong>4<sup>e</sup> sur 4</strong> bâtiments suivis, ce qui la positionne <span style='color:#FFC107;'>en dernière position, mais avec un niveau global restant élevé</span>.</p><p>Par rapport à la moyenne de son groupe <strong>ECLA</strong> (note moyenne <strong>92,5/100</strong>), la résidence présente un niveau <span style='color:#FFC107;'>légèrement inférieur</span>, avec des atouts marqués sur le confinement du dioxyde de carbone et les particules fines, et des marges d’amélioration sur le confort acoustique et l’humidité selon les cas.</p><p>Les notes détaillées par paramètre sont les suivantes&nbsp;: confinement <strong>100/100</strong>, particules fines <strong>99/100</strong>, composés organiques volatils totaux <strong>92/100</strong>, température <strong>98/100</strong>, humidité <strong>89/100</strong>, bruit <strong>51/100</strong>. La qualité d’air est donc très bien maîtrisée, avec un point de vigilance plus prononcé sur le confort acoustique et, dans une moindre mesure, sur la stabilité hygrothermique.</p><hr style='margin: 24px 0; border-color: #e0e0e0;'/><h2 style='color:#2196F3;'>II. DIAGNOSTIC DÉTAILLÉ DE LA QUALITÉ DE L’AIR INTÉRIEUR</h2><h3>1. Confinement du dioxyde de carbone</h3><p>La résidence enregistre <strong>77 heures</strong> de dépassement des seuils de confinement sur un total de <strong>16 909 heures mesurées</strong>, soit <span style='color:#FFC107;'>0,5&nbsp;%</span> du temps de suivi. La distribution par indices montre <span style='color:#4CAF50;'>99,5&nbsp;%</span> des heures en <strong>indice&nbsp;0</strong>, <span style='color:#FFC107;'>0,3&nbsp;%</span> en <strong>indice&nbsp;1</strong> et <span style='color:#FFC107;'>0,1&nbsp;%</span> en <strong>indice&nbsp;2</strong>. Les situations réellement critiques (indices&nbsp;3 à&nbsp;5) restent limitées à <span style='color:#4CAF50;'>0,0&nbsp;%</span> des heures.</p><p>Les niveaux moyens mesurés sur le dioxyde de carbone restent contenus, avec une moyenne de <strong>476 ppm</strong>, un minimum de <strong>376 ppm</strong> et un maximum de <strong>3974 ppm</strong>. Ces valeurs traduisent un renouvellement d’air largement suffisant la plupart du temps, malgré quelques épisodes ponctuels de confinement en périodes d’occupation intense.</p><h3>2. Particules fines</h3><p>Les dépassements sur les particules fines demeurent très limités, avec <strong>550 heures</strong> au-dessus des seuils de référence sur <strong>16 896 heures</strong>, soit seulement <span style='color:#4CAF50;'>3,3&nbsp;%</span> du temps de mesure. Pour les étudiants les plus sensibles (asthme, allergies), ce niveau d’exposition reste très maîtrisé, en cohérence avec la bonne note obtenue sur ce paramètre.</p><h3>3. Composés organiques volatils totaux</h3><p>Les composés organiques volatils totaux représentent un enjeu plus structurant, avec <strong>3 866 heures</strong> de dépassement sur <strong>16 907 heures</strong>, soit <span style='color:#FF9800;'>22,9&nbsp;%</span> du temps. Ces dépassements peuvent être liés à la combinaison des matériaux, du mobilier, des produits d’entretien et de la manière dont les locaux sont aérés après les périodes de forte occupation.</p><h3>4. Température, humidité et bruit</h3><p>Sur la température, la résidence enregistre <strong>1 032 heures</strong> hors plage de confort sur <strong>16 909 heures</strong>, soit <span style='color:#FF9800;'>6,1&nbsp;%</span>. La température moyenne est de <strong>23.6&nbsp;°C</strong>, pour un minimum de <strong>18.7&nbsp;°C</strong> et un maximum de <strong>33&nbsp;°C</strong>, ce qui traduit quelques épisodes de surchauffe estivale dans certains espaces.</p><p>Pour l’humidité, on compte <strong>6 150 heures</strong> hors plage sur <strong>16 909 heures</strong>, soit <span style='color:#FFC107;'>36,4&nbsp;%</span>. Les niveaux moyens restent proches de la zone de confort avec <strong>55&nbsp;%</strong>, mais les maxima atteignent <strong>83&nbsp;%</strong>, ce qui peut générer un ressenti de lourdeur de l’air, notamment dans les espaces de vie collective.</p><p>Enfin, le bruit constitue un facteur de fragilité important avec <strong>11 064 heures</strong> au-dessus des seuils de confort sur <strong>16 907 heures</strong>, soit <span style='color:#F44336;'>65,4&nbsp;%</span>. Le niveau sonore moyen autour de <strong>53&nbsp;décibels pondérés A</strong>, avec des pointes jusqu’à <strong>92&nbsp;décibels</strong>, confirme un environnement parfois bruyant pour les étudiants.</p><hr style='margin: 24px 0; border-color: #e0e0e0;'/><h2 style='color:#2196F3;'>III. CONFORT, RYTHMES D’OCCUPATION ET PERFORMANCE D’USAGE</h2><p>Les profils hebdomadaires montrent que les situations les plus chargées en dioxyde de carbone se concentrent le <strong>mercredi</strong> autour de <strong>21 heures</strong>, avec des niveaux proches de la valeur maximale enregistrée sur la saison. Cela illustre des phases d’occupation intense des espaces communs, pendant lesquelles la vigilance sur l’aération doit être maximale.</p><p>Au niveau des locaux, les analyses montrent que <strong>7 - RDC - Bât B - Fitness</strong> présente le niveau sonore moyen le plus élevé, avec environ <strong>60,8&nbsp;décibels</strong>, là où le local le plus calme, <strong>2 - RDJ - Bât C - Salle de réunion</strong>, se situe autour de <strong>43,8&nbsp;décibels</strong>. Les espaces à forte intensité sociale concentrent donc une part importante de l’inconfort acoustique, alors même qu’ils sont centraux pour la vie étudiante.</p><p>En matière de confort thermique, <strong>4 - RDC - Bât F - Corner</strong> apparaît comme le local le plus chaud, avec une température moyenne de l’ordre de <strong>25,2&nbsp;°C</strong>. Cela suggère un ciblage prioritaire de ces espaces pour les actions de protection solaire, de pilotage des apports internes et de gestion de la ventilation en période estivale.</p><p>Les données de maintenance de <strong>août 2025</strong> indiquent que <span style='color:#4CAF50;'>76,0&nbsp;%</span> des mesures de lumière se situent dans les niveaux 4 à 6, correspondant à des éclairements confortables pour le travail et les activités collectives. À l’inverse, les niveaux de lumière les plus faibles ne représentent qu’environ <span style='color:#FFC107;'>24,0&nbsp;%</span> des situations, ce qui limite les risques de sous-éclairement chronique.</p><hr style='margin: 24px 0; border-color: #e0e0e0;'/><h2 style='color:#2196F3;'>IV. RECOMMANDATIONS ESG ET FEUILLE DE ROUTE</h2><p><strong style='color:#4CAF50;'>🎯 Objectif prioritaire sur le confinement du dioxyde de carbone&nbsp;:</strong> réduire d’environ <span style='color:#4CAF50;'>30&nbsp;%</span> les heures de dépassement, soit à terme <strong>24 heures</strong> de confinement en moins par saison. Cet objectif peut être atteint en combinant une sensibilisation des résidents à l’aération active des espaces communs et des ajustements fins sur les systèmes de ventilation existants.</p><p><strong style='color:#4CAF50;'>🎯 Objectif confort acoustique&nbsp;:</strong> réduire d’environ <span style='color:#4CAF50;'>25&nbsp;%</span> les heures d’inconfort sonore, soit <strong>2 766 heures</strong> à supprimer, en ciblant en priorité les locaux les plus bruyants comme <strong>7 - RDC - Bât B - Fitness</strong> (traitement acoustique, organisation des usages, régulation des horaires d’animation).</p><p><strong style='color:#4CAF50;'>🎯 Objectif composés organiques volatils totaux&nbsp;:</strong> diminuer d’au moins <span style='color:#4CAF50;'>25&nbsp;%</span> les heures de dépassement, soit environ <strong>967 heures</strong>, en agissant sur le choix des produits d’entretien, la ventilation après travaux ou aménagements, et la diffusion de consignes d’usage pour limiter les sources internes.</p><p><strong style='color:#FF9800;'>📌 Enjeu d’équité entre bâtiments&nbsp;:</strong> la convergence vers un niveau de confort acoustique et hygrothermique homogène avec le reste du patrimoine doit être suivie comme un indicateur ESG à part entière, en intégrant ces objectifs dans les plans pluriannuels d’investissement et dans le dialogue avec les exploitants.</p>"
+  "final_report": "
+<h2 style='color:#2196F3;'>I. SYNTHÈSE EXÉCUTIVE ET POSITIONNEMENT ESG - VILLEJUIF</h2>
+<p>Pour la saison <strong>Été 2025</strong>, la résidence Villejuif (ECLA) obtient un score QAI global de <span style='color:#FFC107;'>92</span>. Ce résultat place le bâtiment en dernière position sur les quatre résidences analysées.</p>
+<hr style='margin: 12px 0; border-color: #e0e0e0;'/>
+<h3 style='color:#2196F3;'>Positionnement et Enjeux ESG</h3>
+<ul>
+    <li><strong>Performance vs Patrimoine :</strong> Le score global de Villejuif (<span style='color:#FFC107;'>92</span>) est légèrement inférieur à la moyenne du patrimoine complet ALL (<span style='color:#4CAF50;'>93</span>).</li>
+    <li><strong>Forces :</strong> Le confinement CO₂ est parfaitement maîtrisé (score <span style='color:#4CAF50;'>100</span>), ce qui est excellent pour la santé et le confort des occupants, et la température est très bien gérée (score <span style='color:#4CAF50;'>98</span>).</li>
+    <li><strong>Faiblesses Critiques :</strong> L'<strong>Humidité Relative</strong> (score <span style='color:#F44336;'>89</span>) et le <strong>Bruit</strong> (score <span style='color:#F44336;'>51</span>) sont les principaux points de faiblesse, nécessitant une intervention urgente pour garantir l'équité du confort et prévenir les risques de salubrité et les impacts sur le bâti.</li>
+</ul>
+
+<h2 style='color:#2196F3;'>II. DIAGNOSTIC DÉTAILLÉ DE LA QAI ET DES POLLUANTS</h2>
+<p>L'analyse des dépassements révèle une performance QAI globalement satisfaisante, mais masquée par une gestion problématique de l'humidité et du bruit.</p>
+
+<h3 style='color:#FF9800;'>Humidité Relative (HR) - Priorité Salubrité</h3>
+<p>Villejuif enregistre le taux de dépassement d'humidité le plus élevé du parc étudié : <span style='color:#F44336;'>36,4 %</span> des heures mesurées sont hors des plages de confort/salubrité (6 150 heures). Ce taux est nettement supérieur à la moyenne de l'entité ECLA (qui était de <span style='color:#F44336;'>35,2 %</span> en juillet), ce qui positionne Villejuif comme un point de vulnérabilité majeur pour le groupe. La moyenne saisonnière d'humidité y atteint <span style='color:#F44336;'>55 %</span>, avec des pics enregistrés à <span style='color:#F44336;'>83 %</span>. L'enjeu est critique : une humidité prolongée affecte le confort (sensation de chaleur accrue) et représente un risque direct de détérioration du bâti (moisissures).</p>
+
+<h3 style='color:#F44336;'>Bruit - Priorité Confort et Bien-être</h3>
+<p>Le bruit est le facteur le plus pénalisant, avec <span style='color:#F44336;'>65,4 %</span> des heures en dépassement (<span style='color:#F44336;'>11 064 heures</span>). Ce taux est significativement plus élevé que le patrimoine ALL (<span style='color:#F44336;'>50,7 %</span>), signalant un problème majeur de confort acoustique, particulièrement impactant pour les études et le repos des étudiants. Le score très faible de <span style='color:#F44336;'>51</span> pour ce paramètre est à mettre en relation avec la proximité d'axes routiers (non mesurée dans le CSV mais mentionnée dans les informations de site) et l'usage des espaces communs.</p>
+
+<h3 style='color:#4CAF50;'>Polluants Respiratoires (CO₂, PM2.5, COVT)</h3>
+<ul>
+    <li><strong>CO₂ (Confinement) :</strong> Avec seulement <span style='color:#4CAF50;'>0,5 %</span> d'heures de dépassement, et seulement <span style='color:#4CAF50;'>2 heures</span> d’indice 5, la ventilation, bien qu'en simple flux, semble suffisante pour le renouvellement d'air lié à l'occupation. Le pic maximal de CO₂ (3974 ppm en Salle de réunion) est isolé et probablement lié à un usage ponctuel et intense sans aération manuelle.</li>
+    <li><strong>COVT :</strong> Le taux de dépassement est modéré (<span style='color:#FFC107;'>22,9 %</span> des heures), mais la moyenne est élevée (400 ppb) et le score de <span style='color:#FFC107;'>92</span> justifie une vigilance. L'année de construction (2023) suggère que les matériaux sont récents, ce qui peut expliquer les émissions résiduelles à surveiller.</li>
+    <li><strong>PM2.5 :</strong> Le risque lié aux particules fines est très faible (score <span style='color:#4CAF50;'>99</span>, <span style='color:#4CAF50;'>3,3 %</span> d'heures de dépassement).</li>
+</ul>
+
+<h2 style='color:#2196F3;'>III. ANALYSE DU CONFORT ET PATTERNS D’OCCUPATION</h2>
+<p>L'analyse met en évidence des contraintes d'usages qui s'articulent avec les limites structurelles du bâtiment, notamment l'absence de ventilation double flux (contrairement à d'autres résidences ECLA) et la classification DPE C, indiquant une performance énergétique moyenne.</p>
+
+<h3 style='color:#2196F3;'>Analyse Spatiale (Locaux Critiques)</h3>
+<p>Les espaces les plus susceptibles de créer un inconfort thermique ou hygrométrique sont :</p>
+<ul>
+    <li><strong>Espace Relax (8 - RDC - Bât B) :</strong> C'est dans ce local que le pic d'humidité relative le plus critique a été enregistré (<span style='color:#F44336;'>83,3 %</span>). Cet espace est structurellement le plus exposé aux problèmes de salubrité et nécessite un diagnostic ciblé sur son enveloppe ou sa ventilation (DPE C).</li>
+    <li><strong>Corner (4 - RDC - Bât F) :</strong> Ce local a enregistré le pic de température le plus élevé (<span style='color:#F44336;'>33 °C</span>), confirmant les risques de surchauffe estivale et soulevant des questions d'équité de confort.</li>
+    <li><strong>Fitness (7 - RDC - Bât B) :</strong> L'activité physique génère naturellement un bruit élevé (moyenne de <span style='color:#FFC107;'>60.8 dB(A)</span>) et une forte occupation (score CO₂ <span style='color:#FFC107;'>532.3 ppm</span>). Bien que l'activité soit la cause première, la conception acoustique doit être revue pour éviter la propagation aux locaux adjacents.</li>
+</ul>
+
+<h3 style='color:#2196F3;'>Optimisation Énergétique (Température)</h3>
+<p>Le faible taux de dépassement thermique global (<span style='color:#4CAF50;'>6,1 %</span>) suggère que les systèmes de chauffage/climatisation et l'isolation (RT2012) gèrent correctement les extrêmes climatiques. Néanmoins, les pics de surchauffe localisés (33°C au Corner) indiquent des pertes d’efficacité ou des usages qui nécessitent des ajustements fins pour éviter le gaspillage énergétique lors du refroidissement.</p>
+
+<h2 style='color:#2196F3;'>IV. RECOMMANDATIONS ET FEUILLE DE ROUTE OPÉRATIONNELLE (Vue ESG)</h2>
+<p>La feuille de route doit être axée sur l'amélioration urgente du confort acoustique et de la salubrité (humidité).</p>
+
+<h3 style='color:#F44336;'>Actions Prioritaires (Salubrité et Confort)</h3>
+<ul>
+    <li><strong style='color:#F44336;'>Trajectoire Bruit :</strong> Réduire de <span style='color:#F44336;'>15 points de pourcentage</span> le taux d’heures de dépassement sonore (objectif : <span style='color:#FF9800;'>50 %</span> vs <span style='color:#F44336;'>65,4 %</span>). Action : Mener un audit acoustique ciblé sur les locaux en Bâtiment B et C et déployer des solutions d'absorption phonique (revêtements, panneaux).</li>
+    <li><strong style='color:#F44336;'>Trajectoire Humidité :</strong> Réduire de <span style='color:#F44336;'>10 points de pourcentage</span> le taux d’heures de dépassement d'humidité relative (objectif : <span style='color:#FF9800;'>26,4 %</span> vs <span style='color:#F44336;'>36,4 %</span>). Action : Effectuer un diagnostic complet du système Simple Flux et des points froids dans l'Espace Relax pour identifier l'origine de l'excès d'humidité.</li>
+    <li><strong style='color:#FFC107;'>Matériaux :</strong> Étant une résidence récente (2023), une vigilance continue est nécessaire sur la réduction des COVT. L'objectif est de s'assurer que les émissions actuelles (<span style='color:#FFC107;'>22,9 %</span> de dépassement) diminuent naturellement au fil du temps (dégazage des matériaux).</li>
+</ul>
+
+<h3 style='color:#FF9800;'>Recommandations à Moyen Terme (Énergie et Bâti)</h3>
+<ul>
+    <li>Intégrer une analyse des pics de température (max <span style='color:#F44336;'>33 °C</span>) avec les données d'enveloppe du bâtiment (vitrage, protections solaires si existantes) pour optimiser les consignes de refroidissement.</li>
+    <li>Déployer une sensibilisation des occupants à l'importance de l'aération manuelle dans un bâtiment en Simple Flux pour soutenir la régulation hygrométrique et éviter les pics de COVT et d'humidité.</li>
+</ul>
+"
 }

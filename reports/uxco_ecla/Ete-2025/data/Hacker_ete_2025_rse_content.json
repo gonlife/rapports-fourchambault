@@ -3,56 +3,56 @@
     "residence": "Hacker",
     "saison": "Eté 2025",
     "saison_id": "ete_2025",
-    "periode_debut": "21/06/2025",
-    "periode_fin": "22/09/2025",
-    "seasons_available": [
-      {
-        "id": "ete_2025",
-        "label": "Eté 2025",
-        "data_file": "hacker_ete_2025.json",
-        "content_file": "hacker_ete_2025_content.json",
-        "rse_file": "hacker_ete_2025_rse.json",
-        "periode_debut": "01/07/2025",
-        "periode_fin": "22/09/2025"
-      },
-      {
-        "id": "printemps_2025",
-        "label": "Printemps 2025",
-        "data_file": "hacker_printemps_2025.json",
-        "content_file": "hacker_printemps_2025_content.json",
-        "rse_file": "hacker_printemps_2025_rse.json",
-        "periode_debut": null,
-        "periode_fin": null
-      },
-      {
-        "id": "hiver_2024_2025",
-        "label": "Hiver 2024-2025",
-        "data_file": "hacker_hiver_2024_2025.json",
-        "content_file": "hacker_hiver_2024_2025_content.json",
-        "rse_file": "hacker_hiver_2024_2025_rse.json",
-        "periode_debut": null,
-        "periode_fin": null
-      },
-      {
-        "id": "automne_2024",
-        "label": "Automne 2024",
-        "data_file": "hacker_automne_2024.json",
-        "content_file": "hacker_automne_2024_content.json",
-        "rse_file": "hacker_automne_2024_rse.json",
-        "periode_debut": null,
-        "periode_fin": null
-      },
-      {
-        "id": "ete_2024",
-        "label": "Eté 2024",
-        "data_file": "hacker_ete_2024.json",
-        "content_file": "hacker_ete_2024_content.json",
-        "rse_file": "hacker_ete_2024_rse.json",
-        "periode_debut": null,
-        "periode_fin": null
-      }
-    ],
-    "type_residence": "UXCO"
+    "type_residence": "UXCO",
+    "date_generation": "2025-11-20 11:37:30 CET"
   },
-  "final_report": "<h2 style='color:#2196F3;'>I. SYNTHÈSE EXÉCUTIVE ET POSITIONNEMENT ESG</h2><p>Sur la saison <strong>Eté 2025</strong>, la résidence <strong>Hacker</strong> obtient une note globale de qualité d’air intérieur de <strong>95/100</strong>, à comparer à une moyenne patrimoniale de <strong>93/100</strong>. Elle se classe <strong>1<sup>e</sup> sur 4</strong> bâtiments suivis, ce qui la positionne <span style='color:#4CAF50;'>en tête du patrimoine</span>.</p><p>Par rapport à la moyenne de son groupe <strong>UXCO</strong> (note moyenne <strong>94,5/100</strong>), la résidence présente un niveau <span style='color:#4CAF50;'>légèrement supérieur</span>, avec des atouts marqués sur le confinement du dioxyde de carbone et les particules fines, et des marges d’amélioration sur le confort acoustique et l’humidité selon les cas.</p><p>Les notes détaillées par paramètre sont les suivantes&nbsp;: confinement <strong>100/100</strong>, particules fines <strong>100/100</strong>, composés organiques volatils totaux <strong>97/100</strong>, température <strong>89/100</strong>, humidité <strong>93/100</strong>, bruit <strong>82/100</strong>. La qualité d’air est donc très bien maîtrisée, avec un point de vigilance plus prononcé sur le confort acoustique et, dans une moindre mesure, sur la stabilité hygrothermique.</p><hr style='margin: 24px 0; border-color: #e0e0e0;'/><h2 style='color:#2196F3;'>II. DIAGNOSTIC DÉTAILLÉ DE LA QUALITÉ DE L’AIR INTÉRIEUR</h2><h3>1. Confinement du dioxyde de carbone</h3><p>La résidence enregistre <strong>20 heures</strong> de dépassement des seuils de confinement sur un total de <strong>10 030 heures mesurées</strong>, soit <span style='color:#FFC107;'>0,2&nbsp;%</span> du temps de suivi. La distribution par indices montre <span style='color:#4CAF50;'>99,8&nbsp;%</span> des heures en <strong>indice&nbsp;0</strong>, <span style='color:#FFC107;'>0,2&nbsp;%</span> en <strong>indice&nbsp;1</strong> et <span style='color:#FFC107;'>0,0&nbsp;%</span> en <strong>indice&nbsp;2</strong>. Les situations réellement critiques (indices&nbsp;3 à&nbsp;5) restent limitées à <span style='color:#4CAF50;'>0,0&nbsp;%</span> des heures.</p><p>Les niveaux moyens mesurés sur le dioxyde de carbone restent contenus, avec une moyenne de <strong>473 ppm</strong>, un minimum de <strong>370 ppm</strong> et un maximum de <strong>1548 ppm</strong>. Ces valeurs traduisent un renouvellement d’air largement suffisant la plupart du temps, malgré quelques épisodes ponctuels de confinement en périodes d’occupation intense.</p><h3>2. Particules fines</h3><p>Les dépassements sur les particules fines demeurent très limités, avec <strong>87 heures</strong> au-dessus des seuils de référence sur <strong>10 014 heures</strong>, soit seulement <span style='color:#4CAF50;'>0,9&nbsp;%</span> du temps de mesure. Pour les étudiants les plus sensibles (asthme, allergies), ce niveau d’exposition reste très maîtrisé, en cohérence avec la bonne note obtenue sur ce paramètre.</p><h3>3. Composés organiques volatils totaux</h3><p>Les composés organiques volatils totaux représentent un enjeu plus structurant, avec <strong>1 182 heures</strong> de dépassement sur <strong>10 026 heures</strong>, soit <span style='color:#FF9800;'>11,8&nbsp;%</span> du temps. Ces dépassements peuvent être liés à la combinaison des matériaux, du mobilier, des produits d’entretien et de la manière dont les locaux sont aérés après les périodes de forte occupation.</p><h3>4. Température, humidité et bruit</h3><p>Sur la température, la résidence enregistre <strong>2 639 heures</strong> hors plage de confort sur <strong>10 030 heures</strong>, soit <span style='color:#FF9800;'>26,3&nbsp;%</span>. La température moyenne est de <strong>24.1&nbsp;°C</strong>, pour un minimum de <strong>18.1&nbsp;°C</strong> et un maximum de <strong>35.5&nbsp;°C</strong>, ce qui traduit quelques épisodes de surchauffe estivale dans certains espaces.</p><p>Pour l’humidité, on compte <strong>2 504 heures</strong> hors plage sur <strong>10 030 heures</strong>, soit <span style='color:#FFC107;'>25,0&nbsp;%</span>. Les niveaux moyens restent proches de la zone de confort avec <strong>50&nbsp;%</strong>, mais les maxima atteignent <strong>79&nbsp;%</strong>, ce qui peut générer un ressenti de lourdeur de l’air, notamment dans les espaces de vie collective.</p><p>Enfin, le bruit constitue un facteur de fragilité important avec <strong>2 504 heures</strong> au-dessus des seuils de confort sur <strong>10 026 heures</strong>, soit <span style='color:#F44336;'>25,0&nbsp;%</span>. Le niveau sonore moyen autour de <strong>45&nbsp;décibels pondérés A</strong>, avec des pointes jusqu’à <strong>97&nbsp;décibels</strong>, confirme un environnement parfois bruyant pour les étudiants.</p><hr style='margin: 24px 0; border-color: #e0e0e0;'/><h2 style='color:#2196F3;'>III. CONFORT, RYTHMES D’OCCUPATION ET PERFORMANCE D’USAGE</h2><p>Les profils hebdomadaires montrent que les situations les plus chargées en dioxyde de carbone se concentrent le <strong>mercredi</strong> autour de <strong>22 heures</strong>, avec des niveaux proches de la valeur maximale enregistrée sur la saison. Cela illustre des phases d’occupation intense des espaces communs, pendant lesquelles la vigilance sur l’aération doit être maximale.</p><p>Au niveau des locaux, les analyses montrent que <strong>Agora Lounge RDC</strong> présente le niveau sonore moyen le plus élevé, avec environ <strong>55,5&nbsp;décibels</strong>, là où le local le plus calme, <strong>Studio RDC</strong>, se situe autour de <strong>38,7&nbsp;décibels</strong>. Les espaces à forte intensité sociale concentrent donc une part importante de l’inconfort acoustique, alors même qu’ils sont centraux pour la vie étudiante.</p><p>En matière de confort thermique, <strong>Fitness RDC</strong> apparaît comme le local le plus chaud, avec une température moyenne de l’ordre de <strong>25,6&nbsp;°C</strong>. Cela suggère un ciblage prioritaire de ces espaces pour les actions de protection solaire, de pilotage des apports internes et de gestion de la ventilation en période estivale.</p><p>Les données de maintenance de <strong>août 2025</strong> indiquent que <span style='color:#4CAF50;'>87,3&nbsp;%</span> des mesures de lumière se situent dans les niveaux 4 à 6, correspondant à des éclairements confortables pour le travail et les activités collectives. À l’inverse, les niveaux de lumière les plus faibles ne représentent qu’environ <span style='color:#FFC107;'>12,7&nbsp;%</span> des situations, ce qui limite les risques de sous-éclairement chronique.</p><hr style='margin: 24px 0; border-color: #e0e0e0;'/><h2 style='color:#2196F3;'>IV. RECOMMANDATIONS ESG ET FEUILLE DE ROUTE</h2><p><strong style='color:#4CAF50;'>🎯 Objectif prioritaire sur le confinement du dioxyde de carbone&nbsp;:</strong> réduire d’environ <span style='color:#4CAF50;'>30&nbsp;%</span> les heures de dépassement, soit à terme <strong>6 heures</strong> de confinement en moins par saison. Cet objectif peut être atteint en combinant une sensibilisation des résidents à l’aération active des espaces communs et des ajustements fins sur les systèmes de ventilation existants.</p><p><strong style='color:#4CAF50;'>🎯 Objectif confort acoustique&nbsp;:</strong> réduire d’environ <span style='color:#4CAF50;'>25&nbsp;%</span> les heures d’inconfort sonore, soit <strong>626 heures</strong> à supprimer, en ciblant en priorité les locaux les plus bruyants comme <strong>Agora Lounge RDC</strong> (traitement acoustique, organisation des usages, régulation des horaires d’animation).</p><p><strong style='color:#4CAF50;'>🎯 Objectif composés organiques volatils totaux&nbsp;:</strong> diminuer d’au moins <span style='color:#4CAF50;'>25&nbsp;%</span> les heures de dépassement, soit environ <strong>296 heures</strong>, en agissant sur le choix des produits d’entretien, la ventilation après travaux ou aménagements, et la diffusion de consignes d’usage pour limiter les sources internes.</p><p><strong style='color:#FF9800;'>📌 Enjeu d’équité entre bâtiments&nbsp;:</strong> la convergence vers un niveau de confort acoustique et hygrothermique homogène avec le reste du patrimoine doit être suivie comme un indicateur ESG à part entière, en intégrant ces objectifs dans les plans pluriannuels d’investissement et dans le dialogue avec les exploitants.</p>"
+  "final_report": "
+<h2 style='color:#2196F3;'>I. SYNTHÈSE EXÉCUTIVE ET POSITIONNEMENT ESG - HACKER</h2>
+<p>Pour la saison <strong>Été 2025</strong>, la résidence Hacker (UXCO) obtient le meilleur score QAI global du parc avec <span style='color:#4CAF50;'>95</span>. Ce résultat place le bâtiment en première position du classement et est nettement supérieur à la moyenne du patrimoine ALL (<span style='color:#4CAF50;'>93</span>), confirmant la valeur de ses certifications (HQE/E+C-).</p>
+<hr style='margin: 12px 0; border-color: #e0e0e0;'/>
+<h3 style='color:#2196F3;'>Positionnement et Enjeux ESG</h3>
+<ul>
+    <li><strong>Force Structurelle :</strong> Le contrôle des polluants est exceptionnel, avec un score parfait de <span style='color:#4CAF50;'>100</span> pour le confinement CO₂ et les PM2.5. Seules <span style='color:#4CAF50;'>20 heures</span> de dépassement CO₂ ont été mesurées (soit <span style='color:#4CAF50;'>0,2 %</span>).</li>
+    <li><strong>Faiblesse Critique :</strong> Malgré un score global élevé, le bâtiment présente un taux de dépassement de <strong>Température</strong> problématique (<span style='color:#FFC107;'>26,3 %</span> des heures), faisant chuter son score à <span style='color:#F44336;'>89</span>. Ceci représente son principal défi ESG en matière de confort thermique.</li>
+    <li><strong>Performance vs Groupe :</strong> Le taux de dépassement thermique (<span style='color:#FFC107;'>26,3 %</span>) est supérieur à la moyenne de l'entité UXCO pour juillet (<span style='color:#F44336;'>21 %</span>), indiquant que Hacker est plus vulnérable aux surchauffes estivales que le reste de son groupe.</li>
+</ul>
+
+<h2 style='color:#2196F3;'>II. DIAGNOSTIC DÉTAILLÉ DE LA QAI ET DES POLLUANTS</h2>
+<p>L'analyse met en évidence une excellence opérationnelle sur la QAI intérieure, mais une vulnérabilité aux conditions climatiques externes.</p>
+
+<h3 style='color:#F44336;'>Température et Confort Thermique - Levier Principal</h3>
+<p>Le taux de dépassement de température de <span style='color:#FFC107;'>26,3 %</span> et l'enregistrement d'un pic à <span style='color:#F44336;'>35,5 °C</span> dans l'espace Co-Working signalent un échec du système de refroidissement à maintenir le confort pendant les périodes de canicule, impactant directement le bien-être et la productivité des occupants. Cette surchauffe est critique et doit être la priorité. L'année de construction récente (2022) et la conformité RT2012 suggèrent que l'enjeu se situe dans la régulation et la performance du système de climatisation collective.</p>
+
+<h3 style='color:#FF9800;'>COVT, PM2.5 et Humidité Relative</h3>
+<ul>
+    <li><strong>COVT :</strong> Le taux de dépassement est modéré (<span style='color:#FFC107;'>11,8 %</span>). Cependant, un pic critique a été enregistré à <span style='color:#F44336;'>6432 ppb</span> dans l'espace Co-Working. Ce pic doit être mis en relation avec la concentration d'équipements électroniques et de matériaux dans cet espace (mobilier spécifique).</li>
+    <li><strong>PM2.5 :</strong> Malgré un score parfait (<span style='color:#4CAF50;'>100</span>), le Studio RDC a enregistré un pic ponctuel extrême de <span style='color:#F44336;'>518 µg/m³</span>. Bien que cela soit rare, l'origine de cette pollution doit être identifiée (travaux, activités exceptionnelles).</li>
+    <li><strong>Humidité Relative (HR) :</strong> Le dépassement de HR (<span style='color:#FFC107;'>25 %</span>) est bien géré par rapport au patrimoine ALL (<span style='color:#F44336;'>26,9 %</span>), confirmant que l'hygrométrie n'est pas un point de faiblesse majeur pour ce bâtiment UXCO (ventilation mécanique simple).</li>
+    <li><strong>Bruit :</strong> Le score (<span style='color:#FFC107;'>82</span>) est bon pour un bâtiment avec des espaces collectifs actifs, et bien meilleur que Palaiseau 1 (<span style='color:#F44336;'>46</span>).</li>
+</ul>
+
+<h2 style='color:#2196F3;'>III. ANALYSE DU CONFORT ET PATTERNS D’OCCUPATION</h2>
+<p>L'analyse des données d'occupation révèle que les problèmes de température et de COVT sont étroitement liés à l'usage des espaces les plus stratégiques du bâtiment.</p>
+
+<h3 style='color:#2196F3;'>Le Cas du Co-Working et du Fitness (Enjeu Social/Sanitaire)</h3>
+<ul>
+    <li><strong>Co-Working RDC :</strong> Cet espace combine le pic de température le plus critique (<span style='color:#F44336;'>35,5 °C</span>) et le pic de COVT le plus haut (<span style='color:#F44336;'>6432 ppb</span>). L'enjeu ESG est de garantir que les espaces de travail collaboratifs soient des lieux de concentration saine et non des zones de stress thermique ou de pollution.</li>
+    <li><strong>Fitness RDC :</strong> Le local Fitness a la plus haute moyenne de CO₂ (<span style='color:#FFC107;'>514.8 ppm</span>), confirmant son usage intensif, mais reste bien en dessous du seuil critique (CO₂ score <span style='color:#4CAF50;'>100</span>). Ceci valide la performance du système de ventilation mécanique face à l'occupation.</li>
+</ul>
+
+<h2 style='color:#2196F3;'>IV. RECOMMANDATIONS ET FEUILLE DE ROUTE OPÉRATIONNELLE (Vue ESG)</h2>
+<p>La feuille de route doit capitaliser sur la maîtrise excellente de la QAI (CO₂, PM2.5) pour se concentrer sur la résilience thermique et la réduction des polluants organiques volatils, en ciblant l'équité du confort des occupants.</p>
+
+<h3 style='color:#F44336;'>Actions Prioritaires (Résilience Thermique et COVT)</h3>
+<ul>
+    <li><strong style='color:#F44336;'>Trajectoire Température :</strong> Réduire de <span style='color:#F44336;'>10 points de pourcentage</span> le taux d’heures de dépassement thermique (objectif : <span style='color:#FF9800;'>16,3 %</span> vs <span style='color:#F44336;'>26,3 %</span>). Action : Mener un diagnostic sur la performance du système de climatisation collective et sur l'impact de l'enveloppe du bâtiment (vitrage, protections solaires) pour endiguer les pics supérieurs à <span style='color:#F44336;'>35 °C</span>.</li>
+    <li><strong style='color:#FFC107;'>Trajectoire COVT :</strong> Réduire le taux d’heures de dépassement COVT de <span style='color:#FF9800;'>5 points de pourcentage</span> (objectif : <span style='color:#4CAF50;'>6,8 %</span> vs <span style='color:#FFC107;'>11,8 %</span>). Action : Identifier les sources de polluants dans l'espace Co-Working (nettoyage, matériaux) et mettre en place une aération accrue (manuelle ou mécanique) lors des pics.</li>
+</ul>
+
+<h3 style='color:#4CAF50;'>Recommandations de Pérennisation (CO₂ et PM2.5)</h3>
+<ul>
+    <li><strong style='color:#4CAF50;'>Pérennisation CO₂/PM2.5 :</strong> Maintenir le score parfait (<span style='color:#4CAF50;'>100</span>) et s'assurer que le protocole de maintenance des filtres de ventilation (actuellement non renseigné) est optimal pour garantir la gestion des PM2.5 (<span style='color:#FFC107;'>518 µg/m³</span> de pic).</li>
+    <li><strong style='color:#4CAF50;'>Recommandation Bruit :</strong> L'excellent score de bruit (<span style='color:#FFC107;'>82</span>) est à maintenir. L'action doit se concentrer sur le respect des consignes d'usage dans les espaces communs.</li>
+</ul>
+"
 }
