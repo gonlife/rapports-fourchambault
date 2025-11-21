@@ -1,0 +1,129 @@
+{
+  "metadata": {
+    "residence": "Hacker",
+    "saison": "Eté 2025",
+    "saison_id": "ete_2025",
+    "periode_debut": "21/06/2025",
+    "periode_fin": "22/09/2025",
+    "seasons_available": [
+      {
+        "id": "ete_2025",
+        "label": "Eté 2025",
+        "data_file": "hacker_ete_2025.json",
+        "content_file": "hacker_ete_2025_content.json",
+        "rse_file": "hacker_ete_2025_rse.json",
+        "periode_debut": "01/07/2025",
+        "periode_fin": "22/09/2025"
+      },
+      {
+        "id": "printemps_2025",
+        "label": "Printemps 2025",
+        "data_file": "hacker_printemps_2025.json",
+        "content_file": "hacker_printemps_2025_content.json",
+        "rse_file": "hacker_printemps_2025_rse.json",
+        "periode_debut": null,
+        "periode_fin": null
+      },
+      {
+        "id": "hiver_2024_2025",
+        "label": "Hiver 2024-2025",
+        "data_file": "hacker_hiver_2024_2025.json",
+        "content_file": "hacker_hiver_2024_2025_content.json",
+        "rse_file": "hacker_hiver_2024_2025_rse.json",
+        "periode_debut": null,
+        "periode_fin": null
+      },
+      {
+        "id": "automne_2024",
+        "label": "Automne 2024",
+        "data_file": "hacker_automne_2024.json",
+        "content_file": "hacker_automne_2024_content.json",
+        "rse_file": "hacker_automne_2024_rse.json",
+        "periode_debut": null,
+        "periode_fin": null
+      },
+      {
+        "id": "ete_2024",
+        "label": "Eté 2024",
+        "data_file": "hacker_ete_2024.json",
+        "content_file": "hacker_ete_2024_content.json",
+        "rse_file": "hacker_ete_2024_rse.json",
+        "periode_debut": null,
+        "periode_fin": null
+      }
+    ],
+    "type_residence": "UXCO"
+  },
+  "scores": {
+    "global": 95,
+    "confinement": 100,
+    "pm25": 100,
+    "covt": 97,
+    "temp": 89,
+    "humidity": 93,
+    "noise": 82
+  },
+  "kpi_metrics": {
+    "averages_min_max": {
+      "confinement": {
+        "moyenne": 473,
+        "min": 370,
+        "max": 1548
+      },
+      "covt": {
+        "moyenne": 307,
+        "min": 105,
+        "max": 6432
+      },
+      "pm25": {
+        "moyenne": 1.9,
+        "min": 0,
+        "max": 518
+      },
+      "temp": {
+        "moyenne": 24.1,
+        "min": 18.1,
+        "max": 35.5
+      },
+      "humidity": {
+        "moyenne": 50,
+        "min": 22,
+        "max": 79
+      },
+      "noise": {
+        "moyenne": 45,
+        "min": 36,
+        "max": 97
+      }
+    },
+    "exceedance_hours": {
+      "confinement": 20,
+      "confinement_percentage": 0.2,
+      "confinement_total_measured": 10030,
+      "confinement_by_index": {
+        "index_0": 10010,
+        "index_1": 17,
+        "index_2": 3,
+        "index_3": 0,
+        "index_4": 0,
+        "index_5": 0
+      },
+      "temp": 2639,
+      "temp_percentage": 26.3,
+      "temp_total_measured": 10030,
+      "humidity": 2504,
+      "humidity_percentage": 25,
+      "humidity_total_measured": 10030,
+      "pm25": 87,
+      "pm25_percentage": 0.9,
+      "pm25_total_measured": 10014,
+      "covt": 1182,
+      "covt_percentage": 11.8,
+      "covt_total_measured": 10026,
+      "noise": 2504,
+      "noise_percentage": 25,
+      "noise_total_measured": 10026
+    }
+  },
+  "ai_analysis_placeholder": null
+}

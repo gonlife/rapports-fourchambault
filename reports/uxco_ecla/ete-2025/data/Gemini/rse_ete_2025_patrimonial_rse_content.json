@@ -1,0 +1,81 @@
+{
+  "metadata": {
+    "residence_scope": "PATRIMONIAL",
+    "saison_id": "ete_2025",
+    "saison_label": "Eté 2025",
+    "date_generation": "2025-11-20 11:34:12 CET"
+  },
+  "final_report": "
+<h2 style='color:#2196F3;'>I. ANALYSE PATRIMONIALE COMPLÈTE - ÉTÉ 2025 (TOUS BÂTIMENTS)</h2>
+<p>L'analyse RSE/ESG pour la saison <strong>Été 2025</strong> (Juillet à Septembre) sur l'ensemble du patrimoine (ALL) révèle un score QAI global de <span style='color:#4CAF50;'>93</span>, indiquant une performance solide malgré des défis estivaux récurrents liés à l'humidité et au bruit. Cette période, marquée par de fortes chaleurs et une occupation élevée des espaces communs, permet de tester la résilience des bâtiments face aux stress thermiques et aux usages intensifs.</p>
+<hr style='margin: 24px 0; border-color: #e0e0e0;'/>
+<h3 style='color:#2196F3;'>1. Synthèse des Indicateurs Clés</h3>
+<ul>
+    <li><strong>Performance Thermique et Hygrométrique :</strong> La performance est hétérogène. La <strong>Température</strong> maintient un bon score de <span style='color:#4CAF50;'>95</span>, avec seulement <span style='color:#FFC107;'>12 %</span> des heures mesurées en dépassement (9 501 heures sur 79 157). Cependant, l'<strong>Humidité Relative</strong> présente le score le plus faible (<span style='color:#FFC107;'>92</span>), avec <span style='color:#F44336;'>26,9 %</span> des heures en dépassement (21 265 heures sur 79 157).</li>
+    <li><strong>Qualité de l'Air (Polluants) :</strong> Les scores sont excellents pour le <strong>Confinement CO₂</strong> (<span style='color:#4CAF50;'>99</span>) et les <strong>PM2.5</strong> (<span style='color:#4CAF50;'>99</span>). Le CO₂ est en dépassement sur seulement <span style='color:#4CAF50;'>1,9 %</span> des heures mesurées. Le détail par indice montre que les situations critiques (indices 3, 4 et 5) ne représentent qu'un total de <span style='color:#FFC107;'>188 heures</span> (123 + 43 + 22). Les <strong>COVT</strong> sont le polluant le plus en dépassement (<span style='color:#FFC107;'>17,3 %</span> des heures, soit 12 301 heures sur 71 117 mesurées).</li>
+    <li><strong>Confort Acoustique :</strong> Le <strong>Bruit</strong> est l'indicateur le plus critique, avec un score de <span style='color:#F44336;'>61</span>. Près de la moitié des heures mesurées (<span style='color:#F44336;'>50,7 %</span>, soit 36 023 heures sur 71 117) présentent des dépassements sonores.</li>
+</ul>
+
+<hr style='margin: 24px 0; border-color: #e0e0e0;'/>
+<h3 style='color:#2196F3;'>2. FOCUS ECLA vs UXCO : Enjeux d'Équité et de Performance</h3>
+<p>La comparaison entre les deux entités révèle des stratégies et des performances divergentes face aux contraintes estivales. Les bâtiments ECLA et UXCO présentent des différences notables dans leur conception et leur performance thermique.</p>
+<table style='width:100%; border-collapse: collapse; text-align: center;'>
+    <thead>
+        <tr style='background-color:#E3F2FD;'>
+            <th style='border: 1px solid #BBDEFB; padding: 8px; color:#2196F3;'>Indicateur (Score)</th>
+            <th style='border: 1px solid #BBDEFB; padding: 8px; color:#2196F3;'>Patrimoine ALL (Score)</th>
+            <th style='border: 1px solid #BBDEFB; padding: 8px; color:#2196F3;'>ECLA (Exceedance Mensuel)</th>
+            <th style='border: 1px solid #BBDEFB; padding: 8px; color:#2196F3;'>UXCO (Exceedance Mensuel)</th>
+            <th style='border: 1px solid #BBDEFB; padding: 8px; color:#2196F3;'>Écart / Enjeu ESG</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style='border: 1px solid #BBDEFB; padding: 8px;'><strong>Température (Temp.)</strong></td>
+            <td style='border: 1px solid #BBDEFB; padding: 8px;'>95 (12% h. dépassement)</td>
+            <td style='border: 1px solid #BBDEFB; padding: 8px;'>Juil: <span style='color:#FFC107;'>11%</span>; Août: <span style='color:#FFC107;'>15,3%</span>; Sept: <span style='color:#4CAF50;'>1,1%</span></td>
+            <td style='border: 1px solid #BBDEFB; padding: 8px;'>Juil: <span style='color:#F44336;'>21%</span>; Août: <span style='color:#FFC107;'>16,4%</span>; Sept: <span style='color:#FFC107;'>12,4%</span></td>
+            <td style='border: 1px solid #BBDEFB; padding: 8px; text-align: left;'>UXCO fait face à un <strong>risque de surchauffe structurellement plus élevé</strong> en juillet, impactant l'équité du confort (UXCO est en <span style='color:#F44336;'>21%</span> de dépassement en Juillet, soit le double d'ECLA).</td>
+        </tr>
+        <tr>
+            <td style='border: 1px solid #BBDEFB; padding: 8px;'><strong>Humidité Rel. (HR)</strong></td>
+            <td style='border: 1px solid #BBDEFB; padding: 8px;'>92 (26,9% h. dépassement)</td>
+            <td style='border: 1px solid #BBDEFB; padding: 8px;'>Juil: <span style='color:#F44336;'>35,2%</span>; Août: <span style='color:#F44336;'>30,5%</span>; Sept: <span style='color:#FFC107;'>26,5%</span></td>
+            <td style='border: 1px solid #BBDEFB; padding: 8px;'>Juil: <span style='color:#FFC107;'>27,4%</span>; Août: <span style='color:#4CAF50;'>20,5%</span>; Sept: <span style='color:#4CAF50;'>22,1%</span></td>
+            <td style='border: 1px solid #BBDEFB; padding: 8px; text-align: left;'><strong>L'hygrométrie est le défi principal pour ECLA</strong>, soulevant des questions de salubrité et de confort pour les occupants.</td>
+        </tr>
+    </tbody>
+</table>
+<p><strong>Enjeu d'Équité :</strong> L'entité UXCO semble mieux gérer l'humidité relative, en particulier en août (<span style='color:#4CAF50;'>20,5 %</span> de dépassement vs <span style='color:#F44336;'>30,5 %</span> pour ECLA). Inversement, UXCO a des difficultés plus marquées avec la température en juillet (<span style='color:#F44336;'>21 %</span> de dépassement vs <span style='color:#FFC107;'>11 %</span> pour ECLA). Il existe un enjeu d'équité dans le confort thermique fourni entre les deux entités sur cette saison d'été.</p>
+
+<hr style='margin: 24px 0; border-color: #e0e0e0;'/>
+<h3 style='color:#2196F3;'>3. Classement des Bâtiments et Enjeux ESG</h3>
+<p>Le classement des bâtiments pour l'Été 2025 met en lumière les performances individuelles.</p>
+<ol>
+    <li><strong>🥇 Hacker (UXCO) : Score <span style='color:#4CAF50;'>95</span></strong> - Meilleur score, avec une excellente maîtrise des polluants (<span style='color:#4CAF50;'>100</span> pour CO₂ et PM2.5), malgré une vulnérabilité à la température (score <span style='color:#FFC107;'>89</span>, 26,3% heures de dépassement). Son score bruit est son principal talon d'Achille (<span style='color:#F44336;'>82</span>).</li>
+    <li><strong>🥈 Palaiseau_1 (UXCO) : Score <span style='color:#4CAF50;'>94</span></strong> - Bonne résilience thermique (score <span style='color:#4CAF50;'>98</span>), mais le bruit est très critique (score <span style='color:#F44336;'>46</span>).</li>
+    <li><strong>🥉 Noisy_le_Grand (ECLA) : Score <span style='color:#4CAF50;'>93</span></strong> - Bonne maîtrise des polluants, mais un score de bruit faible (<span style='color:#F44336;'>64</span>) et le plus grand nombre d'heures d'indice de confinement CO₂ 0 (27 500 h), signalant une faible occupation ou une ventilation surdimensionnée.</li>
+    <li><strong>Villejuif (ECLA) : Score <span style='color:#FFC107;'>92</span></strong> - Le score d'humidité est le plus faible du patrimoine (score <span style='color:#F44336;'>89</span>), avec <span style='color:#F44336;'>36,4 %</span> des heures en dépassement. Le bruit est également très problématique (<span style='color:#F44336;'>51</span>).</li>
+</ol>
+<p><strong>Enjeu ESG :</strong> Les bâtiments ECLA (Noisy-le-Grand et Villejuif) sont équipés d'une <strong>ventilation double flux</strong>, contre une ventilation mécanique pour les résidences UXCO (Hacker et Palaiseau\_1). Malgré le double flux, ces deux résidences ECLA affichent un taux de dépassement d'humidité relative très élevé (Villejuif : <span style='color:#F44336;'>36,4 %</span>, Noisy-le-Grand : <span style='color:#F44336;'>26,1 %</span>), ce qui remet en question la performance du système de gestion de l'humidité dans ces locaux et justifie un examen prioritaire (équité du confort et salubrité).</p>
+
+<hr style='margin: 24px 0; border-color: #e0e0e0;'/>
+<h3 style='color:#2196F3;'>4. Recommandations ESG et Trajectoire d'Amélioration</h3>
+<p>La feuille de route doit cibler la réduction des dépassements d'<strong>humidité relative</strong> (principalement ECLA) et du <strong>bruit</strong> (patrimoine entier) tout en pérennisant l'excellente maîtrise du confinement CO₂ et des PM2.5. L'enjeu est de garantir une équité de traitement pour le confort thermique et la qualité de l'air.</p>
+<p><strong>Recommandations Patrimoniales :</strong></p>
+<ul>
+    <li><strong style='color:#FFC107;'>🎯 Objectif Hygrométrie (ECLA) :</strong> Réduire de <span style='color:#FF9800;'>10 points de pourcentage</span> le taux de dépassement d'humidité relative dans l'entité ECLA d'ici la fin du prochain trimestre estival (cible : <span style='color:#4CAF50;'>25,2 %</span> vs <span style='color:#F44336;'>35,2 %</span> en juillet 2025).</li>
+    <li><strong style='color:#F44336;'>🎯 Objectif Bruit (ALL) :</strong> Réduire d'au moins <span style='color:#FF9800;'>5 points de pourcentage</span> les heures de dépassement sonore pour l'ensemble du patrimoine (cible : <span style='color:#FFC107;'>45,7 %</span> vs <span style='color:#F44336;'>50,7 %</span>). Une enquête auprès des occupants est prioritaire pour qualifier la nature du bruit (usage vs structurel).</li>
+    <li><strong style='color:#4CAF50;'>🎯 Optimisation CO₂ (Noisy-le-Grand) :</strong> Mener une étude approfondie à Noisy-le-Grand pour évaluer si les <span style='color:#FFC107;'>27 500 heures</span> en indice 0 de confinement CO₂ signalent une surventilation des locaux peu occupés. L'objectif est d'optimiser l'énergie consommée par la ventilation double flux sans dégrader la QAI (enjeu de performance environnementale).</li>
+    <li><strong style='color:#FFC107;'>🎯 Équité Thermique (UXCO) :</strong> Déployer une surveillance accrue des températures dans l'entité UXCO, en particulier pendant les mois de forte chaleur (juillet), pour ramener les dépassements en dessous de <span style='color:#FF9800;'>15 %</span> (cible : <span style='color:#FFC107;'>14,9 %</span> vs <span style='color:#F44336;'>21 %</span> en juillet 2025).</li>
+</ul>
+<hr style='margin: 24px 0; border-color: #e0e0e0;'/>
+<h2 style='color:#2196F3;'>II. FOCUS ECLA - ÉTÉ 2025</h2>
+<p>L'entité ECLA affiche de très bonnes performances sur la maîtrise du confinement et de la température (seulement <span style='color:#4CAF50;'>1,1 %</span> de dépassement Température en Septembre). Le défi principal est clairement l'<strong>Humidité Relative</strong>, avec des taux de dépassement constamment supérieurs au patrimoine et à l'entité UXCO (Juil: <span style='color:#F44336;'>35,2 %</span>).</p>
+<p>Le bâtiment <strong>Villejuif</strong> (score <span style='color:#FFC107;'>92</span>), est le point de vigilance pour l'hygrométrie et le confort acoustique, et contribue significativement à cette moyenne ECLA.</p>
+<hr style='margin: 24px 0; border-color: #e0e0e0;'/>
+<h2 style='color:#2196F3;'>III. FOCUS UXCO - ÉTÉ 2025</h2>
+<p>L'entité UXCO est la mieux notée au niveau global (grâce à Hacker) et a mieux maîtrisé l'humidité relative que l'entité ECLA (Juil: <span style='color:#FFC107;'>27,4 %</span> ; Août: <span style='color:#4CAF50;'>20,5 %</span>). Le point d’alerte principal est le <strong>Bruit</strong> (score le plus faible du patrimoine : <span style='color:#F44336;'>46</span> à Palaiseau_1) et la <strong>Température en juillet</strong> (<span style='color:#F44336;'>21 %</span> de dépassement).</p>
+<p>Cette performance globale est positive, mais les enjeux de bruit et de surchauffe localisée demandent une action ciblée pour maintenir l'équité du confort des occupants.</p>
+"
+}
