@@ -1,13 +1,15 @@
 {
   "files": {
-    "main.css": "/reports/uxco_ecla/ete-2025/static/css/main.3b384e5e.css",
-    "main.js": "/reports/uxco_ecla/ete-2025/static/js/main.71781c78.js",
+    "main.css": "/reports/uxco_ecla/ete-2025/static/css/main.79c61020.css",
+    "main.js": "/reports/uxco_ecla/ete-2025/static/js/main.0fe5794d.js",
+    "static/js/453.f3f87605.chunk.js": "/reports/uxco_ecla/ete-2025/static/js/453.f3f87605.chunk.js",
     "index.html": "/reports/uxco_ecla/ete-2025/index.html",
-    "main.3b384e5e.css.map": "/reports/uxco_ecla/ete-2025/static/css/main.3b384e5e.css.map",
-    "main.71781c78.js.map": "/reports/uxco_ecla/ete-2025/static/js/main.71781c78.js.map"
+    "main.79c61020.css.map": "/reports/uxco_ecla/ete-2025/static/css/main.79c61020.css.map",
+    "main.0fe5794d.js.map": "/reports/uxco_ecla/ete-2025/static/js/main.0fe5794d.js.map",
+    "453.f3f87605.chunk.js.map": "/reports/uxco_ecla/ete-2025/static/js/453.f3f87605.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3b384e5e.css",
-    "static/js/main.71781c78.js"
+    "static/css/main.79c61020.css",
+    "static/js/main.0fe5794d.js"
   ]
 }

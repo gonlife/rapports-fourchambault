@@ -1,0 +1,59 @@
+{
+  "metadata": {
+    "residence": "Noisy_le_Grand",
+    "saison": "Eté 2025",
+    "saison_id": "ete_2025",
+    "type_residence": "ECLA",
+    "date_generation": "2025-11-20 11:38:35 CET"
+  },
+  "final_report": "
+<h2 style='color:#2196F3;'>I. SYNTHÈSE EXÉCUTIVE ET POSITIONNEMENT ESG - NOISY-LE-GRAND</h2>
+<p>Pour la saison <strong>Été 2025</strong>, la résidence Noisy-le-Grand (ECLA) obtient un score QAI global de <span style='color:#4CAF50;'>93</span>, se positionnant exactement sur la moyenne du patrimoine complet ALL (<span style='color:#4CAF50;'>93</span>). Ce bâtiment rénové en 2022 bénéficie d'une ventilation double flux, mais doit faire face à des enjeux acoustiques et d'efficacité énergétique.</p>
+<hr style='margin: 12px 0; border-color: #e0e0e0;'/>
+<h3 style='color:#2196F3;'>Positionnement et Enjeux ESG</h3>
+<ul>
+    <li><strong>Force QAI :</strong> La QAI liée aux polluants est excellente (CO₂ score <span style='color:#4CAF50;'>98</span>, PM2.5 score <span style='color:#4CAF50;'>99</span>). Le faible taux de dépassement CO₂ (<span style='color:#4CAF50;'>2,2 %</span>) confirme l'efficacité du système de ventilation.</li>
+    <li><strong>Faiblesse Structurelle :</strong> Le <strong>Bruit</strong> est le facteur le plus critique (score <span style='color:#FFC107;'>64</span>), avec <span style='color:#F44336;'>43,4 %</span> des heures en dépassement, impactant le confort des occupants.</li>
+    <li><strong>Enjeu d'Efficacité Énergétique :</strong> La présence de <span style='color:#F44336;'>27 500 heures</span> en indice CO₂ 0 (optimal) suggère une surventilation potentiellement énergivore dans les zones à faible occupation, ce qui est critique pour un bâtiment classé DPE E avec une consommation énergétique élevée (<span style='color:#F44336;'>152 kWh/m².an</span>).</li>
+</ul>
+
+<h2 style='color:#2196F3;'>II. DIAGNOSTIC DÉTAILLÉ DE LA QAI ET DES POLLUANTS</h2>
+
+<h3 style='color:#F44336;'>Bruit - Un risque de perte de confort permanent</h3>
+<p>Avec près de la moitié des heures mesurées hors des seuils de confort (<span style='color:#F44336;'>43,4 %</span>), et un pic sonore enregistré à <span style='color:#F44336;'>106 dB(A)</span> dans le Studio musique, le bruit constitue un risque permanent pour le bien-être des occupants. Ce taux est bien supérieur à l'objectif cible ESG (40 dB max). Le fait que la résidence dispose d'un mur-rideau vitré et que les matériaux d'isolation (30 cm) sont présents suggère que l'enjeu pourrait être lié à la propagation des sons internes (Studio musique, Restaurant) ou à la conception des ouvrants.</p>
+
+<h3 style='color:#FF9800;'>Humidité Relative et COVT</h3>
+<ul>
+    <li><strong>Humidité Relative (HR) :</strong> Le taux de dépassement est de <span style='color:#FFC107;'>26,1 %</span>. Bien que meilleur que Villejuif (36,4 %), il reste une zone de vigilance pour l'entité ECLA, avec des pics à <span style='color:#FFC107;'>78 %</span>, soulevant des inquiétudes concernant la performance estivale du système double flux à gérer l'humidité par temps chaud.</li>
+    <li><strong>COVT :</strong> Le dépassement de COVT (<span style='color:#FFC107;'>15,8 %</span>) est inférieur à la moyenne patrimoniale (17,3 %) mais justifie une surveillance, en particulier dans les zones à fort usage comme l'Accueil (pic max de <span style='color:#F44336;'>7043 ppb</span>), potentiellement lié à l'utilisation de produits d'entretien ou d'émetteurs de senteurs.</li>
+</ul>
+
+<h3 style='color:#4CAF50;'>Température et CO₂ - Maîtrise opérationnelle</h3>
+<p>La température (<span style='color:#FFC107;'>14 %</span> de dépassement) est correctement gérée, évitant les surchauffes critiques. La performance du CO₂ est la meilleure illustration de l'efficacité de la ventilation, avec un score QAI de <span style='color:#4CAF50;'>98</span>.</p>
+
+<h2 style='color:#2196F3;'>III. ANALYSE DU CONFORT ET PATTERNS D’OCCUPATION</h2>
+<p>La résidence, par sa configuration (rénovation, mur rideau, double flux), présente un paradoxe : excellente QAI sanitaire, mais un gaspillage énergétique majeur et un déficit de confort acoustique.</p>
+
+<h3 style='color:#F44336;'>Défis d'Optimisation Énergétique (Enjeu Environnemental)</h3>
+<p>La principale observation ESG pour Noisy-le-Grand est l'inefficacité du système de ventilation double flux en mode régulation. Les <span style='color:#F44336;'>27 500 heures</span> passées en Indice CO₂ 0 (optimal/sous-occupé) pour une ventilation Double Flux sont synonymes d'une consommation énergétique inutile pour renouveler un air déjà propre. La résidence étant classée DPE E et ayant une forte consommation (<span style='color:#F44336;'>152 kWh/m².an</span>), l'absence de régulation CO₂ ou de programmation horaire est un levier d'optimisation prioritaire.</p>
+
+<h3 style='color:#FF9800;'>Analyse des Usages (Bruit et COVT)</h3>
+<p>Les espaces collectifs (Agora, Restaurant, Boxe/Crossfit) sont les principaux générateurs de bruit et de pics de COVT. Le Studio musique enregistre le bruit maximal absolu du bâtiment (<span style='color:#F44336;'>106 dB(A)</span>), justifiant une intervention sur l'isolation acoustique de ce local pour éviter l'impact sur le reste du bâtiment.</p>
+
+<h2 style='color:#2196F3;'>IV. RECOMMANDATIONS ET FEUILLE DE ROUTE OPÉRATIONNELLE (Vue ESG)</h2>
+<p>Les objectifs RSE/ESG doivent privilégier l'efficacité énergétique, en tirant parti du système de ventilation double flux existant, sans compromettre la QAI déjà excellente.</p>
+
+<h3 style='color:#F44336;'>Actions Prioritaires (Efficacité Énergétique et Bruit)</h3>
+<ul>
+    <li><strong style='color:#F44336;'>Trajectoire Optimisation CO₂ :</strong> Réduire de <span style='color:#F44336;'>15 %</span> le temps passé en Indice CO₂ 0 (objectif de gain énergétique). Action : Mettre en œuvre une régulation de la ventilation asservie à l'occupation (sondes CO₂) dans les espaces collectifs, en exploitant le Double Flux (DPE E).</li>
+    <li><strong style='color:#F44336;'>Trajectoire Bruit :</strong> Réduire de <span style='color:#FF9800;'>8 points de pourcentage</span> le taux d’heures de dépassement sonore (objectif : <span style='color:#FFC107;'>35,4 %</span> vs <span style='color:#F44336;'>43,4 %</span>). Action : Mener un diagnostic acoustique du Studio musique et installer des dispositifs d'isolation/atténuation.</li>
+    <li><strong style='color:#FFC107;'>Trajectoire Humidité :</strong> Réduire de <span style='color:#FF9800;'>5 points de pourcentage</span> le taux de dépassement HR (objectif : <span style='color:#FFC107;'>21,1 %</span> vs <span style='color:#FFC107;'>26,1 %</span>). Action : Vérifier l'état de l'échangeur de chaleur double flux et son rôle dans la gestion de l'humidité en été.</li>
+</ul>
+
+<h3 style='color:#4CAF50;'>Recommandations de Pérennisation</h3>
+<ul>
+    <li><strong style='color:#4CAF50;'>COVT :</strong> Capitaliser sur l'excellence QAI pour évaluer l'efficacité des protocoles de nettoyage des locaux (Fréquence nettoyage annuel) en regard des pics de COVT et des émetteurs de senteurs présents.</li>
+    <li><strong style='color:#FF9800;'>Amélioration du Bâti :</strong> Étudier l'opportunité d'une amélioration de l'isolation des murs (30 cm) ou du vitrage (Double) pour un gain sur la classe DPE E, réduisant structurellement la consommation énergétique (<span style='color:#F44336;'>152 kWh/m².an</span>).</li>
+</ul>
+"
+}
