@@ -5,12 +5,58 @@
     "saison_id": "ete_2025",
     "periode_debut": "21/06/2025",
     "periode_fin": "22/09/2025",
-    "seasons_available": null,
+    "seasons_available": [
+      {
+        "id": "ete_2025",
+        "label": "Eté 2025",
+        "data_file": "noisy_le_grand_ete_2025.json",
+        "content_file": "noisy_le_grand_ete_2025_content.json",
+        "rse_file": "noisy_le_grand_ete_2025_rse.json",
+        "periode_debut": "01/07/2025",
+        "periode_fin": "22/09/2025"
+      },
+      {
+        "id": "printemps_2025",
+        "label": "Printemps 2025",
+        "data_file": "noisy_le_grand_printemps_2025.json",
+        "content_file": "noisy_le_grand_printemps_2025_content.json",
+        "rse_file": "noisy_le_grand_printemps_2025_rse.json",
+        "periode_debut": null,
+        "periode_fin": null
+      },
+      {
+        "id": "hiver_2024_2025",
+        "label": "Hiver 2024-2025",
+        "data_file": "noisy_le_grand_hiver_2024_2025.json",
+        "content_file": "noisy_le_grand_hiver_2024_2025_content.json",
+        "rse_file": "noisy_le_grand_hiver_2024_2025_rse.json",
+        "periode_debut": null,
+        "periode_fin": null
+      },
+      {
+        "id": "automne_2024",
+        "label": "Automne 2024",
+        "data_file": "noisy_le_grand_automne_2024.json",
+        "content_file": "noisy_le_grand_automne_2024_content.json",
+        "rse_file": "noisy_le_grand_automne_2024_rse.json",
+        "periode_debut": null,
+        "periode_fin": null
+      },
+      {
+        "id": "ete_2024",
+        "label": "Eté 2024",
+        "data_file": "noisy_le_grand_ete_2024.json",
+        "content_file": "noisy_le_grand_ete_2024_content.json",
+        "rse_file": "noisy_le_grand_ete_2024_rse.json",
+        "periode_debut": null,
+        "periode_fin": null
+      }
+    ],
     "type_residence": "ECLA"
   },
   "scores": {
-    "global": 92,
-    "confinement": null,
+    "global": 93,
+    "confinement": 98,
     "pm25": 99,
     "covt": 96,
     "temp": 96,
